@@ -4,6 +4,12 @@ Offline trip app for Jerry and Tom: https://jerry-trip.vercel.app
 
 Install: open the link in Safari, Share, Add to Home Screen (Android Chrome: Install app). It works with no service once opened.
 
+## iPhone app
+
+`ios/` is a native SwiftUI app (Plan, Places with map, People, Where, Media). It reads the same `docs/trip.json`, keeps the last copy on the phone, and refreshes whenever it has signal (open the app or pull down). Photos and videos listed under `media` download once and play offline.
+
+Install or update on Jerry's iPhone (plugged in or on the same Wi-Fi): `ios/install-on-iphone.sh`. Signed until Nov 2027.
+
 ## How to edit (anyone with access to this repo)
 
 Everything on the site comes from one file: `docs/trip.json`. Change it and commit; the site updates in about a minute, and phones pick it up the next time they have signal.
@@ -14,6 +20,7 @@ On a phone: open github.com/jerryshi042003/trip, tap `docs`, then `trip.json`, t
 - `places`: id, city, name, addr, optional `ja` (Japanese address for taxis). A plan item's `place` must match a place `id`.
 - `people`: name, role, and any of phone, whatsapp, email, ig, fb, web.
 - `emergency`: name and phone.
+- `media` (optional): list of {title, url, kind: "video" or "image", who}. Put files in `docs/media/` (each under 100 MB) and use the URL https://jerryshi042003.github.io/trip/media/<file>. The iPhone app downloads them for offline.
 
 Keep it valid JSON (commas between items, double quotes). If the site goes blank after an edit, the JSON is broken; undo the last commit.
 

@@ -1,0 +1,33 @@
+name: Trip
+options:
+  bundleIdPrefix: com.shishi88.trip
+  deploymentTarget:
+    iOS: '18.0'
+settings:
+  base:
+    SWIFT_VERSION: '5.0'
+    CODE_SIGN_STYLE: Automatic
+targets:
+  Trip:
+    type: application
+    platform: iOS
+    sources:
+      - path: Trip
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.shishi88.trip
+        PRODUCT_NAME: Trip
+        MARKETING_VERSION: '1.0'
+        CURRENT_PROJECT_VERSION: '1'
+        GENERATE_INFOPLIST_FILE: YES
+        TARGETED_DEVICE_FAMILY: '1'
+        INFOPLIST_KEY_CFBundleDisplayName: Trip
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
+        INFOPLIST_KEY_LSApplicationQueriesSchemes: "comgooglemaps whatsapp instagram fb"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+schemes:
+  Trip:
+    build:
+      targets:
+        Trip: all
