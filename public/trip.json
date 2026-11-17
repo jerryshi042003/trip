@@ -1,61 +1,5 @@
 {
  "updated": "2026-11-17",
- "plan": [
-  {
-   "date": "Fri Nov 20",
-   "title": "LAX → Manila",
-   "sub": "PR123 · 3:10 PM → Sat 10:45 PM · backup PR103 10:05 PM",
-   "place": "naia"
-  },
-  {
-   "date": "Sat Nov 21",
-   "title": "Land Manila",
-   "sub": "NAIA · standby, confirm night before",
-   "place": "naia"
-  },
-  {
-   "date": "Nov 30 – Dec 4",
-   "title": "PCA Open qualifying",
-   "sub": "Clay · Paco",
-   "place": "pca"
-  },
-  {
-   "date": "Dec 5 – 13",
-   "title": "PCA Open main draw",
-   "sub": "",
-   "place": "pca"
-  },
-  {
-   "date": "TBD",
-   "title": "Cebu",
-   "sub": "After qualifying",
-   "place": "asmara"
-  },
-  {
-   "date": "Mon Dec 14",
-   "title": "Manila → Tokyo",
-   "sub": "PR424 · 7:10 PM → 12:15 AM Haneda",
-   "place": "hnd"
-  },
-  {
-   "date": "Dec 15",
-   "title": "diadora cup",
-   "sub": "Ariake · check-in 8:40 · ¥4,000 cash",
-   "place": "ariake"
-  },
-  {
-   "date": "Dec 15 – 19",
-   "title": "Tokyo",
-   "sub": "Setinn · Shingo",
-   "place": "setinn"
-  },
-  {
-   "date": "By Dec 20",
-   "title": "Tokyo → LA",
-   "sub": "AA26 6:00 PM or AA170 1:05 PM · Haneda",
-   "place": "hnd"
-  }
- ],
  "places": [
   {
    "id": "naia",
@@ -86,6 +30,24 @@
    "city": "Cebu",
    "name": "Asmara Tennis",
    "addr": "1 Paseo Saturnino, Maria Luisa Rd, Banilad, Cebu City"
+  },
+  {
+   "id": "cebu-airport",
+   "city": "Cebu",
+   "name": "Mactan-Cebu Airport",
+   "addr": "Mactan-Cebu International Airport, Lapu-Lapu City, Cebu"
+  },
+  {
+   "id": "siargao-airport",
+   "city": "Siargao",
+   "name": "Siargao Airport",
+   "addr": "Sayak Airport, Del Carmen, Siargao Island"
+  },
+  {
+   "id": "cloud9",
+   "city": "Siargao",
+   "name": "Cloud 9",
+   "addr": "Cloud 9, Catangnan, General Luna, Siargao Island"
   },
   {
    "id": "hnd",
@@ -216,5 +178,111 @@
    "name": "Japan ambulance",
    "phone": "119"
   }
- ]
+ ],
+ "travelers": {
+  "jerry": {
+   "name": "Jerry",
+   "plan": [
+    {
+     "date": "Fri Nov 20",
+     "title": "LAX → Manila",
+     "sub": "PR123 · 3:10 PM → Sat 10:45 PM · backup PR103 10:05 PM",
+     "place": "naia"
+    },
+    {
+     "date": "Sat Nov 21",
+     "title": "Land Manila",
+     "sub": "NAIA · standby, confirm night before",
+     "place": "naia"
+    },
+    {
+     "date": "Nov 30 – Dec 4",
+     "title": "PCA Open qualifying",
+     "sub": "Clay · Paco",
+     "place": "pca"
+    },
+    {
+     "date": "Dec 5 – 13",
+     "title": "PCA Open main draw",
+     "sub": "",
+     "place": "pca"
+    },
+    {
+     "date": "TBD",
+     "title": "Cebu",
+     "sub": "After qualifying",
+     "place": "asmara"
+    },
+    {
+     "date": "Mon Dec 14",
+     "title": "Manila → Tokyo",
+     "sub": "PR424 · 7:10 PM → 12:15 AM Haneda",
+     "place": "hnd"
+    },
+    {
+     "date": "Dec 15",
+     "title": "diadora cup",
+     "sub": "Ariake · check-in 8:40 · ¥4,000 cash",
+     "place": "ariake"
+    },
+    {
+     "date": "Dec 15 – 19",
+     "title": "Tokyo",
+     "sub": "Setinn · Shingo",
+     "place": "setinn"
+    },
+    {
+     "date": "By Dec 20",
+     "title": "Tokyo → LA",
+     "sub": "AA26 6:00 PM or AA170 1:05 PM · Haneda",
+     "place": "hnd"
+    }
+   ],
+   "bucket": [
+    "PCA Open qualifying and main draw",
+    "Hit with PJ Tierro and the Ateneo guys",
+    "Polo Club doubles with Michael",
+    "Asmara clay in Cebu",
+    "Setinn with Shingo",
+    "diadora cup at Ariake"
+   ],
+   "where": ""
+  },
+  "tom": {
+   "name": "Tom",
+   "plan": [
+    {
+     "date": "TBD",
+     "title": "Fly to Cebu",
+     "sub": "Flight not set",
+     "place": "cebu-airport"
+    },
+    {
+     "date": "TBD",
+     "title": "Siargao",
+     "sub": "Surf and hoop",
+     "place": "cloud9"
+    },
+    {
+     "date": "TBD",
+     "title": "Manila",
+     "sub": "PCA doubles with Jerry, date from Alex",
+     "place": "pca"
+    },
+    {
+     "date": "Dec 15 – 19",
+     "title": "Tokyo",
+     "sub": "With Jerry",
+     "place": "setinn"
+    }
+   ],
+   "bucket": [
+    "Surf Cloud 9",
+    "Hoop in Siargao",
+    "PCA doubles with Jerry",
+    "Tokyo with Jerry"
+   ],
+   "where": ""
+  }
+ }
 }
