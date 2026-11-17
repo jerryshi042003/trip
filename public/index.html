@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Trip</title>
 <meta name="theme-color" content="#f2f2f7" media="(prefers-color-scheme: light)">
@@ -91,7 +92,6 @@ h1{font:700 34px/1.15 -apple-system,"SF Pro Display",sans-serif;letter-spacing:.
     } else if (view === 'places') {
       for (const city of [...new Set(D.places.map(p => p.city))]) h += `<div class="hdr">${esc(city)}</div><div class="group">${D.places.filter(p => p.city === city).map(placeRow).join('')}</div>`;
     } else {
-      h += `<div class="hdr">Private</div><div class="group">` + (P ? P.map(personRow).join('') : `<div class="row"><button class="lock" id="unlock">Unlock</button></div>`) + `</div>`;
       h += `<div class="hdr">Contacts</div><div class="group">${D.people.map(personRow).join('')}</div>`;
       h += `<div class="hdr">Emergency</div><div class="group">${D.emergency.map(personRow).join('')}</div>`;
     }
@@ -115,7 +115,7 @@ h1{font:700 34px/1.15 -apple-system,"SF Pro Display",sans-serif;letter-spacing:.
     if (e.target.id === 'unlock') { const p = prompt('Passcode'); if (p) unlock(p.trim()); }
   });
 
-  fetch('trip.json', { cache: 'no-cache' }).then(r => r.json()).then(d => { D = d; render(); const p = store.get('pass'); if (p) unlock(p, true); });
+  fetch('trip.json', { cache: 'no-cache' }).then(r => r.json()).then(d => { D = d; render(); });
   if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
 })();
 </script>

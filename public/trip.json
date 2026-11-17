@@ -1,42 +1,220 @@
 {
  "updated": "2026-11-17",
  "plan": [
-  {"date": "Fri Nov 20", "title": "LAX → Manila", "sub": "PR123 · 3:10 PM → Sat 10:45 PM · backup PR103 10:05 PM", "place": "naia"},
-  {"date": "Sat Nov 21", "title": "Land Manila", "sub": "NAIA · standby, confirm night before", "place": "naia"},
-  {"date": "Nov 30 – Dec 4", "title": "PCA Open qualifying", "sub": "Clay · Paco", "place": "pca"},
-  {"date": "Dec 5 – 13", "title": "PCA Open main draw", "sub": "", "place": "pca"},
-  {"date": "TBD", "title": "Cebu", "sub": "After qualifying", "place": "asmara"},
-  {"date": "Mon Dec 14", "title": "Manila → Tokyo", "sub": "PR424 · 7:10 PM → 12:15 AM Haneda", "place": "hnd"},
-  {"date": "Dec 15", "title": "diadora cup", "sub": "Ariake · check-in 8:40 · ¥4,000 cash", "place": "ariake"},
-  {"date": "Dec 15 – 19", "title": "Tokyo", "sub": "Setinn · Shingo", "place": "setinn"},
-  {"date": "By Dec 20", "title": "Tokyo → LA", "sub": "AA26 6:00 PM or AA170 1:05 PM · Haneda", "place": "hnd"}
+  {
+   "date": "Fri Nov 20",
+   "title": "LAX → Manila",
+   "sub": "PR123 · 3:10 PM → Sat 10:45 PM · backup PR103 10:05 PM",
+   "place": "naia"
+  },
+  {
+   "date": "Sat Nov 21",
+   "title": "Land Manila",
+   "sub": "NAIA · standby, confirm night before",
+   "place": "naia"
+  },
+  {
+   "date": "Nov 30 – Dec 4",
+   "title": "PCA Open qualifying",
+   "sub": "Clay · Paco",
+   "place": "pca"
+  },
+  {
+   "date": "Dec 5 – 13",
+   "title": "PCA Open main draw",
+   "sub": "",
+   "place": "pca"
+  },
+  {
+   "date": "TBD",
+   "title": "Cebu",
+   "sub": "After qualifying",
+   "place": "asmara"
+  },
+  {
+   "date": "Mon Dec 14",
+   "title": "Manila → Tokyo",
+   "sub": "PR424 · 7:10 PM → 12:15 AM Haneda",
+   "place": "hnd"
+  },
+  {
+   "date": "Dec 15",
+   "title": "diadora cup",
+   "sub": "Ariake · check-in 8:40 · ¥4,000 cash",
+   "place": "ariake"
+  },
+  {
+   "date": "Dec 15 – 19",
+   "title": "Tokyo",
+   "sub": "Setinn · Shingo",
+   "place": "setinn"
+  },
+  {
+   "date": "By Dec 20",
+   "title": "Tokyo → LA",
+   "sub": "AA26 6:00 PM or AA170 1:05 PM · Haneda",
+   "place": "hnd"
+  }
  ],
  "places": [
-  {"id": "naia", "city": "Manila", "name": "NAIA Airport", "addr": "Ninoy Aquino International Airport, Pasay, Metro Manila"},
-  {"id": "pca", "city": "Manila", "name": "PCA Open", "addr": "Plaza Dilao, Quirino Ave cor. Canonigo St, Paco, Manila"},
-  {"id": "rizal", "city": "Manila", "name": "Rizal Memorial Tennis", "addr": "Pablo Ocampo Sr. St, Malate, Manila 1004"},
-  {"id": "proserve", "city": "Manila", "name": "ProServe", "addr": "2123 Suter, Santa Ana, Manila"},
-  {"id": "asmara", "city": "Cebu", "name": "Asmara Tennis", "addr": "1 Paseo Saturnino, Maria Luisa Rd, Banilad, Cebu City"},
-  {"id": "hnd", "city": "Tokyo", "name": "Haneda Airport", "addr": "Haneda Airport Terminal 3, Ota City, Tokyo", "ja": "羽田空港 第3ターミナル"},
-  {"id": "capsule510", "city": "Tokyo", "name": "Capsule Hotel Shinjuku 510", "addr": "2-40-1 Kabukicho, Shinjuku, Tokyo", "ja": "東京都新宿区歌舞伎町2-40-1"},
-  {"id": "setinn", "city": "Tokyo", "name": "Setinn", "addr": "3-51-10 Sendagaya, Shibuya, Tokyo", "ja": "東京都渋谷区千駄ヶ谷3-51-10"},
-  {"id": "ariake", "city": "Tokyo", "name": "Ariake Tennis Forest", "addr": "2-2-22 Ariake, Koto, Tokyo", "ja": "東京都江東区有明2-2-22"}
+  {
+   "id": "naia",
+   "city": "Manila",
+   "name": "NAIA Airport",
+   "addr": "Ninoy Aquino International Airport, Pasay, Metro Manila"
+  },
+  {
+   "id": "pca",
+   "city": "Manila",
+   "name": "PCA Open",
+   "addr": "Plaza Dilao, Quirino Ave cor. Canonigo St, Paco, Manila"
+  },
+  {
+   "id": "rizal",
+   "city": "Manila",
+   "name": "Rizal Memorial Tennis",
+   "addr": "Pablo Ocampo Sr. St, Malate, Manila 1004"
+  },
+  {
+   "id": "proserve",
+   "city": "Manila",
+   "name": "ProServe",
+   "addr": "2123 Suter, Santa Ana, Manila"
+  },
+  {
+   "id": "asmara",
+   "city": "Cebu",
+   "name": "Asmara Tennis",
+   "addr": "1 Paseo Saturnino, Maria Luisa Rd, Banilad, Cebu City"
+  },
+  {
+   "id": "hnd",
+   "city": "Tokyo",
+   "name": "Haneda Airport",
+   "addr": "Haneda Airport Terminal 3, Ota City, Tokyo",
+   "ja": "羽田空港 第3ターミナル"
+  },
+  {
+   "id": "capsule510",
+   "city": "Tokyo",
+   "name": "Capsule Hotel Shinjuku 510",
+   "addr": "2-40-1 Kabukicho, Shinjuku, Tokyo",
+   "ja": "東京都新宿区歌舞伎町2-40-1"
+  },
+  {
+   "id": "setinn",
+   "city": "Tokyo",
+   "name": "Setinn",
+   "addr": "3-51-10 Sendagaya, Shibuya, Tokyo",
+   "ja": "東京都渋谷区千駄ヶ谷3-51-10"
+  },
+  {
+   "id": "ariake",
+   "city": "Tokyo",
+   "name": "Ariake Tennis Forest",
+   "addr": "2-2-22 Ariake, Koto, Tokyo",
+   "ja": "東京都江東区有明2-2-22"
+  }
  ],
  "people": [
-  {"name": "PCA Open office", "role": "Manila", "phone": "+63285638501", "phoneLabel": "8563 8501 ext 116", "email": "philcolumbian_pcaopen@yahoo.com"},
-  {"name": "Asmara Tennis", "role": "Cebu courts", "phone": "+639177081079"},
-  {"name": "Rizal Memorial", "role": "Court booking", "phone": "+63285250808", "phoneLabel": "8525 0808 ext 197", "web": "https://play.psc.gov.ph"},
-  {"name": "PJ Tierro", "role": "Ateneo head coach", "fb": "https://www.facebook.com/pj.tierro"},
-  {"name": "Marvin Bentulan", "role": "Courts, Manila", "ig": "racketoncourt"},
-  {"name": "Chris Papa", "role": "Manila", "ig": "chrispapa01"},
-  {"name": "Shingo Arai", "role": "Setinn, Tokyo", "ig": "sng1980"},
-  {"name": "Capsule Hotel 510", "role": "Tokyo stay", "phone": "+81332006151"},
-  {"name": "Jinji Tennis", "role": "Tokyo hitting", "email": "jinji.tennis1@gmail.com"},
-  {"name": "Tokyo Tennis Intl", "role": "Tokyo lessons", "email": "info@tokyotennisinternational.com"}
+  {
+   "name": "Alex Marcial",
+   "role": "Host · PCA entry",
+   "phone": "+16263620450"
+  },
+  {
+   "name": "Adelmo (Dey Brosas)",
+   "role": "Manila · WhatsApp",
+   "phone": "+639189599450",
+   "whatsapp": "639189599450"
+  },
+  {
+   "name": "Michael Cumagun",
+   "role": "Polo Club",
+   "email": "mcumagun@yahoo.com"
+  },
+  {
+   "name": "CJ Gimena",
+   "role": "LA",
+   "phone": "+16618890441"
+  },
+  {
+   "name": "Drexler Dy",
+   "role": "LA",
+   "phone": "+14086448358"
+  },
+  {
+   "name": "Bryce Pereira",
+   "role": "LA",
+   "phone": "+16267038405"
+  },
+  {
+   "name": "PCA Open office",
+   "role": "Manila",
+   "phone": "+63285638501",
+   "phoneLabel": "8563 8501 ext 116",
+   "email": "philcolumbian_pcaopen@yahoo.com"
+  },
+  {
+   "name": "Asmara Tennis",
+   "role": "Cebu courts",
+   "phone": "+639177081079"
+  },
+  {
+   "name": "Rizal Memorial",
+   "role": "Court booking",
+   "phone": "+63285250808",
+   "phoneLabel": "8525 0808 ext 197",
+   "web": "https://play.psc.gov.ph"
+  },
+  {
+   "name": "PJ Tierro",
+   "role": "Ateneo head coach",
+   "fb": "https://www.facebook.com/pj.tierro"
+  },
+  {
+   "name": "Marvin Bentulan",
+   "role": "Courts, Manila",
+   "ig": "racketoncourt"
+  },
+  {
+   "name": "Chris Papa",
+   "role": "Manila",
+   "ig": "chrispapa01"
+  },
+  {
+   "name": "Shingo Arai",
+   "role": "Setinn, Tokyo",
+   "ig": "sng1980"
+  },
+  {
+   "name": "Capsule Hotel 510",
+   "role": "Tokyo stay",
+   "phone": "+81332006151"
+  },
+  {
+   "name": "Jinji Tennis",
+   "role": "Tokyo hitting",
+   "email": "jinji.tennis1@gmail.com"
+  },
+  {
+   "name": "Tokyo Tennis Intl",
+   "role": "Tokyo lessons",
+   "email": "info@tokyotennisinternational.com"
+  }
  ],
  "emergency": [
-  {"name": "Philippines emergency", "phone": "911"},
-  {"name": "Japan police", "phone": "110"},
-  {"name": "Japan ambulance", "phone": "119"}
+  {
+   "name": "Philippines emergency",
+   "phone": "911"
+  },
+  {
+   "name": "Japan police",
+   "phone": "110"
+  },
+  {
+   "name": "Japan ambulance",
+   "phone": "119"
+  }
  ]
 }
