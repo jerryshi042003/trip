@@ -76,6 +76,13 @@
    "name": "Ariake Tennis Forest",
    "addr": "2-2-22 Ariake, Koto, Tokyo",
    "ja": "東京都江東区有明2-2-22"
+  },
+  {
+   "id": "superpotato",
+   "city": "Tokyo",
+   "name": "Super Potato Akihabara",
+   "addr": "Kitabayashi Bldg 3F-5F, 1-11-2 Sotokanda, Chiyoda, Tokyo",
+   "ja": "東京都千代田区外神田1-11-2 北林ビル3F〜5F"
   }
  ],
  "people": [
