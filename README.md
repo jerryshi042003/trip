@@ -6,9 +6,9 @@ Install: open the link in Safari, Share, Add to Home Screen (Android Chrome: Ins
 
 ## How to edit (anyone with access to this repo)
 
-Everything on the site comes from one file: `public/trip.json`. Change it and commit; the site updates in about a minute, and phones pick it up the next time they have signal.
+Everything on the site comes from one file: `docs/trip.json`. Change it and commit; the site updates in about a minute, and phones pick it up the next time they have signal.
 
-On a phone: open github.com/jerryshi042003/trip, tap `public`, then `trip.json`, then the pencil icon, edit, then Commit changes.
+On a phone: open github.com/jerryshi042003/trip, tap `docs`, then `trip.json`, then the pencil icon, edit, then Commit changes.
 
 - `travelers.jerry` / `travelers.tom`: each person's `plan` (date, title, sub, place), `bucket` list, and `where` (live location link).
 - `places`: id, city, name, addr, optional `ja` (Japanese address for taxis). A plan item's `place` must match a place `id`.
@@ -26,4 +26,4 @@ Anyone with the site can then open it, family included, on iPhone or Android.
 ## For AI agents (Claude, Muse, Codex)
 
 Read the current trip at https://jerry-trip.vercel.app/trip.json (public, no login).
-To change it, edit `public/trip.json` in this repo through the person's own GitHub access, keep the schema above, commit with a short message, and never delete other people's entries.
+To change it, edit `docs/trip.json` in this repo through the person's own GitHub access, keep the schema above, commit with a short message, and never delete other people's entries.
