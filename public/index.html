@@ -66,7 +66,7 @@ h1{font:700 34px/1.15 -apple-system,"SF Pro Display",sans-serif;letter-spacing:.
   const store = { get(k){ try { return localStorage.getItem(k); } catch(e) { return null; } }, set(k,v){ try { localStorage.setItem(k,v); } catch(e) {} } };
   const toast = m => { const t = document.getElementById('toast'); t.textContent = m; t.classList.add('on'); clearTimeout(t._h); t._h = setTimeout(() => t.classList.remove('on'), 1300); };
   const gmap = q => 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(q);
-  let D = null, P = null, view = store.get('view') || 'plan';
+  let D = null, view = store.get('view') || 'plan';
 
   const placeRow = p => `<div class="row"><div class="main"><div class="t">${esc(p.name)}</div><div class="s">${esc(p.addr)}</div>${p.ja ? `<div class="ja">${esc(p.ja)}</div>` : ''}</div><div class="acts">${p.ja ? `<button class="a" data-copy="${esc(p.ja)}" aria-label="Copy">${I.copy}</button>` : ''}<a class="a" href="${gmap(p.ja || p.addr)}" aria-label="Map">${I.map}</a></div></div>`;
   const personRow = p => {
@@ -98,21 +98,10 @@ h1{font:700 34px/1.15 -apple-system,"SF Pro Display",sans-serif;letter-spacing:.
     document.getElementById('out').innerHTML = h;
   }
 
-  async function unlock(pass, silent) {
-    try {
-      const e = await (await fetch('private.enc.json')).json();
-      const b = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
-      const base = await crypto.subtle.importKey('raw', new TextEncoder().encode(pass), 'PBKDF2', false, ['deriveKey']);
-      const key = await crypto.subtle.deriveKey({ name: 'PBKDF2', salt: b(e.salt), iterations: 200000, hash: 'SHA-256' }, base, { name: 'AES-GCM', length: 256 }, false, ['decrypt']);
-      P = JSON.parse(new TextDecoder().decode(await crypto.subtle.decrypt({ name: 'AES-GCM', iv: b(e.iv) }, key, b(e.ct))));
-      store.set('pass', pass); render();
-    } catch (err) { if (!silent) toast('Wrong passcode'); }
-  }
 
   document.addEventListener('click', e => {
     const s = e.target.closest('.seg button'); if (s) { view = s.dataset.v; store.set('view', view); render(); window.scrollTo(0, 0); return; }
     const c = e.target.closest('[data-copy]'); if (c) { navigator.clipboard?.writeText(c.dataset.copy).then(() => toast('Copied'), () => toast(c.dataset.copy)); return; }
-    if (e.target.id === 'unlock') { const p = prompt('Passcode'); if (p) unlock(p.trim()); }
   });
 
   fetch('trip.json', { cache: 'no-cache' }).then(r => r.json()).then(d => { D = d; render(); });
