@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17",
+ "updated": "2026-11-18",
  "places": [
   {
    "id": "naia",
@@ -217,13 +217,13 @@
     {
      "date": "TBD",
      "title": "Cebu",
-     "sub": "After qualifying",
+     "sub": "Maybe, after qualifying. Might stay in Manila the whole time",
      "place": "asmara"
     },
     {
-     "date": "Mon Dec 14",
+     "date": "Dec 14 or ~Dec 5",
      "title": "Manila → Tokyo",
-     "sub": "PR424 · 7:10 PM → 12:15 AM Haneda",
+     "sub": "PR424 7:10 PM → 12:15 AM Haneda · Dec 14 if main draw, ~Dec 5 if out in qualifying",
      "place": "hnd"
     },
     {
@@ -233,9 +233,9 @@
      "place": "ariake"
     },
     {
-     "date": "Dec 15 – 19",
+     "date": "After PCA",
      "title": "Tokyo",
-     "sub": "Setinn · Shingo",
+     "sub": "Setinn · Shingo · dates depend on PCA",
      "place": "setinn"
     },
     {
@@ -283,9 +283,9 @@
      "place": "pca"
     },
     {
-     "date": "Dec 15 – 19",
+     "date": "After PCA",
      "title": "Tokyo",
-     "sub": "With Jerry",
+     "sub": "With Jerry, dates depend on PCA",
      "place": "setinn"
     }
    ],
