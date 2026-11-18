@@ -13,8 +13,23 @@ struct TripData: Codable {
 struct Traveler: Codable {
     var name: String
     var plan: [PlanItem]
+    var todos: [TripTaskSection]?
     var bucket: [String]?
     var `where`: String?
+}
+
+struct TripTaskSection: Codable, Identifiable {
+    var id: String { title }
+    let title: String
+    let items: [TripTask]
+}
+
+struct TripTask: Codable, Identifiable {
+    var id: String { title }
+    let title: String
+    let detail: String
+    let link: URL?
+    let draft: String?
 }
 
 struct PlanItem: Codable, Identifiable {

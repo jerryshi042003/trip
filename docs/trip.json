@@ -106,26 +106,32 @@
    "group": "Manila · People"
   },
   {
+   "name": "Whismark Basanal",
+   "role": "Valle Verde club pro · Offered to hit in Manila",
+   "ig": "whismaaark",
+   "group": "Manila · People"
+  },
+  {
    "name": "Chris Papa",
-   "role": "Filipino-American player and Manila tennis contact",
+   "role": "Filipino-American player · Offered Manila introductions",
    "ig": "chrispapa01",
    "group": "Manila · People"
   },
   {
    "name": "Marvin Bentulan",
-   "role": "Racket on Court · Manila court and hitting contact",
+   "role": "Racket on Court · Offered to arrange a court",
    "ig": "racketoncourt",
    "group": "Manila · People"
   },
   {
    "name": "Michael “Skip” Tan",
-   "role": "SKP Sports coach and Manila open-play organizer",
+   "role": "SKP Sports and Manila open play · Replied",
    "ig": "skip.tan",
    "group": "Manila · People"
   },
   {
    "name": "Tennis United Academy",
-   "role": "Manila coaching and hitting sessions",
+   "role": "Manila coaching team · Offered to arrange a hit",
    "ig": "tennisunitedacademy",
    "whatsapp": "639761234510",
    "group": "Manila · Academies & coaches"
@@ -137,28 +143,40 @@
    "group": "Manila · Academies & coaches"
   },
   {
+   "name": "Migi Lapid",
+   "role": "Another Day Another Court · Offered to ask around for practice partners",
+   "ig": "anotherdayanothercourt",
+   "group": "Manila · Referrals"
+  },
+  {
+   "name": "Ruben Gonzales",
+   "role": "Pro player · Referred Jed Olivarez, Niño Alcantara and AJ Lim",
+   "ig": "rubenninogonzales",
+   "group": "Manila · Referrals"
+  },
+  {
    "name": "Niegel Delima",
-   "role": "Cebu tennis contact · Siargao Tennis Club",
+   "role": "Siargao Tennis Club · Open to meeting in Cebu",
    "ig": "niegeldilemma",
    "group": "Cebu · People"
   },
   {
    "name": "Asmara Tennis",
-   "role": "Banilad clay courts and coaching",
+   "role": "Banilad clay courts · Invited Jerry to book",
    "phone": "+639177081079",
    "web": "https://asmara-tennis-association.rezerv.co/",
    "group": "Cebu · Academies & clubs"
   },
   {
    "name": "Match Point Tennis Academy",
-   "role": "Private and group coaching at UP Cebu, Lahug",
+   "role": "UP Cebu, Lahug · Sent coaching and booking guide",
    "ig": "mptenniscebu",
    "web": "https://www.matchpoint-tennisacademy.com/",
    "group": "Cebu · Academies & clubs"
   },
   {
    "name": "Ryoto Tachi",
-   "role": "Former UCLA tennis player and Tokyo hitting contact",
+   "role": "Former UCLA tennis player · Open to hitting in Tokyo",
    "ig": "ryoto.tachi",
    "group": "Tokyo · People"
   },
@@ -166,7 +184,8 @@
    "name": "Shingo Arai",
    "role": "Setinn founder at BEAMS",
    "ig": "sng1980",
-   "group": "Tokyo · People"
+   "group": "Tokyo · People",
+   "web": "https://setinn.jp/"
   },
   {
    "name": "Jinji Tennis",
@@ -179,6 +198,25 @@
    "role": "Tennis lessons in Tokyo",
    "email": "info@tokyotennisinternational.com",
    "group": "Tokyo · Academies & coaches"
+  },
+  {
+   "name": "Pilgrim Surf+Supply Tokyo",
+   "role": "BEAMS Shibuya store · Surf apparel and accessories",
+   "web": "https://www.beams.co.jp/shop/pss/",
+   "group": "Clothing · Tom’s outreach"
+  },
+  {
+   "name": "Masato Tsuchiya / Sillage",
+   "role": "Sillage representative · Artisanal textiles, Daikanyama",
+   "email": "masa@sillage.online",
+   "web": "https://www.sillage.online/",
+   "group": "Clothing · Tom’s outreach"
+  },
+  {
+   "name": "Mountain Martial Arts",
+   "role": "Japanese trail-running apparel team",
+   "web": "https://mountainmartialarts.tokyo/contact",
+   "group": "Clothing · Tom’s outreach"
   },
   {
    "name": "PCA Open office",
@@ -242,25 +280,25 @@
     {
      "date": "Fri Nov 20",
      "title": "LAX → Manila",
-     "sub": "PR123 · 3:10 PM → Sat 10:45 PM · backup PR103 10:05 PM",
+     "sub": "PR123 · 3:10 PM Los Angeles time",
      "place": "naia"
     },
     {
      "date": "Sat Nov 21",
      "title": "Land Manila",
-     "sub": "NAIA · standby, confirm night before",
+     "sub": "PR123 · 10:45 PM Manila time · NAIA Terminal 1 · check listing",
      "place": "naia"
     },
     {
      "date": "Nov 30 – Dec 4",
      "title": "PCA Open qualifying",
-     "sub": "Clay · Paco",
+     "sub": "Paco · entry and check-in need confirmation",
      "place": "pca"
     },
     {
      "date": "Dec 5 – 13",
      "title": "PCA Open main draw",
-     "sub": "",
+     "sub": "If through qualifying",
      "place": "pca"
     },
     {
@@ -302,7 +340,109 @@
     "Setinn with Shingo",
     "diadora cup at Ariake"
    ],
-   "where": ""
+   "where": "",
+   "todos": [
+    {
+     "title": "Before departure",
+     "items": [
+      {
+       "title": "Update Adelmo about the arrival",
+       "detail": "PR123 is scheduled to arrive Saturday, Nov 21 at 10:45 PM Manila time, Terminal 1. Recheck the ticket or listing before texting.",
+       "draft": "Hi Adelmo, it’s Jerry, Alex Marcial’s friend. Looking forward to meeting you! I’m on PR123, scheduled to land Saturday, Nov 21 at 10:45 PM Manila time, NAIA Terminal 1. Where should I meet you? Thanks so much.",
+       "link": "https://wa.me/639189599450"
+      },
+      {
+       "title": "Confirm PCA singles and doubles with Alex",
+       "detail": "Get the actual entry/payment receipt and check-in time. Ask about doubles with Tom before either of you commits to Manila dates.",
+       "draft": "Hey Alex, can you check if my singles entry and payment went through for PCA? What day do I need to check in? Tom might come to Manila for doubles. When is doubles and can we still enter?",
+       "link": "sms:+16263620450"
+      },
+      {
+       "title": "Finish eTravel and save the QR",
+       "detail": "For the scheduled PR123 arrival, the 72-hour window opened Wednesday, Nov 18 at 10:45 PM Manila time (6:45 AM Pacific). Use the official free form and save the QR.",
+       "link": "https://etravel.gov.ph/"
+      },
+      {
+       "title": "Confirm the listing and onward plan",
+       "detail": "PR123 replaces PR103 in the current plan. Check the actual listing or ticket, passport validity and what proof of onward travel PAL will accept."
+      },
+      {
+       "title": "Pack light and hand off Alex’s gear",
+       "detail": "Confirm Alex’s racket and strings for Adelmo, and check how the racket box must be packed. Bring your playing gear, everyday pants and hoodie, and Shingo’s sticker. Leave the orange puffer.",
+       "link": "https://www.philippineairlines.com/us/en/before-you-fly/baggage-information/baggage-allowance/baggage-allowance-fees/carry-on-baggage.html"
+      },
+      {
+       "title": "Set up phone service and offline trip info",
+       "detail": "Install the eSIM on Wi-Fi if needed. Save the pickup details, reservations and contact routes offline. Clear work-laptop travel with IT if bringing it."
+      }
+     ]
+    },
+    {
+     "title": "In Manila",
+     "items": [
+      {
+       "title": "Set a Valle Verde hit with Whismark",
+       "detail": "He offered to hit. Pick a time and check club entry and court fees.",
+       "link": "https://ig.me/m/whismaaark",
+       "draft": "Thanks Coach! Valle Verde sounds great. What day and time works for you? Is there anything I need to do to get in as a guest?"
+      },
+      {
+       "title": "Coordinate Polo Club and a second hit",
+       "detail": "Check in with Michael and Alex. Chris and Marvin are backup connections. Migi offered to ask around, and Ruben pointed to Jed, Niño and AJ. Continue in the existing threads.",
+       "link": "https://ig.me/m/anotherdayanothercourt",
+       "draft": "Thanks Migi, I appreciate it. Qualies are listed for Nov 30–Dec 4. I’d love to get a practice set in before then if anyone is around."
+      },
+      {
+       "title": "Use Rizal Memorial as the court backup",
+       "detail": "Confirm a session or book a public court if the club sessions don’t line up.",
+       "link": "https://play.psc.gov.ph/"
+      }
+     ]
+    },
+    {
+     "title": "If Cebu happens",
+     "items": [
+      {
+       "title": "Offer Niegel a date in Cebu",
+       "detail": "He said to reach out when you’re there. Set the day after the PCA schedule is clear.",
+       "link": "https://ig.me/m/niegeldilemma"
+      },
+      {
+       "title": "Book Asmara or arrange a hit at Match Point",
+       "detail": "Asmara invited you to book. Match Point shared its coaching and booking guide. Ask for an adult hitting session that fits your dates.",
+       "link": "https://asmara-tennis-association.rezerv.co/"
+      }
+     ]
+    },
+    {
+     "title": "Japan and getting home",
+     "items": [
+      {
+       "title": "Confirm Tokyo dates with Tom, Shingo and Ryoto",
+       "detail": "Decide after the PCA result. Check late-arrival transport and lodging before booking. Let existing contacts know when the window firms up."
+      },
+      {
+       "title": "Bring the sticker to Shingo at Setinn",
+       "detail": "Bring one sticker and pick a shop visit or hit once Shingo confirms a time.",
+       "link": "https://ig.me/m/sng1980"
+      },
+      {
+       "title": "Buy more Yamatomichi pants",
+       "detail": "Reorder the Light 5-Pocket Wide Pants. The last order was Dark Gray, size L. Check stock before visiting.",
+       "link": "https://www.yamatomichi.com/en/products/light-5-pocket-wide-pants"
+      },
+      {
+       "title": "Find another Goldwin hoodie with neck coverage",
+       "detail": "Your last order was the WF Light L/S Hoodie (GL45141), Arid Beige, size 3. Look for the same compact hood and high neck.",
+       "link": "https://usshop.goldwin-global.com/products/gl45141"
+      },
+      {
+       "title": "Firm up the return from Tokyo",
+       "detail": "Check the AA companion listing, eligibility, timing and backup before you depend on the standby return."
+      }
+     ]
+    }
+   ]
   },
   "tom": {
    "name": "Tom",
@@ -345,7 +485,51 @@
     "Tokyo with Jerry",
     "Meet Shingo in Tokyo"
    ],
-   "where": ""
+   "where": "",
+   "todos": [
+    {
+     "title": "Before departure",
+     "items": [
+      {
+       "title": "Sync Cebu, Siargao and Manila with Jerry",
+       "detail": "Keep Cebu arrival as planned. Set Siargao and Manila around actual doubles eligibility and dates. Tell Jerry when you can overlap."
+      },
+      {
+       "title": "Pick one bandana or neck-scarf sample",
+       "detail": "Bring one piece you’ve made and one clear photo. Show what the fabric, print or edge does in use. Use an actual point of overlap in the first message."
+      }
+     ]
+    },
+    {
+     "title": "Japan outreach · Drafts",
+     "items": [
+      {
+       "title": "Start with Shingo at Setinn",
+       "detail": "Warm contact from the LA BEAMS event. Ask for a shop visit or a quick coffee. Bring the sample and ask one question about testing it on court.",
+       "link": "https://ig.me/m/sng1980",
+       "draft": "Hey Shingo, it’s Tom. We met at the BEAMS event in LA with Jerry. I’m working on a bandana for tennis and have a sample I’d love to show you. If our Tokyo dates line up, could I stop by Setinn or grab you a coffee? I’d love your take on how you test a piece on court."
+      },
+      {
+       "title": "Ask Pilgrim Tokyo about their bandanas",
+       "detail": "A real surf-to-everyday clothing connection. Start with the Tokyo shop and its Spring/Summer bandana. Ask who works on accessories.",
+       "link": "https://www.beams.co.jp/shop/pss/",
+       "draft": "Hi, I’m Tom, a designer from LA. I saw the bandana in your spring/summer collection and liked how it fits in with the rest of the surf pieces. I’m making a bandana for tennis. Is there someone on the Tokyo team I could show a sample to when I stop by?"
+      },
+      {
+       "title": "Ask Sillage about fabric and finishing",
+       "detail": "Use the Daikanyama shop or business email. Start with the Artisanal patchwork process. Bring the sample if they’re interested.",
+       "link": "https://www.sillage.online/artisanal?page=2",
+       "draft": "Hi Sillage team, I’m Tom, a designer from LA. I liked how you turn old workwear into patchwork for the Circular Pants. I’m working on tennis bandanas and thinking about how the fabric and edges will wear. Would it be okay to stop by the shop and show you one?"
+      },
+      {
+       "title": "Ask Mountain Martial Arts about running gear",
+       "detail": "Use the brand’s contact form. Ask how they test fabric and print in motion. Offer a photo and ask about visiting only if it’s convenient.",
+       "link": "https://mountainmartialarts.tokyo/contact",
+       "draft": "Hi MMA team, I’m Tom, a designer from LA. I came across your Racing Series. I’m working on a bandana for tennis and I’m curious how your team tests what actually works during a run. Can I send you a photo of the sample? If you’re around while I’m in Tokyo, coffee’s on me."
+      }
+     ]
+    }
+   ]
   }
  }
 }

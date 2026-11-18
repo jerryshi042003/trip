@@ -38,6 +38,10 @@ h1{font:700 34px/1.15 -apple-system,"SF Pro Display",sans-serif;letter-spacing:.
 .ja{font-size:15px;margin-top:3px}
 .date{font-size:15px;color:var(--sec);min-width:104px;font-variant-numeric:tabular-nums}
 .acts{display:flex;gap:8px;flex-shrink:0}
+.task{align-items:flex-start}
+.task details{margin-top:8px}
+.task summary{cursor:pointer;color:var(--tint)}
+.task p{margin:8px 0}
 .a{width:34px;height:34px;border-radius:50%;background:var(--fill);display:grid;place-items:center;color:var(--tint);text-decoration:none;border:0;cursor:pointer;font:600 12px -apple-system,sans-serif}
 .a svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .chev{color:var(--sec);opacity:.6;font-size:20px}
@@ -88,6 +92,7 @@ h1{font:700 34px/1.15 -apple-system,"SF Pro Display",sans-serif;letter-spacing:.
     const sub = [p.role, p.phoneLabel || p.phone, p.email].filter(Boolean).join(' · ');
     return `<div class="row"><div class="main"><div class="t">${esc(p.name)}</div><div class="s">${esc(sub)}</div></div><div class="acts">${a.join('')}</div></div>`;
   };
+  const taskRow = task => `<div class="row task"><div class="main"><div class="t">${esc(task.title)}</div><div class="s">${esc(task.detail)}</div>${task.draft ? `<details><summary>Draft message</summary><p>${esc(task.draft)}</p><button class="lock" data-copy="${esc(task.draft)}">Copy draft</button></details>` : ''}</div>${task.link ? `<a class="a" href="${esc(task.link)}" aria-label="Open link for ${esc(task.title)}">${I.web}</a>` : ''}</div>`;
 
   function render() {
     document.querySelectorAll('.seg button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.v === view)));
@@ -97,7 +102,11 @@ h1{font:700 34px/1.15 -apple-system,"SF Pro Display",sans-serif;letter-spacing:.
     let h = '';
     const T = D.travelers[who];
     if (view === 'plan') {
-      h = `<div class="group">${T.plan.map(x => { const p = byId[x.place]; return `<a class="row" ${p ? `href="${gmap(p.ja || p.addr)}"` : ''}><div class="date">${esc(x.date)}</div><div class="main"><div class="t">${esc(x.title)}</div>${x.sub ? `<div class="s">${esc(x.sub)}</div>` : ''}</div>${p ? '<span class="chev">›</span>' : ''}</a>`; }).join('')}</div>`;
+      for (const section of T.todos ?? []) {
+        h += `<div class="hdr">${esc(section.title)}</div><div class="group">${section.items.map(taskRow).join('')}</div>`;
+      }
+      if (T.todos?.length) h += '<div class="hdr">Itinerary</div>';
+      h += `<div class="group">${T.plan.map(x => { const p = byId[x.place]; return `<a class="row" ${p ? `href="${gmap(p.ja || p.addr)}"` : ''}><div class="date">${esc(x.date)}</div><div class="main"><div class="t">${esc(x.title)}</div>${x.sub ? `<div class="s">${esc(x.sub)}</div>` : ''}</div>${p ? '<span class="chev">›</span>' : ''}</a>`; }).join('')}</div>`;
       if (T.bucket && T.bucket.length) h += `<div class="hdr">Bucket list</div><div class="group">${T.bucket.map(b => `<div class="row"><div class="main"><div class="t">${esc(b)}</div></div></div>`).join('')}</div>`;
     } else if (view === 'places') {
       for (const city of [...new Set(D.places.map(p => p.city))]) h += `<div class="hdr">${esc(city)}</div><div class="group">${D.places.filter(p => p.city === city).map(placeRow).join('')}</div>`;

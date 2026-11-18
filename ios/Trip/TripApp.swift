@@ -1,6 +1,7 @@
 import SwiftUI
 import MapKit
 import AVKit
+import UIKit
 
 @main
 struct TripApp: App {
@@ -63,6 +64,32 @@ struct PlanView: View {
         let t = store.data?.travelers[who]
         let places = Dictionary(uniqueKeysWithValues: (store.data?.places ?? []).map { ($0.id, $0) })
         List {
+            ForEach(t?.todos ?? []) { section in
+                Section(section.title) {
+                    ForEach(section.items) { item in
+                        VStack(alignment: .leading, spacing: 5) {
+                            HStack(alignment: .top) {
+                                VStack(alignment: .leading, spacing: 3) {
+                                    Text(item.title)
+                                    Text(item.detail).font(.subheadline).foregroundStyle(.secondary)
+                                }
+                                if let link = item.link {
+                                    Spacer(minLength: 4)
+                                    Link(destination: link) { Image(systemName: "globe") }
+                                        .accessibilityLabel("Open link for \(item.title)")
+                                }
+                            }
+                            if let draft = item.draft {
+                                DisclosureGroup("Draft message") {
+                                    Text(draft).textSelection(.enabled)
+                                    Button("Copy draft") { UIPasteboard.general.string = draft }
+                                        .buttonStyle(.borderless)
+                                }
+                            }
+                        }
+                    }
+                }
+            }
             Section {
                 ForEach(t?.plan ?? []) { item in
                     let p = item.place.flatMap { places[$0] }
@@ -71,6 +98,8 @@ struct PlanView: View {
                         else { PlanRow(item: item, chevron: false) }
                     }
                 }
+            } header: {
+                if !(t?.todos ?? []).isEmpty { Text("Itinerary") }
             }
             if let b = t?.bucket, !b.isEmpty {
                 Section("Bucket list") { ForEach(b, id: \.self) { Text($0) } }

@@ -16,7 +16,7 @@ Everything on the site comes from one file: `docs/trip.json`. Change it and comm
 
 On a phone: open github.com/jerryshi042003/trip, tap `docs`, then `trip.json`, then the pencil icon, edit, then Commit changes.
 
-- `travelers.jerry` / `travelers.tom`: each person's `plan` (date, title, sub, place), `bucket` list, and `where` (live location link).
+- `travelers.jerry` / `travelers.tom`: each person's `plan` (date, title, sub, place), `bucket` list, and `where` (live location link). Optional `todos` holds ordered sections with a `title` and `items`. Each item has a `title`, `detail`, and optional `link` and `draft`. Drafts are shown for copying.
 - `places`: id, city, name, addr, optional `ja` (Japanese address for taxis). A plan item's `place` must match a place `id`.
 - `people`: name, role, optional group, and any of phone, whatsapp, email, ig, fb, web. Use the same group text for contacts that belong together. Tom can add apparel contacts under `Clothing` when ready. Use public contact links for new entries because the feed is public.
 - `emergency`: name and phone.
