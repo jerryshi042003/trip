@@ -175,8 +175,14 @@ struct PlaceRow: View {
 struct PeopleView: View {
     @EnvironmentObject var store: TripStore
     var body: some View {
+        let people = store.data?.people ?? []
+        let grouped = Dictionary(grouping: people, by: \.contactGroup)
+        var seen = Set<String>()
+        let groupOrder = people.map(\.contactGroup).filter { seen.insert($0).inserted }
         List {
-            Section("Contacts") { ForEach(store.data?.people ?? []) { PersonRow(person: $0) } }
+            ForEach(groupOrder, id: \.self) { name in
+                Section(name) { ForEach(grouped[name] ?? []) { PersonRow(person: $0) } }
+            }
             Section("Emergency") { ForEach(store.data?.emergency ?? []) { PersonRow(person: $0) } }
         }
         .navigationTitle("People")

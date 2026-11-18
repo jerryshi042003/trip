@@ -88,88 +88,137 @@
  "people": [
   {
    "name": "Alex Marcial",
-   "role": "Host · PCA entry",
-   "phone": "+16263620450"
+   "role": "Philippines tennis contact and PCA entry liaison",
+   "phone": "+16263620450",
+   "group": "Manila · People"
   },
   {
    "name": "Adelmo (Dey Brosas)",
-   "role": "Manila · WhatsApp",
+   "role": "Manila host",
    "phone": "+639189599450",
-   "whatsapp": "639189599450"
+   "whatsapp": "639189599450",
+   "group": "Manila · People"
   },
   {
    "name": "Michael Cumagun",
-   "role": "Polo Club",
-   "email": "mcumagun@yahoo.com"
+   "role": "Manila Polo Club contact",
+   "email": "mcumagun@yahoo.com",
+   "group": "Manila · People"
   },
   {
-   "name": "CJ Gimena",
-   "role": "LA",
-   "phone": "+16618890441"
+   "name": "Chris Papa",
+   "role": "Filipino-American player and Manila tennis contact",
+   "ig": "chrispapa01",
+   "group": "Manila · People"
   },
   {
-   "name": "Drexler Dy",
-   "role": "LA",
-   "phone": "+14086448358"
+   "name": "Marvin Bentulan",
+   "role": "Racket on Court · Manila court and hitting contact",
+   "ig": "racketoncourt",
+   "group": "Manila · People"
   },
   {
-   "name": "Bryce Pereira",
-   "role": "LA",
-   "phone": "+16267038405"
+   "name": "Michael “Skip” Tan",
+   "role": "SKP Sports coach and Manila open-play organizer",
+   "ig": "skip.tan",
+   "group": "Manila · People"
   },
   {
-   "name": "PCA Open office",
-   "role": "Manila",
-   "phone": "+63285638501",
-   "phoneLabel": "8563 8501 ext 116",
-   "email": "philcolumbian_pcaopen@yahoo.com"
-  },
-  {
-   "name": "Asmara Tennis",
-   "role": "Cebu courts",
-   "phone": "+639177081079"
-  },
-  {
-   "name": "Rizal Memorial",
-   "role": "Court booking",
-   "phone": "+63285250808",
-   "phoneLabel": "8525 0808 ext 197",
-   "web": "https://play.psc.gov.ph"
+   "name": "Tennis United Academy",
+   "role": "Manila coaching and hitting sessions",
+   "ig": "tennisunitedacademy",
+   "whatsapp": "639761234510",
+   "group": "Manila · Academies & coaches"
   },
   {
    "name": "PJ Tierro",
    "role": "Ateneo head coach",
-   "fb": "https://www.facebook.com/pj.tierro"
+   "fb": "https://www.facebook.com/pj.tierro",
+   "group": "Manila · Academies & coaches"
   },
   {
-   "name": "Marvin Bentulan",
-   "role": "Courts, Manila",
-   "ig": "racketoncourt"
+   "name": "Niegel Delima",
+   "role": "Cebu tennis contact · Siargao Tennis Club",
+   "ig": "niegeldilemma",
+   "group": "Cebu · People"
   },
   {
-   "name": "Chris Papa",
-   "role": "Manila",
-   "ig": "chrispapa01"
+   "name": "Asmara Tennis",
+   "role": "Banilad clay courts and coaching",
+   "phone": "+639177081079",
+   "web": "https://asmara-tennis-association.rezerv.co/",
+   "group": "Cebu · Academies & clubs"
+  },
+  {
+   "name": "Match Point Tennis Academy",
+   "role": "Private and group coaching at UP Cebu, Lahug",
+   "ig": "mptenniscebu",
+   "web": "https://www.matchpoint-tennisacademy.com/",
+   "group": "Cebu · Academies & clubs"
+  },
+  {
+   "name": "Ryoto Tachi",
+   "role": "Former UCLA tennis player and Tokyo hitting contact",
+   "ig": "ryoto.tachi",
+   "group": "Tokyo · People"
   },
   {
    "name": "Shingo Arai",
-   "role": "Setinn, Tokyo",
-   "ig": "sng1980"
-  },
-  {
-   "name": "Capsule Hotel 510",
-   "role": "Tokyo stay",
-   "phone": "+81332006151"
+   "role": "Setinn founder at BEAMS",
+   "ig": "sng1980",
+   "group": "Tokyo · People"
   },
   {
    "name": "Jinji Tennis",
-   "role": "Tokyo hitting",
-   "email": "jinji.tennis1@gmail.com"
+   "role": "Private coaching and hitting in Tokyo",
+   "email": "jinji.tennis1@gmail.com",
+   "group": "Tokyo · Academies & coaches"
   },
   {
    "name": "Tokyo Tennis Intl",
-   "role": "Tokyo lessons",
-   "email": "info@tokyotennisinternational.com"
+   "role": "Tennis lessons in Tokyo",
+   "email": "info@tokyotennisinternational.com",
+   "group": "Tokyo · Academies & coaches"
+  },
+  {
+   "name": "PCA Open office",
+   "role": "Manila tournament office",
+   "phone": "+63285638501",
+   "phoneLabel": "8563 8501 ext 116",
+   "email": "philcolumbian_pcaopen@yahoo.com",
+   "group": "Trip logistics"
+  },
+  {
+   "name": "Rizal Memorial",
+   "role": "Manila court booking",
+   "phone": "+63285250808",
+   "phoneLabel": "8525 0808 ext 197",
+   "web": "https://play.psc.gov.ph",
+   "group": "Trip logistics"
+  },
+  {
+   "name": "Capsule Hotel 510",
+   "role": "Shinjuku lodging",
+   "phone": "+81332006151",
+   "group": "Trip logistics"
+  },
+  {
+   "name": "CJ Gimena",
+   "role": "LA tennis contact",
+   "phone": "+16618890441",
+   "group": "Los Angeles"
+  },
+  {
+   "name": "Drexler Dy",
+   "role": "LA player who connected Jerry with PJ Tierro",
+   "phone": "+14086448358",
+   "group": "Los Angeles"
+  },
+  {
+   "name": "Bryce Pereira",
+   "role": "Former UCLA player and SMU coach",
+   "phone": "+16267038405",
+   "group": "Los Angeles"
   }
  ],
  "emergency": [

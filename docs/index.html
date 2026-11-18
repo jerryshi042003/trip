@@ -104,7 +104,15 @@ h1{font:700 34px/1.15 -apple-system,"SF Pro Display",sans-serif;letter-spacing:.
     } else if (view === 'where') {
       h = `<div class="group">${Object.values(D.travelers).map(x => `<a class="row" ${x.where ? `href="${esc(x.where)}"` : ''}><span class="dot${x.where ? '' : ' off'}"></span><div class="main"><div class="t">${esc(x.name)}</div><div class="s">${x.where ? 'Live location' : 'Not shared'}</div></div>${x.where ? '<span class="chev">›</span>' : ''}</a>`).join('')}</div>`;
     } else {
-      h += `<div class="hdr">Contacts</div><div class="group">${D.people.map(personRow).join('')}</div>`;
+      const groups = new Map();
+      for (const person of D.people) {
+        const title = person.group || 'Contacts';
+        if (!groups.has(title)) groups.set(title, []);
+        groups.get(title).push(person);
+      }
+      for (const [title, contacts] of groups) {
+        h += `<div class="hdr">${esc(title)}</div><div class="group">${contacts.map(personRow).join('')}</div>`;
+      }
       h += `<div class="hdr">Emergency</div><div class="group">${D.emergency.map(personRow).join('')}</div>`;
     }
     document.getElementById('out').innerHTML = h;

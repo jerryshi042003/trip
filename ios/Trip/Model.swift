@@ -37,8 +37,13 @@ struct Place: Codable, Identifiable {
 
 struct Person: Codable, Identifiable {
     var id: String { name }
+    var contactGroup: String {
+        guard let group, !group.isEmpty else { return "Contacts" }
+        return group
+    }
     var name: String
     var role: String?
+    var group: String?
     var phone: String?
     var phoneLabel: String?
     var whatsapp: String?
