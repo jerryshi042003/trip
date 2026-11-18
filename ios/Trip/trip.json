@@ -259,9 +259,15 @@
    "name": "Tom",
    "plan": [
     {
-     "date": "TBD",
-     "title": "Fly to Cebu",
-     "sub": "Flight not set",
+     "date": "Sat Nov 21",
+     "title": "LAX → Cebu",
+     "sub": "China Airlines CI7 + CI705 · 10:40 PM → Mon 11:10 AM · via Taipei (2h 45m)",
+     "place": "cebu-airport"
+    },
+    {
+     "date": "Mon Nov 23",
+     "title": "Land Cebu",
+     "sub": "Mactan-Cebu · 11:10 AM",
      "place": "cebu-airport"
     },
     {
