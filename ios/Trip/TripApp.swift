@@ -107,7 +107,7 @@ struct RootView: View {
 // MARK: - Links
 
 enum Links {
-    static let tomPlan = URL(string: "https://jerryshi042003.github.io/trip/?who=tom")!
+    static let tomPlan = URL(string: "https://jerryshi042003.github.io/trip/tom/")!
     static let editTomNotes = URL(string: "https://github.com/jerryshi042003/trip/edit/main/docs/tom-notes.txt")!
     static let editPlan = URL(string: "https://github.com/jerryshi042003/trip/edit/main/docs/trip.json")!
     static let googleMaps = URL(string: "https://www.google.com/maps/")!

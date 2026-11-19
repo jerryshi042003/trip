@@ -1,5 +1,5 @@
-const C = 'trip-v9';
-const SHELL = ['./', 'index.html', 'manifest.webmanifest?v=2', 'manifest-tom.webmanifest', 'icon-180.png?v=2', 'icon-192.png?v=2', 'icon-512.png?v=2', 'trip.json', 'tom-notes.txt'];
+const C = 'trip-v10';
+const SHELL = ['./', 'index.html', 'tom/', 'trip.css', 'trip.js', 'manifest.webmanifest?v=2', 'manifest-tom.webmanifest', 'icon-180.png?v=2', 'icon-192.png?v=2', 'icon-512.png?v=2', 'trip.json', 'tom-notes.txt'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(C).then(c => c.addAll(SHELL)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(k => Promise.all(k.filter(x => x.startsWith('trip-v') && x !== C).map(x => caches.delete(x)))).then(() => self.clients.claim())); });
 self.addEventListener('fetch', e => {
@@ -18,6 +18,7 @@ self.addEventListener('fetch', e => {
   }).catch(async () => {
     const cache = await caches.open(C);
     const cached = await cache.match(e.request, { ignoreSearch: true });
-    return cached || (e.request.mode === 'navigate' ? await cache.match('index.html') : null) || Response.error();
+    const page = u.pathname.endsWith('/tom/') ? 'tom/' : 'index.html';
+    return cached || (e.request.mode === 'navigate' ? await cache.match(page) : null) || Response.error();
   }));
 });

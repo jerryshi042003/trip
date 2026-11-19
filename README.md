@@ -2,7 +2,7 @@
 
 Trip planner for Jerry and Tom: https://jerryshi042003.github.io/trip/
 
-Send Tom https://jerryshi042003.github.io/trip/?who=tom or tap **Share Trip** in the app. On his iPhone, open the link in Safari, choose **Share → Add to Home Screen**, keep **Open as Web App** on, and tap **Add**. Open the new icon once online. Trip refreshes when it opens, returns to the foreground or reconnects.
+Send Tom https://jerryshi042003.github.io/trip/tom/ or tap **Share Trip** in the app. On his iPhone, open the link in Safari, choose **Share → Add to Home Screen**, keep **Open as Web App** on, and tap **Add**. Open the new icon once online. Trip refreshes when it opens, returns to the foreground or reconnects.
 
 ## iPhone app
 

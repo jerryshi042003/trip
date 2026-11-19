@@ -2,7 +2,7 @@
 
 Trip planner for Jerry and Tom: https://jerryshi042003.github.io/trip/
 
-Tom can open his Plan directly at https://jerryshi042003.github.io/trip/?who=tom. On iPhone, open it in Safari, choose Share → Add to Home Screen, keep Open as Web App on, and tap Add. Open Trip online once to cache it.
+Tom can open his Plan directly at https://jerryshi042003.github.io/trip/tom/. On iPhone, open it in Safari, choose Share → Add to Home Screen, keep Open as Web App on, and tap Add. Open Trip online once to cache it.
 
 ## iPhone app
 
