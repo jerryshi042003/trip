@@ -179,6 +179,9 @@ struct PlanView: View {
                     }
                 }
             }
+            if let d = store.data, let t {
+                Section("Calendar") { TripCalendar(data: d, traveler: t) }
+            }
             Section {
                 ForEach(t?.plan ?? []) { item in
                     let p = item.place.flatMap { places[$0] }
@@ -188,7 +191,7 @@ struct PlanView: View {
                     }
                 }
             } header: {
-                if !(t?.todos ?? []).isEmpty { Text("Itinerary") }
+                Text("Itinerary")
             }
             if let b = t?.bucket, !b.isEmpty {
                 Section("Bucket list") { ForEach(b, id: \.self) { Text($0) } }
