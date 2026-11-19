@@ -10,7 +10,12 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Trip">
-<link rel="manifest" href="manifest.webmanifest?v=2">
+<link id="trip-manifest" rel="manifest" href="manifest.webmanifest?v=2">
+<script>
+if (new URLSearchParams(location.search).get('who') === 'tom') {
+  document.getElementById('trip-manifest').href = 'manifest-tom.webmanifest';
+}
+</script>
 <link rel="apple-touch-icon" href="icon-180.png?v=2">
 <link rel="icon" type="image/png" href="icon-192.png?v=2">
 <style>
@@ -52,6 +57,11 @@ h1{display:flex;align-items:center;gap:9px;font:700 34px/1.15 -apple-system,"SF 
 .where-setup{display:grid;gap:8px;padding:16px}
 .where-setup p{margin:0}
 .where-setup a{display:inline-flex;align-items:center;min-height:44px;color:var(--tint)}
+.install-guide{margin:12px 0 0;padding:0 16px}
+.install-guide summary{cursor:pointer;color:var(--tint);padding:11px 0;min-height:44px}
+.install-guide p{margin:0;padding-bottom:12px}
+.update-actions{display:flex;flex-wrap:wrap;gap:0 20px}
+.update-actions a{display:inline-flex;align-items:center;min-height:44px;color:var(--tint)}
 .toast{position:fixed;left:50%;bottom:calc(env(safe-area-inset-bottom) + 24px);transform:translateX(-50%);background:rgba(30,30,30,.92);color:#fff;font-size:15px;padding:10px 16px;border-radius:12px;opacity:0;transition:opacity .2s;pointer-events:none}
 .toast.on{opacity:1}
 @media (max-width:360px){.person{flex-wrap:wrap;gap:8px}.person .main{flex-basis:100%}}
@@ -119,6 +129,8 @@ h1{display:flex;align-items:center;gap:9px;font:700 34px/1.15 -apple-system,"SF 
   const toast = m => { const t = document.getElementById('toast'); t.textContent = m; t.classList.add('on'); clearTimeout(t._h); t._h = setTimeout(() => t.classList.remove('on'), 1300); };
   const gmap = q => 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(q);
   const tomPlan = 'https://jerryshi042003.github.io/trip/?who=tom';
+  const edit = 'https://github.com/jerryshi042003/trip/edit/main/docs/';
+  const showInstall = !navigator.standalone && !matchMedia('(display-mode: standalone)').matches;
   const travelerKeys = ['jerry', 'tom'];
   const viewKeys = ['plan', 'places', 'people', 'where'];
   const requestedTraveler = new URLSearchParams(location.search).get('who');
@@ -126,6 +138,9 @@ h1{display:flex;align-items:center;gap:9px;font:700 34px/1.15 -apple-system,"SF 
   const savedView = store.get('view');
   const savedTraveler = store.get('who');
   let D = null;
+  let tripText = '';
+  let tomNotes = [];
+  let refreshing = false;
   let view = !linkedTraveler && viewKeys.includes(savedView) ? savedView : 'plan';
   let who = linkedTraveler ? requestedTraveler : travelerKeys.includes(savedTraveler) ? savedTraveler : 'jerry';
   if (linkedTraveler) store.set('who', who);
@@ -232,6 +247,10 @@ h1{display:flex;align-items:center;gap:9px;font:700 34px/1.15 -apple-system,"SF 
     let h = '';
     const T = D.travelers[who];
     if (view === 'plan') {
+      if (who === 'tom') {
+        if (showInstall) h += `<details class="group install-guide"><summary>Install on iPhone</summary><p>Open this link in Safari. Tap Safari’s <strong>Share</strong> → <strong>Add to Home Screen</strong>. Keep <strong>Open as Web App</strong> on and tap <strong>Add</strong>.</p></details>`;
+        h += `<h2 class="hdr">Tom’s updates</h2><div class="group">${tomNotes.map(note => `<div class="row"><div class="main">${esc(note)}</div></div>`).join('')}<div class="row update-actions"><a href="${edit}tom-notes.txt" target="_blank" rel="noopener">Edit updates</a><a href="${edit}trip.json" target="_blank" rel="noopener">Edit full plan</a></div></div>`;
+      }
       for (const section of T.todos ?? []) {
         h += `<h2 class="hdr">${esc(section.title)}</h2><div class="group">${section.items.map(taskRow).join('')}</div>`;
       }
@@ -297,14 +316,43 @@ h1{display:flex;align-items:center;gap:9px;font:700 34px/1.15 -apple-system,"SF 
     }
   });
 
-  render();
-  fetch('trip.json', { cache: 'no-cache' })
-    .then(r => { if (!r.ok) throw new Error('Trip data unavailable'); return r.json(); })
-    .then(d => { D = d; render(); })
-    .catch(() => {
+  async function refreshTrip() {
+    if (refreshing) return;
+    refreshing = true;
+    const read = async path => {
+      const response = await fetch(path, { cache: 'no-store' });
+      return response.ok ? response.text() : null;
+    };
+    try {
+      const [data, notes] = await Promise.all([read('trip.json'), read('tom-notes.txt')].map(reading => reading.catch(() => null)));
+      const nextNotes = notes === null ? tomNotes : notes.split(/\r?\n/).map(line => line.trim()).filter(line => line && !line.startsWith('#'));
+      const notesChanged = JSON.stringify(nextNotes) !== JSON.stringify(tomNotes);
+      if (data && data !== tripText) {
+        try {
+          const parsed = JSON.parse(data);
+          if ([parsed.travelers?.tom?.plan, parsed.travelers?.jerry?.plan, parsed.places, parsed.people, parsed.emergency].every(Array.isArray)) {
+            D = parsed;
+            tripText = data;
+            tomNotes = nextNotes;
+            return render();
+          }
+        } catch { /* Keep the data already loaded if a GitHub edit has invalid JSON. */ }
+      }
+      if (D) {
+        if (notesChanged) { tomNotes = nextNotes; render(); }
+        return;
+      }
       document.getElementById('out').innerHTML = '<p class="state" role="status">Trip could not load.</p><button class="lock" id="retry">Try again</button>';
-      document.getElementById('retry').addEventListener('click', () => location.reload());
-    });
+      document.getElementById('retry').addEventListener('click', refreshTrip);
+    } finally {
+      refreshing = false;
+    }
+  }
+
+  render();
+  refreshTrip();
+  document.addEventListener('visibilitychange', () => { if (!document.hidden) refreshTrip(); });
+  window.addEventListener('online', refreshTrip);
   if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
 })();
 </script>

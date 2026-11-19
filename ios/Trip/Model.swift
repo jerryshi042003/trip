@@ -79,14 +79,17 @@ struct Media: Codable, Identifiable {
 @MainActor
 final class TripStore: ObservableObject {
     static let remote = URL(string: "https://jerryshi042003.github.io/trip/trip.json")!
+    private static let notesRemote = remote.deletingLastPathComponent().appendingPathComponent("tom-notes.txt")
 
     @Published var data: TripData?
     @Published var lastSync: Date?
     @Published var coords: [String: CLLocationCoordinate2D] = [:]
     @Published var localMedia: [String: URL] = [:]
+    @Published private(set) var tomNotes: [String] = []
 
     private let docs = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
     private var cacheURL: URL { docs.appendingPathComponent("trip.json") }
+    private var notesURL: URL { docs.appendingPathComponent("tom-notes.txt") }
     private var coordsURL: URL { docs.appendingPathComponent("coords.json") }
     private var mediaDir: URL { docs.appendingPathComponent("media", isDirectory: true) }
 
@@ -103,21 +106,40 @@ final class TripStore: ObservableObject {
         if let d = try? Data(contentsOf: coordsURL), let c = try? JSONDecoder().decode([String: [Double]].self, from: d) {
             coords = c.compactMapValues { $0.count == 2 ? CLLocationCoordinate2D(latitude: $0[0], longitude: $0[1]) : nil }
         }
+        if let notes = try? String(contentsOf: notesURL, encoding: .utf8) { tomNotes = Self.notes(in: notes) }
         indexLocalMedia()
     }
 
     func refresh() async {
+        async let notes: Void = refreshTomNotes()
         var req = URLRequest(url: Self.remote)
         req.cachePolicy = .reloadIgnoringLocalCacheData
         req.timeoutInterval = 15
-        guard let (d, resp) = try? await URLSession.shared.data(for: req),
+        let result = try? await URLSession.shared.data(for: req)
+        guard let (d, resp) = result,
               (resp as? HTTPURLResponse)?.statusCode == 200,
-              let t = try? JSONDecoder().decode(TripData.self, from: d) else { return }
+              let t = try? JSONDecoder().decode(TripData.self, from: d) else { await notes; return }
         try? d.write(to: cacheURL, options: .atomic)
         data = t
         lastSync = Date()
+        await notes
         await geocodeMissing()
         await downloadMedia()
+    }
+
+    private func refreshTomNotes() async {
+        let request = URLRequest(url: Self.notesRemote, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 15)
+        guard let (data, response) = try? await URLSession.shared.data(for: request),
+              (response as? HTTPURLResponse)?.statusCode == 200,
+              let text = String(data: data, encoding: .utf8) else { return }
+        try? data.write(to: notesURL, options: .atomic)
+        tomNotes = Self.notes(in: text)
+    }
+
+    private static func notes(in text: String) -> [String] {
+        text.split(whereSeparator: \.isNewline)
+            .map { $0.trimmingCharacters(in: .whitespaces) }
+            .filter { !$0.isEmpty && !$0.hasPrefix("#") }
     }
 
     // MARK: Places

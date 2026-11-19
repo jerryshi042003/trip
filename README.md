@@ -2,7 +2,7 @@
 
 Trip planner for Jerry and Tom: https://jerryshi042003.github.io/trip/
 
-Tom can open his Plan directly at https://jerryshi042003.github.io/trip/?who=tom. To install, open it in Safari and choose Share → Add to Home Screen (Android Chrome: Install app). Open Trip while online once to cache the planner on that device.
+Send Tom https://jerryshi042003.github.io/trip/?who=tom or tap **Share Trip** in the app. On his iPhone, open the link in Safari, choose **Share → Add to Home Screen**, keep **Open as Web App** on, and tap **Add**. Open the new icon once online. Trip refreshes when it opens, returns to the foreground or reconnects.
 
 ## iPhone app
 
@@ -12,9 +12,7 @@ Install or update on Jerry's iPhone (plugged in or on the same Wi-Fi): `ios/inst
 
 ## How to edit (anyone with access to this repo)
 
-Everything on the site comes from one file: `docs/trip.json`. Change it and commit; the site updates in about a minute, and phones pick it up the next time they have signal.
-
-On a phone: open github.com/jerryshi042003/trip, tap `docs`, then `trip.json`, then the pencil icon, edit, then Commit changes.
+In Tom’s Plan, tap **Edit updates** for quick notes. Sign in to GitHub as `@tomohto`, write one public note per line in `docs/tom-notes.txt`, then tap **Commit changes** and confirm. For itinerary, tasks or People, tap **Edit full plan**. It opens `docs/trip.json` in GitHub’s editor. Once Pages publishes the commit, return to Trip online to see the change.
 
 - `travelers.jerry` / `travelers.tom`: each person's `plan` (date, title, sub, place) and `bucket` list. Optional `todos` holds ordered sections with a `title` and `items`. Each item has a `title`, `detail`, and optional `link` and `draft`. Drafts are shown for copying.
 - `places`: id, city, name, addr, optional `ja` (Japanese address for taxis). A plan item's `place` must match a place `id`.

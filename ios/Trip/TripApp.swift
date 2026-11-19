@@ -108,6 +108,8 @@ struct RootView: View {
 
 enum Links {
     static let tomPlan = URL(string: "https://jerryshi042003.github.io/trip/?who=tom")!
+    static let editTomNotes = URL(string: "https://github.com/jerryshi042003/trip/edit/main/docs/tom-notes.txt")!
+    static let editPlan = URL(string: "https://github.com/jerryshi042003/trip/edit/main/docs/trip.json")!
     static let googleMaps = URL(string: "https://www.google.com/maps/")!
 
     static func maps(_ p: Place, _ c: CLLocationCoordinate2D?) -> URL {
@@ -151,6 +153,13 @@ struct PlanView: View {
                 .listRowBackground(Color.clear)
                 .listRowInsets(EdgeInsets())
                 .listRowSeparator(.hidden)
+            }
+            if who == "tom" {
+                Section("Tom’s updates") {
+                    ForEach(Array(store.tomNotes.enumerated()), id: \.offset) { _, note in Text(note) }
+                    Link("Edit updates", destination: Links.editTomNotes)
+                    Link("Edit full plan", destination: Links.editPlan)
+                }
             }
             ForEach(t?.todos ?? []) { section in
                 Section(section.title) {

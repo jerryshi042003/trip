@@ -1,0 +1,2 @@
+# Add or change a public trip update below, one note per line.
+# Tap Commit changes to save. Your updates appear in Tom’s Plan.
