@@ -1,5 +1,5 @@
-const C = 'trip-v3';
-const SHELL = ['./', 'index.html', 'manifest.webmanifest', 'icon-180.png', 'icon-192.png', 'icon-512.png', 'trip.json'];
+const C = 'trip-v4';
+const SHELL = ['./', 'index.html', 'manifest.webmanifest?v=2', 'icon-180.png?v=2', 'icon-192.png?v=2', 'icon-512.png?v=2', 'trip.json'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(C).then(c => c.addAll(SHELL)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(k => Promise.all(k.filter(x => x !== C).map(x => caches.delete(x)))).then(() => self.clients.claim())); });
 self.addEventListener('fetch', e => {
