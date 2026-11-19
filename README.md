@@ -7,7 +7,7 @@ Trip planner for Jerry and Tom: https://jerryshi042003.github.io/trip/
 **TestFlight (no Mac needed, updates arrive by themselves)**
 
 1. Install **TestFlight** from the App Store: https://apps.apple.com/app/testflight/id899247664
-2. Open the invite on the iPhone. Either the App Store Connect invitation email Apple sent Tom (tap **Accept**, sign in with an Apple Account, then the TestFlight email: **View in TestFlight**), or Jerry's link https://testflight.apple.com/join/wd5wQyS8 once Apple finishes beta review.
+2. Open the private TestFlight invitation Jerry shares after Apple approves the first beta.
 3. Tap **Install**. In TestFlight → Trip, turn **Automatic Updates** on.
 
 Plan, places and contacts refresh inside the app whenever it has signal. A new TestFlight build is only needed for app code changes.
