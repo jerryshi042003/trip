@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Listen</title>
+<meta name="theme-color" content="#f2f2f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<link rel="apple-touch-icon" href="icon-180.png?v=2">
+<link rel="icon" type="image/png" href="icon-192.png?v=2">
+<link rel="stylesheet" href="trip.css">
+<style>
+.lw h1{font-size:28px;display:block;margin:10px 4px 6px}
+.lw .meta{color:var(--sec);font-size:15px;margin:0 4px 14px}
+.lw .back{display:inline-flex;align-items:center;min-height:44px;color:var(--tint);text-decoration:none;margin-left:4px}
+.lw .card{background:var(--card);border-radius:10px;padding:12px 16px;margin-bottom:10px}
+.lw .lab{font-size:13px;font-weight:650;color:var(--sec);text-transform:uppercase;letter-spacing:.03em;margin-bottom:4px}
+.lw .main-pt{font-size:19px;font-weight:600;line-height:1.35}
+.lw .card p{margin:0;line-height:1.45}
+.lw a{color:var(--tint)}
+.lw .watch{display:flex;align-items:center;justify-content:center;min-height:44px;border-radius:10px;background:var(--tint);color:var(--card);font-weight:600;text-decoration:none;margin:4px 0 16px}
+.lw ul{margin:0;padding-left:20px;line-height:1.45}
+.lw li+li{margin-top:6px}
+.lw .tr p{margin:0 0 12px;line-height:1.55}
+.lw .ts{color:var(--sec);font-variant-numeric:tabular-nums;font-size:14px;text-decoration:none}
+.lw h2{font-size:15px;font-weight:650;color:var(--sec);margin:20px 4px 8px}
+</style>
+</head>
+<body>
+<div class="wrap lw" id="app"><p class="state">Loading…</p></div>
+<script>
+(async () => {
+  const app = document.getElementById('app');
+  const id = new URLSearchParams(location.search).get('id') || '';
+  const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  if (!/^[\w-]+$/.test(id)) { app.innerHTML = '<p class="state">Not found.</p>'; return; }
+  let src;
+  try { const r = await fetch('listen/' + id + '.md'); if (!r.ok) throw 0; src = await r.text(); }
+  catch { app.innerHTML = '<p class="state">Could not load this one. Check your connection.</p>'; return; }
+  const m = src.match(/^---\n([\s\S]*?)\n---\n?([\s\S]*)$/);
+  const fm = {}; let body = src;
+  if (m) { body = m[2]; m[1].split('\n').forEach(l => { const i = l.indexOf(':'); if (i > 0) fm[l.slice(0, i).trim()] = l.slice(i + 1).trim(); }); }
+  const url = fm.url || '';
+  const ytId = (url.match(/[?&]v=([\w-]+)/) || [])[1];
+  const secs = t => t.split(':').map(Number).reduce((a, b) => a * 60 + b, 0);
+  const inline = s => {
+    let h = esc(s);
+    h = h.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+    h = h.replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+    h = h.replace(/(^|[\s(])(https?:\/\/[^\s<)]+)/g, '$1<a href="$2" target="_blank" rel="noopener">$2</a>');
+    h = h.replace(/(^|[\s(])@([A-Za-z0-9_.]*[A-Za-z0-9_])/g, '$1<a href="https://www.instagram.com/$2/" target="_blank" rel="noopener">@$2</a>');
+    h = h.replace(/\[(\d{1,2}:\d{2}(?::\d{2})?)\]/g, (x, t) => ytId ? `<a class="ts" href="https://www.youtube.com/watch?v=${ytId}&t=${secs(t)}s" target="_blank" rel="noopener">${t}</a>` : `<span class="ts">${t}</span>`);
+    return h;
+  };
+  const sections = {}; let cur = '_';
+  body.split('\n').forEach(l => { const h = l.match(/^##\s+(.*)/); if (h) { cur = h[1].trim().toLowerCase(); sections[cur] = []; } else (sections[cur] = sections[cur] || []).push(l); });
+  const list = lines => '<ul>' + lines.filter(l => /^\s*[-*]\s+/.test(l)).map(l => '<li>' + inline(l.replace(/^\s*[-*]\s+/, '')) + '</li>').join('') + '</ul>';
+  const paras = lines => lines.join('\n').split(/\n\s*\n/).map(p => p.trim()).filter(Boolean).map(p => '<p>' + inline(p).replace(/\n/g, '<br>') + '</p>').join('');
+  document.title = fm.title || 'Listen';
+  const back = fm.traveler === 'tom' ? './tom/' : './';
+  const meta = [fm.channel, fm.length, fm.uploaded, fm.language].filter(Boolean).map(esc).join(' · ');
+  app.innerHTML = `
+    <a class="back" href="${back}">‹ Trip</a>
+    <h1>${esc(fm.title || id)}</h1>
+    <div class="meta">${meta}</div>
+    ${fm.main ? `<div class="card"><div class="lab">Main point</div><p class="main-pt">${inline(fm.main)}</p></div>` : ''}
+    ${fm.why ? `<div class="card"><div class="lab">Why</div><p>${inline(fm.why)}</p></div>` : ''}
+    ${fm.contact ? `<div class="card"><div class="lab">Contact</div><p>${inline(fm.contact)}</p></div>` : ''}
+    ${url ? `<a class="watch" href="${esc(url)}" target="_blank" rel="noopener">Watch / listen</a>` : ''}
+    ${sections['key points'] ? `<h2>Key points</h2><div class="card">${list(sections['key points'])}</div>` : ''}
+    ${sections['transcript'] ? `<h2>Transcript</h2><div class="card tr">${paras(sections['transcript'])}</div>` : ''}`;
+})();
+</script>
+</body>
+</html>
