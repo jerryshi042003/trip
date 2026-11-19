@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18",
+ "updated": "2026-11-19",
  "places": [
   {
    "id": "naia",
@@ -478,6 +478,98 @@
    "role": "Chusen dye works, Katsushika · Public dyeing class · Small runs around 100",
    "email": "office@souzou-kan.info",
    "group": "Clothing · Tom’s outreach"
+  },
+  {
+   "name": "Jay Friend",
+   "role": "Tokyo-born pro · Arizona ’26 · Playing the Japan Challengers now (Kobe, Nov 19) · Chris Papa follows him",
+   "group": "Tokyo · People",
+   "ig": "jaythefriend"
+  },
+  {
+   "name": "Shinn Hiramatsu",
+   "role": "Ex-pro, hitting partner and coach · Private lessons across Tokyo · Lesson requests by DM",
+   "group": "Tokyo · Academies & coaches",
+   "ig": "shinn_hiramatsu",
+   "web": "https://shinnhawkeyetennis.com"
+  },
+  {
+   "name": "Takuya Komura",
+   "role": "Pro (Kobe Challenger) · Private coach in Tokyo · Lessons by DM",
+   "group": "Tokyo · Academies & coaches",
+   "ig": "takuya.komura1221"
+  },
+  {
+   "name": "Sari Baba · B LYNC TENNIS",
+   "role": "Former pro, All-Japan QF · 60 min ¥17,600 for up to 4 · Book through B LYNC",
+   "group": "Tokyo · Academies & coaches",
+   "ig": "mahoutukaisally",
+   "web": "https://blync.jp/sports/tennis/"
+  },
+  {
+   "name": "Chikaya Sato",
+   "role": "Penn State / SDSU · Splits time NYC, Tokyo, San Diego · Chris Papa follows him",
+   "group": "Tokyo · People",
+   "ig": "chikayasato"
+  },
+  {
+   "name": "Hiroyasu Ehara",
+   "role": "2014 All-Japan singles champion · Coaches in Tokyo",
+   "group": "Tokyo · Academies & coaches",
+   "ig": "hiroyasueh0727",
+   "web": "https://hiroyasueharatennis.jimdofree.com"
+  },
+  {
+   "name": "t_socialt",
+   "role": "Adult player · All-Japan singles qualifying, Japan League · Right level for sets",
+   "group": "Tokyo · People",
+   "ig": "t_socialt"
+  },
+  {
+   "name": "Ryusei Kato",
+   "role": "Pro · Tokyo, Osaka, Hawaii · Private lessons in English",
+   "group": "Tokyo · Academies & coaches",
+   "ig": "ryusei__tennis",
+   "web": "https://www.tennisbear.net/user/68567/info"
+  },
+  {
+   "name": "EPSOM hitting sessions",
+   "role": "Pay-per-session hitting vs a pro, Shiomi / Ariake · ¥3,900–4,400 · Tue, Wed, Sat evenings",
+   "group": "Tokyo · Academies & coaches",
+   "ig": "epsom_tennis",
+   "web": "https://lin.ee/Z6USi7m3"
+  },
+  {
+   "name": "Aoyama Gakuin University tennis",
+   "role": "University team · Visitors welcome at practice, by email or DM",
+   "group": "Tokyo · Academies & coaches",
+   "ig": "agu_tennis"
+  },
+  {
+   "name": "Noy Seno",
+   "role": "Cebuano · St. Francis Brooklyn D1, All-NEC 2023 · In law school in Cebu · Was on Adam Borak’s podcast",
+   "group": "Cebu · People",
+   "ig": "sinoynoy"
+  },
+  {
+   "name": "Citigreen Tennis Resort",
+   "role": "Only red clay in Cebu · About 6 coaches and hitting partners · Running the Lotus Cup now",
+   "group": "Cebu · Academies & clubs",
+   "ig": "citigreentennisresort"
+  },
+  {
+   "name": "Villa Aurora Tennis Club",
+   "role": "Kasambagan · Where Cebu’s strongest players go for pickup",
+   "group": "Cebu · Academies & clubs"
+  },
+  {
+   "name": "USC Cebu varsity",
+   "role": "University of San Carlos · 3 golds at CESAFI 2026 · Trains at Citigreen",
+   "group": "Cebu · Academies & clubs"
+  },
+  {
+   "name": "Sheena Camporedondo",
+   "role": "Cebu player and coach · Citigreen coach since 2016 · Ex-UP Cebu varsity head coach",
+   "group": "Cebu · Academies & clubs"
   }
  ],
  "emergency": [
@@ -698,6 +790,39 @@
        "title": "Book Asmara or arrange a hit at Match Point",
        "detail": "Asmara invited you to book. Match Point shared its coaching and booking guide. Ask for an adult hitting session that fits your dates.",
        "link": "https://asmara-tennis-association.rezerv.co/"
+      },
+      {
+       "title": "Adam Borak · intro to Noy Seno",
+       "detail": "Adam had Noy on Tipsy Tennis a week ago.",
+       "link": "https://www.instagram.com/tipsytennispodcast/",
+       "draft": "Yo Adam, loved the Noy Seno ep. If Cebu happens after PCA, could you connect me with him for a hit?"
+      },
+      {
+       "title": "Noy Seno · hit in Cebu",
+       "detail": "Ex D1 at St. Francis Brooklyn, now in Cebu. IG may be private; DM request still works.",
+       "link": "https://www.instagram.com/sinoynoy/",
+       "draft": "Hey Noy! Jerry here, UCLA alum playing Futures, caught your ep on Tipsy Tennis. I’ll be in Cebu after PCA, down to hit? I’ll book the court"
+      },
+      {
+       "title": "Citigreen · strongest coach or player",
+       "detail": "Red clay. Lotus Cup running now; draw Nov 21.",
+       "link": "https://www.instagram.com/citigreentennisresort/",
+       "draft": "Hi! UCLA alum playing PCA qualies, in Cebu after. Could you set me up with your strongest coach or a player for a hit? Also is the Lotus Cup still on then?"
+      },
+      {
+       "title": "Villa Aurora · join pickup",
+       "detail": "Best pickup in Cebu. Message the FB page or just show up.",
+       "draft": "Hi! Visiting player from LA (UCLA alum). Can a guest join the pickup games? What time are the strong guys there?"
+      },
+      {
+       "title": "Coach Sheena Camporedondo · hit",
+       "detail": "Citigreen coach. Find her on IG under her name.",
+       "draft": "Hi Coach Sheena! Visiting UCLA player in Cebu after PCA. Do you do hitting sessions, or know strong guys who’d hit?"
+      },
+      {
+       "title": "USC Cebu varsity · join practice",
+       "detail": "Coach Misael Bersaluna. Contact through the USC / Today’s Carolinian FB pages.",
+       "draft": "Hi Coach! UCLA alum playing Futures, in Cebu after PCA. Could I join a varsity practice or hit with your top guys?"
       }
      ]
     },
@@ -747,6 +872,18 @@
      "title": "Tokyo · new hitting leads (send once dates are set)",
      "items": [
       {
+       "title": "Chris Papa · intro to Jay Friend",
+       "detail": "Warmest route. Chris follows Jay and you’re already in a thread with him.",
+       "link": "https://www.instagram.com/chrispapa01/",
+       "draft": "Yo Chris, random one. You know Jay Friend? I’ll be in Tokyo early December and would love to hit with him if he’s home. Mind connecting us?"
+      },
+      {
+       "title": "Jay Friend · hit in Tokyo",
+       "detail": "Pro, in Japan now for the Challengers. Season likely ends after the Asian swing. DM after Chris intros, or cold if Chris can’t.",
+       "link": "https://www.instagram.com/jaythefriend/",
+       "draft": "Yo Jay, Jerry here, UCLA alum playing Futures. Saw you crushing the Japan challengers. I’m in Tokyo early December, if you’re home and want a hit I’ll book the court"
+      },
+      {
        "title": "Emon · who he hits with in Tokyo",
        "detail": "iMessage. He never answered the Tokyo hitting ask.",
        "draft": "Yo Emon, quick one. When you’re home in Japan who do you hit with? Any academy or coach in Tokyo I could pull up to? I’m there early December. And I’ll tell Shingo you’re down for Setinn 🙏"
@@ -791,6 +928,60 @@
        "title": "Jinji · book Hitting with the Pro",
        "detail": "Shai asked for dates; Gmail thread.",
        "draft": "Hi Shai, dates are [dates]. Could I book Hitting with the Pro on [day] and [day], mornings ideally? Thanks!"
+      },
+      {
+       "title": "Shinn Hiramatsu · book hitting",
+       "detail": "Ex-pro hitter, lessons across Tokyo by DM. Rate not public.",
+       "link": "https://www.instagram.com/shinn_hiramatsu/",
+       "draft": "Hey Shinn! Jerry here, UCLA alum playing Futures (UTR ~9). In Tokyo early December, would love to book a couple of hitting sessions with you, happy to pay your rate + court"
+      },
+      {
+       "title": "Takuya Komura · private session",
+       "detail": "Pro and private coach in Tokyo, DM for lessons.",
+       "link": "https://www.instagram.com/takuya.komura1221/",
+       "draft": "Hi Takuya! Jerry, UCLA alum playing Futures. In Tokyo early December, could I book a private hitting or match-play session with you? English ok?"
+      },
+      {
+       "title": "Sari Baba · book through B LYNC",
+       "detail": "¥17,600 for 60 min, prepaid, you book the court.",
+       "link": "https://blync.jp/sports/tennis/",
+       "draft": "Private 90-min hitting and point play for a UTR ~9 male player, early December, Sendagaya area if possible"
+      },
+      {
+       "title": "Chikaya Sato · hit",
+       "detail": "Public email on his IG bio. Ex Penn State / SDSU.",
+       "link": "https://www.instagram.com/chikayasato/",
+       "draft": "Hey Chikaya, Jerry here, UCLA alum playing Futures. Heard you split time in Tokyo. I’m there early December, down to hit? I’ll grab the court"
+      },
+      {
+       "title": "Hiroyasu Ehara · private",
+       "detail": "2014 All-Japan champion, coaches now. Japanese first.",
+       "link": "https://www.instagram.com/hiroyasueh0727/",
+       "draft": "江原さん、はじめまして。UCLA卒でITFフューチャーズに出ているJerryです。12月上旬に東京にいます。ヒッティングやポイント練習のプライベートをお願いできますか?\n\nHi Ehara-san, I’m Jerry, UCLA alum playing ITF Futures. I’m in Tokyo early December. Could I book a private hitting / point-play session?"
+      },
+      {
+       "title": "t_socialt · play sets",
+       "detail": "Adult player at All-Japan qualifying level. Name unknown.",
+       "link": "https://www.instagram.com/t_socialt/",
+       "draft": "Hi! UCLA alum here playing Futures, in Tokyo early December. Would love to hit or play sets if you’re free"
+      },
+      {
+       "title": "Ryusei Kato · English lesson",
+       "detail": "Splits Tokyo and Osaka; ask which city he’s in.",
+       "link": "https://www.instagram.com/ryusei__tennis/",
+       "draft": "Hey Ryusei! I’m in Tokyo early December, are you in Tokyo then? Would love to book a hitting session"
+      },
+      {
+       "title": "EPSOM · top-level hitting session",
+       "detail": "Ask on LINE about December dates.",
+       "link": "https://lin.ee/Z6USi7m3",
+       "draft": "12月上旬に東京にいます。上級者向けのヒッティング練習会はありますか?一番強い球のレベルでお願いしたいです。\n\nI’m in Tokyo early December. Do you have an advanced hitting session? I’d like the strongest ball level."
+      },
+      {
+       "title": "Aoyama Gakuin · join one practice",
+       "detail": "Team welcomes visitors by email or DM. Early-December practices likely still on.",
+       "link": "https://www.instagram.com/agu_tennis/",
+       "draft": "はじめまして。UCLA卒のJerryです。12月上旬に東京にいます。1日だけ練習に参加させていただくことは可能でしょうか?\n\nHi, I’m Jerry, a UCLA alum. I’m in Tokyo early December. Could I join one of your practices?"
       }
      ]
     },
