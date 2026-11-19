@@ -2,15 +2,29 @@
 
 Trip planner for Jerry and Tom: https://jerryshi042003.github.io/trip/
 
-Send Tom https://jerryshi042003.github.io/trip/tom/ or tap **Share Trip** in the app. On his iPhone, open the link in Safari, choose **Share → Add to Home Screen**, keep **Open as Web App** on, and tap **Add**. Open the new icon once online. Trip refreshes when it opens, returns to the foreground or reconnects.
+## Tom: get the iPhone app
+
+**TestFlight (no Mac needed, updates arrive by themselves)**
+
+1. Install **TestFlight** from the App Store: https://apps.apple.com/app/testflight/id899247664
+2. Open the invite on the iPhone. Either the App Store Connect invitation email Apple sent Tom (tap **Accept**, sign in with an Apple Account, then the TestFlight email: **View in TestFlight**), or Jerry's link https://testflight.apple.com/join/wd5wQyS8 once Apple finishes beta review.
+3. Tap **Install**. In TestFlight → Trip, turn **Automatic Updates** on.
+
+Plan, places and contacts refresh inside the app whenever it has signal. A new TestFlight build is only needed for app code changes.
+
+**Build it yourself (one command, Mac + Xcode + any free Apple Account)**
+
+```bash
+git clone https://github.com/jerryshi042003/trip && trip/ios/build-for-my-iphone.sh
+```
+
+Next time, `cd trip && git pull && ios/build-for-my-iphone.sh`. First run only: open Xcode → Settings → Accounts and add your Apple Account; on the iPhone turn on Settings → Privacy & Security → Developer Mode, plug it in and tap Trust. The script finds Xcode, your signing team and the connected iPhone, builds Release and installs. With a free account the app runs for 7 days per install; run the command again to renew.
 
 ## iPhone app
 
 `ios/` is a native SwiftUI app (Plan, Places with map, People, Where, Media). It reads the same `docs/trip.json`, keeps the last copy on the phone, and refreshes whenever it has signal (open the app or pull down). Photos and videos listed under `media` download once and play offline.
 
-For Tom, the native build is distributed through TestFlight. Share the single-slot invitation privately once Apple approves the first build. After installing, Tom can turn on automatic updates in TestFlight. It is only necessary to upload a new build for app changes. Plan and notes edits refresh from GitHub Pages inside the installed app.
-
-For a direct development install on Jerry’s iPhone, connect it to Xcode (USB or paired Wi-Fi) and run `ios/install-on-iphone.sh`.
+Release a TestFlight build (Jerry's team `39225XZQP2`): bump `CURRENT_PROJECT_VERSION` in `ios/project.yml`, then Xcode → Product → Archive → Distribute App → TestFlight & App Store. The **Trip internal** group gets every Xcode build automatically, without beta review. Direct development install on Jerry's iPhone: `ios/install-on-iphone.sh`.
 
 ## How to edit (anyone with access to this repo)
 

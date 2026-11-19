@@ -507,6 +507,11 @@
      "title": "Share location",
      "items": [
       {
+       "title": "Install the Trip iPhone app (TestFlight)",
+       "detail": "1. Install TestFlight from the App Store. 2. Open Apple's invite: the App Store Connect email (Accept, then View in TestFlight), or Jerry's TestFlight link once Apple approves the build. 3. Tap Install, then turn on Automatic Updates in TestFlight → Trip. Plan edits show up in the app by themselves.",
+       "link": "https://testflight.apple.com/join/wd5wQyS8"
+      },
+      {
        "title": "Turn on your live pin",
        "detail": "Install OwnTracks and open your private setup link. In iPhone Settings, set OwnTracks Location to Always and turn Precise Location on. Publish once and check the Where tab.",
        "link": "https://jerryshi042003.github.io/trip/location-setup/"
