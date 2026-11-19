@@ -45,7 +45,9 @@
   let tripText = '';
   let tomNotes = [];
   let refreshing = false;
-  let view = !linkedTraveler && viewKeys.includes(savedView) ? savedView : 'plan';
+  const requestedView = new URLSearchParams(location.search).get('view');
+  let view = viewKeys.includes(requestedView) ? requestedView : !linkedTraveler && viewKeys.includes(savedView) ? savedView : 'plan';
+  let whereView;
   let who = linkedTraveler ? requestedTraveler : travelerKeys.includes(savedTraveler) ? savedTraveler : 'jerry';
   if (linkedTraveler) store.set('who', who);
 
@@ -146,7 +148,17 @@
     document.querySelector('.who').hidden = view !== 'plan';
     document.querySelectorAll('.seg button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.v === view)));
     document.querySelectorAll('.who button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.who === who)));
-    if (!D) return;
+    if (view === 'where') {
+      whereView ??= window.mountTripWhere(document.getElementById('out'));
+      whereView.setTravelers(D?.travelers);
+      return;
+    }
+    whereView?.dispose();
+    whereView = null;
+    if (!D) {
+      document.getElementById('out').innerHTML = '<p class="state" role="status">Loading trip…</p>';
+      return;
+    }
     const byId = Object.fromEntries(D.places.map(p => [p.id, p]));
     let h = '';
     const T = D.travelers[who];
@@ -165,12 +177,6 @@
       if (T.bucket && T.bucket.length) h += `<h2 class="hdr">Bucket list</h2><div class="group">${T.bucket.map(b => `<div class="row"><div class="main"><div class="t">${esc(b)}</div></div></div>`).join('')}</div>`;
     } else if (view === 'places') {
       for (const city of [...new Set(D.places.map(p => p.city))]) h += `<h2 class="hdr">${esc(city)}</h2><div class="group">${D.places.filter(p => p.city === city).map(placeRow).join('')}</div>`;
-    } else if (view === 'where') {
-      h = `<h2 class="hdr">Share with each other</h2><div class="group where-setup">
-        <p>In Google Maps, tap your profile picture, then Location sharing → New share.</p>
-        <p>Choose <strong>Until you turn this off</strong> and select the other person’s Gmail address. Each person does this once.</p>
-        <a href="https://www.google.com/maps/">Open Google Maps</a>
-      </div>`;
     } else {
       const groups = new Map();
       for (const person of D.people) {
@@ -187,12 +193,14 @@
   }
 
   document.getElementById('share-trip').addEventListener('click', async () => {
+    const sharingWhere = view === 'where';
+    const url = sharingWhere ? new URL('?view=where', base).href : tomPlan;
     if (navigator.share) {
-      try { await navigator.share({ title: 'Trip', url: tomPlan }); return; }
+      try { await navigator.share({ title: 'Trip', url }); return; }
       catch (error) { if (error.name === 'AbortError') return; }
     }
-    try { await navigator.clipboard.writeText(tomPlan); toast('Tom’s link copied'); }
-    catch { window.location.assign(tomPlan); }
+    try { await navigator.clipboard.writeText(url); toast(sharingWhere ? 'Map link copied' : 'Tom’s link copied'); }
+    catch { window.location.assign(url); }
   });
 
   document.addEventListener('click', e => {
@@ -211,7 +219,18 @@
     }
     const cd = e.target.closest('.cal-d.has');
     if (cd) { selDay = selDay === cd.dataset.day ? null : cd.dataset.day; render(); document.querySelector(`[data-day="${selDay || cd.dataset.day}"]`)?.focus({ preventScroll: true }); return; }
-    const s = e.target.closest('.seg button'); if (s) { view = s.dataset.v; store.set('view', view); render(); window.scrollTo(0, 0); return; }
+    const stage = e.target.closest('.seg button');
+    if (stage) {
+      view = stage.dataset.v;
+      const url = new URL(location.href);
+      if (view === 'where') url.searchParams.set('view', view);
+      else url.searchParams.delete('view');
+      history.replaceState(null, '', url);
+      store.set('view', view);
+      render();
+      window.scrollTo(0, 0);
+      return;
+    }
     const c = e.target.closest('[data-copy]');
     if (c) {
       const copy = navigator.clipboard?.writeText(c.dataset.copy);
@@ -246,6 +265,7 @@
         if (notesChanged) { tomNotes = nextNotes; render(); }
         return;
       }
+      if (view === 'where') return;
       document.getElementById('out').innerHTML = '<p class="state" role="status">Trip could not load.</p><button class="lock" id="retry">Try again</button>';
       document.getElementById('retry').addEventListener('click', refreshTrip);
     } finally {

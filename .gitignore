@@ -1,3 +1,6 @@
 .vercel
 .DS_Store
 ios/Trip.xcodeproj/
+
+node_modules/
+.env*

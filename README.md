@@ -8,7 +8,9 @@ Send Tom https://jerryshi042003.github.io/trip/tom/ or tap **Share Trip** in the
 
 `ios/` is a native SwiftUI app (Plan, Places with map, People, Where, Media). It reads the same `docs/trip.json`, keeps the last copy on the phone, and refreshes whenever it has signal (open the app or pull down). Photos and videos listed under `media` download once and play offline.
 
-Install or update on Jerry's iPhone (plugged in or on the same Wi-Fi): `ios/install-on-iphone.sh`. Signed until Nov 2027.
+For Tom, the native build is distributed through TestFlight. Share the single-slot invitation privately once Apple approves the first build. After installing, Tom can turn on automatic updates in TestFlight. It is only necessary to upload a new build for app changes. Plan and notes edits refresh from GitHub Pages inside the installed app.
+
+For a direct development install on Jerry’s iPhone, connect it to Xcode (USB or paired Wi-Fi) and run `ios/install-on-iphone.sh`.
 
 ## How to edit (anyone with access to this repo)
 
@@ -24,7 +26,24 @@ Keep it valid JSON (commas between items, double quotes). If the site goes blank
 
 ## Live location (Where tab)
 
-Open Google Maps → profile picture → Location sharing → New share. Choose **Until you turn this off** and select the other person’s Gmail account. Each person starts their own share. Live locations are visible to the selected accounts in Google Maps. Trip does not request location permission.
+[Open the family map](https://jerryshi042003.github.io/trip/?view=where) in any phone browser. It opens without an account. In the native iPhone app, tap **Where**. Both views show the latest point for each person, its age, and battery when reported. They check for new points every minute while open. Locations older than 15 minutes say “Last seen”; after 24 hours they leave the map.
+
+### Enable sharing on each phone
+
+1. Follow the **Turn on your live pin** task in Plan. Install OwnTracks and enable external configuration in its settings.
+2. Open your private setup link and tap **Open your setup in OwnTracks**. Confirm the configuration. Turn external configuration off again after importing if desired.
+3. In iPhone Settings → Apps → OwnTracks → Location, set **Always** and enable **Precise Location**. Open OwnTracks and publish one point to check your pin. Keep OwnTracks running. Significant mode reports when the OS detects movement, including with the screen locked. It has no fixed reporting interval.
+4. To stop, set OwnTracks to Manual. Trip hides the last point after 24 hours. The operator can clear it immediately with the phone credential as described below.
+
+### Google Maps fallback
+
+From Google Maps, use profile picture → **Location sharing** → **New share** and copy a public link. Add the real link to the matching traveler’s `where` field. Where shows a **Google Maps share** button beside that traveler. Public Google Maps share links expire after at most 24 hours.
+
+### Hosting and credentials
+
+`api/location.mjs` runs on the existing `trip` Vercel Hobby project at `https://jerry-trip.vercel.app/api/location`. The same read endpoint is used by GitHub Pages and MapKit. Public GET returns only the current point per traveler and never requires a login. OwnTracks uses HTTPS Basic Auth to POST updates, with a distinct token and SHA-256 secret per phone (`TRIP_JERRY_SHA256`, `TRIP_TOM_SHA256`). The app uses a private Vercel Blob store with one object per phone and no trail. Authenticated DELETE clears the caller’s point. Never place setup links or write credentials in trip.json, documentation, or GitHub.
+
+Release web changes from this repo to GitHub Pages (`main:docs/`) and Vercel (`jerryshi042003s-projects/trip`). Vercel must have the connected private Blob store and the two digest variables before releasing the API. Build the native target from `ios/project.yml` and publish through Apple TestFlight or the direct install script.
 
 ## For AI agents (Claude, Muse, Codex)
 

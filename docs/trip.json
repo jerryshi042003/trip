@@ -342,6 +342,16 @@
    "where": "",
    "todos": [
     {
+     "title": "Share location",
+     "items": [
+      {
+       "title": "Turn on your live pin",
+       "detail": "Install OwnTracks and open your private setup link. In iPhone Settings, set OwnTracks Location to Always and turn Precise Location on. Publish once and check the Where tab.",
+       "link": "https://jerryshi042003.github.io/trip/location-setup/"
+      }
+     ]
+    },
+    {
      "title": "Before departure",
      "items": [
       {
@@ -493,6 +503,16 @@
    ],
    "where": "",
    "todos": [
+    {
+     "title": "Share location",
+     "items": [
+      {
+       "title": "Turn on your live pin",
+       "detail": "Install OwnTracks and open your private setup link. In iPhone Settings, set OwnTracks Location to Always and turn Precise Location on. Publish once and check the Where tab.",
+       "link": "https://jerryshi042003.github.io/trip/location-setup/"
+      }
+     ]
+    },
     {
      "title": "Before departure",
      "items": [

@@ -53,7 +53,7 @@ struct RootView: View {
                 NavigationStack { PeopleView().toolbar(.hidden, for: .tabBar) }
             }
             Tab("Where", systemImage: TripTab.where.icon, value: .where) {
-                NavigationStack { WhereView().toolbar(.hidden, for: .tabBar) }
+                NavigationStack { WhereView(isVisible: tab == .where).toolbar(.hidden, for: .tabBar) }
             }
             if showsMedia {
                 Tab("Media", systemImage: TripTab.media.icon, value: .media) {
@@ -359,26 +359,6 @@ struct PersonRow: View {
             }
             .buttonStyle(CircleButton())
         }
-    }
-}
-
-// MARK: - Where
-
-struct WhereView: View {
-    @EnvironmentObject var store: TripStore
-    var body: some View {
-        List {
-            Section("Share with each other") {
-                Text("In Google Maps, tap your profile picture, then Location sharing → New share.")
-                Text("Choose Until you turn this off and select the other person’s Gmail address. Each person does this once.")
-                Link("Open Google Maps", destination: Links.googleMaps)
-            }
-            if let s = store.lastSync {
-                Section { Text("Synced \(s.formatted(date: .abbreviated, time: .shortened))").font(.footnote).foregroundStyle(.secondary) }
-            }
-        }
-        .navigationTitle("Where")
-        .refreshable { await store.refresh() }
     }
 }
 

@@ -33,9 +33,6 @@ h1{display:flex;align-items:center;gap:9px;font:700 34px/1.15 -apple-system,"SF 
 .chev{color:var(--sec);opacity:.6;font-size:20px}
 .lock{color:var(--tint);font-size:17px;border:0;background:none;min-height:44px;padding:6px 4px;cursor:pointer}
 .state{margin:20px 16px;color:var(--sec)}
-.where-setup{display:grid;gap:8px;padding:16px}
-.where-setup p{margin:0}
-.where-setup a{display:inline-flex;align-items:center;min-height:44px;color:var(--tint)}
 .install-guide{margin:12px 0 0;padding:0 16px}
 .install-guide summary{cursor:pointer;color:var(--tint);padding:11px 0;min-height:44px}
 .install-guide p{margin:0;padding-bottom:12px}
@@ -72,3 +69,19 @@ h1{display:flex;align-items:center;gap:9px;font:700 34px/1.15 -apple-system,"SF 
 .legend{display:flex;flex-wrap:wrap;gap:6px 14px;margin:10px 8px 0;font-size:13px;color:var(--sec)}
 .legend span{display:inline-flex;align-items:center;gap:6px}
 .undated{margin:8px 8px 0;font-size:13px;color:var(--sec)}
+
+.live-where{display:grid;gap:12px}
+.live-map{height:clamp(260px,49dvh,440px);border-radius:16px;background:#dde7eb;isolation:isolate}
+.live-message{margin:0;color:var(--sec);font-size:15px}
+.live-travelers{margin:0}
+.live-travelers .row{min-height:64px;align-items:center}
+.live-actions{display:flex;flex-wrap:wrap;align-items:center;gap:4px 12px;justify-content:flex-end}
+.live-actions a{color:var(--tint);padding:12px 0;font-size:14px;text-decoration:none}
+.live-actions a:hover,.live-actions a:focus-visible{text-decoration:underline}
+.live-avatar{display:grid;place-items:center;border:2px solid #fff;border-radius:50%;box-shadow:0 1px 5px #0005;color:#fff;background:#064f8e;font:700 15px -apple-system,BlinkMacSystemFont,sans-serif}
+.live-avatar-tom{background:#263b57}
+.live-map-label{font-weight:650}
+
+.location-setup li{margin:0 0 15px}
+.location-setup a{color:var(--tint)}
+@media(max-width:460px){.live-travelers .row:has(.live-sharing-link:not([hidden])){display:grid;gap:0}.live-travelers .row:has(.live-sharing-link:not([hidden])) .live-actions{justify-content:flex-start}}
