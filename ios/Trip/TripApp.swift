@@ -87,6 +87,7 @@ struct PlanView: View {
                                 if let link = item.link {
                                     Spacer(minLength: 4)
                                     Link(destination: link) { Image(systemName: "globe") }
+                                        .buttonStyle(.borderless)
                                         .accessibilityLabel("Open link for \(item.title)")
                                 }
                             }
