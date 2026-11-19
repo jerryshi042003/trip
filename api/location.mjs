@@ -37,7 +37,10 @@ async function writePoint(who, point, onlyClear = false) {
       });
       return;
     } catch (error) {
-      if (!(error instanceof BlobPreconditionFailedError) && (previous || !await readPoint(who))) throw error;
+      // A concurrent overwrite can return either a precondition error or a generic storage error.
+      const latest = await readPoint(who);
+      if (!onlyClear && latest?.point.tst >= point.tst) return;
+      if (!(error instanceof BlobPreconditionFailedError) && latest?.etag === previous?.etag) throw error;
     }
   }
   throw new Error('Write contention');
