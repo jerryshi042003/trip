@@ -1,8 +1,8 @@
 # Trip
 
-Offline trip app for Jerry and Tom: https://jerry-trip.vercel.app
+Trip planner for Jerry and Tom: https://jerryshi042003.github.io/trip/
 
-Install: open the link in Safari, Share, Add to Home Screen (Android Chrome: Install app). It works with no service once opened.
+Tom can open his Plan directly at https://jerryshi042003.github.io/trip/?who=tom. To install, open it in Safari and choose Share → Add to Home Screen (Android Chrome: Install app). Open Trip while online once to cache the planner on that device.
 
 ## iPhone app
 
@@ -32,5 +32,5 @@ Anyone with the site can then open it, family included, on iPhone or Android.
 
 ## For AI agents (Claude, Muse, Codex)
 
-Read the current trip at https://jerry-trip.vercel.app/trip.json (public, no login).
+Read the current trip at https://jerryshi042003.github.io/trip/trip.json (public, no login).
 To change it, edit `docs/trip.json` in this repo through the person's own GitHub access, keep the schema above, commit with a short message, and never delete other people's entries.

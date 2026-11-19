@@ -64,6 +64,17 @@ struct PlanView: View {
         let t = store.data?.travelers[who]
         let places = Dictionary(uniqueKeysWithValues: (store.data?.places ?? []).map { ($0.id, $0) })
         List {
+            Section {
+                Picker("Traveler", selection: $who) {
+                    ForEach((store.data?.travelers ?? [:]).keys.sorted(), id: \.self) { key in
+                        Text(store.data?.travelers[key]?.name ?? key).tag(key)
+                    }
+                }
+                .pickerStyle(.segmented)
+                .listRowBackground(Color.clear)
+                .listRowInsets(EdgeInsets())
+                .listRowSeparator(.hidden)
+            }
             ForEach(t?.todos ?? []) { section in
                 Section(section.title) {
                     ForEach(section.items) { item in
@@ -106,33 +117,29 @@ struct PlanView: View {
             }
         }
         .navigationTitle("Trip")
-        .toolbar {
-            ToolbarItem(placement: .topBarTrailing) {
-                Picker("", selection: $who) {
-                    ForEach((store.data?.travelers ?? [:]).keys.sorted(), id: \.self) { k in
-                        Text(store.data?.travelers[k]?.name ?? k).tag(k)
-                    }
-                }
-                .pickerStyle(.segmented)
-                .frame(width: 150)
-            }
-        }
         .refreshable { await store.refresh() }
     }
 }
 
 struct PlanRow: View {
+    @Environment(\.dynamicTypeSize) private var textSize
     let item: PlanItem
     let chevron: Bool
     var body: some View {
-        HStack(alignment: .firstTextBaseline, spacing: 12) {
-            Text(item.date).font(.subheadline).foregroundStyle(.secondary).frame(width: 104, alignment: .leading).monospacedDigit()
+        let layout = textSize.isAccessibilitySize
+            ? AnyLayout(VStackLayout(alignment: .leading, spacing: 4))
+            : AnyLayout(HStackLayout(alignment: .firstTextBaseline, spacing: 12))
+        layout {
+            Text(item.date).font(.subheadline).foregroundStyle(.secondary)
+                .frame(width: textSize.isAccessibilitySize ? nil : 96, alignment: .leading).monospacedDigit()
             VStack(alignment: .leading, spacing: 2) {
                 Text(item.title).foregroundStyle(.primary)
                 if let s = item.sub, !s.isEmpty { Text(s).font(.subheadline).foregroundStyle(.secondary) }
             }
-            Spacer(minLength: 0)
-            if chevron { Image(systemName: "chevron.right").font(.footnote.weight(.semibold)).foregroundStyle(.tertiary) }
+            if !textSize.isAccessibilitySize {
+                Spacer(minLength: 0)
+                if chevron { Image(systemName: "chevron.right").font(.footnote.weight(.semibold)).foregroundStyle(.tertiary) }
+            }
         }
     }
 }
@@ -146,13 +153,17 @@ struct PlacesView: View {
     var body: some View {
         let places = store.data?.places ?? []
         let cities = places.map(\.city).reduce(into: [String]()) { if !$0.contains($1) { $0.append($1) } }
-        let shown = places.filter { $0.city == (city.isEmpty ? cities.first ?? "" : city) }
+        let selection = Binding(get: { cities.contains(city) ? city : cities.first ?? "" }, set: { city = $0 })
+        let shown = places.filter { $0.city == selection.wrappedValue }
         List {
-            Section {
-                Picker("City", selection: $city) { ForEach(cities, id: \.self) { Text($0).tag($0) } }
-                    .pickerStyle(.segmented)
-                    .listRowBackground(Color.clear)
-                    .listRowInsets(EdgeInsets())
+            if !cities.isEmpty {
+                Section {
+                    Picker("City", selection: selection) { ForEach(cities, id: \.self) { Text($0).tag($0) } }
+                        .pickerStyle(.segmented)
+                        .listRowBackground(Color.clear)
+                        .listRowInsets(EdgeInsets())
+                        .listRowSeparator(.hidden)
+                }
             }
             let pins = shown.compactMap { p in store.coordinate(for: p).map { (p, $0) } }
             if !pins.isEmpty {
@@ -169,7 +180,6 @@ struct PlacesView: View {
             }
         }
         .navigationTitle("Places")
-        .onAppear { if city.isEmpty { city = cities.first ?? "" } }
         .refreshable { await store.refresh() }
     }
 }
@@ -188,9 +198,11 @@ struct PlaceRow: View {
             if let ja = place.ja {
                 Button { UIPasteboard.general.string = ja } label: { Image(systemName: "doc.on.doc") }
                     .buttonStyle(CircleButton())
+                    .accessibilityLabel("Copy Japanese address")
             }
             Link(destination: Links.maps(place, store.coordinate(for: place))) { Image(systemName: "map") }
                 .buttonStyle(CircleButton())
+                .accessibilityLabel("Open in Apple Maps")
         }
         .contextMenu {
             Link("Open in Google Maps", destination: Links.google(place))
@@ -220,22 +232,42 @@ struct PeopleView: View {
 }
 
 struct PersonRow: View {
+    @Environment(\.dynamicTypeSize) private var textSize
     let person: Person
     var body: some View {
-        HStack(spacing: 10) {
+        let layout = textSize.isAccessibilitySize
+            ? AnyLayout(VStackLayout(alignment: .leading, spacing: 6))
+            : AnyLayout(HStackLayout(spacing: 8))
+        layout {
             VStack(alignment: .leading, spacing: 2) {
                 Text(person.name)
                 let sub = [person.role, person.phoneLabel ?? person.phone, person.email].compactMap { $0 }.joined(separator: " · ")
                 if !sub.isEmpty { Text(sub).font(.subheadline).foregroundStyle(.secondary).textSelection(.enabled) }
             }
-            Spacer(minLength: 0)
-            if let p = person.phone, let u = URL(string: "tel:\(p)") { Link(destination: u) { Image(systemName: "phone.fill") }.buttonStyle(CircleButton()) }
-            if let w = person.whatsapp, let u = URL(string: "https://wa.me/\(w)") { Link(destination: u) { Image(systemName: "message.fill") }.buttonStyle(CircleButton()) }
-            else if let p = person.phone, p.count > 6, let u = URL(string: "sms:\(p)") { Link(destination: u) { Image(systemName: "message.fill") }.buttonStyle(CircleButton()) }
-            if let e = person.email, let u = URL(string: "mailto:\(e)") { Link(destination: u) { Image(systemName: "envelope.fill") }.buttonStyle(CircleButton()) }
-            if let ig = person.ig, let u = URL(string: "https://ig.me/m/\(ig)") { Link(destination: u) { Text("IG").font(.caption.weight(.bold)) }.buttonStyle(CircleButton()) }
-            if let fb = person.fb, let u = URL(string: fb) { Link(destination: u) { Text("FB").font(.caption.weight(.bold)) }.buttonStyle(CircleButton()) }
-            if let w = person.web, let u = URL(string: w) { Link(destination: u) { Image(systemName: "globe") }.buttonStyle(CircleButton()) }
+            if !textSize.isAccessibilitySize { Spacer(minLength: 0) }
+            HStack(spacing: 2) {
+                if let p = person.phone, let u = URL(string: "tel:\(p)") {
+                    Link(destination: u) { Image(systemName: "phone.fill") }.accessibilityLabel("Call")
+                }
+                if let w = person.whatsapp, let u = URL(string: "https://wa.me/\(w)") {
+                    Link(destination: u) { Image(systemName: "message.fill") }.accessibilityLabel("WhatsApp")
+                } else if let p = person.phone, p.count > 6, let u = URL(string: "sms:\(p)") {
+                    Link(destination: u) { Image(systemName: "message.fill") }.accessibilityLabel("Text message")
+                }
+                if let e = person.email, let u = URL(string: "mailto:\(e)") {
+                    Link(destination: u) { Image(systemName: "envelope.fill") }.accessibilityLabel("Email")
+                }
+                if let ig = person.ig, let u = URL(string: "https://ig.me/m/\(ig)") {
+                    Link(destination: u) { Text("IG").font(.caption.weight(.bold)) }.accessibilityLabel("Instagram")
+                }
+                if let fb = person.fb, let u = URL(string: fb) {
+                    Link(destination: u) { Text("FB").font(.caption.weight(.bold)) }.accessibilityLabel("Facebook")
+                }
+                if let w = person.web, let u = URL(string: w) {
+                    Link(destination: u) { Image(systemName: "globe") }.accessibilityLabel("Website")
+                }
+            }
+            .buttonStyle(CircleButton())
         }
     }
 }
@@ -311,10 +343,11 @@ struct MediaDetail: View {
 struct CircleButton: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .font(.system(size: 14, weight: .semibold))
+            .font(.subheadline.weight(.semibold))
             .foregroundStyle(.tint)
-            .frame(width: 34, height: 34)
-            .background(Circle().fill(Color(.tertiarySystemFill)))
+            .frame(width: 44, height: 44)
+            .background(Circle().fill(Color(.tertiarySystemFill)).frame(width: 34, height: 34))
+            .contentShape(Rectangle())
             .opacity(configuration.isPressed ? 0.6 : 1)
     }
 }

@@ -14,57 +14,65 @@
 <link rel="apple-touch-icon" href="icon-180.png?v=2">
 <link rel="icon" type="image/png" href="icon-192.png?v=2">
 <style>
-:root{--bg:#f2f2f7;--card:#fff;--text:#000;--sec:#8a8a8e;--sep:rgba(60,60,67,.18);--tint:#0a84ff;--fill:rgba(118,118,128,.12);--seg:#fff}
-@media (prefers-color-scheme:dark){:root{--bg:#000;--card:#1c1c1e;--text:#fff;--sec:#8d8d93;--sep:rgba(84,84,88,.6);--fill:rgba(118,118,128,.24);--seg:#636366}}
+:root{--bg:#f2f2f7;--card:#fff;--text:#141419;--sec:#626269;--sep:rgba(60,60,67,.18);--tint:#005fbd;--fill:rgba(118,118,128,.12);--seg:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#000;--card:#1c1c1e;--text:#f5f5f7;--sec:#a9a9b0;--sep:rgba(84,84,88,.65);--tint:#70b8ff;--fill:rgba(118,118,128,.24);--seg:#37373b}}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{margin:0;background:var(--bg);color:var(--text);font:17px/1.3 -apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",sans-serif;-webkit-font-smoothing:antialiased}
 .wrap{max-width:640px;margin:0 auto;padding:calc(env(safe-area-inset-top) + 8px) 16px calc(env(safe-area-inset-bottom) + 40px)}
 h1{display:flex;align-items:center;gap:9px;font:700 34px/1.15 -apple-system,"SF Pro Display",sans-serif;letter-spacing:.01em;margin:14px 4px 12px}
 .trip-mark{display:block;border-radius:8px;border:1px solid var(--sep)}
-.seg{display:grid;grid-template-columns:repeat(4,1fr);background:var(--fill);border-radius:9px;padding:2px;margin:0 0 22px;position:sticky;top:env(safe-area-inset-top);z-index:2;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
-.seg button{appearance:none;border:0;background:transparent;color:var(--text);font:500 13px/1 -apple-system,sans-serif;padding:7px 0;border-radius:7px;cursor:pointer}
-.seg button[aria-pressed=true]{background:var(--seg);box-shadow:0 3px 8px rgba(0,0,0,.12),0 1px 1px rgba(0,0,0,.04);font-weight:600}
-.top{display:flex;align-items:center;justify-content:space-between;gap:12px}
-.who{display:flex;background:var(--fill);border-radius:9px;padding:2px}
-.who button{appearance:none;border:0;background:transparent;color:var(--text);font:500 13px/1 -apple-system,sans-serif;padding:7px 14px;border-radius:7px;cursor:pointer}
-.who button[aria-pressed=true]{background:var(--seg);box-shadow:0 3px 8px rgba(0,0,0,.12),0 1px 1px rgba(0,0,0,.04);font-weight:600}
+.seg{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-bottom:16px;position:sticky;top:env(safe-area-inset-top);z-index:2;background:var(--bg);border-bottom:1px solid var(--sep)}
+.seg button,.who button{appearance:none;border:0;min-height:44px;background:transparent;color:var(--sec);font:500 15px/1.25 -apple-system,sans-serif;padding:6px;cursor:pointer}
+.seg button[aria-pressed=true]{color:var(--text);box-shadow:inset 0 -2px var(--tint);font-weight:650}
+.who{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));background:var(--fill);border-radius:10px;padding:3px}
+.who button{border-radius:7px}
+.who button[aria-pressed=true]{background:var(--seg);color:var(--text);font-weight:650}
+:where(button,a[href],summary):focus-visible{outline:2px solid var(--tint);outline-offset:-2px}
 .dot{width:8px;height:8px;border-radius:50%;background:#34c759;flex-shrink:0}
 .dot.off{background:var(--sep)}
-.hdr{font-size:13px;color:var(--sec);text-transform:uppercase;letter-spacing:.02em;margin:22px 16px 7px}
+.hdr{font-size:15px;font-weight:650;color:var(--sec);margin:20px 16px 8px}
 .group{background:var(--card);border-radius:10px;overflow:hidden}
 .row{display:flex;align-items:center;gap:12px;padding:11px 16px;min-height:44px;position:relative;text-decoration:none;color:inherit}
 .row+.row::before{content:"";position:absolute;top:0;left:16px;right:0;border-top:.5px solid var(--sep)}
-.main{flex:1;min-width:0}
+.main{flex:1;min-width:0;overflow-wrap:anywhere}
 .t{font-size:17px}
 .s{font-size:15px;color:var(--sec);margin-top:2px}
 .ja{font-size:15px;margin-top:3px}
-.date{font-size:15px;color:var(--sec);min-width:104px;font-variant-numeric:tabular-nums}
-.acts{display:flex;gap:8px;flex-shrink:0}
+.date{font-size:15px;color:var(--sec);flex:0 0 clamp(74px,24vw,104px);font-variant-numeric:tabular-nums}
+.acts{display:flex;gap:4px;flex-shrink:0}
+.acts:empty{display:none}
 .task{align-items:flex-start}
 .task details{margin-top:8px}
-.task summary{cursor:pointer;color:var(--tint)}
-.task p{margin:8px 0}
-.a{width:34px;height:34px;border-radius:50%;background:var(--fill);display:grid;place-items:center;color:var(--tint);text-decoration:none;border:0;cursor:pointer;font:600 12px -apple-system,sans-serif}
+.task summary{cursor:pointer;color:var(--tint);padding:8px 0}
+.task p{margin:8px 0;white-space:pre-wrap}
+.a{width:44px;height:44px;flex-shrink:0;border-radius:50%;background:var(--fill);display:grid;place-items:center;color:var(--tint);text-decoration:none;border:0;cursor:pointer;font:600 12px -apple-system,sans-serif}
 .a svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .chev{color:var(--sec);opacity:.6;font-size:20px}
-.lock{color:var(--tint);font-size:17px;border:0;background:none;padding:0;cursor:pointer}
+.lock{color:var(--tint);font-size:17px;border:0;background:none;min-height:44px;padding:6px 4px;cursor:pointer}
+.state{margin:20px 16px;color:var(--sec)}
 .toast{position:fixed;left:50%;bottom:calc(env(safe-area-inset-bottom) + 24px);transform:translateX(-50%);background:rgba(30,30,30,.92);color:#fff;font-size:15px;padding:10px 16px;border-radius:12px;opacity:0;transition:opacity .2s;pointer-events:none}
 .toast.on{opacity:1}
+@media (max-width:360px){.person{flex-wrap:wrap;gap:8px}.person .main{flex-basis:100%}}
+@media (prefers-reduced-motion:reduce){.toast{transition:none}}
 [hidden]{display:none!important}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <div class="top"><h1><img class="trip-mark" src="icon-180.png?v=2" width="32" height="32" alt="">Trip</h1><div class="who" role="tablist"><button data-who="jerry" aria-pressed="true">Jerry</button><button data-who="tom" aria-pressed="false">Tom</button></div></div>
-  <div class="seg" role="tablist">
+  <h1><img class="trip-mark" src="icon-180.png?v=2" width="32" height="32" alt="">Trip</h1>
+  <nav class="seg" aria-label="Trip sections">
     <button data-v="plan" aria-pressed="true">Plan</button>
     <button data-v="places" aria-pressed="false">Places</button>
     <button data-v="people" aria-pressed="false">People</button>
     <button data-v="where" aria-pressed="false">Where</button>
+  </nav>
+  <div class="who" role="group" aria-label="Traveler">
+    <button data-who="jerry" aria-pressed="true">Jerry</button>
+    <button data-who="tom" aria-pressed="false">Tom</button>
   </div>
-  <div id="out"></div>
+  <main id="out"><p class="state" role="status">Loading trip…</p></main>
 </div>
-<div class="toast" id="toast"></div>
+<div class="toast" id="toast" role="status"></div>
 <script>
 (() => {
   const I = {
@@ -79,7 +87,16 @@ h1{display:flex;align-items:center;gap:9px;font:700 34px/1.15 -apple-system,"SF 
   const store = { get(k){ try { return localStorage.getItem(k); } catch(e) { return null; } }, set(k,v){ try { localStorage.setItem(k,v); } catch(e) {} } };
   const toast = m => { const t = document.getElementById('toast'); t.textContent = m; t.classList.add('on'); clearTimeout(t._h); t._h = setTimeout(() => t.classList.remove('on'), 1300); };
   const gmap = q => 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(q);
-  let D = null, view = store.get('view') || 'plan', who = store.get('who') || 'jerry';
+  const travelerKeys = ['jerry', 'tom'];
+  const viewKeys = ['plan', 'places', 'people', 'where'];
+  const requestedTraveler = new URLSearchParams(location.search).get('who');
+  const linkedTraveler = travelerKeys.includes(requestedTraveler);
+  const savedView = store.get('view');
+  const savedTraveler = store.get('who');
+  let D = null;
+  let view = !linkedTraveler && viewKeys.includes(savedView) ? savedView : 'plan';
+  let who = linkedTraveler ? requestedTraveler : travelerKeys.includes(savedTraveler) ? savedTraveler : 'jerry';
+  if (linkedTraveler) store.set('who', who);
 
   const placeRow = p => `<div class="row"><div class="main"><div class="t">${esc(p.name)}</div><div class="s">${esc(p.addr)}</div>${p.ja ? `<div class="ja">${esc(p.ja)}</div>` : ''}</div><div class="acts">${p.ja ? `<button class="a" data-copy="${esc(p.ja)}" aria-label="Copy">${I.copy}</button>` : ''}<a class="a" href="${gmap(p.ja || p.addr)}" aria-label="Map">${I.map}</a></div></div>`;
   const personRow = p => {
@@ -92,11 +109,12 @@ h1{display:flex;align-items:center;gap:9px;font:700 34px/1.15 -apple-system,"SF 
     if (p.fb) a.push(`<a class="a" href="${esc(p.fb)}" aria-label="Facebook">FB</a>`);
     if (p.web) a.push(`<a class="a" href="${esc(p.web)}" aria-label="Website">${I.web}</a>`);
     const sub = [p.role, p.phoneLabel || p.phone, p.email].filter(Boolean).join(' · ');
-    return `<div class="row"><div class="main"><div class="t">${esc(p.name)}</div><div class="s">${esc(sub)}</div></div><div class="acts">${a.join('')}</div></div>`;
+    return `<div class="row person"><div class="main"><div class="t">${esc(p.name)}</div><div class="s">${esc(sub)}</div></div><div class="acts">${a.join('')}</div></div>`;
   };
   const taskRow = task => `<div class="row task"><div class="main"><div class="t">${esc(task.title)}</div><div class="s">${esc(task.detail)}</div>${task.draft ? `<details><summary>Draft message</summary><p>${esc(task.draft)}</p><button class="lock" data-copy="${esc(task.draft)}">Copy draft</button></details>` : ''}</div>${task.link ? `<a class="a" href="${esc(task.link)}" aria-label="Open link for ${esc(task.title)}">${I.web}</a>` : ''}</div>`;
 
   function render() {
+    document.querySelector('.who').hidden = view !== 'plan';
     document.querySelectorAll('.seg button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.v === view)));
     document.querySelectorAll('.who button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.who === who)));
     if (!D) return;
@@ -105,13 +123,13 @@ h1{display:flex;align-items:center;gap:9px;font:700 34px/1.15 -apple-system,"SF 
     const T = D.travelers[who];
     if (view === 'plan') {
       for (const section of T.todos ?? []) {
-        h += `<div class="hdr">${esc(section.title)}</div><div class="group">${section.items.map(taskRow).join('')}</div>`;
+        h += `<h2 class="hdr">${esc(section.title)}</h2><div class="group">${section.items.map(taskRow).join('')}</div>`;
       }
-      if (T.todos?.length) h += '<div class="hdr">Itinerary</div>';
+      if (T.todos?.length) h += '<h2 class="hdr">Itinerary</h2>';
       h += `<div class="group">${T.plan.map(x => { const p = byId[x.place]; return `<a class="row" ${p ? `href="${gmap(p.ja || p.addr)}"` : ''}><div class="date">${esc(x.date)}</div><div class="main"><div class="t">${esc(x.title)}</div>${x.sub ? `<div class="s">${esc(x.sub)}</div>` : ''}</div>${p ? '<span class="chev">›</span>' : ''}</a>`; }).join('')}</div>`;
-      if (T.bucket && T.bucket.length) h += `<div class="hdr">Bucket list</div><div class="group">${T.bucket.map(b => `<div class="row"><div class="main"><div class="t">${esc(b)}</div></div></div>`).join('')}</div>`;
+      if (T.bucket && T.bucket.length) h += `<h2 class="hdr">Bucket list</h2><div class="group">${T.bucket.map(b => `<div class="row"><div class="main"><div class="t">${esc(b)}</div></div></div>`).join('')}</div>`;
     } else if (view === 'places') {
-      for (const city of [...new Set(D.places.map(p => p.city))]) h += `<div class="hdr">${esc(city)}</div><div class="group">${D.places.filter(p => p.city === city).map(placeRow).join('')}</div>`;
+      for (const city of [...new Set(D.places.map(p => p.city))]) h += `<h2 class="hdr">${esc(city)}</h2><div class="group">${D.places.filter(p => p.city === city).map(placeRow).join('')}</div>`;
     } else if (view === 'where') {
       h = `<div class="group">${Object.values(D.travelers).map(x => `<a class="row" ${x.where ? `href="${esc(x.where)}"` : ''}><span class="dot${x.where ? '' : ' off'}"></span><div class="main"><div class="t">${esc(x.name)}</div><div class="s">${x.where ? 'Live location' : 'Not shared'}</div></div>${x.where ? '<span class="chev">›</span>' : ''}</a>`).join('')}</div>`;
     } else {
@@ -122,21 +140,44 @@ h1{display:flex;align-items:center;gap:9px;font:700 34px/1.15 -apple-system,"SF 
         groups.get(title).push(person);
       }
       for (const [title, contacts] of groups) {
-        h += `<div class="hdr">${esc(title)}</div><div class="group">${contacts.map(personRow).join('')}</div>`;
+        h += `<h2 class="hdr">${esc(title)}</h2><div class="group">${contacts.map(personRow).join('')}</div>`;
       }
-      h += `<div class="hdr">Emergency</div><div class="group">${D.emergency.map(personRow).join('')}</div>`;
+      h += `<h2 class="hdr">Emergency</h2><div class="group">${D.emergency.map(personRow).join('')}</div>`;
     }
     document.getElementById('out').innerHTML = h;
   }
 
 
   document.addEventListener('click', e => {
-    const w = e.target.closest('.who button'); if (w) { who = w.dataset.who; store.set('who', who); render(); return; }
+    const w = e.target.closest('.who button');
+    if (w) {
+      who = w.dataset.who;
+      store.set('who', who);
+      if (linkedTraveler) {
+        const url = new URL(location.href);
+        url.searchParams.set('who', who);
+        history.replaceState(null, '', url);
+      }
+      render();
+      return;
+    }
     const s = e.target.closest('.seg button'); if (s) { view = s.dataset.v; store.set('view', view); render(); window.scrollTo(0, 0); return; }
-    const c = e.target.closest('[data-copy]'); if (c) { navigator.clipboard?.writeText(c.dataset.copy).then(() => toast('Copied'), () => toast(c.dataset.copy)); return; }
+    const c = e.target.closest('[data-copy]');
+    if (c) {
+      const copy = navigator.clipboard?.writeText(c.dataset.copy);
+      if (copy) copy.then(() => toast('Copied'), () => toast('Could not copy. Select the text to copy it.'));
+      else toast('Could not copy. Select the text to copy it.');
+    }
   });
 
-  fetch('trip.json', { cache: 'no-cache' }).then(r => r.json()).then(d => { D = d; render(); });
+  render();
+  fetch('trip.json', { cache: 'no-cache' })
+    .then(r => { if (!r.ok) throw new Error('Trip data unavailable'); return r.json(); })
+    .then(d => { D = d; render(); })
+    .catch(() => {
+      document.getElementById('out').innerHTML = '<p class="state" role="status">Trip could not load.</p><button class="lock" id="retry">Try again</button>';
+      document.getElementById('retry').addEventListener('click', () => location.reload());
+    });
   if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
 })();
 </script>
