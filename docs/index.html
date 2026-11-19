@@ -55,6 +55,32 @@ h1{display:flex;align-items:center;gap:9px;font:700 34px/1.15 -apple-system,"SF 
 @media (max-width:360px){.person{flex-wrap:wrap;gap:8px}.person .main{flex-basis:100%}}
 @media (prefers-reduced-motion:reduce){.toast{transition:none}}
 [hidden]{display:none!important}
+:root{--c-manila:#0a6fd6;--c-cebu:#0f8a6a;--c-siargao:#d4700a;--c-tokyo:#d1335b;--c-other:#7d7d86}
+@media (prefers-color-scheme:dark){:root{--c-manila:#5aa9ff;--c-cebu:#3fcf9f;--c-siargao:#ffa64d;--c-tokyo:#ff6f91;--c-other:#9a9aa3}}
+.cal{background:var(--card);border-radius:10px;padding:10px 8px 12px}
+.cal+.cal{margin-top:10px}
+.cal-m{font-size:15px;font-weight:650;margin:2px 8px 8px}
+.cal-g{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));row-gap:2px}
+.cal-w{font-size:11px;color:var(--sec);text-align:center;padding-bottom:4px}
+.cal-d{appearance:none;border:0;background:none;color:inherit;font:inherit;padding:3px 0 4px;min-height:48px;display:flex;flex-direction:column;align-items:stretch;gap:2px;cursor:default;border-radius:8px}
+.cal-d.has{cursor:pointer}
+.cal-d.sel{background:var(--fill)}
+.cal-n{font-size:13px;width:24px;height:24px;line-height:24px;text-align:center;border-radius:50%;margin:0 auto;font-variant-numeric:tabular-nums}
+.cal-d.today .cal-n{background:var(--tint);color:var(--card);font-weight:650}
+.cal-d.past .cal-n{color:var(--sec)}
+.bar{height:5px;margin:0 -1px;background:var(--cc,var(--c-other))}
+.bar.l{margin-left:4px;border-top-left-radius:3px;border-bottom-left-radius:3px}
+.bar.r{margin-right:4px;border-top-right-radius:3px;border-bottom-right-radius:3px}
+.bar.tent{background:repeating-linear-gradient(90deg,var(--cc) 0 3px,transparent 3px 5px)}
+.bar.gap{background:none}
+.cal-x{margin:10px 8px 0;font-size:15px}
+.cal-x .row{padding:8px 0}
+.cal-x .row+.row::before{left:0}
+.sw{width:10px;height:10px;border-radius:3px;background:var(--cc,var(--c-other));flex-shrink:0}
+.sw.tent{background:repeating-linear-gradient(90deg,var(--cc) 0 3px,transparent 3px 5px)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;margin:10px 8px 0;font-size:13px;color:var(--sec)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.undated{margin:8px 8px 0;font-size:13px;color:var(--sec)}
 </style>
 </head>
 <body>
@@ -113,6 +139,82 @@ h1{display:flex;align-items:center;gap:9px;font:700 34px/1.15 -apple-system,"SF 
   };
   const taskRow = task => `<div class="row task"><div class="main"><div class="t">${esc(task.title)}</div><div class="s">${esc(task.detail)}</div>${task.draft ? `<details><summary>Draft message</summary><p>${esc(task.draft)}</p><button class="lock" data-copy="${esc(task.draft)}">Copy draft</button></details>` : ''}</div>${task.link ? `<a class="a" href="${esc(task.link)}" aria-label="Open link for ${esc(task.title)}">${I.web}</a>` : ''}</div>`;
 
+  // Calendar: reads the free-text plan dates. "Nov 30 – Dec 4", "Fri Nov 20", "Dec 15 – 19" are exact;
+  // anything else that names a day ("By Dec 20", "Dec 14 or ~Dec 5") is shown dashed as tentative.
+  const MON = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'];
+  const MONTH_NAMES = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  const DAY = 864e5;
+  let selDay = null;
+  // Dates carry no year: pick the year that keeps them near when trip.json was last updated.
+  const mkDate = (mon, day) => {
+    const u = D && Date.parse(D.updated), ref = Number.isFinite(u) ? new Date(u) : new Date();
+    let y = ref.getFullYear();
+    if (mon - ref.getMonth() < -5) y++; else if (mon - ref.getMonth() > 6) y--;
+    return new Date(y, mon, day);
+  };
+  const mi = s => MON.indexOf(String(s).slice(0, 3).toLowerCase());
+  function parseWhen(s) {
+    s = String(s || '').trim();
+    const m = s.match(/^(?:[A-Za-z]{3,9}\.?,?\s+)?([A-Za-z]{3,9})\.?\s+(\d{1,2})(?:\s*[–—-]\s*(?:([A-Za-z]{3,9})\.?\s+)?(\d{1,2}))?$/);
+    if (m && mi(m[1]) >= 0 && (!m[3] || mi(m[3]) >= 0)) {
+      const start = mkDate(mi(m[1]), +m[2]);
+      let end = m[4] ? mkDate(m[3] ? mi(m[3]) : mi(m[1]), +m[4]) : start;
+      if (end < start) end = start;
+      return { start, end, tent: false };
+    }
+    for (const f of s.matchAll(/([A-Za-z]{3,9})\.?\s+(\d{1,2})\b/g)) {
+      if (mi(f[1]) >= 0) { const d = mkDate(mi(f[1]), +f[2]); return { start: d, end: d, tent: true }; }
+    }
+    return null;
+  }
+  const cityVar = c => ({ manila: '--c-manila', cebu: '--c-cebu', siargao: '--c-siargao', tokyo: '--c-tokyo' })[String(c || '').toLowerCase()] || '--c-other';
+  const key = d => `${d.getFullYear()}-${d.getMonth()}-${d.getDate()}`;
+  const fmt = d => d.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+
+  function calendar(T, byId) {
+    const all = Object.values(D.travelers).flatMap(t => t.plan.map(x => parseWhen(x.date)).filter(Boolean));
+    if (!all.length) return '';
+    const items = T.plan.map(x => ({ x, w: parseWhen(x.date), city: byId[x.place]?.city })).filter(i => i.w).sort((a, b) => a.w.start - b.w.start);
+    const lanes = [];
+    for (const i of items) { let l = 0; while (lanes[l] && lanes[l] >= i.w.start) l++; lanes[l] = i.w.end; i.lane = l; }
+    const nLanes = Math.max(1, lanes.length);
+    const first = new Date(Math.min(...all.map(w => w.start))), last = new Date(Math.max(...all.map(w => w.end)));
+    const today = new Date(); today.setHours(0, 0, 0, 0);
+    const sd = selDay ? new Date(...selDay.split('-').map(Number)) : null;
+    const sel = sd ? items.filter(i => sd >= i.w.start && sd <= i.w.end) : [];
+    let h = '';
+    for (let mo = new Date(first.getFullYear(), first.getMonth(), 1); mo <= last; mo = new Date(mo.getFullYear(), mo.getMonth() + 1, 1)) {
+      h += `<section class="cal" aria-label="${MONTH_NAMES[mo.getMonth()]} ${mo.getFullYear()}"><div class="cal-m">${MONTH_NAMES[mo.getMonth()]} ${mo.getFullYear()}</div><div class="cal-g">`;
+      h += ['S','M','T','W','T','F','S'].map(w => `<div class="cal-w" aria-hidden="true">${w}</div>`).join('');
+      for (let i = 0; i < mo.getDay(); i++) h += '<div></div>';
+      const days = new Date(mo.getFullYear(), mo.getMonth() + 1, 0).getDate();
+      for (let n = 1; n <= days; n++) {
+        const d = new Date(mo.getFullYear(), mo.getMonth(), n), wd = d.getDay();
+        const on = items.filter(i => d >= i.w.start && d <= i.w.end);
+        let bars = '';
+        for (let l = 0; l < nLanes; l++) {
+          const i = on.find(o => o.lane === l);
+          if (!i) { bars += '<div class="bar gap"></div>'; continue; }
+          const cls = ['bar', i.w.tent && 'tent', (+d === +i.w.start || wd === 0 || n === 1) && 'l', (+d === +i.w.end || wd === 6 || n === days) && 'r'].filter(Boolean).join(' ');
+          bars += `<div class="${cls}" style="--cc:var(${cityVar(i.city)})"></div>`;
+        }
+        const label = `${fmt(d)}${on.length ? ': ' + on.map(o => o.x.title).join(', ') : ''}`;
+        const cls = ['cal-d', on.length && 'has', +d === +today && 'today', d < today && 'past', selDay === key(d) && 'sel'].filter(Boolean).join(' ');
+        h += `<button class="${cls}" data-day="${key(d)}" aria-label="${esc(label)}" ${on.length ? '' : 'tabindex="-1"'} aria-pressed="${selDay === key(d)}"><span class="cal-n">${n}</span>${bars}</button>`;
+      }
+      h += '</div>';
+      if (sel.length && sd.getFullYear() === mo.getFullYear() && sd.getMonth() === mo.getMonth()) {
+        h += `<div class="cal-x" role="status"><div class="s">${esc(fmt(sd))}</div>${sel.map(i => `<div class="row"><span class="sw${i.w.tent ? ' tent' : ''}" style="--cc:var(${cityVar(i.city)})"></span><div class="main"><div class="t">${esc(i.x.title)}</div><div class="s">${esc([i.x.date, i.x.sub].filter(Boolean).join(' · '))}</div></div></div>`).join('')}</div>`;
+      }
+      h += '</section>';
+    }
+    const cities = [...new Set(items.map(i => i.city).filter(Boolean))];
+    h += `<div class="legend">${cities.map(c => `<span><span class="sw" style="--cc:var(${cityVar(c)})"></span>${esc(c)}</span>`).join('')}${items.some(i => i.w.tent) ? '<span><span class="sw tent" style="--cc:var(--c-other)"></span>Not firm</span>' : ''}</div>`;
+    const undated = T.plan.filter(x => !parseWhen(x.date));
+    if (undated.length) h += `<p class="undated">No date yet: ${undated.map(x => esc(x.title)).join(', ')}</p>`;
+    return h;
+  }
+
   function render() {
     document.querySelector('.who').hidden = view !== 'plan';
     document.querySelectorAll('.seg button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.v === view)));
@@ -125,7 +227,9 @@ h1{display:flex;align-items:center;gap:9px;font:700 34px/1.15 -apple-system,"SF 
       for (const section of T.todos ?? []) {
         h += `<h2 class="hdr">${esc(section.title)}</h2><div class="group">${section.items.map(taskRow).join('')}</div>`;
       }
-      if (T.todos?.length) h += '<h2 class="hdr">Itinerary</h2>';
+      const cal = calendar(T, byId);
+      if (cal) h += `<h2 class="hdr">Calendar</h2>${cal}`;
+      h += '<h2 class="hdr">Itinerary</h2>';
       h += `<div class="group">${T.plan.map(x => { const p = byId[x.place]; return `<a class="row" ${p ? `href="${gmap(p.ja || p.addr)}"` : ''}><div class="date">${esc(x.date)}</div><div class="main"><div class="t">${esc(x.title)}</div>${x.sub ? `<div class="s">${esc(x.sub)}</div>` : ''}</div>${p ? '<span class="chev">›</span>' : ''}</a>`; }).join('')}</div>`;
       if (T.bucket && T.bucket.length) h += `<h2 class="hdr">Bucket list</h2><div class="group">${T.bucket.map(b => `<div class="row"><div class="main"><div class="t">${esc(b)}</div></div></div>`).join('')}</div>`;
     } else if (view === 'places') {
@@ -152,6 +256,7 @@ h1{display:flex;align-items:center;gap:9px;font:700 34px/1.15 -apple-system,"SF 
     const w = e.target.closest('.who button');
     if (w) {
       who = w.dataset.who;
+      selDay = null;
       store.set('who', who);
       if (linkedTraveler) {
         const url = new URL(location.href);
@@ -161,6 +266,8 @@ h1{display:flex;align-items:center;gap:9px;font:700 34px/1.15 -apple-system,"SF 
       render();
       return;
     }
+    const cd = e.target.closest('.cal-d.has');
+    if (cd) { selDay = selDay === cd.dataset.day ? null : cd.dataset.day; render(); document.querySelector(`[data-day="${selDay || cd.dataset.day}"]`)?.focus({ preventScroll: true }); return; }
     const s = e.target.closest('.seg button'); if (s) { view = s.dataset.v; store.set('view', view); render(); window.scrollTo(0, 0); return; }
     const c = e.target.closest('[data-copy]');
     if (c) {
