@@ -19,6 +19,7 @@
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{margin:0;background:var(--bg);color:var(--text);font:17px/1.3 -apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",sans-serif;-webkit-font-smoothing:antialiased}
 .wrap{max-width:640px;margin:0 auto;padding:calc(env(safe-area-inset-top) + 8px) 16px calc(env(safe-area-inset-bottom) + 40px)}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px}
 h1{display:flex;align-items:center;gap:9px;font:700 34px/1.15 -apple-system,"SF Pro Display",sans-serif;letter-spacing:.01em;margin:14px 4px 12px}
 .trip-mark{display:block;border-radius:8px;border:1px solid var(--sep)}
 .seg{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-bottom:16px;position:sticky;top:env(safe-area-inset-top);z-index:2;background:var(--bg);border-bottom:1px solid var(--sep)}
@@ -28,8 +29,6 @@ h1{display:flex;align-items:center;gap:9px;font:700 34px/1.15 -apple-system,"SF 
 .who button{border-radius:7px}
 .who button[aria-pressed=true]{background:var(--seg);color:var(--text);font-weight:650}
 :where(button,a[href],summary):focus-visible{outline:2px solid var(--tint);outline-offset:-2px}
-.dot{width:8px;height:8px;border-radius:50%;background:#34c759;flex-shrink:0}
-.dot.off{background:var(--sep)}
 .hdr{font-size:15px;font-weight:650;color:var(--sec);margin:20px 16px 8px}
 .group{background:var(--card);border-radius:10px;overflow:hidden}
 .row{display:flex;align-items:center;gap:12px;padding:11px 16px;min-height:44px;position:relative;text-decoration:none;color:inherit}
@@ -50,6 +49,9 @@ h1{display:flex;align-items:center;gap:9px;font:700 34px/1.15 -apple-system,"SF 
 .chev{color:var(--sec);opacity:.6;font-size:20px}
 .lock{color:var(--tint);font-size:17px;border:0;background:none;min-height:44px;padding:6px 4px;cursor:pointer}
 .state{margin:20px 16px;color:var(--sec)}
+.where-setup{display:grid;gap:8px;padding:16px}
+.where-setup p{margin:0}
+.where-setup a{display:inline-flex;align-items:center;min-height:44px;color:var(--tint)}
 .toast{position:fixed;left:50%;bottom:calc(env(safe-area-inset-bottom) + 24px);transform:translateX(-50%);background:rgba(30,30,30,.92);color:#fff;font-size:15px;padding:10px 16px;border-radius:12px;opacity:0;transition:opacity .2s;pointer-events:none}
 .toast.on{opacity:1}
 @media (max-width:360px){.person{flex-wrap:wrap;gap:8px}.person .main{flex-basis:100%}}
@@ -85,7 +87,10 @@ h1{display:flex;align-items:center;gap:9px;font:700 34px/1.15 -apple-system,"SF 
 </head>
 <body>
 <div class="wrap">
-  <h1><img class="trip-mark" src="icon-180.png?v=2" width="32" height="32" alt="">Trip</h1>
+  <header class="top">
+    <h1><img class="trip-mark" src="icon-180.png?v=2" width="32" height="32" alt="">Trip</h1>
+    <button class="lock" id="share-trip" type="button">Share Trip</button>
+  </header>
   <nav class="seg" aria-label="Trip sections">
     <button data-v="plan" aria-pressed="true">Plan</button>
     <button data-v="places" aria-pressed="false">Places</button>
@@ -113,6 +118,7 @@ h1{display:flex;align-items:center;gap:9px;font:700 34px/1.15 -apple-system,"SF 
   const store = { get(k){ try { return localStorage.getItem(k); } catch(e) { return null; } }, set(k,v){ try { localStorage.setItem(k,v); } catch(e) {} } };
   const toast = m => { const t = document.getElementById('toast'); t.textContent = m; t.classList.add('on'); clearTimeout(t._h); t._h = setTimeout(() => t.classList.remove('on'), 1300); };
   const gmap = q => 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(q);
+  const tomPlan = 'https://jerryshi042003.github.io/trip/?who=tom';
   const travelerKeys = ['jerry', 'tom'];
   const viewKeys = ['plan', 'places', 'people', 'where'];
   const requestedTraveler = new URLSearchParams(location.search).get('who');
@@ -155,12 +161,14 @@ h1{display:flex;align-items:center;gap:9px;font:700 34px/1.15 -apple-system,"SF 
   const mi = s => MON.indexOf(String(s).slice(0, 3).toLowerCase());
   function parseWhen(s) {
     s = String(s || '').trim();
+    const tentative = /^Maybe\s+/i.test(s) || /\s+target$/i.test(s);
+    if (tentative) s = s.replace(/^Maybe\s+|\s+target$/gi, '');
     const m = s.match(/^(?:[A-Za-z]{3,9}\.?,?\s+)?([A-Za-z]{3,9})\.?\s+(\d{1,2})(?:\s*[–—-]\s*(?:([A-Za-z]{3,9})\.?\s+)?(\d{1,2}))?$/);
     if (m && mi(m[1]) >= 0 && (!m[3] || mi(m[3]) >= 0)) {
       const start = mkDate(mi(m[1]), +m[2]);
       let end = m[4] ? mkDate(m[3] ? mi(m[3]) : mi(m[1]), +m[4]) : start;
       if (end < start) end = start;
-      return { start, end, tent: false };
+      return { start, end, tent: tentative };
     }
     for (const f of s.matchAll(/([A-Za-z]{3,9})\.?\s+(\d{1,2})\b/g)) {
       if (mi(f[1]) >= 0) { const d = mkDate(mi(f[1]), +f[2]); return { start: d, end: d, tent: true }; }
@@ -235,7 +243,11 @@ h1{display:flex;align-items:center;gap:9px;font:700 34px/1.15 -apple-system,"SF 
     } else if (view === 'places') {
       for (const city of [...new Set(D.places.map(p => p.city))]) h += `<h2 class="hdr">${esc(city)}</h2><div class="group">${D.places.filter(p => p.city === city).map(placeRow).join('')}</div>`;
     } else if (view === 'where') {
-      h = `<div class="group">${Object.values(D.travelers).map(x => `<a class="row" ${x.where ? `href="${esc(x.where)}"` : ''}><span class="dot${x.where ? '' : ' off'}"></span><div class="main"><div class="t">${esc(x.name)}</div><div class="s">${x.where ? 'Live location' : 'Not shared'}</div></div>${x.where ? '<span class="chev">›</span>' : ''}</a>`).join('')}</div>`;
+      h = `<h2 class="hdr">Share with each other</h2><div class="group where-setup">
+        <p>In Google Maps, tap your profile picture, then Location sharing → New share.</p>
+        <p>Choose <strong>Until you turn this off</strong> and select the other person’s Gmail address. Each person does this once.</p>
+        <a href="https://www.google.com/maps/">Open Google Maps</a>
+      </div>`;
     } else {
       const groups = new Map();
       for (const person of D.people) {
@@ -251,6 +263,14 @@ h1{display:flex;align-items:center;gap:9px;font:700 34px/1.15 -apple-system,"SF 
     document.getElementById('out').innerHTML = h;
   }
 
+  document.getElementById('share-trip').addEventListener('click', async () => {
+    if (navigator.share) {
+      try { await navigator.share({ title: 'Trip', url: tomPlan }); return; }
+      catch (error) { if (error.name === 'AbortError') return; }
+    }
+    try { await navigator.clipboard.writeText(tomPlan); toast('Tom’s link copied'); }
+    catch { window.location.assign(tomPlan); }
+  });
 
   document.addEventListener('click', e => {
     const w = e.target.closest('.who button');

@@ -298,7 +298,7 @@
     {
      "date": "Dec 5 – 13",
      "title": "PCA Open main draw",
-     "sub": "If through qualifying",
+     "sub": "If through qualifying. Later rounds conflict with the target return.",
      "place": "pca"
     },
     {
@@ -308,28 +308,27 @@
      "place": "asmara"
     },
     {
-     "date": "Dec 14 or ~Dec 5",
+     "date": "Maybe Dec 5",
      "title": "Manila → Tokyo",
-     "sub": "PR424 7:10 PM → 12:15 AM Haneda · Dec 14 if main draw, ~Dec 5 if out in qualifying",
+     "sub": "Only if qualifying ends early enough and the confirmed return leaves room",
      "place": "hnd"
-    },
-    {
-     "date": "Dec 15",
-     "title": "diadora cup",
-     "sub": "Ariake · check-in 8:40 · ¥4,000 cash",
-     "place": "ariake"
     },
     {
      "date": "After PCA",
      "title": "Tokyo",
-     "sub": "Setinn · Shingo · dates depend on PCA",
+     "sub": "Setinn and Shingo if PCA timing and the return flight leave room",
      "place": "setinn"
     },
     {
-     "date": "By Dec 20",
-     "title": "Tokyo → LA",
-     "sub": "AA26 6:00 PM or AA170 1:05 PM · Haneda",
-     "place": "hnd"
+     "date": "Dec 6–7 target",
+     "title": "Return to LA",
+     "sub": "Arrival deadline and departure city still to confirm"
+    },
+    {
+     "date": "Dec 15 (if return moves)",
+     "title": "diadora cup",
+     "sub": "Only if the return moves later · Ariake · check-in 8:40 · ¥4,000 cash",
+     "place": "ariake"
     }
    ],
    "bucket": [
@@ -365,6 +364,10 @@
       {
        "title": "Confirm the listing and onward plan",
        "detail": "PR123 replaces PR103 in the current plan. Check the actual listing or ticket, passport validity and what proof of onward travel PAL will accept."
+      },
+      {
+       "title": "Confirm and book the return flight",
+       "detail": "Aim to land at LAX by Sun Dec 6. Mon Dec 7 works only if the later deadline is confirmed. Check Tokyo and Manila departures, and keep a confirmed backup if using the AA companion standby listing. Reconcile Japan and PCA dates before booking."
       },
       {
        "title": "Pack light and hand off Alex’s gear",
@@ -419,7 +422,7 @@
      "items": [
       {
        "title": "Confirm Tokyo dates with Tom, Shingo and Ryoto",
-       "detail": "Decide after the PCA result. Check late-arrival transport and lodging before booking. Let existing contacts know when the window firms up."
+       "detail": "Use the return deadline and PCA result to decide if Tokyo fits. Check transport and lodging before booking, then update existing contacts."
       },
       {
        "title": "Bring the sticker to Shingo at Setinn",
@@ -435,10 +438,6 @@
        "title": "Find another Goldwin hoodie with neck coverage",
        "detail": "Your last order was the WF Light L/S Hoodie (GL45141), Arid Beige, size 3. Look for the same compact hood and high neck.",
        "link": "https://usshop.goldwin-global.com/products/gl45141"
-      },
-      {
-       "title": "Firm up the return from Tokyo",
-       "detail": "Check the AA companion listing, eligibility, timing and backup before you depend on the standby return."
       }
      ]
     }

@@ -19,30 +19,97 @@ struct TripApp: App {
 }
 
 struct RootView: View {
-    @EnvironmentObject var store: TripStore
-    @AppStorage("who") private var who = "jerry"
+    private enum TripTab: String, CaseIterable {
+        case plan = "Plan", places = "Places", people = "People", `where` = "Where", media = "Media"
 
-    var body: some View {
-        TabView {
-            NavigationStack { PlanView(who: $who) }
-                .tabItem { Label("Plan", systemImage: "calendar") }
-            NavigationStack { PlacesView() }
-                .tabItem { Label("Places", systemImage: "mappin.and.ellipse") }
-            NavigationStack { PeopleView() }
-                .tabItem { Label("People", systemImage: "person.2") }
-            NavigationStack { WhereView() }
-                .tabItem { Label("Where", systemImage: "location") }
-            if !(store.data?.media ?? []).isEmpty {
-                NavigationStack { MediaView() }
-                    .tabItem { Label("Media", systemImage: "play.rectangle") }
+        var icon: String {
+            switch self {
+            case .plan: "calendar"
+            case .places: "mappin.and.ellipse"
+            case .people: "person.2"
+            case .where: "location"
+            case .media: "play.rectangle"
             }
         }
+    }
+
+    @EnvironmentObject var store: TripStore
+    @AppStorage("who") private var who = "jerry"
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @Environment(\.accessibilityReduceTransparency) private var reduceTransparency
+    @State private var tab: TripTab = .plan
+
+    private var showsMedia: Bool { !(store.data?.media ?? []).isEmpty }
+
+    var body: some View {
+        TabView(selection: $tab) {
+            Tab("Plan", systemImage: TripTab.plan.icon, value: .plan) {
+                NavigationStack { PlanView(who: $who).toolbar(.hidden, for: .tabBar) }
+            }
+            Tab("Places", systemImage: TripTab.places.icon, value: .places) {
+                NavigationStack { PlacesView().toolbar(.hidden, for: .tabBar) }
+            }
+            Tab("People", systemImage: TripTab.people.icon, value: .people) {
+                NavigationStack { PeopleView().toolbar(.hidden, for: .tabBar) }
+            }
+            Tab("Where", systemImage: TripTab.where.icon, value: .where) {
+                NavigationStack { WhereView().toolbar(.hidden, for: .tabBar) }
+            }
+            if showsMedia {
+                Tab("Media", systemImage: TripTab.media.icon, value: .media) {
+                    NavigationStack { MediaView().toolbar(.hidden, for: .tabBar) }
+                }
+            }
+        }
+        .safeAreaInset(edge: .bottom, spacing: 0) { sectionBar }
+        .onChange(of: showsMedia) { _, visible in
+            if !visible && tab == .media { tab = .plan }
+        }
+    }
+
+    private var sectionBar: some View {
+        HStack(spacing: 0) {
+            ForEach(TripTab.allCases.filter { $0 != .media || showsMedia }, id: \.self) { section in
+                let selected = section == tab
+                Button {
+                    tab = section
+                } label: {
+                    VStack(spacing: 4) {
+                        Capsule()
+                            .fill(selected ? Color.accentColor : Color.clear)
+                            .frame(width: 16, height: 2)
+                        Image(systemName: section.icon).font(.system(size: 18, weight: .medium))
+                        Text(section.rawValue).font(.caption2.weight(.semibold))
+                    }
+                    .foregroundStyle(selected ? Color.accentColor : Color.secondary)
+                    .frame(maxWidth: .infinity, minHeight: 52)
+                    .contentShape(Rectangle())
+                    .animation(reduceMotion ? nil : .easeInOut(duration: 0.28), value: selected)
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel(section.rawValue)
+                .accessibilityAddTraits(selected ? .isSelected : [])
+                .accessibilityIdentifier("section-\(section.rawValue)")
+            }
+        }
+        .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
+        .background {
+            Group {
+                if reduceTransparency { Color(.systemBackground) }
+                else { Rectangle().fill(.regularMaterial) }
+            }
+            .ignoresSafeArea(edges: .bottom)
+        }
+        .overlay(alignment: .top) { Divider() }
     }
 }
 
 // MARK: - Links
 
 enum Links {
+    static let tomPlan = URL(string: "https://jerryshi042003.github.io/trip/?who=tom")!
+    static let googleMaps = URL(string: "https://www.google.com/maps/")!
+
     static func maps(_ p: Place, _ c: CLLocationCoordinate2D?) -> URL {
         let q = (p.ja ?? p.addr).addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
         if let c { return URL(string: "maps://?ll=\(c.latitude),\(c.longitude)&q=\(q)")! }
@@ -65,12 +132,22 @@ struct PlanView: View {
         let places = Dictionary(uniqueKeysWithValues: (store.data?.places ?? []).map { ($0.id, $0) })
         List {
             Section {
-                Picker("Traveler", selection: $who) {
-                    ForEach((store.data?.travelers ?? [:]).keys.sorted(), id: \.self) { key in
-                        Text(store.data?.travelers[key]?.name ?? key).tag(key)
+                HStack(spacing: 8) {
+                    Picker("Traveler", selection: $who) {
+                        ForEach((store.data?.travelers ?? [:]).keys.sorted(), id: \.self) { key in
+                            Text(store.data?.travelers[key]?.name ?? key).tag(key)
+                        }
                     }
+                    .pickerStyle(.segmented)
+                    ShareLink(item: Links.tomPlan) {
+                        Image(systemName: "square.and.arrow.up")
+                            .frame(width: 44, height: 44)
+                            .contentShape(Rectangle())
+                    }
+                    .buttonStyle(.borderless)
+                    .accessibilityLabel("Share Tom’s Trip link")
+                    .accessibilityIdentifier("share-tom-trip")
                 }
-                .pickerStyle(.segmented)
                 .listRowBackground(Color.clear)
                 .listRowInsets(EdgeInsets())
                 .listRowSeparator(.hidden)
@@ -278,16 +355,11 @@ struct PersonRow: View {
 struct WhereView: View {
     @EnvironmentObject var store: TripStore
     var body: some View {
-        let ts = (store.data?.travelers ?? [:]).sorted { $0.key < $1.key }
         List {
-            ForEach(ts, id: \.key) { _, t in
-                if let w = t.where, !w.isEmpty, let u = URL(string: w) {
-                    Link(destination: u) {
-                        HStack { Circle().fill(.green).frame(width: 9, height: 9); Text(t.name).foregroundStyle(.primary); Spacer(); Text("Live").foregroundStyle(.secondary) }
-                    }
-                } else {
-                    HStack { Circle().fill(.quaternary).frame(width: 9, height: 9); Text(t.name); Spacer(); Text("Not shared").foregroundStyle(.secondary) }
-                }
+            Section("Share with each other") {
+                Text("In Google Maps, tap your profile picture, then Location sharing → New share.")
+                Text("Choose Until you turn this off and select the other person’s Gmail address. Each person does this once.")
+                Link("Open Google Maps", destination: Links.googleMaps)
             }
             if let s = store.lastSync {
                 Section { Text("Synced \(s.formatted(date: .abbreviated, time: .shortened))").font(.footnote).foregroundStyle(.secondary) }
@@ -336,6 +408,7 @@ struct MediaDetail: View {
         }
         .navigationTitle(media.title)
         .navigationBarTitleDisplayMode(.inline)
+        .toolbar(.hidden, for: .tabBar)
     }
 }
 

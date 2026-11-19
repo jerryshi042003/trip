@@ -16,7 +16,7 @@ Everything on the site comes from one file: `docs/trip.json`. Change it and comm
 
 On a phone: open github.com/jerryshi042003/trip, tap `docs`, then `trip.json`, then the pencil icon, edit, then Commit changes.
 
-- `travelers.jerry` / `travelers.tom`: each person's `plan` (date, title, sub, place), `bucket` list, and `where` (live location link). Optional `todos` holds ordered sections with a `title` and `items`. Each item has a `title`, `detail`, and optional `link` and `draft`. Drafts are shown for copying.
+- `travelers.jerry` / `travelers.tom`: each person's `plan` (date, title, sub, place) and `bucket` list. Optional `todos` holds ordered sections with a `title` and `items`. Each item has a `title`, `detail`, and optional `link` and `draft`. Drafts are shown for copying.
 - `places`: id, city, name, addr, optional `ja` (Japanese address for taxis). A plan item's `place` must match a place `id`.
 - `people`: name, role, optional group, and any of phone, whatsapp, email, ig, fb, web. Use the same group text for contacts that belong together. Tom can add apparel contacts under `Clothing` when ready. Use public contact links for new entries because the feed is public.
 - `emergency`: name and phone.
@@ -26,9 +26,7 @@ Keep it valid JSON (commas between items, double quotes). If the site goes blank
 
 ## Live location (Where tab)
 
-Each person shares a Google Maps live-location link and pastes it into their `where` field:
-Google Maps app, profile picture, Location sharing, New share, "Until you turn this off", Copy link.
-Anyone with the site can then open it, family included, on iPhone or Android.
+Open Google Maps → profile picture → Location sharing → New share. Choose **Until you turn this off** and select the other person’s Gmail account. Each person starts their own share. Live locations are visible to the selected accounts in Google Maps. Trip does not request location permission.
 
 ## For AI agents (Claude, Muse, Codex)
 
