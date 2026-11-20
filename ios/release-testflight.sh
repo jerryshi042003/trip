@@ -77,7 +77,7 @@ xcodebuild -exportArchive -archivePath "$WORK/Trip.xcarchive" -exportOptionsPlis
 grep -q "Upload succeeded" "$WORK/upload.log" || fail "Upload failed. Is your Apple Account signed in to Xcode (Settings -> Accounts)?"
 
 SHIPPED=1
-git add project.yml
+git add project.yml Trip/trip.json
 git commit -q -m "TestFlight build $NEW"
 git pull --no-rebase -q && git push -q
 say "Done. Build $NEW uploaded. It appears in TestFlight -> Trip internal after Apple processes it (5-15 min)."
