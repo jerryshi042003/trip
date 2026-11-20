@@ -30,7 +30,9 @@ final class LocationSharer: NSObject, ObservableObject {
         super.init()
         manager.delegate = self
         manager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
-        manager.distanceFilter = 25
+        // No distance filter: iOS keeps delivering fixes while the phone sits still, which keeps
+        // the app awake in the background so the heartbeat below can post (throttled in shouldSend).
+        manager.distanceFilter = kCLDistanceFilterNone
         manager.pausesLocationUpdatesAutomatically = false
         manager.activityType = .other
         if let saved = Keychain.read(), let (who, secret) = Self.parse(saved) {
@@ -105,9 +107,12 @@ final class LocationSharer: NSObject, ObservableObject {
         Task { await clear() }
     }
 
+    /// Moving: about every 60 s, or after 25 m (at most every 15 s).
+    /// Still: a heartbeat every 3 min so the pin never looks stale.
     private func shouldSend(_ location: CLLocation) -> Bool {
         guard let last = lastSentLocation, let sent = lastSent else { return true }
-        return Date().timeIntervalSince(sent) >= 60 || location.distance(from: last) >= 25
+        let elapsed = Date().timeIntervalSince(sent), moved = location.distance(from: last)
+        return (moved >= 25 && elapsed >= 15) || (moved >= 10 && elapsed >= 60) || elapsed >= 180
     }
 
     private func send(_ location: CLLocation) async {
@@ -195,11 +200,18 @@ struct ShareLocationSection: View {
     }
 
     private func status(_ who: String) -> String {
-        if let error = sharer.lastError { return error }
-        guard sharer.sharing else { return "Off · sharing as \(who.capitalized)" }
-        guard let sent = sharer.lastSent else { return "Sharing · waiting for location" }
+        let permission: String
+        switch sharer.authorization {
+        case .authorizedAlways: permission = "Location: Always"
+        case .authorizedWhenInUse: permission = "Location: While Using"
+        case .denied, .restricted: permission = "Location: Off"
+        default: permission = "Location: not asked yet"
+        }
+        if let error = sharer.lastError { return error + " · " + permission }
+        guard sharer.sharing else { return "Off · sharing as \(who.capitalized) · " + permission }
+        guard let sent = sharer.lastSent else { return "Sharing · waiting for location · " + permission }
         let minutes = Int(Date().timeIntervalSince(sent) / 60)
-        return "Sharing · sent " + (minutes < 1 ? "just now" : "\(minutes) min ago")
+        return "Sharing · sent " + (minutes < 1 ? "just now" : "\(minutes) min ago") + " · " + permission
     }
 }
 
