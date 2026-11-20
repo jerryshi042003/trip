@@ -20,11 +20,26 @@ git clone https://github.com/jerryshi042003/trip && trip/ios/build-for-my-iphone
 
 Next time, `cd trip && git pull && ios/build-for-my-iphone.sh`. First run only: open Xcode → Settings → Accounts and add your Apple Account; on the iPhone turn on Settings → Privacy & Security → Developer Mode, plug it in and tap Trust. The script finds Xcode, your signing team and the connected iPhone, builds Release and installs. With a free account the app runs for 7 days per install; run the command again to renew.
 
+**Ship app code changes to TestFlight**
+
+How to update content versus app code, step by step: [UPDATING.md](UPDATING.md).
+
+Content changes (plan, places, people in `docs/trip.json`) need no new build: the app picks them up on refresh. Only Swift code changes in `ios/` need a TestFlight build.
+
+- **From Jerry's Mac:** `ios/release-testflight.sh`. It bumps the build number, archives, uploads to App Store Connect, then commits and pushes the bump. The **Trip internal** group gets the build after Apple processes it (5–15 min). It uses the Apple Account signed in to Xcode.
+- **From anywhere, including Tom:** GitHub → Actions → **Release TestFlight build** → **Run workflow**. It runs the same script on GitHub's Mac. It works only after Jerry adds the App Store Connect key below. Until then it stops with a message saying the key is missing.
+
+One-time setup for the GitHub route (Jerry):
+
+1. App Store Connect → Users and Access → Integrations → App Store Connect API → Team Keys → **+**. Name it `Trip GitHub release` with role **Admin**, so GitHub's Mac can create its own signing certificate. Download `AuthKey_<id>.p8`; Apple allows only one download.
+2. Copy the **Key ID** and the **Issuer ID** shown above the key list.
+3. GitHub → this repo → Settings → Secrets and variables → Actions → New repository secret. Add three secrets: `ASC_KEY_ID`, `ASC_ISSUER_ID`, and `ASC_KEY_P8` (the whole text of the .p8 file).
+
 ## iPhone app
 
 `ios/` is a native SwiftUI app (Plan, Places with map, People, Where, Media). It reads the same `docs/trip.json`, keeps the last copy on the phone, and refreshes whenever it has signal (open the app or pull down). Photos and videos listed under `media` download once and play offline.
 
-Release a TestFlight build (Jerry's team `39225XZQP2`): bump `CURRENT_PROJECT_VERSION` in `ios/project.yml`, then Xcode → Product → Archive → Distribute App → TestFlight & App Store. The **Trip internal** group gets every Xcode build automatically, without beta review. Direct development install on Jerry's iPhone: `ios/install-on-iphone.sh`.
+Release a TestFlight build (Jerry's team `39225XZQP2`): `ios/release-testflight.sh`, or the **Release TestFlight build** GitHub Action (see "Ship app code changes to TestFlight" above). The **Trip internal** group gets every build automatically, without beta review. Direct development install on Jerry's iPhone: `ios/install-on-iphone.sh`.
 
 ## How to edit (anyone with access to this repo)
 

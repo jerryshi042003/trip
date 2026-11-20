@@ -194,3 +194,105 @@ final class TripStore: ObservableObject {
         }
     }
 }
+
+
+// Lenient decoding: one malformed item in trip.json is skipped instead of making the
+// whole feed fail to decode (which would leave the app stuck on its last cached copy).
+
+private struct SkipItem: Decodable { init(from decoder: Decoder) throws {} }
+
+extension KeyedDecodingContainer {
+    /// Decodes an array, dropping elements that fail. Missing or non-array values give [].
+    func lossyArray<T: Decodable>(_ type: T.Type, forKey key: Key) -> [T] {
+        guard var c = try? nestedUnkeyedContainer(forKey: key) else { return [] }
+        var out: [T] = []
+        while !c.isAtEnd {
+            if let v = try? c.decode(T.self) { out.append(v) } else { _ = try? c.decode(SkipItem.self) }
+        }
+        return out
+    }
+    func optionalLossyArray<T: Decodable>(_ type: T.Type, forKey key: Key) -> [T]? {
+        contains(key) ? lossyArray(type, forKey: key) : nil
+    }
+    func string(_ key: Key, default value: String = "") -> String {
+        (try? decodeIfPresent(String.self, forKey: key)) ?? value
+    }
+    func optionalString(_ key: Key) -> String? {
+        try? decodeIfPresent(String.self, forKey: key)
+    }
+}
+
+extension TripData {
+    init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        updated = c.optionalString(.updated)
+        var t: [String: Traveler] = [:]
+        if let raw = try? c.nestedContainer(keyedBy: AnyKey.self, forKey: .travelers) {
+            for k in raw.allKeys { if let v = try? raw.decode(Traveler.self, forKey: k) { t[k.stringValue] = v } }
+        }
+        travelers = t
+        places = c.lossyArray(Place.self, forKey: .places)
+        people = c.lossyArray(Person.self, forKey: .people)
+        emergency = c.lossyArray(Person.self, forKey: .emergency)
+        media = c.optionalLossyArray(Media.self, forKey: .media)
+    }
+}
+
+struct AnyKey: CodingKey {
+    var stringValue: String
+    var intValue: Int? { nil }
+    init?(stringValue: String) { self.stringValue = stringValue }
+    init?(intValue: Int) { nil }
+}
+
+extension Traveler {
+    init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        name = c.string(.name)
+        plan = c.lossyArray(PlanItem.self, forKey: .plan)
+        todos = c.optionalLossyArray(TripTaskSection.self, forKey: .todos)
+        bucket = c.optionalLossyArray(String.self, forKey: .bucket)
+        `where` = c.optionalString(.where)
+    }
+}
+
+extension TripTaskSection {
+    init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        title = c.string(.title)
+        items = c.lossyArray(TripTask.self, forKey: .items)
+    }
+}
+
+extension TripTask {
+    init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        title = try c.decode(String.self, forKey: .title)
+        detail = c.string(.detail)
+        link = c.optionalString(.link).flatMap { URL(string: $0.trimmingCharacters(in: .whitespaces)) }
+        draft = c.optionalString(.draft)
+    }
+}
+
+extension PlanItem {
+    init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        date = c.string(.date)
+        title = try c.decode(String.self, forKey: .title)
+        sub = c.optionalString(.sub)
+        place = c.optionalString(.place)
+    }
+}
+
+extension Place {
+    init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        id = try c.decode(String.self, forKey: .id)
+        city = c.string(.city)
+        name = c.string(.name, default: id)
+        addr = c.string(.addr)
+        ja = c.optionalString(.ja)
+        lat = try? c.decodeIfPresent(Double.self, forKey: .lat)
+        lon = try? c.decodeIfPresent(Double.self, forKey: .lon)
+    }
+}

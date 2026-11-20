@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18",
+ "updated": "2026-11-19",
  "places": [
   {
    "id": "naia",
@@ -94,44 +94,44 @@
   },
   {
    "name": "Adelmo (Dey Brosas)",
-   "role": "Manila host",
+   "role": "Manila host · Confirmed NAIA T1 pickup Sat Nov 21",
    "phone": "+639189599450",
    "whatsapp": "639189599450",
    "group": "Manila · People"
   },
   {
    "name": "Michael Cumagun",
-   "role": "Manila Polo Club contact",
+   "role": "Manila Polo Club player, PCA Team Tennis 60s · Invited Jerry to 7am Sat hard court with Roland So; Jerry declined Sat, find another morning",
    "email": "mcumagun@yahoo.com",
    "group": "Manila · People"
   },
   {
    "name": "Whismark Basanal",
-   "role": "Valle Verde club pro · Offered to hit in Manila",
+   "role": "Valle Verde club pro · Offered a hit at Valle Verde, waiting on Jerry’s day",
    "ig": "whismaaark",
    "group": "Manila · People"
   },
   {
    "name": "Chris Papa",
-   "role": "Filipino-American player · Offered Manila introductions",
+   "role": "UTR 13.23 · Filipino-American player, 2026 Gentry and Palawan champ · Said he’d ask people; route to Arthur Pantino",
    "ig": "chrispapa01",
    "group": "Manila · People"
   },
   {
    "name": "Marvin Bentulan",
-   "role": "Racket on Court · Offered to arrange a court",
+   "role": "Racket on Court creator · Offered to arrange courts, waiting on Jerry’s reply",
    "ig": "racketoncourt",
    "group": "Manila · People"
   },
   {
    "name": "Michael “Skip” Tan",
-   "role": "SKP Sports and Manila open play · Replied",
+   "role": "SKP Sports and Manila open play · Said “hey bro”, waiting on Jerry",
    "ig": "skip.tan",
    "group": "Manila · People"
   },
   {
    "name": "Tennis United Academy",
-   "role": "Manila coaching team · Offered to arrange a hit",
+   "role": "Manila (not Cebu) coaching team · Offered a hit with a ~9 UTR coach · Venues include Manila Polo Club · WhatsApp number not yet verified",
    "ig": "tennisunitedacademy",
    "whatsapp": "639761234510",
    "group": "Manila · Academies & coaches"
@@ -144,7 +144,7 @@
   },
   {
    "name": "Migi Lapid",
-   "role": "Another Day Another Court · Offered to ask around for practice partners",
+   "role": "Another Day Another Court · Open-play connector · Asked when qualies are",
    "ig": "anotherdayanothercourt",
    "group": "Manila · Referrals"
   },
@@ -156,13 +156,13 @@
   },
   {
    "name": "Niegel Delima",
-   "role": "Siargao Tennis Club · Open to meeting in Cebu",
+   "role": "Cebuano designer and professor, tennis hobbyist · Said to reach out in Cebu",
    "ig": "niegeldilemma",
    "group": "Cebu · People"
   },
   {
    "name": "Asmara Tennis",
-   "role": "Banilad clay courts · Invited Jerry to book",
+   "role": "Banilad clay courts, owner Carlo Cordaro · Welcomed Jerry, invited him to book",
    "phone": "+639177081079",
    "web": "https://asmara-tennis-association.rezerv.co/",
    "group": "Cebu · Academies & clubs"
@@ -182,41 +182,47 @@
   },
   {
    "name": "Shingo Arai",
-   "role": "Setinn founder at BEAMS",
+   "role": "Setinn director, BEAMS buyer · In Japan Nov–Dec, meet when timing works · Shop: Setinn / paperboy, 3-51-10 Sendagaya",
    "ig": "sng1980",
    "group": "Tokyo · People",
    "web": "https://setinn.jp/"
   },
   {
-   "name": "Jinji Tennis",
-   "role": "Private coaching and hitting in Tokyo",
+   "name": "Jinji Tennis (Shai Gigi)",
+   "role": "Hitting with the Pro, ¥16,000/h · Asked for dates, will lend a racket",
    "email": "jinji.tennis1@gmail.com",
-   "group": "Tokyo · Academies & coaches"
+   "group": "Tokyo · Academies & coaches",
+   "phone": "+818035761300",
+   "web": "https://www.jinjitennis.org/booking"
   },
   {
    "name": "Tokyo Tennis Intl",
-   "role": "Tennis lessons in Tokyo",
+   "role": "Private lesson ¥16,000/h at Hilton Tokyo · Needs dates and a card deposit",
    "email": "info@tokyotennisinternational.com",
-   "group": "Tokyo · Academies & coaches"
+   "group": "Tokyo · Academies & coaches",
+   "phone": "+819017370795",
+   "web": "https://www.tokyotennisinternational.com/"
   },
   {
    "name": "Pilgrim Surf+Supply Tokyo",
-   "role": "BEAMS Shibuya store · Surf apparel and accessories",
+   "role": "BEAMS Shibuya store, Jinnan 1-14-7 · Director Takayuki Izumi · Ask Shingo for an intro",
    "web": "https://www.beams.co.jp/shop/pss/",
-   "group": "Clothing · Tom’s outreach"
+   "group": "Clothing · Tom’s outreach",
+   "phone": "+81354591690"
   },
   {
    "name": "Masato Tsuchiya / Sillage",
-   "role": "Sillage representative · Artisanal textiles, Daikanyama",
+   "role": "Sillage representative · New store 6-2 Sarugakucho, Daikanyama · Stocks small makers",
    "email": "masa@sillage.online",
    "web": "https://www.sillage.online/",
    "group": "Clothing · Tom’s outreach"
   },
   {
    "name": "Mountain Martial Arts",
-   "role": "Japanese trail-running apparel team",
+   "role": "Japanese trail-running apparel · Founder Yuichi Shibui (@shibuinsta_mania) · Tokyo Guerrilla Runs in Stories",
    "web": "https://mountainmartialarts.tokyo/contact",
-   "group": "Clothing · Tom’s outreach"
+   "group": "Clothing · Tom’s outreach",
+   "ig": "mountainmartialarts"
   },
   {
    "name": "PCA Open office",
@@ -257,6 +263,344 @@
    "role": "Former UCLA player and SMU coach",
    "phone": "+16267038405",
    "group": "Los Angeles"
+  },
+  {
+   "name": "Joseph “Popet” Lizardo",
+   "role": "Ex-pro, 2025 PH team captain, Jack Kramer coach · Met Jerry Nov 18 · Can intro Arthur Pantino",
+   "ig": "lizardo_jr_development_",
+   "group": "Manila · Referrals"
+  },
+  {
+   "name": "Silvio Cifuentes",
+   "role": "NYC creator who filmed the Asmara Open · Offered to help with PCA contacts",
+   "ig": "silvio.nyc",
+   "group": "Manila · Referrals"
+  },
+  {
+   "name": "Johnny Arcilla",
+   "role": "10-time national champion, now pickleball · Not playing PCA, maybe a hit",
+   "group": "Manila · People"
+  },
+  {
+   "name": "Carl Ubalde (CBU Tennis)",
+   "role": "ITF coach, Makati · Organized and paid hitting · Accepted Jerry’s message request",
+   "ig": "cbu_tennis",
+   "fb": "https://www.facebook.com/carl.ubalde.56",
+   "group": "Manila · Academies & coaches"
+  },
+  {
+   "name": "Adam Borak (Tipsy Tennis Podcast)",
+   "role": "US ex-ITF junior, Fordham captain, playing the PH circuit · Trains with Chad Cuizon",
+   "ig": "tipsytennispodcast",
+   "group": "Manila · Players"
+  },
+  {
+   "name": "Arthur “Iggy” Pantino",
+   "role": "LMU, Cebuano, Gentry Open champ · Route through Chris Papa or Lizardo",
+   "ig": "arthur_pantino",
+   "group": "Cebu · People"
+  },
+  {
+   "name": "Chad Connor Cuizon",
+   "role": "Cebuano, national top 30, on PCA list · Intro via Adam Borak",
+   "ig": "chadconnorcuizon",
+   "group": "Cebu · People"
+  },
+  {
+   "name": "Ka Palo (Mel Abad)",
+   "role": "Tennis vlogger · Posts PCA order of play daily",
+   "fb": "https://www.facebook.com/mel.abad.79",
+   "group": "Trip logistics"
+  },
+  {
+   "name": "PCA OPEN Facebook page",
+   "role": "Entry list (deadline Sat Nov 21) and schedule posts",
+   "fb": "https://www.facebook.com/100057105145569",
+   "group": "Trip logistics"
+  },
+  {
+   "name": "Emon van Loben Sels",
+   "role": "UCLA ’27, US/JP · Wants the Setinn intro · Ask who he hits with in Tokyo",
+   "ig": "emon.vanlobensels",
+   "group": "Tokyo · People"
+  },
+  {
+   "name": "Shiyu Murashima",
+   "role": "UCLA friend in Tokyo · Wants to meet, into tennis and clothes",
+   "group": "Tokyo · People"
+  },
+  {
+   "name": "Robert Kawaratani",
+   "role": "UCLA alum in Kyoto · Will post on the UCLA Japan Facebook page",
+   "group": "Tokyo · People"
+  },
+  {
+   "name": "Hien Pham",
+   "role": "ATP-ranked pro based in Tokyo · Paid private hitting in central Tokyo",
+   "ig": "hienpham_",
+   "web": "https://www.linkedin.com/in/hien-pham-81650b421/",
+   "group": "Tokyo · Academies & coaches"
+  },
+  {
+   "name": "Kenny (Kensuke) Watabe",
+   "role": "1ntegrators · Touring coach for Japanese pros (self-reported)",
+   "email": "kennywatabe1982@gmail.com",
+   "whatsapp": "819092544908",
+   "ig": "kennywatabe1982",
+   "group": "Tokyo · Academies & coaches"
+  },
+  {
+   "name": "Frédéric Dewitte",
+   "role": "Tokyo coach, ex-Japan junior team, NCAA D1 · play tennis! brand",
+   "ig": "fdewitte",
+   "web": "https://fredericdewitte.com/ja/",
+   "group": "Tokyo · Academies & coaches"
+  },
+  {
+   "name": "Kurashima International Tennis Academy",
+   "role": "Aoyama / Jingu Gaien, near Setinn · Pro coach Yuri Kurashima (Temple No. 1)",
+   "web": "https://kurashimatennis.com/",
+   "group": "Tokyo · Academies & coaches"
+  },
+  {
+   "name": "BLUE SIX TRAINING CLUB",
+   "role": "Ariake pro-development club, B6OPEN organizer · Ask to join practice",
+   "ig": "bluesix_trainingclub",
+   "group": "Tokyo · Academies & coaches"
+  },
+  {
+   "name": "Just Show Up Club",
+   "role": "Rockwell road runs 5 days a week · Sunday 5 AM long run · Just show up",
+   "ig": "justshowupclub",
+   "web": "https://justshowupclub.com/",
+   "group": "Manila · Runs"
+  },
+  {
+   "name": "Trailista Run Club",
+   "role": "Rizal trail club, races to 75 km · Founder Kriz Bondad",
+   "ig": "trailistarunclub",
+   "group": "Manila · Runs"
+  },
+  {
+   "name": "BeyondTrails PH",
+   "role": "Trail community · Timberland long runs",
+   "ig": "beyondtrailsph",
+   "group": "Manila · Runs"
+  },
+  {
+   "name": "Aleksis Capili",
+   "role": "4× UTMB finisher, HOKA athlete and ultra coach · Sunday long runs",
+   "ig": "aleksiscapili",
+   "group": "Manila · Runs"
+  },
+  {
+   "name": "RWP Cebu",
+   "role": "Free weekly runs · Sunday long run",
+   "ig": "rwp_cebu",
+   "group": "Cebu · Runs"
+  },
+  {
+   "name": "R.A.T.S. Road And Trail Squad",
+   "role": "Wednesdays 6:30 PM, McDonald’s Paseo Arcenas, Banawa",
+   "ig": "ratsquad_cebu",
+   "group": "Cebu · Runs"
+  },
+  {
+   "name": "Namban Rengo",
+   "role": "English-speaking club since 1989 · Visitors welcome · Wednesdays 7:30 PM",
+   "ig": "nambanrengo",
+   "web": "https://namban.org/faq/",
+   "group": "Tokyo · Runs"
+  },
+  {
+   "name": "Tokyo Tarzan Club",
+   "role": "Takao trail runs, international crowd · DM to join",
+   "ig": "tokyo_tarzan_club",
+   "group": "Tokyo · Runs"
+  },
+  {
+   "name": "Takao Trail Club",
+   "role": "English-friendly weekend trail runs, free · RSVP on Meetup",
+   "web": "https://www.meetup.com/takao-trailrunning-club/events/",
+   "group": "Tokyo · Runs"
+  },
+  {
+   "name": "080TOKYO",
+   "role": "Mondays 8:10 PM, Yoyogi Park Harajuku Gate",
+   "ig": "080tokyo_official",
+   "group": "Tokyo · Runs"
+  },
+  {
+   "name": "Tomita twins / TENEZ",
+   "role": "Tennis label run by twin players · Tokyo Big Sight booth A-186, Dec 8–9 · Team runs from 10 pieces",
+   "ig": "tomitatwins_tennis",
+   "web": "https://tenez-wear.com",
+   "group": "Clothing · Tom’s outreach"
+  },
+  {
+   "name": "Yuta Sugimoto / Small Lighter",
+   "role": "Bandana-only label founder, Shibuya · Hand-screened, reactive dye",
+   "ig": "helloyuta",
+   "email": "info@small-lighter.com",
+   "web": "https://small-lighter.com/pages/factory",
+   "group": "Clothing · Tom’s outreach"
+  },
+  {
+   "name": "Mizuno Dyeing Factory, OKUROJI",
+   "role": "Custom tenugui from 5 pieces · Book a face-to-face design meeting",
+   "phone": "+81368073901",
+   "web": "https://www.hanten.tokyo/tenugui/",
+   "group": "Clothing · Tom’s outreach"
+  },
+  {
+   "name": "CHAORAS (Motohiro Miyamoto)",
+   "role": "Sports tenugui for running · Solved edge, fabric and production · Takes original orders",
+   "ig": "chaoras",
+   "web": "https://www.chaoras.com",
+   "group": "Clothing · Tom’s outreach"
+  },
+  {
+   "name": "Koichi Tamaki workshop",
+   "role": "Pattern maker · Workshop Dec 10–13, Tomigaya, ¥5,000, in Japanese",
+   "ig": "pattern_maker_tamaki",
+   "web": "https://tamasan.com",
+   "group": "Clothing · Tom’s outreach"
+  },
+  {
+   "name": "Kamawanu Asakusa × BOLOCO",
+   "role": "Sakiori pop-up Dec 4–20 (closed Tue) · Weaving workshop Dec 5–6, ¥8,800, book by phone",
+   "phone": "+81362316466",
+   "ig": "kamawanu_asakusa",
+   "group": "Clothing · Tom’s outreach"
+  },
+  {
+   "name": "Tokyo Wasarashi",
+   "role": "Chusen dye works, Katsushika · Public dyeing class · Small runs around 100",
+   "email": "office@souzou-kan.info",
+   "group": "Clothing · Tom’s outreach"
+  },
+  {
+   "name": "Jay Friend",
+   "role": "UTR 14.33 · Tokyo-born pro · Arizona ’26 · Playing the Japan Challengers now (Kobe, Nov 19) · Chris Papa follows him",
+   "group": "Tokyo · People",
+   "ig": "jaythefriend"
+  },
+  {
+   "name": "Shinn Hiramatsu",
+   "role": "Ex-pro, hitting partner and coach · Private lessons across Tokyo · Lesson requests by DM",
+   "group": "Tokyo · Academies & coaches",
+   "ig": "shinn_hiramatsu",
+   "web": "https://shinnhawkeyetennis.com"
+  },
+  {
+   "name": "Takuya Komura",
+   "role": "Pro (Kobe Challenger) · Private coach in Tokyo · Lessons by DM",
+   "group": "Tokyo · Academies & coaches",
+   "ig": "takuya.komura1221"
+  },
+  {
+   "name": "Sari Baba · B LYNC TENNIS",
+   "role": "Former pro, All-Japan QF · 60 min ¥17,600 for up to 4 · Book through B LYNC",
+   "group": "Tokyo · Academies & coaches",
+   "ig": "mahoutukaisally",
+   "web": "https://blync.jp/sports/tennis/"
+  },
+  {
+   "name": "Chikaya Sato",
+   "role": "Penn State / SDSU · Splits time NYC, Tokyo, San Diego · Chris Papa follows him",
+   "group": "Tokyo · People",
+   "ig": "chikayasato"
+  },
+  {
+   "name": "Hiroyasu Ehara",
+   "role": "2014 All-Japan singles champion · Coaches in Tokyo",
+   "group": "Tokyo · Academies & coaches",
+   "ig": "hiroyasueh0727",
+   "web": "https://hiroyasueharatennis.jimdofree.com"
+  },
+  {
+   "name": "t_socialt",
+   "role": "Adult player · All-Japan singles qualifying, Japan League · Right level for sets",
+   "group": "Tokyo · People",
+   "ig": "t_socialt"
+  },
+  {
+   "name": "Ryusei Kato",
+   "role": "Pro · Tokyo, Osaka, Hawaii · Private lessons in English",
+   "group": "Tokyo · Academies & coaches",
+   "ig": "ryusei__tennis",
+   "web": "https://www.tennisbear.net/user/68567/info"
+  },
+  {
+   "name": "EPSOM hitting sessions",
+   "role": "Pay-per-session hitting vs a pro, Shiomi / Ariake · ¥3,900–4,400 · Tue, Wed, Sat evenings",
+   "group": "Tokyo · Academies & coaches",
+   "ig": "epsom_tennis",
+   "web": "https://lin.ee/Z6USi7m3"
+  },
+  {
+   "name": "Aoyama Gakuin University tennis",
+   "role": "University team · Visitors welcome at practice, by email or DM",
+   "group": "Tokyo · Academies & coaches",
+   "ig": "agu_tennis"
+  },
+  {
+   "name": "Noy Seno",
+   "role": "Cebuano · St. Francis Brooklyn D1, All-NEC 2023 · In law school in Cebu · Was on Adam Borak’s podcast",
+   "group": "Cebu · People",
+   "ig": "sinoynoy"
+  },
+  {
+   "name": "Citigreen Tennis Resort",
+   "role": "Only red clay in Cebu · About 6 coaches and hitting partners · Running the Lotus Cup now",
+   "group": "Cebu · Academies & clubs",
+   "ig": "citigreentennisresort"
+  },
+  {
+   "name": "Villa Aurora Tennis Club",
+   "role": "Kasambagan · Where Cebu’s strongest players go for pickup",
+   "group": "Cebu · Academies & clubs"
+  },
+  {
+   "name": "USC Cebu varsity",
+   "role": "University of San Carlos · 3 golds at CESAFI 2026 · Trains at Citigreen",
+   "group": "Cebu · Academies & clubs"
+  },
+  {
+   "name": "Sheena Camporedondo",
+   "role": "Cebu player and coach · Citigreen coach since 2016 · Ex-UP Cebu varsity head coach",
+   "group": "Cebu · Academies & clubs"
+  },
+  {
+   "name": "Eric Jed Olivarez",
+   "role": "UTR 12.67 · PH No. 2, WMU alum · Asmara Open 2026 champ (Nov 15) · Trains weekdays at Olivarez College, Parañaque · Not on Nov 18 PCA list yet",
+   "group": "Manila · People",
+   "ig": "jeddyboy109"
+  },
+  {
+   "name": "Nilo Ledama",
+   "role": "UTR 10+ · UST, 3x UAAP MVP · Jed's training partner, Asmara 2026 doubles runner-up",
+   "group": "Manila · People",
+   "ig": "its_nillllllll"
+  },
+  {
+   "name": "AJ Lim",
+   "role": "UTR ~13.35 (unconfirmed profile) · PH No. 1 · On PCA entry list · Asmara 2026 runner-up",
+   "group": "Manila · People",
+   "ig": "ajlimofficial"
+  },
+  {
+   "name": "JIKAN STYLE",
+   "role": "Tenugui specialist · KITTE Marunouchi 4F, 11:00–20:00 · Neck-wrap tenugui",
+   "group": "Clothing · Tom’s outreach",
+   "ig": "jikan_style",
+   "web": "https://jikan-style.jp/pages/about"
+  },
+  {
+   "name": "RWP Run Club",
+   "role": "Metro Manila run club · Chapters BGC, Alabang, Pasay, UP Diliman",
+   "group": "Manila · Runs",
+   "ig": "rwprunclub"
   }
  ],
  "emergency": [
@@ -352,20 +696,108 @@
      ]
     },
     {
-     "title": "Before departure",
+     "title": "Do now · before Sat Nov 21",
      "items": [
       {
-       "title": "Update Adelmo about the arrival",
-       "detail": "PR123 is scheduled to arrive Saturday, Nov 21 at 10:45 PM Manila time, Terminal 1. Recheck the ticket or listing before texting.",
-       "draft": "Hi Adelmo, it’s Jerry, Alex Marcial’s friend. Looking forward to meeting you! I’m on PR123, scheduled to land Saturday, Nov 21 at 10:45 PM Manila time, NAIA Terminal 1. Where should I meet you? Thanks so much.",
-       "link": "https://wa.me/639189599450"
+       "title": "Confirm PCA entry and doubles with Alex",
+       "detail": "The PCA entry list (as of Nov 18) shows “Sy, Jerry” (#159), no “Shi”. Entries close Sat Nov 21. If Alex can’t confirm fast, call PCA 8563 8501 ext 116 or email philcolumbian_pcaopen@yahoo.com. You texted Alex Nov 19 at 4:20 PM about the entry form, fee and Nov 30 qualies; this follow-up adds the name check.",
+       "link": "https://www.facebook.com/100057105145569/posts/posting-list-of-open-entries-as-of-november-18-2026reminder-also-that-the-deadli/1708210611092427/",
+       "draft": "Also, PCA’s entry list has “Sy, Jerry” (#159) but no “Shi”. Is that me? Entries close Saturday."
       },
       {
-       "title": "Confirm PCA singles and doubles with Alex",
-       "detail": "Get the actual entry/payment receipt and check-in time. Ask about doubles with Tom before either of you commits to Manila dates.",
-       "draft": "Hey Alex, can you check if my singles entry and payment went through for PCA? What day do I need to check in? Tom might come to Manila for doubles. When is doubles and can we still enter?",
-       "link": "sms:+16263620450"
+       "title": "Decide Tokyo dates",
+       "detail": "Contacts have heard ~Dec 1 (Shingo), ~Dec 3 (Jinji, Tom); the app says ~Dec 5 or Dec 14. Depends on PCA (main draw Dec 5–13) and landing LAX by Dec 6–7. Diadora Cup (Dec 15) only fits the late option. TTI, Jinji, Ryoto, Shingo and new Tokyo contacts wait on this."
+      }
+     ]
+    },
+    {
+     "title": "Replies owed",
+     "items": [
+      {
+       "title": "Whismark · Valle Verde hit",
+       "detail": "He offered a hit at Valle Verde (IG, Nov 18).",
+       "link": "https://www.instagram.com/whismaaark/",
+       "draft": "Valle Verde sounds good! I land Saturday night, I’ll message you when I get in."
       },
+      {
+       "title": "Migi · when are qualies",
+       "detail": "She asked when PCA qualies are (IG, Nov 18).",
+       "link": "https://www.instagram.com/anotherdayanothercourt/",
+       "draft": "Qualies are Nov 30 to Dec 4! No worries at all, any tune-up games you find would be awesome. Thank you!"
+      },
+      {
+       "title": "Marvin · confirm 43rd PCA",
+       "detail": "He replied “43rd pca open” and offered to arrange courts (IG).",
+       "link": "https://www.instagram.com/racketoncourt/",
+       "draft": "Yes it’s the 43rd PCA Open, qualies Nov 30 to Dec 4. I land in Manila Saturday night. Would love that court hit before qualies!"
+      },
+      {
+       "title": "Silvio · not PHILTA, it’s PCA",
+       "detail": "He sent the 2026 PHILTA Men’s National Open post and asked “R u talking about this tournament?” (IG, Nov 19).",
+       "link": "https://www.instagram.com/silvio.nyc/",
+       "draft": "It’s this tournament: https://www.abs-cbn.com/sports/othersports/2026/10/15/local-tennis-players-take-the-spotlight-at-43rd-pca-open-1348 But I’m down to hit in Cebu after!"
+      },
+      {
+       "title": "Skip Tan · reply to “hey bro”",
+       "link": "https://www.instagram.com/skip.tan/",
+       "detail": "Open play and reach, rec level.",
+       "draft": "Hey Skip! I’m in Manila from Nov 21 for PCA qualies. Any open play or hitters you’d point me to?"
+      },
+      {
+       "title": "Michael Cumagun · optional thanks",
+       "detail": "He replied Nov 20 PHT: “Ok. I thought you were here already. Good luck with PCA Open.” No reply needed.",
+       "draft": "Thanks Mike! Would love to hit with you and Roland another morning once I’m in, let me know."
+      },
+      {
+       "title": "Tennis United · correct Cebu to Manila",
+       "detail": "You told them “Cebu” but they’re in Manila. They offered a hit with a ~9 UTR coach.",
+       "link": "https://www.instagram.com/tennisunitedacademy/",
+       "draft": "Sorry, I meant Manila! I’m there from Nov 21. Could we set a hit with one of your coaches that week?"
+      },
+      {
+       "title": "Tokyo Tennis International · skip for now (fallback)",
+       "detail": "Not worth ¥16,000/h (≈ $100/h) for now. Fallback only if you have nobody to hit with in Tokyo. Lilian Breut, born Nov 22, 1996 (29, turns 30 Nov 22), ATP career high 1321 (2022), is the only verified high-level pro. Optional reply asks for Lilian or Jelassi without booking.",
+       "draft": "Filip様、Kazu様\n\nご返信ありがとうございます。日程はまだ調整中です。プライベートの場合、Lilianさんか Jelassiさんとの試合形式の練習は可能でしょうか。\n\nHi Filip and Kazu, thanks! My dates are still moving. If I book a private, could it be match-play hitting with Lilian or Jelassi? I’ll confirm a date once my plans are set.\n\nThanks,\nJerry"
+      },
+      {
+       "title": "Lilian Breut · direct DM (skip the club)",
+       "detail": "Ex-ATP (career high 1321), 29, Tokyo-based, coaches at TTI. His coaching IG says “DM COACHING”. Private personal IG: @lilian.breut.",
+       "link": "https://www.instagram.com/tenniscoachlilian/",
+       "draft": "Hey Lilian, I’m Jerry from LA. I’m playing PCA Open qualies in Manila, then coming to Tokyo in December. Saw you played the tour and you’re based in Tokyo. Would you be down to hit while I’m there? Happy to cover the court."
+      },
+      {
+       "title": "Robert Kawaratani · UCLA Japan post",
+       "detail": "Gmail thread. He lives in Kyoto and will post on the UCLA Japan Facebook page. Degree conferred Spring 2025 (UCLA Registrar email).",
+       "draft": "ロバートさん、ありがとうございます。とても助かります。\n\nHi Bob, thank you, that would be great!\n\nDepartment: Mathematics and Statistics (B.S. Data Theory)\nGraduation year: 2025\nEmail: [my email]\n\nThanks again,\nJerry"
+      },
+      {
+       "title": "Hermont · PH hitters, Futures coach",
+       "detail": "Instagram @hq_legatsby (Sac State alum, Racquet Club of Irvine). No thread yet; Kyle Vo wouldn’t share his number.",
+       "link": "https://www.instagram.com/hq_legatsby/",
+       "draft": "Hi Hermont, I’m Jerry Shi. Joseph Lizardo mentioned you at Jack Kramer. I hit with Anthony Lee all the time at Victoria since I work at LA Galaxy by the USTA courts in Carson, so if you ever want to hit, let me know! I fly to Manila Friday for the PCA Open. Do you know anyone in the Philippines to hit with? Also I’m looking to play Futures and looking for a coach, do you know anyone?"
+      },
+      {
+       "title": "Johnny Arcilla · acknowledge",
+       "detail": "He said “Im not playing pca.. sayang” (Messenger, Nov 18).",
+       "draft": "All good! Hope to cross paths on court in Manila sometime."
+      },
+      {
+       "title": "Asmara (Cebu) · optional thanks",
+       "detail": "They welcomed you and pointed to online booking (Messenger, Nov 18).",
+       "link": "https://asmara-tennis-association.rezerv.co/",
+       "draft": "Thank you so much! I’ll book a slot once my Cebu dates are set."
+      },
+      {
+       "title": "Joseph Lizardo · follow up, academy intros",
+       "detail": "He said to follow up after the Jack Kramer match (Nov 18) and that he knows academy people in Manila.",
+       "link": "https://www.instagram.com/lizardo_jr_development_/",
+       "draft": "Hey Coach Joseph, great meeting you at Jack Kramer Wednesday! Following up like you said. You mentioned you know some academy people in Manila. Could you connect me with them? I land Saturday night."
+      }
+     ]
+    },
+    {
+     "title": "Before departure",
+     "items": [
       {
        "title": "Finish eTravel and save the QR",
        "detail": "For the scheduled PR123 arrival, the 72-hour window opened Wednesday, Nov 18 at 10:45 PM Manila time (6:45 AM Pacific). Use the official free form and save the QR.",
@@ -394,18 +826,6 @@
      "title": "In Manila",
      "items": [
       {
-       "title": "Set a Valle Verde hit with Whismark",
-       "detail": "He offered to hit. Pick a time and check club entry and court fees.",
-       "link": "https://ig.me/m/whismaaark",
-       "draft": "Thanks Coach! Valle Verde sounds great. What day and time works for you? Is there anything I need to do to get in as a guest?"
-      },
-      {
-       "title": "Coordinate Polo Club and a second hit",
-       "detail": "Check in with Michael and Alex. Chris and Marvin are backup connections. Migi offered to ask around, and Ruben pointed to Jed, Niño and AJ. Continue in the existing threads.",
-       "link": "https://ig.me/m/anotherdayanothercourt",
-       "draft": "Thanks Migi, I appreciate it. Qualies are listed for Nov 30–Dec 4. I’d love to get a practice set in before then if anyone is around."
-      },
-      {
        "title": "Use Rizal Memorial as the court backup",
        "detail": "Confirm a session or book a public court if the club sessions don’t line up.",
        "link": "https://play.psc.gov.ph/"
@@ -424,16 +844,45 @@
        "title": "Book Asmara or arrange a hit at Match Point",
        "detail": "Asmara invited you to book. Match Point shared its coaching and booking guide. Ask for an adult hitting session that fits your dates.",
        "link": "https://asmara-tennis-association.rezerv.co/"
+      },
+      {
+       "title": "Adam Borak · intro to Noy Seno",
+       "detail": "Adam had Noy on Tipsy Tennis a week ago.",
+       "link": "https://www.instagram.com/tipsytennispodcast/",
+       "draft": "Yo Adam, loved the Noy Seno ep. If Cebu happens after PCA, could you connect me with him for a hit?"
+      },
+      {
+       "title": "Noy Seno · hit in Cebu",
+       "detail": "Ex D1 at St. Francis Brooklyn, now in Cebu. IG may be private; DM request still works.",
+       "link": "https://www.instagram.com/sinoynoy/",
+       "draft": "Hey Noy! Jerry here, UCLA alum playing Futures, caught your ep on Tipsy Tennis. I’ll be in Cebu after PCA, down to hit? I’ll book the court"
+      },
+      {
+       "title": "Citigreen · strongest coach or player",
+       "detail": "Red clay. Lotus Cup running now; draw Nov 21.",
+       "link": "https://www.instagram.com/citigreentennisresort/",
+       "draft": "Hi! UCLA alum playing PCA qualies, in Cebu after. Could you set me up with your strongest coach or a player for a hit? Also is the Lotus Cup still on then?"
+      },
+      {
+       "title": "Villa Aurora · join pickup",
+       "detail": "Best pickup in Cebu. Message the FB page or just show up.",
+       "draft": "Hi! Visiting player from LA (UCLA alum). Can a guest join the pickup games? What time are the strong guys there?"
+      },
+      {
+       "title": "Coach Sheena Camporedondo · hit",
+       "detail": "Citigreen coach. Find her on IG under her name.",
+       "draft": "Hi Coach Sheena! Visiting UCLA player in Cebu after PCA. Do you do hitting sessions, or know strong guys who’d hit?"
+      },
+      {
+       "title": "USC Cebu varsity · join practice",
+       "detail": "Coach Misael Bersaluna. Contact through the USC / Today’s Carolinian FB pages.",
+       "draft": "Hi Coach! UCLA alum playing Futures, in Cebu after PCA. Could I join a varsity practice or hit with your top guys?"
       }
      ]
     },
     {
      "title": "Japan and getting home",
      "items": [
-      {
-       "title": "Confirm Tokyo dates with Tom, Shingo and Ryoto",
-       "detail": "Use the return deadline and PCA result to decide if Tokyo fits. Check transport and lodging before booking, then update existing contacts."
-      },
       {
        "title": "Bring the sticker to Shingo at Setinn",
        "detail": "Bring one sticker and pick a shop visit or hit once Shingo confirms a time.",
@@ -448,6 +897,241 @@
        "title": "Find another Goldwin hoodie with neck coverage",
        "detail": "Your last order was the WF Light L/S Hoodie (GL45141), Arid Beige, size 3. Look for the same compact hood and high neck.",
        "link": "https://usshop.goldwin-global.com/products/gl45141"
+      }
+     ]
+    },
+    {
+     "title": "Manila · new hitting leads",
+     "items": [
+      {
+       "title": "Adam Borak · Tipsy Tennis Podcast",
+       "detail": "US ex-ITF junior playing the PH circuit; trains with Chad Cuizon. New cold.",
+       "link": "https://www.instagram.com/tipsytennispodcast/",
+       "draft": "Hey Adam, Jerry here, UCLA alum playing Futures. In Manila for PCA qualies from Nov 21. Love the pod. Down to hit sometime before qualies?"
+      },
+      {
+       "title": "Carl Ubalde · book a hit",
+       "detail": "Accepted your FB request Nov 19. Organized hits in Makati.",
+       "link": "https://www.facebook.com/carl.ubalde.56",
+       "draft": "Hey Coach Carl, thanks for accepting! I’m in Manila from Nov 21 for PCA qualies. Could I book a hitting session that week? What’s your rate?"
+      },
+      {
+       "title": "Ka Palo · watch for order of play",
+       "detail": "Follow his FB for daily PCA order of play.",
+       "link": "https://www.facebook.com/mel.abad.79"
+      },
+      {
+       "title": "Jed Olivarez · nudge for an Olivarez hit",
+       "detail": "Ruben referral; FB message Nov 17 unanswered. Mutuals: Chris Papa, Silvio, Joseph Lizardo. Nudge the FB thread, IG if unread by Nov 23.",
+       "link": "https://www.instagram.com/jeddyboy109/",
+       "draft": "Congrats on Asmara man! I'm the UCLA guy Ruben mentioned, in Manila from Sat for PCA qualies. Any chance I could join a hit at Olivarez one weekday?"
+      },
+      {
+       "title": "Nilo Ledama · ask for a hit",
+       "detail": "New lead from Jed's Nov 18 Asmara post. Only mutual is Marvin (racketoncourt), so Marvin can intro. PCA entry unknown.",
+       "link": "https://www.instagram.com/its_nillllllll/",
+       "draft": "Hey Nilo, saw you and Jed in the Asmara doubles final. I'm ex-UCLA, in Manila for PCA qualies. Down to hit some time next week?"
+      },
+      {
+       "title": "AJ Lim · ask Chris for an intro",
+       "detail": "IG DM Nov 17 likely in his requests (he follows 1 account). Chris Papa is a mutual. Unlikely to hit during PCA week.",
+       "link": "https://www.instagram.com/chrispapa01/",
+       "draft": "Hey Chris, any chance you could intro me to AJ for a hit before PCA qualies? Ex-UCLA, in Manila from Sat."
+      }
+     ]
+    },
+    {
+     "title": "Tokyo · new hitting leads (send once dates are set)",
+     "items": [
+      {
+       "title": "Chris Papa · intro to Jay (skip; DM Jay directly)",
+       "detail": "Checked Nov 19: Jay and Chris follow each other, but that’s the only link found. No sign they’re close friends, so DM Jay yourself first.",
+       "link": "https://www.instagram.com/chrispapa01/",
+       "draft": "Yo Chris, random one. You know Jay Friend? I’ll be in Tokyo early December and would love to hit with him if he’s home. Mind connecting us?"
+      },
+      {
+       "title": "Jay Friend · hit in Tokyo",
+       "detail": "Tokyo-born pro, Arizona ’26, playing the Japan Challengers now. Mutual follow with Chris Papa, nothing more. DM him directly.",
+       "link": "https://www.instagram.com/jaythefriend/",
+       "draft": "Yo Jay, Jerry here, UCLA alum playing Futures. Saw you crushing the Japan challengers. I’m in Tokyo early December, if you’re home and want a hit I’ll book the court"
+      },
+      {
+       "title": "Emon · who he hits with in Tokyo",
+       "detail": "iMessage. He never answered the Tokyo hitting ask.",
+       "draft": "Yo Emon, quick one. When you’re home in Japan who do you hit with? Any academy or coach in Tokyo I could pull up to? I’m there early December. And I’ll tell Shingo you’re down for Setinn 🙏"
+      },
+      {
+       "title": "Hien Pham · paid hitting",
+       "detail": "ATP-ranked pro in Tokyo; LinkedIn message, IG backup.",
+       "link": "https://www.linkedin.com/in/hien-pham-81650b421/",
+       "draft": "Hey Hien, I’m Jerry, UCLA alum playing Futures (UTR ~9). Saw you do private sessions in central Tokyo. I’m there early December. Could I book 2–3 hitting sessions? Happy to pay your rate + court"
+      },
+      {
+       "title": "Kenny Watabe · session or pro hitter",
+       "link": "https://wa.me/819092544908",
+       "detail": "Email kennywatabe1982@gmail.com or WhatsApp.",
+       "draft": "Hi Kenny, I’m Jerry, UCLA alum playing Futures (UTR ~9), in Tokyo early December. Any chance of a paid session, or could you point me to a pro who wants a hitting partner? Thanks!"
+      },
+      {
+       "title": "Frédéric Dewitte · hitting session",
+       "link": "https://www.instagram.com/fdewitte/",
+       "detail": "Tokyo coach, ex-Japan junior team, NCAA D1.",
+       "draft": "Hey Frédéric, Jerry here, UCLA alum playing Futures. In Tokyo early December. Do you do high-level hitting sessions? Would love to book one"
+      },
+      {
+       "title": "Kurashima Academy · private with Yuri",
+       "link": "https://kurashimatennis.com/",
+       "detail": "Inquiry form on the site. Jingu Gaien, near Setinn.",
+       "draft": "はじめまして、UCLA卒でITFフューチャーズに出ているJerryです(UTR 9前後)。12月上旬に東京に滞在します。倉島侑里コーチとのプライベートレッスン(ラリー/ポイント練習中心)を2回ほどお願いできますか?日程と料金を教えてください。"
+      },
+      {
+       "title": "Blue Six · join practice",
+       "link": "https://www.instagram.com/bluesix_trainingclub/",
+       "detail": "Ariake pro club; pros prep there before All-Japans (Dec 13–20).",
+       "draft": "はじめまして、UCLA卒でITFフューチャーズに出ているJerryです(UTR約9)。12月上旬に東京にいます。選手の方の練習相手やクラブの練習に参加させていただくことは可能でしょうか?費用はお支払いします。"
+      },
+      {
+       "title": "Ryoto · lock a hit",
+       "link": "https://www.instagram.com/ryoto.tachi/",
+       "detail": "He said “Would love to get a hit in!”",
+       "draft": "Yo Ryoto! Locking dates now, I’m in Tokyo [dates]. Which days work for a hit? Happy to book the court."
+      },
+      {
+       "title": "Jinji · book Hitting with the Pro",
+       "detail": "Replied Nov 20 JST: lessons only, no player introductions. Book a lesson if you want one; LINE or email.",
+       "draft": "Hi Shai, dates are [dates]. Could I book Hitting with the Pro on [day] and [day], mornings ideally? Thanks!"
+      },
+      {
+       "title": "Shinn Hiramatsu · book hitting",
+       "detail": "Ex-pro hitter, lessons across Tokyo by DM. Rate not public.",
+       "link": "https://www.instagram.com/shinn_hiramatsu/",
+       "draft": "Hey Shinn! Jerry here, UCLA alum playing Futures (UTR ~9). In Tokyo early December, would love to book a couple of hitting sessions with you, happy to pay your rate + court"
+      },
+      {
+       "title": "Takuya Komura · private session",
+       "detail": "Pro and private coach in Tokyo, DM for lessons.",
+       "link": "https://www.instagram.com/takuya.komura1221/",
+       "draft": "Hi Takuya! Jerry, UCLA alum playing Futures. In Tokyo early December, could I book a private hitting or match-play session with you? English ok?"
+      },
+      {
+       "title": "Sari Baba · book through B LYNC",
+       "detail": "¥17,600 for 60 min, prepaid, you book the court.",
+       "link": "https://blync.jp/sports/tennis/",
+       "draft": "Private 90-min hitting and point play for a UTR ~9 male player, early December, Sendagaya area if possible"
+      },
+      {
+       "title": "Chikaya Sato · hit",
+       "detail": "Public email on his IG bio. Ex Penn State / SDSU.",
+       "link": "https://www.instagram.com/chikayasato/",
+       "draft": "Hey Chikaya, Jerry here, UCLA alum playing Futures. Heard you split time in Tokyo. I’m there early December, down to hit? I’ll grab the court"
+      },
+      {
+       "title": "Hiroyasu Ehara · private",
+       "detail": "2014 All-Japan champion, coaches now. Japanese first.",
+       "link": "https://www.instagram.com/hiroyasueh0727/",
+       "draft": "江原さん、はじめまして。UCLA卒でITFフューチャーズに出ているJerryです。12月上旬に東京にいます。ヒッティングやポイント練習のプライベートをお願いできますか?\n\nHi Ehara-san, I’m Jerry, UCLA alum playing ITF Futures. I’m in Tokyo early December. Could I book a private hitting / point-play session?"
+      },
+      {
+       "title": "t_socialt · play sets",
+       "detail": "Adult player at All-Japan qualifying level. Name unknown.",
+       "link": "https://www.instagram.com/t_socialt/",
+       "draft": "Hi! UCLA alum here playing Futures, in Tokyo early December. Would love to hit or play sets if you’re free"
+      },
+      {
+       "title": "Ryusei Kato · English lesson",
+       "detail": "Splits Tokyo and Osaka; ask which city he’s in.",
+       "link": "https://www.instagram.com/ryusei__tennis/",
+       "draft": "Hey Ryusei! I’m in Tokyo early December, are you in Tokyo then? Would love to book a hitting session"
+      },
+      {
+       "title": "EPSOM · top-level hitting session",
+       "detail": "Ask on LINE about December dates.",
+       "link": "https://lin.ee/Z6USi7m3",
+       "draft": "12月上旬に東京にいます。上級者向けのヒッティング練習会はありますか?一番強い球のレベルでお願いしたいです。\n\nI’m in Tokyo early December. Do you have an advanced hitting session? I’d like the strongest ball level."
+      },
+      {
+       "title": "Aoyama Gakuin · join one practice",
+       "detail": "Team welcomes visitors by email or DM. Early-December practices likely still on.",
+       "link": "https://www.instagram.com/agu_tennis/",
+       "draft": "はじめまして。UCLA卒のJerryです。12月上旬に東京にいます。1日だけ練習に参加させていただくことは可能でしょうか?\n\nHi, I’m Jerry, a UCLA alum. I’m in Tokyo early December. Could I join one of your practices?"
+      }
+     ]
+    },
+    {
+     "title": "Runs",
+     "items": [
+      {
+       "title": "Manila · Sunday long run with Just Show Up Club",
+       "detail": "Sunday 5 AM at Rockwell. No message needed.",
+       "link": "https://justshowupclub.com/"
+      },
+      {
+       "title": "Manila · trail day with Trailista",
+       "link": "https://www.instagram.com/trailistarunclub/",
+       "detail": "Rizal trails. BeyondTrails and Aleksis Capili are backups.",
+       "draft": "yo! tennis player from LA in manila from nov 21, I run too. any chance I could tag along on one of your weekend trail runs?"
+      },
+      {
+       "title": "Tokyo · Namban Rengo Wednesday",
+       "detail": "Wednesdays 7:30 PM, visitors welcome; venue on IG.",
+       "link": "https://namban.org/faq/"
+      },
+      {
+       "title": "Tokyo · Takao run with Tokyo Tarzan Club",
+       "link": "https://www.instagram.com/tokyo_tarzan_club/",
+       "detail": "December schedule not posted yet.",
+       "draft": "hey! tennis player from LA in tokyo early december. any takao run that week I could join?"
+      },
+      {
+       "title": "RWP Run Club · join a BGC run",
+       "detail": "Active Nov 2026. Ask the weekly BGC meet point.",
+       "link": "https://www.instagram.com/rwprunclub/",
+       "draft": "Hey! Visiting Manila till early Dec and want to join a BGC run. Which day and where do you meet?"
+      }
+     ]
+    },
+    {
+     "title": "Listen & read · Filipino tennis",
+     "items": [
+      {
+       "title": "The Rise of Filipino Tennis Icon Alberto \"AJ\" Lim | TTP Ep 27",
+       "detail": "AJ Lim, the Philippines' No. 1 and a Davis Cup regular, says the PCA courts in Manila are hot, humid and airless with crowds close in, so plan hydration and cramp management (walk cramps off, never lie down) before PCA Open qualies. Why: AJ is the top Filipino player and played the PCA Open right after Davis Cup the year this was filmed, so he is the highest-level hitting partner and local connector Jerry could reach in Manila; he also explains how thin the local pro circuit is (no wild cards, few international men's events). Contact: AJ Lim, Instagram @ajlimofficial (https://www.instagram.com/ajlimofficial/, checked live 2026-11-19: \"AJ Lim\", Athlete, Philippine sponsors, collab email in bio). Adam Borak (@tipsytennispodcast, https://www.instagram.com/tipsytennispodcast/) filmed this and is already in Jerry's Manila contacts, so he can intro.",
+       "link": "https://jerryshi042003.github.io/trip/listen.html?id=2L_H33TYv6c"
+      },
+      {
+       "title": "Former D1 player Noy Seno on going from Cebu to college tennis in the US",
+       "detail": "Noy Seno is a Cebu local who played D1 at St. Francis Brooklyn after Concordia, spent six years in the US and has been back in Cebu for three, which makes him Jerry's natural hitting partner and guide if he goes to Cebu after the PCA Open. Why: He shares Jerry's US college tennis background, still plays locally with Adam Borak in Cebu, and can point Jerry to courts, partners and events there. Contact: Noy Seno, Instagram @sinoynoy (https://www.instagram.com/sinoynoy/, checked live 2026-11-19; tagged by @tipsytennispodcast in this reel). Adam Borak (@tipsytennispodcast) is already in Jerry's Manila contacts and can intro.",
+       "link": "https://jerryshi042003.github.io/trip/listen.html?id=DfjESycCHrc"
+      },
+      {
+       "title": "D1 Filipino College Player Jed Olivarez | TTP Episode 28",
+       "detail": "Jed Olivarez, the Philippines' number two and a Western Michigan D1 alum, trains weekdays at his family's Olivarez College courts in Parañaque and hits with the top Filipino men there, making him a natural Manila hitting partner and PCA Open contact. Why: Jed plays the PCA Open, is chasing ITF points like Jerry, and has a home base with courts right by the Manila airport, so he is a strong first ask for practice sessions before and during qualies. Contact: Jed Olivarez, Instagram @jeddyboy109 (https://www.instagram.com/jeddyboy109/, checked live 2026-11-19: \"Eric Jed Olivarez\", Athlete, \"I play tennis sometimes\", WMU alumni). Adam Borak (@tipsytennispodcast, https://www.instagram.com/tipsytennispodcast/) is already in Jerry's Manila contacts and can intro.",
+       "link": "https://jerryshi042003.github.io/trip/listen.html?id=b-jB18H5Qvc"
+      },
+      {
+       "title": "Teaching Local Kids in the Philippines",
+       "detail": "Adam Borak taught free lessons to local kids at the Asmara Urban Resort in Cebu City and donated his spare rackets, bags and shirts, so bringing a few old rackets and offering a clinic is an easy, welcome way into the Cebu tennis scene. Why: If Jerry goes to Cebu after the PCA Open, the Asmara Urban Resort (home of the monthly Asmara Open) is where Adam already has ties, and a kids clinic or gear donation gives Jerry a natural reason to meet the local coaches and players. Contact: Adam Borak, Instagram @tipsytennispodcast (https://www.instagram.com/tipsytennispodcast/, checked live 2026-11-19), already in Jerry's Manila contacts; ask him for an intro to the Asmara Urban Resort tennis director in Cebu City.",
+       "link": "https://jerryshi042003.github.io/trip/listen.html?id=uLqDrzi2r28"
+      }
+     ]
+    },
+    {
+     "title": "Listen & read · David Choe · Philippines",
+     "items": [
+      {
+       "title": "David Choe Lost in the Philippines (Thumbs Up Season 5)",
+       "detail": "Choe's whole Philippines method is to put the phone away, say yes to whoever talks to you and let the day lead, and it gives Jerry a ready list of stops: Quiapo Church and its palm readers, Greenhills for bootleg toys and 30-peso Pokemon packs, then Siargao for a boat trip to Ma'mon Island, lechon, Bebe's Barbeque and Mrs. Krispy fried chicken. Why: In Manila Jerry can do Choe's Quiapo Church stop (palm readers and the Black Nazarene) and Greenhills Shopping Center (bootleg toys and cheap Pokemon packs; the street fruit and haggling scenes are not located on screen) around PCA Open match days; if he adds Siargao instead of or after Cebu, Choe's day was island hopping by boat to Ma'mon Island, jet skis at sunset, a lechon pig face, Bebe's Barbeque with its house band, and Mrs. Krispy fried chicken, plus a warning that he got traveler's diarrhea there. Contact: Quiapo Church, Instagram @quiapochurch (https://www.instagram.com/quiapochurch/), 910 Plaza Miranda, Quiapo, Manila, site quiapochurch.com.ph; Greenhills Mall, Instagram @greenhillsph (https://www.instagram.com/greenhillsph/), Ortigas Avenue, Greenhills, San Juan. Bebe's Barbeque and Mrs. Krispy in Siargao had no Instagram I could verify; go in person. Bobby Trivia's account was not verified.",
+       "link": "https://jerryshi042003.github.io/trip/listen.html?id=D-oSpkzPIoQ"
+      },
+      {
+       "title": "David Choe Painting in the Philippines",
+       "detail": "This is a mostly wordless painting livestream in which Choe, working with unfamiliar local brushes, acrylics and a loose, thrice-painted canvas, adapts instead of complaining and breaks to rip open Pokemon packs on chat's urging. Why: It has little travel value: no place in Manila or Siargao is named, so it is only worth watching for Choe's mindset (adapt to whatever gear and conditions the country gives you, which applies to unfamiliar courts and balls at the PCA Open) and for his Pokemon card habit, which the full episode ties to Greenhills. Contact: None shown in the video. Only David Choe himself, Instagram @davidchoe (https://www.instagram.com/davidchoe/).",
+       "link": "https://jerryshi042003.github.io/trip/listen.html?id=w3vRQZbmLyw"
+      },
+      {
+       "title": "Thumbs Up Season 5 Teaser (Philippines, Manila, Siargao)",
+       "detail": "A 47-second trailer for David Choe's Manila and Siargao Thumbs Up episode; watch the full episode (D-oSpkzPIoQ) instead, since this clip only shows the arrival in Manila and Choe sick in bed in Siargao. Why: It previews the same trip Jerry can partly retrace (Manila first, then Siargao), and the sick-bed scene is a fair warning to watch street food and water before PCA Open matches. Contact: David Choe, Instagram @davidchoe (https://www.instagram.com/davidchoe/); the trailer shows no shop, guide or venue Jerry could contact.",
+       "link": "https://jerryshi042003.github.io/trip/listen.html?id=x5jTxz_n2yo"
       }
      ]
     }
@@ -475,7 +1159,7 @@
      "place": "cloud9"
     },
     {
-     "date": "Nov 30 – Dec 2",
+     "date": "Nov 30 – Dec 2/3",
      "title": "Manila",
      "sub": "PCA doubles with Jerry, date from Alex",
      "place": "pca"
@@ -658,6 +1342,237 @@
        "detail": "Official BAPE Japan contact form. Ask who handled the samples for BAPE by KidSuper, starting with the flipped shark hoodie. The show is a reference Tom named himself. Ask for the production team or a public event.",
        "link": "https://jp.bape.com/pages/contact",
        "draft": "Hi BAPE team, I’m Tom Oh from LA. I’ve been studying the flipped shark hoodie from BAPE by KidSuper and am curious who turned that design into the runway sample. Is there a public talk, interview, or production credit I could look up? Thanks."
+      }
+     ]
+    },
+    {
+     "title": "Clothing · Tom’s outreach · dated events",
+     "items": [
+      {
+       "title": "TENEZ booth at Tokyo Big Sight · Dec 8–9",
+       "detail": "2026 Good Work Creation Fair, South Hall 3–4, booth A-186. Dec 8 10:00–17:00, Dec 9 10:00–16:00. The Tomita twins (tennis players) will be there; team runs from 10 pieces. Bring the bandana sample.",
+       "link": "https://www.instagram.com/tomitatwins_tennis/",
+       "draft": "Hey! I’m Tom, a designer from LA who plays a lot of tennis. I’m making a tennis bandana and I’ll be in Tokyo in December. Planning to swing by your booth at Big Sight on the 8th or 9th. Could I show you a sample and ask how you handle small team runs? Down to hit too."
+      },
+      {
+       "title": "Koichi Tamaki pattern workshop · Dec 10–13",
+       "detail": "Tomigaya, Shibuya, ¥5,000, about 2 hours, in Japanese. Open to people outside the trade. Apply through tamasan.com and bring the sample.",
+       "link": "https://tamasan.com"
+      },
+      {
+       "title": "BOLOCO at Kamawanu Asakusa · Dec 4–20",
+       "detail": "Sakiori pop-up 10:00–18:00, closed Tue. Weaving workshop Dec 5–6, 2 seats per session, ¥8,800: bring a towel or bandana to weave into a 35×50 cm piece. Book by phone 03-6231-6466.",
+       "link": "https://kamawanu-store.jp/blogs/news/boloco-popup2612"
+      }
+     ]
+    },
+    {
+     "title": "Clothing · Tom’s outreach · new makers",
+     "items": [
+      {
+       "title": "Yuta Sugimoto · Small Lighter",
+       "detail": "Bandana-only label founder in Shibuya. Hand-screened reactive dye.",
+       "link": "https://www.instagram.com/helloyuta/",
+       "draft": "Hi Yuta, I’m Tom from LA. I make bandanas for tennis and running, and Small Lighter’s factory page is the best thing I’ve read on how bandanas are made. I’ll be in Tokyo in December. Could I buy you a coffee and trade you one of mine?"
+      },
+      {
+       "title": "Mizuno Dyeing · OKUROJI meeting",
+       "detail": "Custom tenugui from 5 pieces; lead time 2–3 weeks, so it may not be ready before you leave.",
+       "link": "https://www.hanten.tokyo/tenugui/",
+       "draft": "Individual designer from LA, in Tokyo in December. I’d like to discuss a small run (10–30) of a bandana-size cloth from my artwork. Could I book a meeting at OKUROJI?"
+      },
+      {
+       "title": "CHAORAS · edge and fabric",
+       "detail": "Sports tenugui (Osaka). Email before arriving.",
+       "link": "https://www.instagram.com/chaoras/",
+       "draft": "Hi, I’m Tom, a designer in LA making a tennis bandana. I read your YAMAP interview about the overlocked edge and the cotton/bamboo-rayon fabric. That’s exactly what I’m stuck on. Do you take small original orders from overseas designers?"
+      },
+      {
+       "title": "Shibui · Guerrilla Run",
+       "detail": "Watch @mountainmartialarts Stories for a run date.",
+       "link": "https://www.instagram.com/shibuinsta_mania/",
+       "draft": "Hi Shibui-san, I’m Tom from LA. I run and I’m making a bandana for tennis and running. If there’s a Tokyo Guerrilla Run while I’m there in December, I’d love to join. Can I send you a photo of my sample?"
+      },
+      {
+       "title": "Tokyo Wasarashi · dyeing class",
+       "detail": "Katsushika chusen dye works; open 9:00–12:00 and 13:00–17:00.",
+       "draft": "Hello, I’m Tom, a designer from LA. I’d like to book a tenugui dyeing class in December and ask whether you do small chusen runs (around 100) of an original design."
+      },
+      {
+       "title": "JIKAN STYLE · visit KITTE Marunouchi",
+       "detail": "1 min from Tokyo Station Marunouchi South Exit. Ask who handles original designs.",
+       "link": "https://www.instagram.com/jikan_style/",
+       "draft": "Hi! I design bandanas in LA and love your neck-wrap tenugui. Could I visit KITTE in early December and ask who handles original designs?"
+      }
+     ]
+    },
+    {
+     "title": "Listen & read · Shingo Arai / Setinn",
+     "items": [
+      {
+       "title": "Where the Setinn brand name comes from, the maker of the National High School Senbatsu Tennis official uniform (【全国選抜高校テニス大会】公式ユニフォームを制作する『Setinn』ブランド名の由来とは！？)",
+       "detail": "Shingo Arai put his own office inside the new Setinn flagship near Harajuku and says he is basically always there and wants people to come and meet him, so Tom can simply walk in. Why: Shingo is a former Senbatsu player and BEAMS buyer who started Setinn because tennis wear \"wasn't cool at all\", which is the same gap Tom's bandanas and clothing aim at. The shop visit is the easiest first meeting of the trip. Contact: Shingo Arai (Setinn director, BEAMS men's casual buyer), IG @sng1980 https://www.instagram.com/sng1980/ ; Setinn IG @setinn_official https://www.instagram.com/setinn_official/ ; Setinn Flagship Store (@setinn_flagshipstore https://www.instagram.com/setinn_flagshipstore/), 1F 3-51-10 Sendagaya, Shibuya-ku, Tokyo, 10am to 7pm, cashless only, https://setinn.jp/",
+       "link": "https://jerryshi042003.github.io/trip/listen.html?id=HrKbKuUjBe0"
+      },
+      {
+       "title": "Interview with Setinn director Arai at the 48th National High School Senbatsu Tennis Tournament (【第48回】『全国選抜高校テニス大会 x Setinn 新井ディレクター』インタビュー！！)",
+       "detail": "Shingo's whole pitch is \"make tennis cool again by doing the opposite of today's function-only tennis wear,\" and he openly wants brands to work together across company lines, which is exactly the opening for Tom. Why: It shows what Shingo cares about (style, community, bringing non-tennis people in, cross-brand collaboration) so Tom can talk his language, and it shows Setinn already does charity and tournament wear with Wilson. Contact: Shingo Arai (Setinn director, BEAMS men's casual buyer), IG @sng1980 https://www.instagram.com/sng1980/ ; Setinn IG @setinn_official https://www.instagram.com/setinn_official/ ; Setinn Flagship Store, 1F 3-51-10 Sendagaya, Shibuya-ku, Tokyo, 10am to 7pm, https://setinn.jp/",
+       "link": "https://jerryshi042003.github.io/trip/listen.html?id=UUi5rnrkzOM"
+      },
+      {
+       "title": "Setinn x Wilson custom racket session Vol. 1 (Setinn × Wilson | カスタムラケット セッション Vol.1)",
+       "detail": "Setinn already has a hands-on design partnership with Wilson Japan, where its team builds custom rackets around personal themes, so Shingo is used to co-designing tennis gear with outside partners. Why: Shows how Setinn's team thinks about color and theme on tennis equipment, which gives Tom a concrete reference when he shows Shingo a bandana designed to match a racket or kit. Contact: Shingo Arai (Setinn director), IG @sng1980 https://www.instagram.com/sng1980/ ; Setinn IG @setinn_official https://www.instagram.com/setinn_official/ ; Setinn Flagship Store, 1F 3-51-10 Sendagaya, Shibuya-ku, Tokyo, https://setinn.jp/",
+       "link": "https://jerryshi042003.github.io/trip/listen.html?id=tpki1kGy-JE"
+      }
+     ]
+    },
+    {
+     "title": "Listen & read · Jun Takahashi / UNDERCOVER",
+     "items": [
+      {
+       "title": "UNDERCOVER Jun Takahashi Interview",
+       "detail": "In the only clearly captioned talk, Jun Takahashi explains UNDERCOVER's PCM temperature-regulating fabric and says an exhibition (instead of a runway show) let him go back and deepen older functional ideas rather than chase new ones. Why: Jun is on Tom's Tokyo designer list, and this gives Tom a specific making topic (functional fabric that stores and releases body heat, revisited from a 2007 winter collection) to raise instead of a generic compliment. Most of the video is music or uncaptioned Japanese, so treat it as light background. Contact: UNDERCOVER, IG @undercover_lab https://www.instagram.com/undercover_lab/ (official account, 1.1M followers) ; https://undercoverism.com/ . No personal route for Jun was verified.",
+       "link": "https://jerryshi042003.github.io/trip/listen.html?id=2keFg5BWCIU"
+      },
+      {
+       "title": "UNDERCOVER Jun Takahashi interview at The Corner",
+       "detail": "Jun Takahashi says function and current technology must go into the clothes he wears and took Dieter Rams's \"less but better\" as his theme: cut out waste and do what you can. Why: Jun's push toward function, comfort and technology, with minimal waste, is the language Tom will use to describe tennis gear, so this gives him a shared design principle to raise with UNDERCOVER's team. Contact: UNDERCOVER official Instagram @undercover_lab (https://www.instagram.com/undercover_lab/, verified, 1.1M followers); written enquiries through the form at https://undercoverism.com/contact (no public press email; support Mon to Fri 10:00 to 17:00 JST); in person at UNDERCOVER AOYAMA, B1F Bleu Cinq Point A, 5-3-22 Minami-Aoyama, Minato-ku, Tokyo (men's 03 5778 4805).",
+       "link": "https://jerryshi042003.github.io/trip/listen.html?id=9DWFrIHVf3Y"
+      },
+      {
+       "title": "UNDERCOVER A/W 1997-98 \"Leaf\": Behind the Scenes (TV excerpt)",
+       "detail": "Jun Takahashi built UNDERCOVER by starting from copying, casting friends who \"do what they love,\" and treating music as raw material, and his advice to young makers is simply that you have to do it. Why: This 1997 Japanese TV segment shows how Jun ran UNDERCOVER as a small Harajuku label with friends, shop builders and musicians, which is the closest model to Tom's own small tennis bandana and clothing line and gives him real history to open a conversation with in Tokyo. Contact: UNDERCOVER official Instagram @undercover_lab (https://www.instagram.com/undercover_lab/, verified, 1.1M followers); written enquiries through the form at https://undercoverism.com/contact (no public press email; support Mon to Fri 10:00 to 17:00 JST); in person at UNDERCOVER AOYAMA, B1F Bleu Cinq Point A, 5-3-22 Minami-Aoyama, Minato-ku, Tokyo (men's 03 5778 4805, women's 03 3407 1232).",
+       "link": "https://jerryshi042003.github.io/trip/listen.html?id=EDCsfTMe5No"
+      },
+      {
+       "title": "UNDERCOVER 35th Anniversary Feature \"but beautiful 4...\": Behind the Scenes, 2025.1.25 to 3.4, Tokyo chapter",
+       "detail": "Jun Takahashi's method is to take something everyone finds cute, like a teddy bear, add one \"spice,\" then strip details until people can still recognize it, because \"if people can't tell what it is, it doesn't communicate.\" Why: This is UNDERCOVER's own film of its Harajuku atelier and Tokyo makers finishing a Paris collection, so it shows Tom exactly how Jun's team works with craftspeople, how far ahead they finish pieces, and what they value in makers (\"nothing but love\"). Contact: UNDERCOVER official Instagram @undercover_lab (https://www.instagram.com/undercover_lab/, verified, 1.1M followers; also on YouTube as @undercover_lab, which posted this film); written enquiries through the form at https://undercoverism.com/contact (no public press email; support Mon to Fri 10:00 to 17:00 JST); in person at UNDERCOVER AOYAMA, B1F Bleu Cinq Point A, 5-3-22 Minami-Aoyama, Minato-ku, Tokyo (men's 03 5778 4805, women's 03 3407 1232).",
+       "link": "https://jerryshi042003.github.io/trip/listen.html?id=NOAh2jgfh98"
+      },
+      {
+       "title": "UNDERCOVER Presents: Jun Takahashi and WTAPS TET in Conversation (2022)",
+       "detail": "Once Jun Takahashi started taking menswear seriously, his goal became pieces stripped down enough to wear every day that still carry a philosophy, and he and WTAPS's Tetsu Nishiyama both trace that to how carefully 1990s Tokyo street brands chose the words on their graphics. Why: For a small brand like Tom's, this shows that Tokyo's street founders judge clothes by everyday wearability plus the wording and graphics on them, which is the angle Tom's bandanas and tees can lead with when he meets them. Contact: UNDERCOVER official Instagram @undercover_lab (https://www.instagram.com/undercover_lab/, verified, 1.1M followers); written enquiries through the form at https://undercoverism.com/contact (no public press email; support Mon to Fri 10:00 to 17:00 JST); in person at UNDERCOVER AOYAMA, B1F Bleu Cinq Point A, 5-3-22 Minami-Aoyama, Minato-ku, Tokyo (men's 03 5778 4805). For Tetsu Nishiyama's side: WTAPS official Instagram @wtaps_tokyo (https://www.instagram.com/wtaps_tokyo/, verified, 574K followers, links to www.wtaps.com).",
+       "link": "https://jerryshi042003.github.io/trip/listen.html?id=QoQ6kkSaTXs"
+      },
+      {
+       "title": "Tiffany's Tokyo TV: Jun Takahashi (English)",
+       "detail": "Jun Takahashi runs on Monday, Wednesday and Friday mornings to stop thinking about work, keeps \"Balance & Chaos\" as a motto, and says his ideas come from remixing music, art and friends inside himself. Why: Running is a sport-and-clothing habit Tom shares through tennis, so Jun's routine and his \"Balance & Chaos\" line give Tom a natural, non-salesy way to start a conversation about sportswear with him or his team. Contact: UNDERCOVER official Instagram @undercover_lab (https://www.instagram.com/undercover_lab/, verified, 1.1M followers); written enquiries through the form at https://undercoverism.com/contact (no public press email; support Mon to Fri 10:00 to 17:00 JST); in person at UNDERCOVER AOYAMA, B1F Bleu Cinq Point A, 5-3-22 Minami-Aoyama, Minato-ku, Tokyo (men's 03 5778 4805).",
+       "link": "https://jerryshi042003.github.io/trip/listen.html?id=_7Zbj_hmX5I"
+      },
+      {
+       "title": "Nike x Undercover GYAKUSOU, Spring 2011: Behind the Scenes with Jun Takahashi",
+       "detail": "For Nike GYAKUSOU, Jun Takahashi designs as a runner with no wasted detail and a slightly roomy fit for airflow and enjoyment, aiming for gear ordinary runners keep using rather than anything big. Why: GYAKUSOU is Jun's only long-running performance sportswear line, so his thinking on function, fit and everyday athletes is the closest match to Tom's tennis bandanas and clothing and the most relevant thing to ask him or his team about. Contact: UNDERCOVER official Instagram @undercover_lab (https://www.instagram.com/undercover_lab/, verified, 1.1M followers); written enquiries through the form at https://undercoverism.com/contact (no public press email; support Mon to Fri 10:00 to 17:00 JST); in person at UNDERCOVER AOYAMA, B1F Bleu Cinq Point A, 5-3-22 Minami-Aoyama, Minato-ku, Tokyo (men's 03 5778 4805).",
+       "link": "https://jerryshi042003.github.io/trip/listen.html?id=ytcVk9Fg5-k"
+      }
+     ]
+    },
+    {
+     "title": "Listen & read · Shunta Nakajima / ALMOSTBLACK",
+     "items": [
+      {
+       "title": "BerBerJin web store: SHUNTA NAKAJIMA and BerBerJin pop-up \"BE FREE! OUT OF CHAOS 2\" exclusive items (【 ベルベルジン web store！SHUNTA NAKAJIMA アンドベルベルジンPOP UP｢BE FREE！OUT OF CHAOS 2｣限定商品！】)",
+       "detail": "Shunta Nakajima's personal wardrobe is oversized, worn-in 1980s and 90s post-punk and shoegaze band tees, faded vintage Levi's and workwear, and old Converse, Vans and Jordans, so vintage music tees and fades are an easy, sincere opener with him. Why: Before Tom pitches anything to Nakajima, this shows his taste in detail (The Cure, Jesus and Mary Chain, Depeche Mode, My Bloody Valentine, big boxy fits, damage valued over perfection), and BerBerJin in Harajuku is a shop Tom can visit that already works with him. Contact: Shunta Nakajima via @almostblack_official (https://www.instagram.com/almostblack_official/) or @shuntanakajima (https://www.instagram.com/shuntanakajima/). For the pop-up, BerBerJin: @berberjin_harajuku (https://www.instagram.com/berberjin_harajuku/, 3-26-11 Jingumae, Shibuya, open 12:00 to 19:00) and @and_berberjin (https://www.instagram.com/and_berberjin/), all checked live 2026-11-19; web store https://webstore.berberjin.com/.",
+       "link": "https://jerryshi042003.github.io/trip/listen.html?id=6ou8uiWeJz8"
+      },
+      {
+       "title": "KREVA visits the ALMOSTBLACK atelier: inside the special collaboration and the deep side of making clothes (【KREVAが訪問】ブランドALMOSTBLACKのアトリエに潜入！特別コラボの裏側と服作りのディープな裏側を探る)",
+       "detail": "Nakajima designs from concrete, physical problems a collaborator brings him (a phone pocket that doesn't hit the knee, a hat that is \"shade,\" UV-cut fabric for Tokyo heat), so Tom should arrive with one specific functional problem his tennis bandanas solve. Why: Nakajima is a Raf Simons alumnus who says he got his job by drawing 100 sketches and phoning the studio, collects Japanese art, furniture and military/sport gear, and co-develops summer-heat functional pieces; a tennis bandana built for Tokyo heat and sweat is squarely in his language. Contact: Shunta Nakajima via the brand Instagram @almostblack_official (https://www.instagram.com/almostblack_official/) or his own @shuntanakajima (https://www.instagram.com/shuntanakajima/), both checked live 2026-11-19; site https://almostblackofficial.jp/.",
+       "link": "https://jerryshi042003.github.io/trip/listen.html?id=XHbJye-3_Wo"
+      }
+     ]
+    },
+    {
+     "title": "Listen & read · Yuki Hashimoto",
+     "items": [
+      {
+       "title": "TOKYO KNIT 2023 collaborating designer interview: YUKI HASHIMOTO (TOKYO KNIT 2023 コラボデザイナーYUKI HASHIMOTOインタビュー)",
+       "detail": "Hashimoto found that old Tokyo knit and dye factories turned an iPad doodle and a shared mood into finished fabric without any technical jargon, so Tom can approach Tokyo makers with a clear picture of the finished bandana rather than a spec sheet. Why: Hashimoto is one of the Raf Simons-era Japanese designers on Tom's list, and here he walks through exactly the kind of small-run, factory-partnered textile work (custom jacquard, bleach-dyed patterns, a first-ever textile design) that Tom wants for his tennis bandanas and clothing in Tokyo. Contact: Yuki Hashimoto via the brand Instagram @_yuki_hashimoto_ (https://www.instagram.com/_yuki_hashimoto_/, checked live 2026-11-19; links to yuki-hashimoto.com). Press: Peel PR, Chihiro Kamatsuka, press@yuki-hashimoto.com (listed on the Rakuten Fashion Week Tokyo brand page, which may be dated).",
+       "link": "https://jerryshi042003.github.io/trip/listen.html?id=6wiY-3p3bSM"
+      },
+      {
+       "title": "Special talk show at TOKYO KNIT 2023: TENDER PERSON x YUKI HASHIMOTO (特別トークショー @TOKYO KNIT総合展2023【TENDER PERSON × YUKI HASHIMOTO】)",
+       "detail": "Yuki Hashimoto treats Tokyo factories as partners with distinct personalities that grasp a design from a few vague words, so Tom should go in person with a clear finished image rather than a spec sheet. Why: Hashimoto (ex-Belgium, brand in Japan since 2018) explains how he works with Tokyo knit and dye factories, and TENDER PERSON's Yuto Yashige describes barging into factories and print shops each season; this is exactly the maker relationship Tom wants for small-run tennis bandanas and clothing in Tokyo. Contact: Yuki Hashimoto via the brand Instagram @_yuki_hashimoto_ (https://www.instagram.com/_yuki_hashimoto_/, checked live 2026-11-19; links to yuki-hashimoto.com). Press: Peel PR, Chihiro Kamatsuka, press@yuki-hashimoto.com (listed on the Rakuten Fashion Week Tokyo brand page, which may be dated).",
+       "link": "https://jerryshi042003.github.io/trip/listen.html?id=BlsrXF8HNyU"
+      }
+     ]
+    },
+    {
+     "title": "Listen & read · Taro Horiuchi",
+     "items": [
+      {
+       "title": "TARO HORIUCHI 2015 S/S interview",
+       "detail": "Horiuchi built his first runway show around Panamarenko, an Antwerp artist who kept hand-making flying machines that could never fly, so the \"futuristic but analog, with a little sadness\" idea is a natural, specific opener with him. Why: Horiuchi trained in Antwerp and now designs both th products and kolor, and this short clip shows what moves him (handmade objects, art from his Antwerp years, collaborators he admired as a student), which helps Tom open with a real making conversation rather than a pitch. Contact: Taro Horiuchi via th products on Instagram @th.products (https://www.instagram.com/th.products/, checked live 2026-11-19; bio says \"by @tarohoriuchi\"), or in person at the th products Sendagaya store, 2-30-28 Jingumae, Shibuya-ku, Tokyo. For kolor, where he is creative director, the brand IG is @kolorofficial (https://www.instagram.com/kolorofficial/).",
+       "link": "https://jerryshi042003.github.io/trip/listen.html?id=-2N9ueoUoRE"
+      }
+     ]
+    },
+    {
+     "title": "Listen & read · Mountain Martial Arts",
+     "items": [
+      {
+       "title": "Behind the scenes at a joint running-apparel exhibition, with an honest talk by the MMA, Ranor and RYOGEN directors ([VLOG] ランニングアパレルブランド合同展示会に密着。MMA、Ranor、RYOGENブランドディレクターの本音トーク！)",
+       "detail": "Japan's indie running brands (MMA, Ranor, RYOGEN) all make in Japan, show to wholesale buyers at small joint exhibitions in Tokyo, and say a brand survives on delivering the numbers, not on taste. Why: It shows Tom how a one-person Tokyo apparel brand actually runs (B2B exhibitions four times a year, Japanese factories, short lead times, cash-flow pressure), and the directors openly want more young brands and overseas buyers to come to their shows, which is an opening for a tennis/running bandana maker. Contact: Yuichi Shibui (MMA founder), IG @shibuinsta_mania https://www.instagram.com/shibuinsta_mania/ and MMA @mountainmartialarts https://www.instagram.com/mountainmartialarts/ ; Ranor (made-in-Japan running wear), IG @ranor9378 https://www.instagram.com/ranor9378/ , www.ranor.jp ; RYOGEN, IG @ryogen.jp https://www.instagram.com/ryogen.jp/",
+       "link": "https://jerryshi042003.github.io/trip/listen.html?id=AROPvefELX4"
+      },
+      {
+       "title": "\"[INTRODUCTION] Mountain Martial Arts, obsessed with design and function. But when did it start, and who started it? The brand's origin, product details and history, introduced again ([INTRODUCTION] デザインと機能にこだわったマウンテンマーシャルアーツ。でも、いつから、誰が始めたの？ブランドスタートのきっかけから商品のこだわり、歴史まであらためてご紹介！)\"",
+       "detail": "Yuichi Shibui is a graphic designer and avid runner, not a trained clothing designer, who built a one-person, all made-in-Japan running brand by mixing vintage and street taste with top technical fabrics, which is close to what Tom is trying to do with tennis. Why: Shibui is the clearest model in Tokyo for a sport-first apparel brand run by one person with Japanese factories, and he says he got his first big collaboration (Joe Grant) because someone noticed the product on a run. Tom can open with running and his bandanas, and ask about Japanese factories, minimums and Polartec-style fabric access. Contact: Yuichi Shibui (MMA founder and director), Instagram @shibuinsta_mania https://www.instagram.com/shibuinsta_mania/ ; brand Instagram @mountainmartialarts https://www.instagram.com/mountainmartialarts/ ; web store https://store.mountainmartialarts.tokyo/",
+       "link": "https://jerryshi042003.github.io/trip/listen.html?id=J-jpHJYhsoc"
+      },
+      {
+       "title": "\"TOKYO GUERRILLA RUN: a new running community in Tokyo, MOUNTAIN MARTIAL ARTS x Tani wa Hashiru. Why are they starting guerrilla runs in Tokyo? (【TOKYO GUERRILLA RUN /東京ゲリララン】東京に新たなランニングコミュニティ/MOUNTAIN MARTIAL ARTS ×タニは走る。/彼らはなぜ東京でゲリラランを始めるのか？！)\"",
+       "detail": "MMA's Tokyo Guerrilla Runs are free, unannounced night runs posted only in disappearing Instagram Stories, and Shibui explicitly wants foreign runners to join, so showing up to one is Tom's easiest way to meet him. Why: Tom runs, and this is a low-pressure way to spend an hour with Shibui and his running crowd before talking about bandanas or making. Watching MMA's and Shibui's Stories daily during Tom's December dates is the only way to catch one. Contact: Yuichi Shibui (MMA founder and director), Instagram @shibuinsta_mania https://www.instagram.com/shibuinsta_mania/ ; brand Instagram @mountainmartialarts https://www.instagram.com/mountainmartialarts/ (Guerrilla Runs are announced only in these accounts' Instagram Stories, which vanish after a day) ; web store https://store.mountainmartialarts.tokyo/",
+       "link": "https://jerryshi042003.github.io/trip/listen.html?id=KHJ8uUluHe4"
+      }
+     ]
+    },
+    {
+     "title": "Listen & read · Pilgrim Surf+Supply",
+     "items": [
+      {
+       "title": "Shopping at Pilgrim Surf+Supply Shibuya, a grown-up shop for the city-and-nature dual life (【お買い物動画】都会と自然のデュアルライフ！！洗練されたファッション、サーフ、アウトドアが全て詰まった\"ピルグリム サーフ+サプライ\"で大人のお買い物！！)",
+       "detail": "Pilgrim Surf+Supply Shibuya, run in Japan by BEAMS under Chris Gentile's New York direction, is one of the only shops in Tokyo that mixes surf gear with real clothing around a \"city and nature dual life\" idea, so it is a natural place to show a surf or sun bandana. Why: Pilgrim is one hop from Shingo Arai through BEAMS, and this tour shows what it stocks, how staff talk about product and which Tokyo surf people (Yuya Ofuji, the Ambient Wetsuits riders) gather around it. Tom can walk in, see where a bandana would sit on the shelf and ask staff in person. Contact: Pilgrim Surf+Supply Tokyo (BEAMS), 1F 1-14-7 Jinnan, Shibuya-ku, Tokyo, tel 03-5459-1690, open 11:00-20:00, https://pilgrimsurfsupply.jp/ ; Instagram @pilgrimsurfsupply_japan_news https://www.instagram.com/pilgrimsurfsupply_japan_news/ (product questions go to the store by phone). Host Yuya Ofuji (OVY director, Ambient Wetsuits co-founder): Instagram @yuyaofuji https://www.instagram.com/yuyaofuji/",
+       "link": "https://jerryshi042003.github.io/trip/listen.html?id=ZAR4KmmH8ZI"
+      },
+      {
+       "title": "Staying Fluid with Chris Gentile (Pilgrim Surf + Supply)",
+       "detail": "Pilgrim's founder says the person who wins people over is \"the 25-year-old asking a million questions with a smile,\" so Tom should walk into Pilgrim Tokyo curious and in person, not with a hard pitch. Why: Pilgrim mixes surf hard goods with clothing from small makers, its Tokyo shop is run by BEAMS (the same company as Setinn's Shingo Arai), and Chris calls Japanese retailers the best in the world, so a surf or sun bandana is a natural thing for Tom to show there. Contact: Pilgrim Surf+Supply Tokyo (run by BEAMS), 1F 1-14-7 Jinnan, Shibuya-ku, Tokyo, tel 03-5459-1690, 11:00-20:00, https://pilgrimsurfsupply.jp/ ; Japan Instagram @pilgrimsurfsupply_japan_news https://www.instagram.com/pilgrimsurfsupply_japan_news/ (its bio says product questions go to the store by phone); Chris Gentile through the New York shop, Instagram @pilgrimsurfsupply https://www.instagram.com/pilgrimsurfsupply/ (33 Grand St, Brooklyn)",
+       "link": "https://jerryshi042003.github.io/trip/listen.html?id=uqkCPdugcxQ"
+      }
+     ]
+    },
+    {
+     "title": "Listen & read · Sillage",
+     "items": [
+      {
+       "title": "\"Big boys need big clothes\": Sillage's loose-fit philosophy (「Big boys need big clothes.」大男孩的寬鬆主義－Sillage)",
+       "detail": "Sillage's own site runs What We Wear, a store for small brands and artists' work, so offering Tom's bandanas for it is a more natural ask than requesting a meeting. Why: This is a fan's secondhand explainer, but it gives Tom the basics on Nicolas Yuthanan Chalmeau (Paris-raised, in Tokyo since 2017, oversized comfort, \"customize your own clothes\"). Sillage now has a physical store in Daikanyama, which Tom can visit. Contact: Nicolas Yuthanan Chalmeau, IG @yuthanan__ https://www.instagram.com/yuthanan__/ (www.yuthanan.com) ; Sillage IG @sillage.online https://www.instagram.com/sillage.online/ ; Sillage Store, 6-2 Sarugakucho, Shibuya, Tokyo 150-0033, 12:00 to 19:00, https://www.sillage.online/",
+       "link": "https://jerryshi042003.github.io/trip/listen.html?id=lHlJ_6nWuuc"
+      }
+     ]
+    },
+    {
+     "title": "Listen & read · Tenugui and dyeing",
+     "items": [
+      {
+       "title": "How traditional Japanese hand-dyed towels are made",
+       "detail": "Todaya Shoten in Ningyocho will make a fully custom chusen-dyed tenugui for anyone who orders enough, but bold shapes and 7 or 8 colours at most dye best, and fine detail gets lost. Why: This is the end-to-end process Tom would go through to have his bandana print made as Tokyo tenugui (stencil in Mie, chusen dyeing in Edogawa, finishing in Ningyocho), so he can walk in knowing the steps, the design limits and the questions to ask. Contact: Todaya Shoten (Rienzome), 2-1-11 Nihonbashi Horidomecho, Chuo-ku, Tokyo, tel 03-3661-9566; inquiry form https://www.rienzome.co.jp/inquiry/ ; custom orders https://www.rienzome.co.jp/ordermade/ (original designs from about 100 pieces, usually 3+ months after design approval, so a December order will not finish during the trip); IG @rienzome_tenugui https://www.instagram.com/rienzome_tenugui/ (does not answer DMs)",
+       "link": "https://jerryshi042003.github.io/trip/listen.html?id=F87Iw5oBWUI"
+      },
+      {
+       "title": "Todaya Shoten: Rienzome's manufacturing process, digest version (【戸田屋商店】梨園染こだわりの製造プロセス（ダイジェストVer.）)",
+       "detail": "In under two minutes this shows the three stages a Rienzome custom tenugui goes through (design, stencil carving, chusen dyeing), which is the same pipeline Tom's bandana print would follow. Why: It is Todaya Shoten's own short visual of the process, useful to watch before contacting them so Tom can talk about stencils and dyeing in their terms; it was filmed with the cooperation of Asahi Senko, a dye works. Contact: Todaya Shoten (Rienzome), 2-1-11 Nihonbashi Horidomecho, Chuo-ku, Tokyo, tel 03-3661-9566; inquiry form https://www.rienzome.co.jp/inquiry/ ; custom orders https://www.rienzome.co.jp/ordermade/ (original designs from about 100 pieces, usually 3+ months after design approval, so a December order will not finish during the trip); IG @rienzome_tenugui https://www.instagram.com/rienzome_tenugui/ (does not answer DMs)",
+       "link": "https://jerryshi042003.github.io/trip/listen.html?id=FAGmbV_Rni8"
+      },
+      {
+       "title": "Gotta Hand it to Kamawanu! Shopping for Traditional Hand Towels in Tokyo",
+       "detail": "Kamawanu's Harajuku shop, in the basement of the Ota Memorial Museum, shows how far a tenugui brand can push one standard 35 x 90 cm cloth with seasonal motifs, playful modern prints and licensed collaborations. Why: It is in Harajuku near the Setinn flagship and is the clearest example in Tokyo of a modern tenugui brand Tom can study for sizing, folding, display and price, and Kamawanu also takes original tenugui orders. Contact: Kamawanu Harajuku, B1 Ota Memorial Museum of Art, 1-10-10 Jingumae, Shibuya-ku, Tokyo, tel 03-3401-7957, 10:30-18:30, closed Mondays; original tenugui from 75 pieces; contact form https://kamawanu-store.jp/pages/contact ; IG @tenugui_kamawanu https://www.instagram.com/tenugui_kamawanu/",
+       "link": "https://jerryshi042003.github.io/trip/listen.html?id=NMy_kzPPeSo"
+      },
+      {
+       "title": "Double-sided dyeing with the traditional Tokyo Honzome (chusen) technique, Tokyo Wasarashi (Katsushika) (6 伝統的な染技法\"東京本染(注染)\"による「両面染色技術」[ 東京和晒株式会社（葛飾区）])",
+       "detail": "Tokyo Wasarashi (now Tokyo Wasen) is a 1889 chusen dye works in Katsushika that runs hands-on tenugui dyeing classes with professional tools and was openly asking to collaborate with designers. Why: It is the most accessible way for Tom to touch Tokyo chusen dyeing during a two-week trip (book a class and leave with a real Tokyo-dyed sample), and a factory that has said it wants designer partners is a natural place to raise a small bandana run. Contact: Tokyo Wasen (東京和染, formerly Tokyo Wasarashi; name change notice dated 2026-10-01), 4-14-9 Tateishi, Katsushika-ku, Tokyo, tel 03-3693-3334 (weekdays 9:00-18:00), https://tenugui.co.jp/ ; IG @tokyowasen https://www.instagram.com/tokyowasen/ ; dyeing workshop booking https://souzou-kan.info/koubou/offer/ (GO TOKYO lists a 120-minute short course at 6,600 yen for 2 to 6 people)",
+       "link": "https://jerryshi042003.github.io/trip/listen.html?id=k1JHOHPLfbw"
       }
      ]
     }
