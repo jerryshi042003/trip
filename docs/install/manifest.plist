@@ -2,13 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0"><dict><key>items</key><array><dict>
 <key>assets</key><array>
-<dict><key>kind</key><string>software-package</string><key>url</key><string>https://jerryshi042003.github.io/trip/install/Trip.ipa?b=8-1795136336</string></dict>
+<dict><key>kind</key><string>software-package</string><key>url</key><string>https://jerryshi042003.github.io/trip/install/Trip.ipa?b=9-1795143013</string></dict>
 <dict><key>kind</key><string>display-image</string><key>url</key><string>https://jerryshi042003.github.io/trip/install/icon-57.png</string></dict>
 <dict><key>kind</key><string>full-size-image</string><key>url</key><string>https://jerryshi042003.github.io/trip/install/icon-512.png</string></dict>
 </array>
 <key>metadata</key><dict>
 <key>bundle-identifier</key><string>com.shishi88.trip</string>
-<key>bundle-version</key><string>1.0.8</string>
+<key>bundle-version</key><string>1.0.9</string>
 <key>kind</key><string>software</string>
 <key>title</key><string>Trip</string>
 </dict></dict></array></dict></plist>
