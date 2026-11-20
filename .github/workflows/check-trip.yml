@@ -1,0 +1,13 @@
+name: Check trip.json
+# Fails (and GitHub emails the pusher) if an edit would make the iPhone app ignore the update.
+on:
+  push:
+    paths: ['docs/trip.json', 'scripts/check_trip.py']
+  pull_request:
+    paths: ['docs/trip.json']
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/check_trip.py
