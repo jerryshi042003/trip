@@ -785,7 +785,7 @@
        "title": "Skip Tan · reply to “hey bro”",
        "link": "https://www.instagram.com/skip.tan/",
        "detail": "Open play and reach, rec level.",
-       "draft": "Hey Skip! I’m in Manila from Nov 21 for PCA qualies. Any open play or hitters you’d point me to?"
+       "draft": "Hey Skip! I land in Manila Saturday night for PCA qualies. Any open play or hitters you’d point me to?"
       },
       {
        "title": "Michael Cumagun · optional thanks",
@@ -796,7 +796,7 @@
        "title": "Tennis United · correct Cebu to Manila",
        "detail": "You told them “Cebu” but they’re in Manila. They offered a hit with a ~9 UTR coach.",
        "link": "https://www.instagram.com/tennisunitedacademy/",
-       "draft": "Sorry, I meant Manila! I’m there from Nov 21. Could we set a hit with one of your coaches that week?"
+       "draft": "Sorry, I meant Manila, not Cebu! I land Saturday night. If any of your players want to hit with me, my number is [my number]."
       },
       {
        "title": "Tokyo Tennis International · skip for now (fallback)",
@@ -818,7 +818,7 @@
        "title": "Hermont · PH hitters, Futures coach",
        "detail": "UC Irvine women’s tennis assistant coach (work email on his staff page) or IG @hq_legatsby. Sac State alum.",
        "link": "https://ucirvinesports.com/sports/womens-tennis/roster/coaches/hermont-legaspi/1213",
-       "draft": "Hi Hermont, I’m Jerry Shi. Joseph Lizardo mentioned you at Jack Kramer. I hit with Anthony Lee all the time at Victoria since I work at LA Galaxy by the USTA courts in Carson, so if you ever want to hit, let me know! I fly to Manila Friday for the PCA Open. Do you know anyone in the Philippines to hit with? Also I’m looking to play Futures and looking for a coach, do you know anyone?"
+       "draft": "Hi Hermont, I’m Jerry Shi. Joseph Lizardo mentioned you at Jack Kramer. I hit with Anthony Lee all the time at Victoria since I work at LA Galaxy by the USTA courts in Carson, so if you ever want to hit, let me know! I fly to Manila tomorrow for the PCA Open. Do you know anyone in the Philippines to hit with? Also I’m looking to play Futures and looking for a coach, do you know anyone?"
       },
       {
        "title": "Johnny Arcilla · acknowledge",
@@ -846,25 +846,24 @@
        "title": "PJ Tierro · email (he coaches at Cal State Fullerton)",
        "detail": "FB message Nov 17, no reply. Work email is on his Fullerton staff page. May be in Manila now for PCA doubles (unverified).",
        "link": "https://fullertontitans.com/sports/womens-tennis/roster/coaches/patrick-tierro/849",
-       "draft": "Hi Coach PJ, I’m Jerry Shi, a UCLA alum. Drexler Dy told me to reach out, and I sent you a Facebook message too. I fly to Manila Friday for PCA Open qualies (Nov 30). Do you know anyone I could hit with in Manila? I’d also love to hit with you back in SoCal sometime.\n\nThanks,\nJerry"
+       "draft": "Hi Coach PJ, I’m Jerry Shi, I was part of UCLA tennis, and I’m going to play the PCA Open in Manila. I know Alex Danti Marcial and Drexler Dy, and I fly out tomorrow. Do you know anyone I could hit with in Manila or Cebu?\n\nThanks,\nJerry"
       },
       {
-       "title": "Tennis United · email",
-       "detail": "IG unanswered. Email and booking form on their site.",
-       "link": "https://tennisunitedacademy.com",
-       "draft": "Hi, I’m Jerry Shi, a UCLA alum. I messaged you on Instagram and said Cebu by mistake. I meant Manila! I’m there from Nov 21 for PCA qualies. Could I book a hit with one of your ~UTR 9 coaches that week? What’s the rate?"
+       "title": "Tennis United · use the IG reply above",
+       "detail": "They did reply on IG (coaches ~9 UTR, offered a hit). Reply there with your number instead of asking the academy.",
+       "link": "https://tennisunitedacademy.com"
       },
       {
        "title": "John Rey Moreno · email (IG never delivered)",
        "detail": "Benilde head coach. Email on his GPTCA coach profile.",
        "link": "https://gptcatennis.org/johnrey-moreno",
-       "draft": "Hi Coach John Rey, I’m Jerry Shi, a UCLA alum. My Instagram message didn’t go through, so I’m trying email. I’m in Manila from Saturday Nov 21 for PCA Open qualies (Nov 30). Could I hit with you or one of your Benilde players that week?\n\nThanks, Jerry"
+       "draft": "Hi Coach John Rey, I’m Jerry Shi, I was part of UCLA tennis, and I’m going to play the PCA Open in Manila. I know Alex Danti Marcial, and I fly out tomorrow. Do you know anyone I could hit with in Manila or Cebu?\n\nThanks,\nJerry"
       },
       {
        "title": "Coach Czar · email or WhatsApp",
        "detail": "IG unanswered. She publishes email and WhatsApp for coaching on this page.",
        "link": "https://sportsprosconnect.com/?p=14121",
-       "draft": "Hi Coach Czar, Jerry here, I messaged you on Instagram. I’m in Manila from Nov 21 for PCA qualies. Do you do hitting sessions, or know strong players who’d hit? Happy to pay."
+       "draft": "Hi Coach Czar, I’m Jerry Shi, I was part of UCLA tennis, and I’m going to play the PCA Open in Manila. I know Alex Danti Marcial, and I land Saturday night. Do you know anyone who would want to hit with me?"
       },
       {
        "title": "Gentry Open · email",
@@ -876,25 +875,25 @@
        "title": "AJ Lim · Facebook page",
        "detail": "IG DM likely sits in his requests.",
        "link": "https://www.facebook.com/ajlimofficial",
-       "draft": "Hi AJ, I’m Jerry, an ex-UCLA player. I’m in Manila from Saturday for PCA qualies. I sent you an IG message too. Any chance you’d be down to hit one day before qualies?"
+       "draft": "Hey AJ, I’m Jerry Shi, I was part of UCLA tennis. I know Chris Papa (I’ve hit with him), and I’m good friends with Alex Danti Marcial. He’s the reason I’m coming for the PCA Open. Do you want to play at all before or after the tournament?"
       },
       {
        "title": "Niño Alcantara · Facebook page",
        "detail": "IG unanswered. Ruben’s referral.",
        "link": "https://www.facebook.com/franciscasey.alcantara",
-       "draft": "Hi Niño, Jerry here, the UCLA guy Ruben mentioned. I’m in Manila from Saturday for PCA qualies. Down to hit one day next week?"
+       "draft": "Hey Niño, I’m Jerry Shi, I was part of UCLA tennis. I know Ruben and Alex Danti Marcial, and I’m coming for the PCA Open. Do you want to play at all before or after the tournament?"
       },
       {
        "title": "Tennis MNL · Instagram",
        "detail": "FB unanswered.",
        "link": "https://www.instagram.com/tennismnl/",
-       "draft": "Hi! Following up from FB. I land in Manila Saturday (Nov 21) for PCA qualies. Any open play or strong hitters that week?"
+       "draft": "Hi! I’m Jerry Shi, I was part of UCLA tennis, and I land in Manila Saturday night for the PCA Open. Do you know anyone who would want to hit with me?"
       },
       {
        "title": "Open Play & Away · ask Coach Waldo",
        "detail": "IG unanswered. Their coach.",
        "link": "https://www.instagram.com/coachwaldobernardo/",
-       "draft": "Hi Coach Waldo, I’m Jerry, a UCLA alum in Manila from Nov 21 for PCA qualies. I messaged Open Play & Away too. Any session that week where I could hit with strong players?"
+       "draft": "Hi Coach Waldo, I’m Jerry Shi, I was part of UCLA tennis, and I land in Manila Saturday night for the PCA Open. I messaged Open Play & Away too. Do you know anyone who would want to hit with me?"
       },
       {
        "title": "Bryce · the PH buddy’s number",
@@ -904,22 +903,31 @@
       {
        "title": "RJ (Jason Fan’s friend) · first text",
        "detail": "Text. His number is in Jason’s contact card from Nov 14.",
-       "draft": "Hey RJ, I’m Jerry. I met Jason Fan at Walnut Ranch Park and got your number from his friend Steven. I’m in Manila from Saturday for the PCA Open. Any chance you know people to hit with there?"
+       "draft": "Hey RJ, I’m Jerry. Jason Fan was part of my club at UCLA, and he gave me your number. I’m in Manila from Saturday for the PCA Open. Any chance you know people to hit with there?"
       },
       {
        "title": "Griffen · family in Manila",
        "detail": "iMessage stalled Nov 15.",
-       "draft": "Leaving Friday! If any of your family in Manila plays or knows courts, I’d love an intro."
+       "draft": "Leaving tomorrow! I’ve met Alex Danti Marcial (he played Davis Cup for the Philippines) and Coach Joseph Lizardo, I’m staying with Adelmo in Manila, and I’ve got a hit set up at Valle Verde. Will send pics!"
       },
       {
-       "title": "Emon · Tokyo academy nudge",
-       "detail": "iMessage. You asked Nov 11, no answer.",
-       "draft": "Yo Emon, any academy or coach come to mind in Tokyo? I’m there in December. Also still down to connect you with Shingo for Setinn."
+       "title": "Emon · already asked (Nov 11), skip",
+       "detail": "You asked him about Tokyo academies on Nov 11. No new message needed."
       },
       {
        "title": "Tokyo Nov 18 batch · second route (send once dates are set)",
        "detail": "Musashino Dome (LINE), Waseda (email on wasedatennis.net), SBC (form), LEONE (form), Kazumax (email on YouTube about), Shota Konishi (LINE), Keisuke Ota (X), Star Tennis Academy (email on YouTube about).",
-       "draft": "先日Instagramでご連絡したUCLA卒のJerryです。12月[日付]に東京にいます。一緒に打てる方や参加できる練習があれば教えていただけると嬉しいです。費用はお支払いします。\n\nHi, I’m Jerry, a UCLA alum. I messaged you on Instagram. I’m in Tokyo [dates] in December. Is there anyone I could hit with, or a practice I could join? Happy to pay."
+       "draft": "先日Instagramでご連絡したUCLAテニス部出身のJerryです。12月[日付]に東京にいます。一緒に打てる方や参加できる練習があれば教えていただけると嬉しいです。\n\nHi, I’m Jerry Shi, I was part of UCLA tennis. I messaged you on Instagram. I’m in Tokyo [dates] in December. Is there anyone I could hit with, or a practice I could join?"
+      },
+      {
+       "title": "Arthur “Iggy” Pantino · Instagram @arthur_pantino",
+       "detail": "Arthur “Iggy” Pantino · Cebuano, played at LMU (Chris Papa gave you his name Nov 10)",
+       "draft": "Hey Arthur, I’m Jerry Shi, I was part of UCLA tennis. I know Chris Papa (I’ve hit with him), and I’m good friends with Alex Danti Marcial. He’s the reason I’m coming for the PCA Open. I might come to Cebu after. Do you want to play at all before or after the tournament?"
+      },
+      {
+       "title": "everybodi · Email or Reclub",
+       "detail": "everybodi · Manila open play",
+       "draft": "Hi! I’m Jerry Shi, I was part of UCLA tennis, and I land in Manila Saturday night for the PCA Open. Do you know anyone who would want to hit with me?"
       }
      ]
     },
@@ -977,36 +985,36 @@
        "title": "Adam Borak · intro to Noy Seno",
        "detail": "Adam had Noy on Tipsy Tennis a week ago.",
        "link": "https://www.instagram.com/tipsytennispodcast/",
-       "draft": "Yo Adam, loved the Noy Seno ep. If Cebu happens after PCA, could you connect me with him for a hit?"
+       "draft": "Yo Adam, loved the Noy Seno ep. If I make it to Cebu after PCA, could you connect me with him for a hit?"
       },
       {
        "title": "Noy Seno · hit in Cebu",
        "detail": "Ex D1 at St. Francis Brooklyn, now in Cebu. IG may be private; DM request still works.",
        "link": "https://www.instagram.com/sinoynoy/",
-       "draft": "Hey Noy! Jerry here, UCLA alum playing Futures, caught your ep on Tipsy Tennis. I’ll be in Cebu after PCA, down to hit? I’ll book the court"
+       "draft": "Hey Noy! I’m Jerry Shi, I was part of UCLA tennis, caught your ep on Tipsy Tennis. I’m in Manila for the PCA Open and might come to Cebu after. Do you want to play at all before or after the tournament?"
       },
       {
        "title": "Citigreen · strongest coach or player",
        "detail": "Red clay. Lotus Cup running now; draw Nov 21. Also Messenger: facebook.com/citigreentennisresort.",
        "link": "https://www.instagram.com/citigreentennisresort/",
-       "draft": "Hi! UCLA alum playing PCA qualies, in Cebu after. Could you set me up with your strongest coach or a player for a hit? Also is the Lotus Cup still on then?"
+       "draft": "Hi! I’m Jerry Shi, I was part of UCLA tennis. I’m playing the PCA Open in Manila and might come to Cebu after. Does anyone at Citigreen want to hit? Also is the Lotus Cup still on then?"
       },
       {
        "title": "Villa Aurora · join pickup",
        "detail": "Best pickup in Cebu. Message the FB page or just show up.",
-       "draft": "Hi! Visiting player from LA (UCLA alum). Can a guest join the pickup games? What time are the strong guys there?",
+       "draft": "Hi! I’m Jerry Shi, I was part of UCLA tennis, visiting from LA. Can a guest join the pickup games? What time are the strong guys there?",
        "link": "https://www.facebook.com/villaauroratennis"
       },
       {
        "title": "Coach Sheena Camporedondo · hit",
        "detail": "Citigreen coach. Find her on IG under her name.",
-       "draft": "Hi Coach Sheena! Visiting UCLA player in Cebu after PCA. Do you do hitting sessions, or know strong guys who’d hit?",
+       "draft": "Hi Coach Sheena! I’m Jerry Shi, I was part of UCLA tennis. I might be in Cebu after the PCA Open. Do you know anyone who would want to hit with me?",
        "link": "https://www.facebook.com/maria.camporedondo"
       },
       {
        "title": "USC Cebu varsity · join practice",
        "detail": "Coach Misael Bersaluna. Contact through the USC / Today’s Carolinian FB pages.",
-       "draft": "Hi Coach! UCLA alum playing Futures, in Cebu after PCA. Could I join a varsity practice or hit with your top guys?",
+       "draft": "Hi! I’m Jerry Shi, I was part of UCLA tennis, and I might be in Cebu after the PCA Open. Could I join a varsity practice or hit with your top guys?",
        "link": "https://www.facebook.com/todayscarolinian"
       }
      ]
@@ -1038,13 +1046,13 @@
        "title": "Adam Borak · Tipsy Tennis Podcast",
        "detail": "US ex-ITF junior playing the PH circuit; trains with Chad Cuizon. New cold. Business email on the podcast page: rss.com/podcasts/tipsytennispodcast.",
        "link": "https://www.instagram.com/tipsytennispodcast/",
-       "draft": "Hey Adam, Jerry here, UCLA alum playing Futures. In Manila for PCA qualies from Nov 21. Love the pod. Down to hit sometime before qualies?"
+       "draft": "Hey Adam, I’m Jerry Shi, I was part of UCLA tennis. Love the pod. I know Chris Papa (I’ve hit with him), and I’m good friends with Alex Danti Marcial. He’s the reason I’m coming for the PCA Open. Do you want to play at all before or after the tournament?"
       },
       {
        "title": "Carl Ubalde · book a hit",
        "detail": "Accepted your FB request Nov 19. Organized hits in Makati.",
        "link": "https://www.facebook.com/carl.ubalde.56",
-       "draft": "Hey Coach Carl, thanks for accepting! I’m in Manila from Nov 21 for PCA qualies. Could I book a hitting session that week? What’s your rate?"
+       "draft": "Hey Coach Carl, thanks for accepting! I’m Jerry Shi, I was part of UCLA tennis, and I land in Manila Saturday night for the PCA Open. Do you know anyone who would want to hit with me?"
       },
       {
        "title": "Ka Palo · watch for order of play",
@@ -1055,19 +1063,18 @@
        "title": "Jed Olivarez · nudge for an Olivarez hit",
        "detail": "FB message Nov 17 unseen (likely in Message Requests; not FB friends). Nudge on IG, or ask Alex Marcial, your one mutual. Mutuals on IG: Chris Papa, Silvio, Joseph Lizardo.",
        "link": "https://www.instagram.com/jeddyboy109/",
-       "draft": "Congrats on Asmara man! I'm the UCLA guy Ruben mentioned, in Manila from Sat for PCA qualies. Any chance I could join a hit at Olivarez one weekday?"
+       "draft": "Hey Jed, congrats on Asmara! I’m Jerry Shi, I was part of UCLA tennis. I know Chris Papa (I’ve hit with him), and I’m good friends with Alex Danti Marcial. He’s the reason I’m coming for the PCA Open. Do you want to play at all before or after the tournament?"
       },
       {
        "title": "Nilo Ledama · ask for a hit",
        "detail": "New lead from Jed's Nov 18 Asmara post. Only mutual is Marvin (racketoncourt), so Marvin can intro. PCA entry unknown.",
        "link": "https://www.instagram.com/its_nillllllll/",
-       "draft": "Hey Nilo, saw you and Jed in the Asmara doubles final. I'm ex-UCLA, in Manila for PCA qualies. Down to hit some time next week?"
+       "draft": "Hey Nilo, saw you and Jed in the Asmara doubles final. I’m Jerry Shi, I was part of UCLA tennis. I know Chris Papa (I’ve hit with him), and I’m good friends with Alex Danti Marcial. He’s the reason I’m coming for the PCA Open. Do you want to play at all before or after the tournament?"
       },
       {
-       "title": "AJ Lim · ask Chris for an intro",
+       "title": "AJ Lim · skip the Chris intro (DM him directly)",
        "detail": "IG DM Nov 17 likely in his requests (he follows 1 account). Chris Papa is a mutual. Unlikely to hit during PCA week.",
-       "link": "https://www.instagram.com/chrispapa01/",
-       "draft": "Hey Chris, any chance you could intro me to AJ for a hit before PCA qualies? Ex-UCLA, in Manila from Sat."
+       "link": "https://www.instagram.com/chrispapa01/"
       }
      ]
     },
@@ -1084,42 +1091,41 @@
        "title": "Jay Friend · hit in Tokyo",
        "detail": "Tokyo-born pro, Arizona ’26, playing the Japan Challengers now. Mutual follow with Chris Papa, nothing more. DM him directly.",
        "link": "https://www.instagram.com/jaythefriend/",
-       "draft": "Yo Jay, Jerry here, UCLA alum playing Futures. Saw you crushing the Japan challengers. I’m in Tokyo early December, if you’re home and want a hit I’ll book the court"
+       "draft": "Yo Jay, I’m Jerry Shi, I was part of UCLA tennis. Saw you crushing the Japan challengers. I’m in Tokyo [dates] in December. If you’re home and want a hit, I’ll book the court."
       },
       {
-       "title": "Emon · who he hits with in Tokyo",
-       "detail": "iMessage. He never answered the Tokyo hitting ask.",
-       "draft": "Yo Emon, quick one. When you’re home in Japan who do you hit with? Any academy or coach in Tokyo I could pull up to? I’m there early December. And I’ll tell Shingo you’re down for Setinn 🙏"
+       "title": "Emon · already asked (Nov 11), skip",
+       "detail": "You asked him about Tokyo academies on Nov 11. No new message needed."
       },
       {
        "title": "Hien Pham · paid hitting",
        "detail": "ATP-ranked pro in Tokyo; LinkedIn message, IG backup.",
        "link": "https://www.linkedin.com/in/hien-pham-81650b421/",
-       "draft": "Hey Hien, I’m Jerry, UCLA alum playing Futures (UTR ~9). Saw you do private sessions in central Tokyo. I’m there early December. Could I book 2–3 hitting sessions? Happy to pay your rate + court"
+       "draft": "Hey Hien, I’m Jerry Shi, I was part of UCLA tennis. I’m in Tokyo [dates] in December. Saw you do private sessions in central Tokyo. Could I book a couple of hitting sessions?"
       },
       {
        "title": "Kenny Watabe · session or pro hitter",
        "link": "https://wa.me/819092544908",
        "detail": "Email kennywatabe1982@gmail.com or WhatsApp.",
-       "draft": "Hi Kenny, I’m Jerry, UCLA alum playing Futures (UTR ~9), in Tokyo early December. Any chance of a paid session, or could you point me to a pro who wants a hitting partner? Thanks!"
+       "draft": "Hi Kenny, I’m Jerry Shi, I was part of UCLA tennis. I’m in Tokyo [dates] in December. Do you know a pro or strong player who would want to hit with me?"
       },
       {
        "title": "Frédéric Dewitte · hitting session",
        "link": "https://fredericdewitte.com/ja/contact/",
        "detail": "Academy is at Club Med Hokkaido/Okinawa, so ask if he hits in Tokyo. Contact form on his site.",
-       "draft": "Hey Frédéric, Jerry here, UCLA alum playing Futures. In Tokyo early December. Do you do high-level hitting sessions? Would love to book one"
+       "draft": "Hey Frédéric, I’m Jerry Shi, I was part of UCLA tennis. I’m in Tokyo [dates] in December. Do you hit in Tokyo, or know a strong player there who would want to hit with me?"
       },
       {
        "title": "Kurashima Academy · private with Yuri",
        "link": "https://kurashimatennis.com/",
        "detail": "Inquiry form on the site. Jingu Gaien, near Setinn.",
-       "draft": "はじめまして、UCLA卒でITFフューチャーズに出ているJerryです(UTR 9前後)。12月上旬に東京に滞在します。倉島侑里コーチとのプライベートレッスン(ラリー/ポイント練習中心)を2回ほどお願いできますか?日程と料金を教えてください。"
+       "draft": "はじめまして。UCLAテニス部出身のJerryです。12月[日付]に東京に滞在します。倉島侑里コーチとのプライベートレッスン（ラリー・ポイント練習中心）をお願いできますか？日程と料金を教えてください。\n\nHi, I’m Jerry Shi, I was part of UCLA tennis. I’m in Tokyo [dates] in December. Could I book a private session with Coach Yuri, mostly rallies and points? Please let me know times and price."
       },
       {
        "title": "Blue Six · join practice",
        "link": "https://www.instagram.com/bluesix_trainingclub/",
        "detail": "Ariake pro club; pros prep there before All-Japans (Dec 13–20). Email on tc.blue-6.com.",
-       "draft": "はじめまして、UCLA卒でITFフューチャーズに出ているJerryです(UTR約9)。12月上旬に東京にいます。選手の方の練習相手やクラブの練習に参加させていただくことは可能でしょうか?費用はお支払いします。"
+       "draft": "はじめまして。UCLAテニス部出身のJerryです。12月[日付]に東京にいます。選手の方の練習相手や、クラブの練習に参加させていただくことは可能でしょうか？\n\nHi, I’m Jerry Shi, I was part of UCLA tennis. I’m in Tokyo [dates] in December. Could I join a practice or be a hitting partner for one of your players?"
       },
       {
        "title": "Ryoto · lock a hit",
@@ -1136,55 +1142,55 @@
        "title": "Shinn Hiramatsu · book hitting",
        "detail": "Ex-pro hitter, lessons across Tokyo by DM. Rate not public. Lesson form on his site.",
        "link": "https://shinnhawkeyetennis.com/",
-       "draft": "Hey Shinn! Jerry here, UCLA alum playing Futures (UTR ~9). In Tokyo early December, would love to book a couple of hitting sessions with you, happy to pay your rate + court"
+       "draft": "Hey Shinn! I’m Jerry Shi, I was part of UCLA tennis. I’m in Tokyo [dates] in December. Would love to book a couple of hitting sessions with you."
       },
       {
        "title": "Takuya Komura · private session",
        "detail": "Pro and private coach in Tokyo, DM for lessons.",
        "link": "https://www.instagram.com/takuya.komura1221/",
-       "draft": "Hi Takuya! Jerry, UCLA alum playing Futures. In Tokyo early December, could I book a private hitting or match-play session with you? English ok?"
+       "draft": "Hi Takuya! I’m Jerry Shi, I was part of UCLA tennis. I’m in Tokyo [dates] in December. Could I book a hitting or match-play session with you? English ok?"
       },
       {
        "title": "Sari Baba · book through B LYNC",
        "detail": "¥17,600 for 60 min, prepaid, you book the court.",
        "link": "https://blync.jp/sports/tennis/",
-       "draft": "Private 90-min hitting and point play for a UTR ~9 male player, early December, Sendagaya area if possible"
+       "draft": "Private 60–90 min hitting and point play with Sari Baba for a former UCLA player, [dates] in December, Sendagaya area if possible."
       },
       {
        "title": "Chikaya Sato · hit",
        "detail": "Public email on his IG bio. Ex Penn State / SDSU.",
        "link": "https://www.instagram.com/chikayasato/",
-       "draft": "Hey Chikaya, Jerry here, UCLA alum playing Futures. Heard you split time in Tokyo. I’m there early December, down to hit? I’ll grab the court"
+       "draft": "Hey Chikaya, I’m Jerry Shi, I was part of UCLA tennis. Heard you split time in Tokyo. I’m in Tokyo [dates] in December, down to hit? I’ll grab the court."
       },
       {
        "title": "Hiroyasu Ehara · private",
        "detail": "2014 All-Japan champion, coaches now. Japanese first. Private-lesson form on his site.",
        "link": "https://hiroyasueharatennis.jimdofree.com/",
-       "draft": "江原さん、はじめまして。UCLA卒でITFフューチャーズに出ているJerryです。12月上旬に東京にいます。ヒッティングやポイント練習のプライベートをお願いできますか?\n\nHi Ehara-san, I’m Jerry, UCLA alum playing ITF Futures. I’m in Tokyo early December. Could I book a private hitting / point-play session?"
+       "draft": "江原さん、はじめまして。UCLAテニス部出身のJerryです。12月[日付]に東京にいます。ヒッティングやポイント練習のプライベートをお願いできますか？\n\nHi Ehara-san, I’m Jerry Shi, I was part of UCLA tennis. I’m in Tokyo [dates] in December. Could I book a private hitting / point-play session?"
       },
       {
        "title": "t_socialt · play sets",
        "detail": "Adult player at All-Japan qualifying level. Name unknown.",
        "link": "https://www.instagram.com/t_socialt/",
-       "draft": "Hi! UCLA alum here playing Futures, in Tokyo early December. Would love to hit or play sets if you’re free"
+       "draft": "Hi! I’m Jerry Shi, I was part of UCLA tennis. I’m in Tokyo [dates] in December. Would love to hit or play sets if you’re free."
       },
       {
        "title": "Ryusei Kato · English lesson",
        "detail": "Splits Tokyo and Osaka; ask which city he’s in.",
        "link": "https://www.instagram.com/ryusei__tennis/",
-       "draft": "Hey Ryusei! I’m in Tokyo early December, are you in Tokyo then? Would love to book a hitting session"
+       "draft": "Hey Ryusei! I’m Jerry Shi, I was part of UCLA tennis. I’m in Tokyo [dates] in December, are you in Tokyo then? Would love to book a hitting session."
       },
       {
        "title": "EPSOM · top-level hitting session",
        "detail": "Ask on LINE about December dates.",
        "link": "https://lin.ee/Z6USi7m3",
-       "draft": "12月上旬に東京にいます。上級者向けのヒッティング練習会はありますか?一番強い球のレベルでお願いしたいです。\n\nI’m in Tokyo early December. Do you have an advanced hitting session? I’d like the strongest ball level."
+       "draft": "12月[日付]に東京にいます。上級者向けのヒッティング練習会はありますか？一番強い球のレベルでお願いしたいです。\n\nI’m in Tokyo [dates] in December. Do you have an advanced hitting session? I’d like the strongest ball level."
       },
       {
        "title": "Aoyama Gakuin · join one practice",
        "detail": "Team welcomes visitors by email or DM. Early-December practices likely still on.",
        "link": "https://www.agu-tennis.com/contact/",
-       "draft": "はじめまして。UCLA卒のJerryです。12月上旬に東京にいます。1日だけ練習に参加させていただくことは可能でしょうか?\n\nHi, I’m Jerry, a UCLA alum. I’m in Tokyo early December. Could I join one of your practices?"
+       "draft": "はじめまして。UCLAテニス部出身のJerryです。12月[日付]に東京にいます。1日だけ練習に参加させていただくことは可能でしょうか？\n\nHi, I’m Jerry Shi, I was part of UCLA tennis. I’m in Tokyo [dates] in December. Could I join one of your practices?"
       }
      ]
     },
@@ -1211,7 +1217,7 @@
        "title": "Tokyo · Takao run with Tokyo Tarzan Club",
        "link": "https://www.instagram.com/tokyo_tarzan_club/",
        "detail": "December schedule not posted yet.",
-       "draft": "hey! tennis player from LA in tokyo early december. any takao run that week I could join?"
+       "draft": "hey! tennis player from LA in tokyo [dates]. any takao run that week I could join?"
       },
       {
        "title": "RWP Run Club · join a BGC run",
