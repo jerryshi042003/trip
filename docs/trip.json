@@ -694,21 +694,11 @@
    "where": "",
    "todos": [
     {
-     "title": "Share location",
-     "items": [
-      {
-       "title": "Turn on your live pin",
-       "detail": "Open your private setup link from Jerry and tap Open in Trip, then allow location Always. Trip sends your point about every minute while you move. Turn it off any time in Where.",
-       "link": "https://jerryshi042003.github.io/trip/location-setup/"
-      }
-     ]
-    },
-    {
      "title": "Do now · before Sat Nov 21",
      "items": [
       {
        "title": "PCA entry: done (Alex signed you up)",
-       "detail": "Alex, Nov 19 7:48 PM: “You are signed up.” No message needed.",
+       "detail": "Alex, Nov 19 7:48 PM: “You are signed up.” No fee to pay. No message needed.",
        "link": "https://www.facebook.com/100057105145569/posts/posting-list-of-open-entries-as-of-november-18-2026reminder-also-that-the-deadli/1708210611092427/"
       },
       {
@@ -720,11 +710,6 @@
     {
      "title": "Money & payments · from Muse, Nov 19",
      "items": [
-      {
-       "title": "PCA entry fee · ₱1,200 singles, pay first",
-       "detail": "Official form says “No Pay, No Play”: men’s singles ₱1,200, doubles ₱900 each. Pay by BDO transfer to Philippine Columbian Association or QR-PH, then upload the receipt in the form. Easiest from LA: Wise to the BDO account shown on the form. Or Alex/Adelmo pays by QR-PH and you repay in cash. Check first whether “Sy, Jerry” (#159) is already your paid entry.",
-       "link": "https://docs.google.com/forms/d/e/1FAIpQLSdGsNLqzoUeBv0nRPltp4y6S__L5acQg_0ruUmSo2qgfLXQJg/viewform"
-      },
       {
        "title": "Philippines · set up GCash GTourist",
        "detail": "Locals pay by scanning GCash or Maya QR codes. GTourist is GCash for US visitors: sign up with your +1 number and passport (keep roaming on for the code). It activates once you land and lasts 30 days. Use up the balance before it ends.",
