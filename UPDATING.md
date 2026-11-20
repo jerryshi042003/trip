@@ -28,7 +28,7 @@ Any agent that can drive the GitHub editor or push to the repo can do the same.
 
 Field rules the app needs:
 - Every to-do item needs `title` and `detail` as text.
-- `link` must be a full `https://` URL.
+- `link` must be a full `https://` URL. (Since build 8 the app skips one bad item instead of keeping the old copy, but the check still matters.)
 - `draft` is optional.
 - Every person needs a `name`.
 - No private phone numbers or emails: the site is public.
@@ -40,3 +40,4 @@ This needs a new TestFlight build. Once Apple processes it, it reaches the "Trip
 - **From Jerry's Mac:** run `ios/release-testflight.sh`. It bumps the build number, archives and uploads.
 - **From GitHub, no Mac:** Actions tab → "Release TestFlight build" → Run workflow. This needs three repository secrets from an App Store Connect Team API key (`ASC_KEY_ID`, `ASC_ISSUER_ID`, `ASC_KEY_P8`), which Jerry creates once in App Store Connect → Users and Access → Integrations.
 - **Tom building it himself:** `ios/build-for-my-iphone.sh`. See the README.
+- **One-tap install link, no TestFlight:** https://jerryshi042003.github.io/trip/install/. Tom taps "Get my iPhone ID" once. Jerry registers that iPhone, then runs `ios/release-adhoc.sh`. After that, "Install" puts the app on Tom's iPhone, and re-tapping it after each `ios/release-adhoc.sh` run brings new app code. Registering new iPhones happens automatically when the `ASC_KEY_*` variables are set; without them, add the iPhone at https://developer.apple.com/account/resources/devices/add.
