@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Install Trip</title>
+<meta name="theme-color" content="#f2f2f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<link rel="apple-touch-icon" href="../icon-180.png?v=2">
+<link rel="stylesheet" href="../trip.css">
+<style>
+.step{display:flex;gap:14px;align-items:center;padding:14px 16px}
+.n{flex:0 0 28px;height:28px;border-radius:50%;background:var(--fill);display:grid;place-items:center;font-weight:650;font-size:15px;color:var(--sec)}
+.btn{display:block;text-align:center;background:var(--tint);color:#fff;text-decoration:none;border-radius:12px;padding:14px;font-weight:650;margin:0 16px 16px}
+@media (prefers-color-scheme:dark){.btn{color:#000}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<h1><img class="trip-mark" src="../icon-180.png?v=2" width="34" height="34" alt="">Install Trip</h1>
+
+<div class="group">
+  <div class="step"><span class="n">1</span><div class="main"><div class="t">Get my iPhone ID</div></div></div>
+  <a class="btn" href="https://jerry-trip.vercel.app/api/udid?profile=1">Get my iPhone ID</a>
+</div>
+
+<div class="hdr"></div>
+<div class="group">
+  <div class="step"><span class="n">2</span><div class="main"><div class="t">Install</div></div></div>
+  <a class="btn" href="itms-services://?action=download-manifest&amp;url=https://jerryshi042003.github.io/trip/install/manifest.plist">Install</a>
+</div>
+</main>
+</body>
+</html>
