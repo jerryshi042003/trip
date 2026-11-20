@@ -61,7 +61,7 @@ Keep it valid JSON (commas between items, double quotes). If the site goes blank
 
 1. Follow the **Turn on your live pin** task in Plan. Install OwnTracks and enable external configuration in its settings.
 2. Open your private setup link and tap **Open your setup in OwnTracks**. Confirm the configuration. Turn external configuration off again after importing if desired.
-3. In iPhone Settings → Apps → OwnTracks → Location, set **Always** and enable **Precise Location**. Open OwnTracks and publish one point to check your pin. Keep OwnTracks running. Significant mode reports when the OS detects movement, including with the screen locked. It has no fixed reporting interval.
+3. In iPhone Settings → Apps → OwnTracks → Location, set **Always** and enable **Precise Location**. Open OwnTracks and publish one point to check your pin. Keep OwnTracks running. Move mode sends a point about every 60 seconds or 25 m of movement, including with the screen locked; it uses more battery. Switch to Significant to save battery.
 4. To stop, set OwnTracks to Manual. Trip hides the last point after 24 hours. The operator can clear it immediately with the phone credential as described below.
 
 ### Google Maps fallback

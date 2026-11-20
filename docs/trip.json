@@ -698,7 +698,7 @@
      "items": [
       {
        "title": "Turn on your live pin",
-       "detail": "Install OwnTracks and open your private setup link. In iPhone Settings, set OwnTracks Location to Always and turn Precise Location on. Publish once and check the Where tab.",
+       "detail": "Open your private setup link from Jerry and follow it: OwnTracks, Location Always, Precise on. It sends your point about every minute while you move.",
        "link": "https://jerryshi042003.github.io/trip/location-setup/"
       }
      ]
@@ -1236,12 +1236,12 @@
      "items": [
       {
        "title": "Install the Trip iPhone app (TestFlight)",
-       "detail": "Install TestFlight. Open the private invite Jerry shares after Apple approves the beta. Tap Install and turn on Automatic Updates in TestFlight. Plan edits refresh in Trip.",
-       "link": "https://apps.apple.com/app/testflight/id899247664"
+       "detail": "Open https://testflight.apple.com/join/f9uEGmew, tap Install, and turn on Automatic Updates in TestFlight. Plan edits refresh in Trip by themselves.",
+       "link": "https://testflight.apple.com/join/f9uEGmew"
       },
       {
        "title": "Turn on your live pin",
-       "detail": "Install OwnTracks and open your private setup link. In iPhone Settings, set OwnTracks Location to Always and turn Precise Location on. Publish once and check the Where tab.",
+       "detail": "Open your private setup link from Jerry and follow it: OwnTracks, Location Always, Precise on. It sends your point about every minute while you move.",
        "link": "https://jerryshi042003.github.io/trip/location-setup/"
       }
      ]

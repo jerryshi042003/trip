@@ -15,7 +15,10 @@
     password: token,
     deviceid: 'iphone',
     tid: user === 'tom' ? 'TO' : 'JE',
-    monitoring: 1,
+    monitoring: 2,
+    locatorInterval: 60,
+    locatorDisplacement: 25,
+    ignoreInaccurateLocations: 100,
     remoteConfiguration: false,
     extendedData: false,
   };
