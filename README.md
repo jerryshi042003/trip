@@ -59,10 +59,11 @@ Keep it valid JSON (commas between items, double quotes). If the site goes blank
 
 ### Enable sharing on each phone
 
-1. Follow the **Turn on your live pin** task in Plan. Install OwnTracks and enable external configuration in its settings.
-2. Open your private setup link and tap **Open your setup in OwnTracks**. Confirm the configuration. Turn external configuration off again after importing if desired.
-3. In iPhone Settings → Apps → OwnTracks → Location, set **Always** and enable **Precise Location**. Open OwnTracks and publish one point to check your pin. Keep OwnTracks running. Move mode sends a point about every 60 seconds or 25 m of movement, including with the screen locked; it uses more battery. Switch to Significant to save battery.
-4. To stop, set OwnTracks to Manual. Trip hides the last point after 24 hours. The operator can clear it immediately with the phone credential as described below.
+1. Install Trip from TestFlight: https://testflight.apple.com/join/f9uEGmew
+2. Open your private setup link from Jerry and tap **Open in Trip**. Trip pairs itself (the key is saved in the iPhone Keychain) and starts sharing.
+3. Allow location **Always** when asked, with **Precise Location** on.
+
+Trip sends a point about every 60 seconds or 25 m of movement, including with the screen locked or the app closed. Turn **Share my location** off in Where to stop; that also clears your pin right away. After a reboot or a force-quit, Trip resumes on its own when you next move. The pairing link format is `trip://pair?traveler=<jerry|tom>&token=<43 chars>`; `trip://share?on=0` or `trip://share?on=1` turns sharing off or on.
 
 ### Google Maps fallback
 
@@ -70,7 +71,7 @@ From Google Maps, use profile picture → **Location sharing** → **New share**
 
 ### Hosting and credentials
 
-`api/location.mjs` runs on the existing `trip` Vercel Hobby project at `https://jerry-trip.vercel.app/api/location`. The same read endpoint is used by GitHub Pages and MapKit. Public GET returns only the current point per traveler and never requires a login. OwnTracks uses HTTPS Basic Auth to POST updates, with a distinct token and SHA-256 secret per phone (`TRIP_JERRY_SHA256`, `TRIP_TOM_SHA256`). The app uses a private Vercel Blob store with one object per phone and no trail. Authenticated DELETE clears the caller’s point. Never place setup links or write credentials in trip.json, documentation, or GitHub.
+`api/location.mjs` runs on the existing `trip` Vercel Hobby project at `https://jerry-trip.vercel.app/api/location`. The same read endpoint is used by GitHub Pages and MapKit. Public GET returns only the current point per traveler and never requires a login. The Trip app uses HTTPS Basic Auth to POST updates, with a distinct token and SHA-256 secret per phone (`TRIP_JERRY_SHA256`, `TRIP_TOM_SHA256`). The app uses a private Vercel Blob store with one object per phone and no trail. Authenticated DELETE clears the caller’s point. Never place setup links or write credentials in trip.json, documentation, or GitHub.
 
 Release web changes from this repo to GitHub Pages (`main:docs/`) and Vercel (`jerryshi042003s-projects/trip`). Vercel must have the connected private Blob store and the two digest variables before releasing the API. Build the native target from `ios/project.yml` and publish through Apple TestFlight or the direct install script.
 

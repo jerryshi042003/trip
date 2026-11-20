@@ -74,6 +74,7 @@ struct WhereView: View {
                     Text("Pins appear when Jerry or Tom starts sharing.").foregroundStyle(.secondary)
                 }
             }
+            ShareLocationSection()
             Section {
                 ForEach(travelers, id: \.self) { id in
                     let pin = pins.first { $0.id == id }

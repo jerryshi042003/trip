@@ -13,6 +13,15 @@ targets:
     platform: iOS
     sources:
       - path: Trip
+    info:
+      path: Trip/Info.plist
+      properties:
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        UIBackgroundModes: [location]
+        CFBundleURLTypes:
+          - CFBundleURLName: com.shishi88.trip
+            CFBundleURLSchemes: [trip]
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.shishi88.trip
@@ -23,6 +32,8 @@ targets:
         INFOPLIST_KEY_ITSAppUsesNonExemptEncryption: NO
         TARGETED_DEVICE_FAMILY: '1'
         INFOPLIST_KEY_CFBundleDisplayName: Trip
+        INFOPLIST_KEY_NSLocationWhenInUseUsageDescription: Trip shares your location with Jerry and Tom while sharing is on.
+        INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription: Trip shares your location with Jerry and Tom while sharing is on.
         INFOPLIST_KEY_UILaunchScreen_Generation: YES
         INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
         INFOPLIST_KEY_LSApplicationQueriesSchemes: "comgooglemaps whatsapp instagram fb"

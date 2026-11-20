@@ -8,6 +8,8 @@
 #   ASC_KEY_ID=... ASC_ISSUER_ID=... ASC_KEY_PATH=/path/AuthKey_XXXX.p8
 set -euo pipefail
 cd "$(dirname "$0")"
+# App Store Connect API key on Jerry's Mac (GitHub passes the same variables as secrets)
+[[ -z ${ASC_KEY_ID:-} && -f ~/.config/trip/asc.env ]] && source ~/.config/trip/asc.env
 say() { print -P "%B$1%b" }
 fail() { print -P "%F{red}%B$1%b%f"; exit 1 }
 TEAM=${TEAM:-39225XZQP2}
@@ -92,4 +94,9 @@ SHIPPED=1
 git add project.yml Trip/trip.json
 git commit -q -m "TestFlight build $NEW"
 git pull --no-rebase -q && git push -q
-say "Done. Build $NEW uploaded. It appears in TestFlight -> Trip internal after Apple processes it (5-15 min)."
+if [[ -n ${ASC_KEY_ID:-} ]]; then
+  node asc-distribute.mjs "$NEW" || print "Couldn't finish distribution; add build $NEW to the groups in App Store Connect."
+  say "Done. Build $NEW is in TestFlight."
+else
+  say "Done. Build $NEW uploaded. Add it to the TestFlight groups once Apple processes it (5-15 min)."
+fi

@@ -698,7 +698,7 @@
      "items": [
       {
        "title": "Turn on your live pin",
-       "detail": "Open your private setup link from Jerry and follow it: OwnTracks, Location Always, Precise on. It sends your point about every minute while you move.",
+       "detail": "Open your private setup link from Jerry and tap Open in Trip, then allow location Always. Trip sends your point about every minute while you move. Turn it off any time in Where.",
        "link": "https://jerryshi042003.github.io/trip/location-setup/"
       }
      ]
@@ -1241,7 +1241,7 @@
       },
       {
        "title": "Turn on your live pin",
-       "detail": "Open your private setup link from Jerry and follow it: OwnTracks, Location Always, Precise on. It sends your point about every minute while you move.",
+       "detail": "Open your private setup link from Jerry and tap Open in Trip, then allow location Always. Trip sends your point about every minute while you move. Turn it off any time in Where.",
        "link": "https://jerryshi042003.github.io/trip/location-setup/"
       }
      ]

@@ -8,6 +8,8 @@
 # Uses the build number in project.yml as is (TestFlight releases bump it).
 set -euo pipefail
 cd "$(dirname "$0")"
+# App Store Connect API key on Jerry's Mac (GitHub passes the same variables as secrets)
+[[ -z ${ASC_KEY_ID:-} && -f ~/.config/trip/asc.env ]] && source ~/.config/trip/asc.env
 say() { print -P "%B$1%b" }
 fail() { print -P "%F{red}%B$1%b%f"; exit 1 }
 TEAM=${TEAM:-39225XZQP2}
