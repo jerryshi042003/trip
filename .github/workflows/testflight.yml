@@ -4,6 +4,9 @@ name: Release TestFlight build
 #   ASC_KEY_ID, ASC_ISSUER_ID, ASC_KEY_P8 (the full text of AuthKey_<id>.p8)
 on:
   workflow_dispatch:
+  # TestFlight builds expire after 90 days: ship a fresh one on the 1st of every month.
+  schedule:
+    - cron: '0 17 1 * *'
 
 permissions:
   contents: write
@@ -22,12 +25,17 @@ jobs:
         env:
           ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
         run: |
-          [ -n "$ASC_KEY_ID" ] || { echo "::error::Add the ASC_KEY_ID, ASC_ISSUER_ID and ASC_KEY_P8 secrets first (see README, 'Ship app code changes')."; exit 1; }
+          if [ -z "$ASC_KEY_ID" ]; then
+            if [ "${{ github.event_name }}" = schedule ]; then echo "::notice::No App Store Connect key yet; Jerry's Mac does the monthly build."; echo "SKIP=1" >> "$GITHUB_ENV"; exit 0; fi
+            echo "::error::Add the ASC_KEY_ID, ASC_ISSUER_ID and ASC_KEY_P8 secrets first (see README, 'Ship app code changes')."; exit 1
+          fi
       - name: Write API key
+        if: env.SKIP != '1'
         env:
           ASC_KEY_P8: ${{ secrets.ASC_KEY_P8 }}
         run: printf '%s\n' "$ASC_KEY_P8" > "$RUNNER_TEMP/AuthKey.p8"
       - name: Build and upload
+        if: env.SKIP != '1'
         env:
           ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
           ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
@@ -36,7 +44,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           sudo xcode-select -s "$(ls -d /Applications/Xcode_26*.app | sort -V | tail -1)"
-          ios/release-testflight.sh
+          if [ "${{ github.event_name }}" = schedule ]; then ios/release-testflight.sh --if-stale; else ios/release-testflight.sh; fi
       - name: Remove API key
         if: always()
         run: rm -f "$RUNNER_TEMP/AuthKey.p8"

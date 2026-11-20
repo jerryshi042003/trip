@@ -33,6 +33,14 @@ if [[ -z $XG ]]; then
   fi
 fi
 
+# --if-stale: do nothing when a TestFlight build was shipped in the last 25 days
+# (used by the monthly GitHub schedule and the Mac's monthly LaunchAgent, so they never double up).
+if [[ ${1:-} == --if-stale ]]; then
+  git pull --no-rebase -q
+  recent=$(git log --since=25.days --format=%s --grep='^TestFlight build' | head -1)
+  [[ -z $recent ]] || { print "Skipping: '$recent' shipped in the last 25 days."; exit 0; }
+fi
+
 # Start from the latest main so the build number never collides
 [[ -z $(git status --porcelain -- project.yml) ]] || fail "ios/project.yml has uncommitted changes. Commit or discard them first."
 git pull --no-rebase -q
