@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19",
+ "updated": "2026-11-21",
  "places": [
   {
    "id": "naia",
@@ -693,6 +693,48 @@
    ],
    "where": "",
    "todos": [
+    {
+     "title": "In Manila now · Sat Nov 21",
+     "items": [
+      {
+       "title": "Paying: GCash didn't work, so use card or pesos",
+       "detail": "GCash is set up but payments to people failed. Until it works: tap card or Apple Pay where there's a contactless terminal (malls, chains, nicer restaurants). At a nice place, ask before ordering. Use pesos for everything else. Keep the eTravel QR in Photos even though nobody checked it on arrival."
+      },
+      {
+       "title": "Getting pesos without a debit card",
+       "detail": "Bring US cash to a licensed money changer in a mall. Rates there beat the airport and hotels; count the pesos at the counter. Don't pull cash from an ATM with a credit card: that's a cash advance, with a fee plus interest from day one. Change about one week's spending at a time."
+      },
+      {
+       "title": "Paying people back (Adelmo, PCA, partners)",
+       "detail": "Send through Wise from your US bank account (bank transfer, no debit card needed) straight to their GCash or bank account. Ask Adelmo which he prefers and roughly what's fair for the room and food. Hand over pesos if he'd rather have cash.",
+       "link": "https://wise.com/us/send-money/send-money-to-philippines"
+      },
+      {
+       "title": "PCA singles · confirm the entry by email",
+       "detail": "Adelmo says he signed you up for singles, and you emailed PCA saying you'll play. Watch for their reply: the entry deadline is today, Sat Nov 21. Check the name, “Sy, Jerry” on the list, and whether there's a fee. If there's no reply, ask Alex or Adelmo to check in person."
+      },
+      {
+       "title": "Mark Ivan Malinis · doubles partner, fee",
+       "detail": "He wants his registration fee covered. PCA lists doubles at ₱900 (about $15), not $30–50. Check the exact amount in Messenger. He asked twice whether you know him: ask Alex or Adelmo how he plays before agreeing."
+      },
+      {
+       "title": "Ask Adelmo if Tom can come over tomorrow",
+       "detail": "Sun Nov 22."
+      },
+      {
+       "title": "Water: bottled only",
+       "detail": "Don't drink tap water, including for brushing your teeth. Adelmo has bottled water at the house."
+      },
+      {
+       "title": "Daily reset",
+       "detail": "Keep only useful things in the bag. Clean the room every day: it's the habit that earns the futon. Free up iPhone storage: Settings → General → iPhone Storage. Offload unused apps and delete big videos once they're backed up."
+      },
+      {
+       "title": "Japan longer? Plan, not hope",
+       "detail": "Before committing to a longer stay, write down weekly tennis, a budget (capsule is fine) and what has to have happened by a set date. A full plan is being written."
+      }
+     ]
+    },
     {
      "title": "Before you fly · Fri Nov 20",
      "items": [
