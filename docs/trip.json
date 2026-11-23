@@ -14,7 +14,7 @@
    "city": "Manila",
    "name": "The Aristocrat · Roxas Blvd",
    "addr": "432 San Andres St cor. Roxas Blvd, Malate, Manila 1004",
-   "photo": "https://jerryshi042003.github.io/trip/media/places/aristocrat.jpg",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/aristocrat.jpg?v=2",
    "been": true
   },
   {
@@ -38,7 +38,7 @@
    "city": "Manila",
    "name": "PCA Open",
    "addr": "Plaza Dilao, Quirino Ave cor. Canonigo St, Paco, Manila",
-   "photo": "https://jerryshi042003.github.io/trip/media/places/pca.jpg",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/pca.jpg?v=2",
    "been": true
   },
   {
@@ -128,7 +128,7 @@
    "city": "Manila",
    "name": "Manila Polo Club",
    "addr": "35 McKinley Rd, Forbes Park, Makati 1220",
-   "photo": "https://jerryshi042003.github.io/trip/media/places/mpc.jpg",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/mpc.jpg?v=2",
    "been": true
   },
   {
@@ -164,7 +164,7 @@
    "city": "Manila",
    "name": "Kerry Sports Manila",
    "addr": "Shangri-La The Fort, 30th St cor 5th Ave, BGC, Taguig",
-   "photo": "https://jerryshi042003.github.io/trip/media/places/kerry.jpg"
+   "photo": "https://jerryshi042003.github.io/trip/media/places/kerry.jpg?v=2"
   },
   {
    "id": "alphaland",
@@ -178,7 +178,7 @@
    "city": "Manila",
    "name": "Rockwell · Power Plant Mall",
    "addr": "Rockwell Drive cor Estrella St, Rockwell Center, Makati",
-   "photo": "https://jerryshi042003.github.io/trip/media/places/rockwell.jpg"
+   "photo": "https://jerryshi042003.github.io/trip/media/places/rockwell.jpg?v=2"
   },
   {
    "id": "bgc",
@@ -192,7 +192,7 @@
    "city": "Manila",
    "name": "Binondo Church · Ongpin St",
    "addr": "Binondo Church, Plaza Lorenzo Ruiz, Binondo, Manila",
-   "photo": "https://jerryshi042003.github.io/trip/media/places/binondo.jpg"
+   "photo": "https://jerryshi042003.github.io/trip/media/places/binondo.jpg?v=2"
   },
   {
    "id": "golden-mosque",
@@ -227,7 +227,7 @@
    "city": "Day trips",
    "name": "Anilao",
    "addr": "Anilao Port, Mabini, Batangas",
-   "photo": "https://jerryshi042003.github.io/trip/media/places/anilao.jpg"
+   "photo": "https://jerryshi042003.github.io/trip/media/places/anilao.jpg?v=2"
   },
   {
    "id": "subic",
