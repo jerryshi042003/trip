@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22",
+ "updated": "2026-11-23",
  "places": [
   {
    "id": "naia",
@@ -766,6 +766,38 @@
    "where": "",
    "todos": [
     {
+     "title": "Today · Mon Nov 23",
+     "items": [
+      {
+       "title": "Ask Adelmo his plans today",
+       "detail": "Your words: “let me ask Adelmo. I'll see what his plans are today.”"
+      },
+      {
+       "title": "Pesos: change US cash on A. Mabini St",
+       "detail": "A few blocks from Robinsons Place Manila in Ermita/Malate (Moonlight 1190 A. Mabini, Edzen 1511 A. Mabini; Moromax inside Robinsons, 4th level). Compare two rates. Clean, uncreased $50/$100 bills. Ask for ₱20, ₱50, ₱100 notes. Pay the tournament in cash."
+      },
+      {
+       "title": "Grab: pay cash, or load GrabPay at 7-Eleven",
+       "detail": "Your Visa can't top up GrabPay in the Philippines, and Grab's PH pages put rides on GrabPay balance, so choose Cash on the booking screen. To load GrabPay: 7-Eleven “GrabPay cash-in”, or GCash → Bank Transfer → GrabPay. Small bills; drivers often lack change for ₱1,000.",
+       "link": "https://www.grab.com/ph/pay/guide/cash-in/"
+      },
+      {
+       "title": "GCash: cash-in at 7-Eleven, don't redo the bank transfer",
+       "detail": "Say “GCash cash-in”, give your number, hand over pesos (ask the fee first; about 1% at 7-Eleven). The US bank → GCash (Meridian) screen “Your bank is processing your payment” is the first ₱3,000 still settling on the bank side (up to 3 business days). It allows one at a time, so retrying won't work before about Wed Nov 25 – Thu Nov 26.",
+       "link": "https://help.gcash.com/hc/en-us/articles/360017595774-GCash-Cash-in-fees"
+      },
+      {
+       "title": "Use the phone as little as possible; walk around more",
+       "detail": "Your words, Nov 23: “I want to use my phone as little as possible and just walk around more.”"
+      },
+      {
+       "title": "Get used to the heat: be outside every day",
+       "detail": "Your words: “I think my stamina is actually okay. I don't see how I'm gonna increase my stamina over a week. I've been, I was cramping a lot yesterday. If anything, I just need to get used to the heat, so I don't know if I just need to be outside every single day.” Research agrees on the direction: heat adaptation takes about 7–14 days of daily exposure, about 60–90 minutes of activity in the heat, with heart-rate gains in 3–5 days. Put salt/sodium in your drinks while adapting (sweat loses sodium). Cramping cause isn't established from this.",
+       "link": "https://www.gssiweb.org/en/sports-science-exchange/article/sse-153-heat-acclimatization-to-improve-athletic-performance-in-warm-hot-environments"
+      }
+     ]
+    },
+    {
      "title": "Set up paying · do these once",
      "items": [
       {
@@ -784,11 +816,11 @@
       },
       {
        "title": "4. In person: tap card or Apple Pay where there's a contactless terminal",
-       "detail": "Works at malls, chains, nicer restaurants and Grab (card in the app). At a restaurant, ask “Card or Apple Pay okay?” before ordering. Jeepneys, tricycles, small stores, markets, club courts and tips are cash only."
+       "detail": "Works at malls, chains and nicer restaurants. At a restaurant, ask “Card or Apple Pay okay?” before ordering. Jeepneys, tricycles, small stores, markets, club courts and tips are cash only. Grab rides: in the Philippines Grab charges rides to your GrabPay balance, and your US Visa can't top that up (Grab: “This foreign card isn't supported for top-ups”). Pay rides in cash, or load GrabPay at 7-Eleven or from GCash."
       },
       {
        "title": "5. Online: pay with your credit card",
-       "detail": "Card works for Grab, websites and app stores. After step 1, you can also pay any QR Ph code from GCash."
+       "detail": "Card works for websites and app stores (not Grab rides, see step 4). After step 1, you can also pay any QR Ph code from GCash."
       },
       {
        "title": "6. Paying people back (Adelmo, Mark ₱900, PCA fees)",
@@ -850,7 +882,7 @@
       },
       {
        "title": "Grab · rides from the airport and around Manila",
-       "detail": "Install Grab, add your card and use it for the airport pickup and getting around Manila and Cebu. Fixed price shown upfront; no haggling. Pay in the app or with cash.",
+       "detail": "Install Grab for getting around Manila and Cebu. Fixed price shown upfront; no haggling. Pay cash to the driver (your US card can't load GrabPay).",
        "link": "https://www.grab.com/ph/"
       },
       {
@@ -879,7 +911,7 @@
      "items": [
       {
        "title": "Philippines · carry pesos",
-       "detail": "Cash runs street food, small eateries, tricycles, tips and club courts. Apple Pay (live in PH since Aug 4, 2026) works at contactless terminals in malls, chains and hotels. ATMs charge foreign cards about ₱250 a withdrawal, so pull about ₱10,000 at a time and keep small bills. Grab and GrabFood take your US card.",
+       "detail": "Cash runs street food, small eateries, tricycles, tips and club courts. Apple Pay (live in PH since Aug 4, 2026) works at contactless terminals in malls, chains and hotels. ATMs charge foreign cards about ₱250 a withdrawal, so pull about ₱10,000 at a time and keep small bills. Grab can't take your US card in PH (checked Nov 23): pay cash or load GrabPay at 7-Eleven.",
        "link": "https://mb.com.ph/2026/08/04/no-more-cards-needed-where-you-can-use-apple-pay-in-the-philippines-starting-today"
       },
       {
