@@ -83,6 +83,120 @@
    "name": "Super Potato Akihabara",
    "addr": "Kitabayashi Bldg 3F-5F, 1-11-2 Sotokanda, Chiyoda, Tokyo",
    "ja": "東京都千代田区外神田1-11-2 北林ビル3F〜5F"
+  },
+  {
+   "id": "mpc",
+   "city": "Manila",
+   "name": "Manila Polo Club",
+   "addr": "McKinley Road, Forbes Park, Makati"
+  },
+  {
+   "id": "mendokoro-salcedo",
+   "city": "Manila",
+   "name": "Mendokoro Ramenba Salcedo",
+   "addr": "G/F V Corporate Centre, Soliman St, Salcedo Village, Makati"
+  },
+  {
+   "id": "mendokoro-bgc",
+   "city": "Manila",
+   "name": "Mendokoro Ramenba BGC",
+   "addr": "G/F Mitsukoshi Mall, 8th Ave cor 36th St, BGC, Taguig"
+  },
+  {
+   "id": "bikram",
+   "city": "Manila",
+   "name": "Bikram Yoga Manila",
+   "addr": "15/F 88 Corporate Center, 141 Valero cor Sedeño St, Salcedo Village, Makati"
+  },
+  {
+   "id": "f45-bgc",
+   "city": "Manila",
+   "name": "F45 BGC Stopover",
+   "addr": "Unit R-308 Bonifacio Stopover, 31st St cor 2nd Ave, Rizal Drive, BGC, Taguig"
+  },
+  {
+   "id": "kerry",
+   "city": "Manila",
+   "name": "Kerry Sports Manila",
+   "addr": "Shangri-La The Fort, 30th St cor 5th Ave, BGC, Taguig"
+  },
+  {
+   "id": "alphaland",
+   "city": "Manila",
+   "name": "Alphaland Makati Place",
+   "addr": "Ayala Ave Extension cor Malugay St, Makati"
+  },
+  {
+   "id": "rockwell",
+   "city": "Manila",
+   "name": "Rockwell · Power Plant Mall",
+   "addr": "Rockwell Drive cor Estrella St, Rockwell Center, Makati"
+  },
+  {
+   "id": "bgc",
+   "city": "Manila",
+   "name": "Bonifacio High Street",
+   "addr": "Bonifacio High Street, BGC, Taguig"
+  },
+  {
+   "id": "binondo",
+   "city": "Manila",
+   "name": "Binondo Church · Ongpin St",
+   "addr": "Binondo Church, Plaza Lorenzo Ruiz, Binondo, Manila"
+  },
+  {
+   "id": "golden-mosque",
+   "city": "Manila",
+   "name": "Golden Mosque",
+   "addr": "Masjid Al-Dahab, Globo de Oro St, Quiapo, Manila"
+  },
+  {
+   "id": "intramuros",
+   "city": "Manila",
+   "name": "Fort Santiago · Intramuros",
+   "addr": "Fort Santiago, Santa Clara St, Intramuros, Manila"
+  },
+  {
+   "id": "baywalk",
+   "city": "Manila",
+   "name": "Manila Baywalk · Dolomite Beach",
+   "addr": "Manila Baywalk Dolomite Beach, Roxas Blvd, Ermita, Manila"
+  },
+  {
+   "id": "nasugbu",
+   "city": "Day trips",
+   "name": "Fortune Island · Nasugbu",
+   "addr": "Fortune Island, Nasugbu, Batangas"
+  },
+  {
+   "id": "anilao",
+   "city": "Day trips",
+   "name": "Anilao",
+   "addr": "Anilao Port, Mabini, Batangas"
+  },
+  {
+   "id": "subic",
+   "city": "Day trips",
+   "name": "Subic Bay · All Hands Beach",
+   "addr": "All Hands Beach, Subic Bay Freeport Zone, Zambales"
+  },
+  {
+   "id": "antipolo",
+   "city": "Day trips",
+   "name": "Hinulugang Taktak",
+   "addr": "Hinulugang Taktak, Taktak Rd, Antipolo, Rizal"
+  },
+  {
+   "id": "daranak",
+   "city": "Day trips",
+   "name": "Daranak Falls",
+   "addr": "Daranak Falls, Tanay, Rizal"
+  },
+  {
+   "id": "puerto-galera",
+   "city": "Day trips",
+   "name": "Puerto Galera",
+   "addr": "Balatero Pier, Puerto Galera, Oriental Mindoro"
   }
  ],
  "people": [
@@ -794,6 +908,111 @@
        "title": "Get used to the heat: be outside every day",
        "detail": "Your words: “I think my stamina is actually okay. I don't see how I'm gonna increase my stamina over a week. I've been, I was cramping a lot yesterday. If anything, I just need to get used to the heat, so I don't know if I just need to be outside every single day.” Research agrees on the direction: heat adaptation takes about 7–14 days of daily exposure, about 60–90 minutes of activity in the heat, with heart-rate gains in 3–5 days. Put salt/sodium in your drinks while adapting (sweat loses sodium). Cramping cause isn't established from this.",
        "link": "https://www.gssiweb.org/en/sports-science-exchange/article/sse-153-heat-acclimatization-to-improve-athletic-performance-in-warm-hot-environments"
+      }
+     ]
+    },
+    {
+     "title": "Manila · places to go",
+     "items": [
+      {
+       "title": "Rizal Memorial Tennis Center · ITF J30 juniors",
+       "detail": "The sports complex by JR's place, next to De La Salle. ITF J30 Manila (PHILTA J30) is on now, Nov 23–28, hard courts; ITF lists a second J30 Manila starting Nov 29. Your Muse note. Watch any morning; free to walk in (not confirmed). Grab ~10 min or walk ~25 min. Rest day: yes.",
+       "link": "https://www.google.com/maps/search/?api=1&query=Rizal%20Memorial%20Tennis%2C%20Pablo%20Ocampo%20Sr.%20St%2C%20Malate%2C%20Manila%201004"
+      },
+      {
+       "title": "Manila Polo Club",
+       "detail": "JR coaches here. At the gate: guest of Carmela Fernandez, then find JR on the outdoor courts. Your Muse note and JR. Courts 6 AM–10 PM (club post, older). Grab ~30–60 min, book by 4 PM for a 5 PM start. Training day.",
+       "link": "https://www.google.com/maps/search/?api=1&query=Manila%20Polo%20Club%2C%20McKinley%20Road%2C%20Forbes%20Park%2C%20Makati"
+      },
+      {
+       "title": "Mendokoro Ramenba",
+       "detail": "The ramen JR said to try (\"Mendo Polo\"). No branch at the Polo Club; nearest are Salcedo (Makati) and Mitsukoshi BGC, both about 10 AM–11 PM. From JR. About ₱450–600 a bowl (not checked). Grab ~25–45 min.",
+       "link": "https://www.google.com/maps/search/?api=1&query=Mendokoro%20Ramenba%20Salcedo%2C%20G/F%20V%20Corporate%20Centre%2C%20Soliman%20St%2C%20Salcedo%20Village%2C%20Makati"
+      },
+      {
+       "title": "Bikram Yoga Manila · Salcedo",
+       "detail": "Hot yoga, 90 min. JR's pick (the 7:45 class). Weekdays about 6 AM–10 PM (2023 listing); drop-in price not found, ClassPass lists it. Grab ~25–40 min. You cramp: skip it in the two days before Nov 30.",
+       "link": "https://www.google.com/maps/search/?api=1&query=Bikram%20Yoga%20Manila%2C%2015/F%2088%20Corporate%20Center%2C%20141%20Valero%20cor%20Sede%C3%B1o%20St%2C%20Salcedo%20Village%2C%20Makati"
+      },
+      {
+       "title": "F45 · BGC Stopover",
+       "detail": "HIIT circuits JR does (\"F45 ABC\"). Your Muse note: F45 functional movement. Unit R-308 Bonifacio Stopover; a second studio is in the Zuellig Building, Paseo de Roxas, Makati. Price not checked. Grab ~30–45 min. Not the week of qualifying.",
+       "link": "https://www.google.com/maps/search/?api=1&query=F45%20BGC%20Stopover%2C%20Unit%20R-308%20Bonifacio%20Stopover%2C%2031st%20St%20cor%202nd%20Ave%2C%20Rizal%20Drive%2C%20BGC%2C%20Taguig"
+      },
+      {
+       "title": "Kerry Sports Manila · Shangri-La The Fort",
+       "detail": "JR coaches here (his GPTCA page). Two covered outdoor tennis courts, gym. Members and hotel guests; ask JR to bring you. Grab ~30–45 min.",
+       "link": "https://www.google.com/maps/search/?api=1&query=Kerry%20Sports%20Manila%2C%20Shangri-La%20The%20Fort%2C%2030th%20St%20cor%205th%20Ave%2C%20BGC%2C%20Taguig"
+      },
+      {
+       "title": "Alphaland Makati Place · City Club",
+       "detail": "JR is head coach here (GPTCA page). Ask JR about a hit. Address not checked on the club's own page. Grab ~25–40 min.",
+       "link": "https://www.google.com/maps/search/?api=1&query=Alphaland%20Makati%20Place%2C%20Ayala%20Ave%20Extension%20cor%20Malugay%20St%2C%20Makati"
+      },
+      {
+       "title": "Rockwell · Power Plant Mall",
+       "detail": "JR named Rockwell. Mall, food, the Rockwell Club (members). Just Show Up Club runs from Rockwell Sundays at 5 AM. Grab ~20–35 min. Rest day: yes.",
+       "link": "https://www.google.com/maps/search/?api=1&query=Rockwell%20%C2%B7%20Power%20Plant%20Mall%2C%20Rockwell%20Drive%20cor%20Estrella%20St%2C%20Rockwell%20Center%2C%20Makati"
+      },
+      {
+       "title": "BGC · Bonifacio High Street",
+       "detail": "JR named BGC. Walkable blocks of shops and food; pair it with F45, Kerry Sports or Mendokoro BGC. Free. Grab ~30–50 min. Rest day: yes, late afternoon.",
+       "link": "https://www.google.com/maps/search/?api=1&query=Bonifacio%20High%20Street%2C%20Bonifacio%20High%20Street%2C%20BGC%2C%20Taguig"
+      },
+      {
+       "title": "Binondo · Chinatown food walk",
+       "detail": "JR: \"little Shanghai\", near your place. Binondo Church, then Ongpin St: Eng Bee Tin (628 Ongpin, 8 AM–8 PM), Sincerity fried chicken (Yuchengco St), New Po-Heng lumpia (Carvajal St, closed Sun). About ₱500 eats well. Go late morning to lunch. Grab ~20–40 min. Rest day: yes.",
+       "link": "https://www.google.com/maps/search/?api=1&query=Binondo%20Church%20%C2%B7%20Ongpin%20St%2C%20Binondo%20Church%2C%20Plaza%20Lorenzo%20Ruiz%2C%20Binondo%2C%20Manila"
+      },
+      {
+       "title": "Golden Mosque · Quiapo",
+       "detail": "Metro Manila's largest mosque (1976), center of Quiapo's Muslim town; halal food around it. You asked Muse where the Muslim community is. Free; dress modestly; avoid Friday midday prayers. ~15 min walk from Binondo, Grab ~20–35 min from Malate.",
+       "link": "https://www.google.com/maps/search/?api=1&query=Golden%20Mosque%2C%20Masjid%20Al-Dahab%2C%20Globo%20de%20Oro%20St%2C%20Quiapo%2C%20Manila"
+      },
+      {
+       "title": "Intramuros · Fort Santiago",
+       "detail": "The walled Spanish city. Fort Santiago ₱75 (official site); hours vary by source, roughly 8–9 AM to 8 PM. Grab ~15 min. Rest day: yes, late afternoon into the bay sunset.",
+       "link": "https://www.google.com/maps/search/?api=1&query=Fort%20Santiago%20%C2%B7%20Intramuros%2C%20Fort%20Santiago%2C%20Santa%20Clara%20St%2C%20Intramuros%2C%20Manila"
+      },
+      {
+       "title": "Manila Bay sunset · Baywalk and Dolomite Beach",
+       "detail": "The bay is a walk from Malate along Roxas Blvd. Sunset about 5:25 PM. Dolomite Beach: 6 AM–6 PM, closed Thursdays, free (2024 report). No swimming. Rest day: yes, any evening.",
+       "link": "https://www.google.com/maps/search/?api=1&query=Manila%20Baywalk%20%C2%B7%20Dolomite%20Beach%2C%20Manila%20Baywalk%20Dolomite%20Beach%2C%20Roxas%20Blvd%2C%20Ermita%2C%20Manila"
+      }
+     ]
+    },
+    {
+     "title": "Beach, bay, falls · day trips",
+     "items": [
+      {
+       "title": "Batangas · Fortune Island, Nasugbu",
+       "detail": "JR: Batangas, nearby beach. Bus from DLTB Buendia (near LRT Gil Puyat) 3–4 h to Nasugbu, ₱160–300; then ~1 h boat. Island day tour ₱350. Leave by 5 AM. After qualifying.",
+       "link": "https://www.google.com/maps/search/?api=1&query=Fortune%20Island%20%C2%B7%20Nasugbu%2C%20Fortune%20Island%2C%20Nasugbu%2C%20Batangas"
+      },
+      {
+       "title": "Batangas · Anilao snorkeling",
+       "detail": "Batangas reef, snorkel or dive; Nov–May is the clear season. 2–3 h by car, or bus to Batangas City plus ~45 min jeep. Tours pick up 5–6 AM. After qualifying.",
+       "link": "https://www.google.com/maps/search/?api=1&query=Anilao%2C%20Anilao%20Port%2C%20Mabini%2C%20Batangas"
+      },
+      {
+       "title": "Subic Bay · beach and forest",
+       "detail": "JR: Subic beach, good forest. All Hands Beach (gentle slope, snorkeling) and the Pamulaklakin forest trail. JR's first coaching job was the Subic International Tennis Center. 2–4 h by car. Best as an overnight after qualifying.",
+       "link": "https://www.google.com/maps/search/?api=1&query=Subic%20Bay%20%C2%B7%20All%20Hands%20Beach%2C%20All%20Hands%20Beach%2C%20Subic%20Bay%20Freeport%20Zone%2C%20Zambales"
+      },
+      {
+       "title": "Hinulugang Taktak · Antipolo",
+       "detail": "JR: falls near Manila. The closest one, a park waterfall (viewing, not swimming). Fee ₱30–100 or a donation; hours conflict (Tue–Sun 7 AM–4 PM in one source). Grab ~1–1.5 h. Possible on a rest day morning.",
+       "link": "https://www.google.com/maps/search/?api=1&query=Hinulugang%20Taktak%2C%20Hinulugang%20Taktak%2C%20Taktak%20Rd%2C%20Antipolo%2C%20Rizal"
+      },
+      {
+       "title": "Daranak Falls · Tanay",
+       "detail": "JR: falls near Manila. Swimmable falls; Batlag Falls next door is ₱100 more. Daily 8 AM–5 PM; fee ₱50–180 (sources conflict). ~2 h by car. After qualifying.",
+       "link": "https://www.google.com/maps/search/?api=1&query=Daranak%20Falls%2C%20Daranak%20Falls%2C%20Tanay%2C%20Rizal"
+      },
+      {
+       "title": "Puerto Galera · overnight",
+       "detail": "Real beach town, Mindoro. Bus to Batangas Pier (~₱260) then 45–90 min ferry; 4–5 h total. Overnight only. After the tournament.",
+       "link": "https://www.google.com/maps/search/?api=1&query=Puerto%20Galera%2C%20Balatero%20Pier%2C%20Puerto%20Galera%2C%20Oriental%20Mindoro"
       }
      ]
     },
