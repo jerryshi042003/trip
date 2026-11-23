@@ -1,88 +1,261 @@
 {
- "updated": "2026-11-19",
+ "updated": "2026-11-23",
  "places": [
+  {
+   "id": "condo",
+   "city": "Manila",
+   "name": "Alpha Grandview Condominium",
+   "addr": "1716 M. H. del Pilar St cor. Sinagoga St, Malate, Manila 1004",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/condo.jpg",
+   "been": true
+  },
+  {
+   "id": "aristocrat",
+   "city": "Manila",
+   "name": "The Aristocrat · Roxas Blvd",
+   "addr": "432 San Andres St cor. Roxas Blvd, Malate, Manila 1004",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/aristocrat.jpg",
+   "been": true
+  },
+  {
+   "id": "robinsons-manila",
+   "city": "Manila",
+   "name": "Robinsons Place Manila",
+   "addr": "M. Adriatico St cor. Pedro Gil St, Ermita, Manila 1000",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/robinsons-manila.jpg",
+   "been": true
+  },
   {
    "id": "naia",
    "city": "Manila",
    "name": "NAIA Airport",
-   "addr": "Ninoy Aquino International Airport, Pasay, Metro Manila"
+   "addr": "Ninoy Aquino International Airport, Pasay, Metro Manila",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/naia.jpg",
+   "been": true
   },
   {
    "id": "pca",
    "city": "Manila",
    "name": "PCA Open",
-   "addr": "Plaza Dilao, Quirino Ave cor. Canonigo St, Paco, Manila"
+   "addr": "Plaza Dilao, Quirino Ave cor. Canonigo St, Paco, Manila",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/pca.jpg",
+   "been": true
   },
   {
    "id": "rizal",
    "city": "Manila",
    "name": "Rizal Memorial Tennis",
-   "addr": "Pablo Ocampo Sr. St, Malate, Manila 1004"
+   "addr": "Pablo Ocampo Sr. St, Malate, Manila 1004",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/rizal.jpg"
   },
   {
    "id": "proserve",
    "city": "Manila",
    "name": "ProServe",
-   "addr": "2123 Suter, Santa Ana, Manila"
+   "addr": "2123 Suter, Santa Ana, Manila",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/proserve.jpg"
   },
   {
    "id": "asmara",
    "city": "Cebu",
    "name": "Asmara Tennis",
-   "addr": "1 Paseo Saturnino, Maria Luisa Rd, Banilad, Cebu City"
+   "addr": "1 Paseo Saturnino, Maria Luisa Rd, Banilad, Cebu City",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/asmara.jpg"
   },
   {
    "id": "cebu-airport",
    "city": "Cebu",
    "name": "Mactan-Cebu Airport",
-   "addr": "Mactan-Cebu International Airport, Lapu-Lapu City, Cebu"
+   "addr": "Mactan-Cebu International Airport, Lapu-Lapu City, Cebu",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/cebu-airport.jpg"
   },
   {
    "id": "siargao-airport",
    "city": "Siargao",
    "name": "Siargao Airport",
-   "addr": "Sayak Airport, Del Carmen, Siargao Island"
+   "addr": "Sayak Airport, Del Carmen, Siargao Island",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/siargao-airport.jpg"
   },
   {
    "id": "cloud9",
    "city": "Siargao",
    "name": "Cloud 9",
-   "addr": "Cloud 9, Catangnan, General Luna, Siargao Island"
+   "addr": "Cloud 9, Catangnan, General Luna, Siargao Island",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/cloud9.jpg"
   },
   {
    "id": "hnd",
    "city": "Tokyo",
    "name": "Haneda Airport",
    "addr": "Haneda Airport Terminal 3, Ota City, Tokyo",
-   "ja": "羽田空港 第3ターミナル"
+   "ja": "羽田空港 第3ターミナル",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/hnd.jpg"
   },
   {
    "id": "capsule510",
    "city": "Tokyo",
    "name": "Capsule Hotel Shinjuku 510",
    "addr": "2-40-1 Kabukicho, Shinjuku, Tokyo",
-   "ja": "東京都新宿区歌舞伎町2-40-1"
+   "ja": "東京都新宿区歌舞伎町2-40-1",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/capsule510.jpg"
   },
   {
    "id": "setinn",
    "city": "Tokyo",
    "name": "Setinn",
-   "addr": "3-51-10 Sendagaya, Shibuya, Tokyo",
-   "ja": "東京都渋谷区千駄ヶ谷3-51-10"
+   "addr": "3-51-10 Sendagaya, Shibuya, Tokyo 151-0051 (1F)",
+   "ja": "東京都渋谷区千駄ヶ谷3-51-10",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/setinn.jpg"
   },
   {
    "id": "ariake",
    "city": "Tokyo",
    "name": "Ariake Tennis Forest",
    "addr": "2-2-22 Ariake, Koto, Tokyo",
-   "ja": "東京都江東区有明2-2-22"
+   "ja": "東京都江東区有明2-2-22",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/ariake.jpg"
   },
   {
    "id": "superpotato",
    "city": "Tokyo",
    "name": "Super Potato Akihabara",
    "addr": "Kitabayashi Bldg 3F-5F, 1-11-2 Sotokanda, Chiyoda, Tokyo",
-   "ja": "東京都千代田区外神田1-11-2 北林ビル3F〜5F"
+   "ja": "東京都千代田区外神田1-11-2 北林ビル3F〜5F",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/superpotato.jpg"
+  },
+  {
+   "id": "mpc",
+   "city": "Manila",
+   "name": "Manila Polo Club",
+   "addr": "35 McKinley Rd, Forbes Park, Makati 1220",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/mpc.jpg",
+   "been": true
+  },
+  {
+   "id": "mendokoro-salcedo",
+   "city": "Manila",
+   "name": "Mendokoro Ramenba Salcedo",
+   "addr": "Unit 14 & 15, V Corporate Centre, Soliman St, Salcedo Village, Makati 1209",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/mendokoro-salcedo.jpg"
+  },
+  {
+   "id": "mendokoro-bgc",
+   "city": "Manila",
+   "name": "Mendokoro Ramenba BGC",
+   "addr": "G/F Mitsukoshi Mall, 8th Ave cor 36th St, BGC, Taguig",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/mendokoro-bgc.jpg"
+  },
+  {
+   "id": "bikram",
+   "city": "Manila",
+   "name": "Bikram Yoga Manila",
+   "addr": "15/F 88 Corporate Center, 141 Valero cor Sedeño St, Salcedo Village, Makati",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/bikram.jpg"
+  },
+  {
+   "id": "f45-bgc",
+   "city": "Manila",
+   "name": "F45 BGC Stopover",
+   "addr": "Unit R-308 Bonifacio Stopover, 31st St cor 2nd Ave, Rizal Drive, BGC, Taguig",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/f45-bgc.jpg"
+  },
+  {
+   "id": "kerry",
+   "city": "Manila",
+   "name": "Kerry Sports Manila",
+   "addr": "Shangri-La The Fort, 30th St cor 5th Ave, BGC, Taguig",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/kerry.jpg"
+  },
+  {
+   "id": "alphaland",
+   "city": "Manila",
+   "name": "Alphaland Makati Place",
+   "addr": "7232 Malugay St cor. Ayala Ave Extension, Makati",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/alphaland.jpg"
+  },
+  {
+   "id": "rockwell",
+   "city": "Manila",
+   "name": "Rockwell · Power Plant Mall",
+   "addr": "Rockwell Drive cor Estrella St, Rockwell Center, Makati",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/rockwell.jpg"
+  },
+  {
+   "id": "bgc",
+   "city": "Manila",
+   "name": "Bonifacio High Street",
+   "addr": "Bonifacio High Street, BGC, Taguig",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/bgc.jpg"
+  },
+  {
+   "id": "binondo",
+   "city": "Manila",
+   "name": "Binondo Church · Ongpin St",
+   "addr": "Binondo Church, Plaza Lorenzo Ruiz, Binondo, Manila",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/binondo.jpg"
+  },
+  {
+   "id": "golden-mosque",
+   "city": "Manila",
+   "name": "Golden Mosque",
+   "addr": "Masjid Al-Dahab, Globo de Oro St, Quiapo, Manila",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/golden-mosque.jpg"
+  },
+  {
+   "id": "intramuros",
+   "city": "Manila",
+   "name": "Fort Santiago · Intramuros",
+   "addr": "Fort Santiago, Santa Clara St, Intramuros, Manila",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/intramuros.jpg"
+  },
+  {
+   "id": "baywalk",
+   "city": "Manila",
+   "name": "Manila Baywalk · Dolomite Beach",
+   "addr": "Manila Baywalk Dolomite Beach, Roxas Blvd, Ermita, Manila",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/baywalk.jpg"
+  },
+  {
+   "id": "nasugbu",
+   "city": "Day trips",
+   "name": "Fortune Island · Nasugbu",
+   "addr": "Fortune Island, Nasugbu, Batangas",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/nasugbu.jpg"
+  },
+  {
+   "id": "anilao",
+   "city": "Day trips",
+   "name": "Anilao",
+   "addr": "Anilao Port, Mabini, Batangas",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/anilao.jpg"
+  },
+  {
+   "id": "subic",
+   "city": "Day trips",
+   "name": "Subic Bay · All Hands Beach",
+   "addr": "All Hands Beach, Subic Bay Freeport Zone, Zambales",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/subic.jpg"
+  },
+  {
+   "id": "antipolo",
+   "city": "Day trips",
+   "name": "Hinulugang Taktak",
+   "addr": "Hinulugang Taktak, Taktak Rd, Antipolo, Rizal",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/antipolo.jpg"
+  },
+  {
+   "id": "daranak",
+   "city": "Day trips",
+   "name": "Daranak Falls",
+   "addr": "Daranak Falls, Tanay, Rizal",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/daranak.jpg"
+  },
+  {
+   "id": "puerto-galera",
+   "city": "Day trips",
+   "name": "Puerto Galera",
+   "addr": "Balatero Pier, Puerto Galera, Oriental Mindoro",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/puerto-galera.jpg"
   }
  ],
  "people": [
@@ -609,6 +782,78 @@
    "role": "Metro Manila run club · Chapters BGC, Alabang, Pasay, UP Diliman",
    "group": "Manila · Runs",
    "ig": "rwprunclub"
+  },
+  {
+   "name": "Natsumi Tanaka",
+   "role": "Setinn flagship + paperboy staff · plays tennis",
+   "ig": "_____.723n",
+   "group": "Tokyo · Shingo’s team"
+  },
+  {
+   "name": "Karen Hihara (花怜)",
+   "role": "paperboy + Setinn flagship staff, Tokyo",
+   "ig": "karen_hihara",
+   "group": "Tokyo · Shingo’s team"
+  },
+  {
+   "name": "Hachi (Shun Hachiya)",
+   "role": "Setinn / paperboy",
+   "ig": "shunhachiya",
+   "group": "Tokyo · Shingo’s team"
+  },
+  {
+   "name": "Takahashi (高橋)",
+   "role": "paperboy staff · private account",
+   "ig": "melobanditaa",
+   "group": "Tokyo · Shingo’s team"
+  },
+  {
+   "name": "Ryosuke Nozaki",
+   "role": "BEAMS buyer, Men's Casual",
+   "ig": "r.nzk",
+   "group": "Tokyo · Shingo’s team"
+  },
+  {
+   "name": "Keita Kobayashi",
+   "role": "BEAMS buyer · On × BEAMS Street Tennis Club with Shingo · Studied in Seattle, speaks English",
+   "ig": "gonzo19891016",
+   "group": "Tokyo · Shingo’s team"
+  },
+  {
+   "name": "Kaito Maru",
+   "role": "BEAMS PRESS (PR)",
+   "ig": "go_go_maru",
+   "group": "Tokyo · Shingo’s team"
+  },
+  {
+   "name": "Maya Watanabe",
+   "role": "BEAMS buyer (Men's Casual, Future Archive) + stylist",
+   "ig": "mayawtnb_",
+   "group": "Tokyo · Shingo’s team"
+  },
+  {
+   "name": "Shinsuke Nakada",
+   "role": "Creative director, Unlikely · author of Unlikely Things",
+   "ig": "nakadashinsuke",
+   "group": "Tokyo · Shingo’s team"
+  },
+  {
+   "name": "Tsukasa Nakao",
+   "role": "Shop manager, BEAMS MEN Shibuya",
+   "ig": "tsukasanakao",
+   "group": "Tokyo · Shingo’s team"
+  },
+  {
+   "name": "Hirofumi Tsunakawa (綱川浩史)",
+   "role": "BEAMS Men's Casual",
+   "ig": "tsunakawa_hirofumi_0919",
+   "group": "Tokyo · Shingo’s team"
+  },
+  {
+   "name": "Kensuke Ido (井戸健介)",
+   "role": "BEAMS staff photographer",
+   "ig": "kensuke_ido_studio",
+   "group": "Tokyo · Shingo’s team"
   }
  ],
  "emergency": [
@@ -694,12 +939,239 @@
    "where": "",
    "todos": [
     {
-     "title": "Share location",
+     "title": "Today · Mon Nov 23",
      "items": [
       {
-       "title": "Turn on your live pin",
-       "detail": "Open your private setup link from Jerry and tap Open in Trip, then allow location Always. Trip sends your point about every minute while you move. Turn it off any time in Where.",
-       "link": "https://jerryshi042003.github.io/trip/location-setup/"
+       "title": "Adelmo · already at PCA",
+       "detail": "Your words, Nov 23: Adelmo “has already been at PCA” (dictated as “a demo”)."
+      },
+      {
+       "title": "Pesos: change US cash on A. Mabini St",
+       "detail": "A few blocks from Robinsons Place Manila in Ermita/Malate (Moonlight 1190 A. Mabini, Edzen 1511 A. Mabini; Moromax inside Robinsons, 4th level). Compare two rates. Clean, uncreased $50/$100 bills. Ask for ₱20, ₱50, ₱100 notes. Pay the tournament in cash."
+      },
+      {
+       "title": "Grab: worked Nov 23",
+       "detail": "You said Grab worked on Nov 23. Payment method not recorded yet. If it ever fails: choose Cash, or load GrabPay at 7-Eleven or from GCash. (A US Visa can't top up GrabPay in PH.)",
+       "link": "https://www.grab.com/ph/pay/guide/cash-in/"
+      },
+      {
+       "title": "GCash: cash-in at 7-Eleven, don't redo the bank transfer",
+       "detail": "Say “GCash cash-in”, give your number, hand over pesos (ask the fee first; about 1% at 7-Eleven). The US bank → GCash (Meridian) screen “Your bank is processing your payment” is the first ₱3,000 still settling on the bank side (up to 3 business days). It allows one at a time, so retrying won't work before about Wed Nov 25 – Thu Nov 26.",
+       "link": "https://help.gcash.com/hc/en-us/articles/360017595774-GCash-Cash-in-fees"
+      },
+      {
+       "title": "Use the phone as little as possible; walk around more",
+       "detail": "Your words, Nov 23: “I want to use my phone as little as possible and just walk around more.”"
+      },
+      {
+       "title": "Get used to the heat: be outside every day",
+       "detail": "Your words: “I think my stamina is actually okay. I don't see how I'm gonna increase my stamina over a week. I've been, I was cramping a lot yesterday. If anything, I just need to get used to the heat, so I don't know if I just need to be outside every single day.” Research agrees on the direction: heat adaptation takes about 7–14 days of daily exposure, about 60–90 minutes of activity in the heat, with heart-rate gains in 3–5 days. Put salt/sodium in your drinks while adapting (sweat loses sodium). Cramping cause isn't established from this.",
+       "link": "https://www.gssiweb.org/en/sports-science-exchange/article/sse-153-heat-acclimatization-to-improve-athletic-performance-in-warm-hot-environments"
+      }
+     ]
+    },
+    {
+     "title": "Manila · places to go",
+     "items": [
+      {
+       "title": "Rizal Memorial Tennis Center · ITF J30 juniors",
+       "detail": "The sports complex by JR's place, next to De La Salle. ITF J30 Manila (PHILTA J30) is on now, Nov 23–28, hard courts; ITF lists a second J30 Manila starting Nov 29. Your Muse note. Watch any morning; free to walk in (not confirmed). Grab ~10 min or walk ~25 min. Rest day: yes.",
+       "link": "https://www.google.com/maps/search/?api=1&query=Rizal%20Memorial%20Tennis%2C%20Pablo%20Ocampo%20Sr.%20St%2C%20Malate%2C%20Manila%201004"
+      },
+      {
+       "title": "The Aristocrat · chicken cutlet",
+       "detail": "Next to your condo, about 150 m: the original Aristocrat (since 1936), 432 San Andres St cor. Roxas Blvd. Your pick. Open 24 hours (listing). Walk ~3 min. Been.",
+       "link": "https://www.google.com/maps/search/?api=1&query=The%20Aristocrat%20Restaurant%2C%20432%20San%20Andres%20St%2C%20Malate%2C%20Manila"
+      },
+      {
+       "title": "Manila Polo Club",
+       "detail": "JR coaches here. At the gate: guest of Carmela Fernandez, then find JR on the outdoor courts. Your Muse note and JR. Courts 6 AM–10 PM (club post, older). Grab ~30–60 min, book by 4 PM for a 5 PM start. Training day.",
+       "link": "https://www.google.com/maps/search/?api=1&query=Manila%20Polo%20Club%2C%2035%20McKinley%20Rd%2C%20Forbes%20Park%2C%20Makati"
+      },
+      {
+       "title": "Mendokoro Ramenba",
+       "detail": "The ramen JR said to try (\"Mendo Polo\"). No branch at the Polo Club; nearest are Salcedo (Makati) and Mitsukoshi BGC, both about 10 AM–11 PM. From JR. About ₱450–600 a bowl (not checked). Grab ~25–45 min.",
+       "link": "https://www.google.com/maps/search/?api=1&query=Mendokoro%20Ramenba%20Salcedo%2C%20G/F%20V%20Corporate%20Centre%2C%20Soliman%20St%2C%20Salcedo%20Village%2C%20Makati"
+      },
+      {
+       "title": "Bikram Yoga Manila · Salcedo",
+       "detail": "Hot yoga, 90 min. JR's pick (the 7:45 class). Weekdays about 6 AM–10 PM (2023 listing); drop-in price not found, ClassPass lists it. Grab ~25–40 min. You cramp: skip it in the two days before Nov 30.",
+       "link": "https://www.google.com/maps/search/?api=1&query=Bikram%20Yoga%20Manila%2C%2015/F%2088%20Corporate%20Center%2C%20141%20Valero%20cor%20Sede%C3%B1o%20St%2C%20Salcedo%20Village%2C%20Makati"
+      },
+      {
+       "title": "F45 · BGC Stopover",
+       "detail": "HIIT circuits JR does (\"F45 ABC\"). Your Muse note: F45 functional movement. Unit R-308 Bonifacio Stopover; a second studio is in the Zuellig Building, Paseo de Roxas, Makati. Price not checked. Grab ~30–45 min. Not the week of qualifying.",
+       "link": "https://www.google.com/maps/search/?api=1&query=F45%20BGC%20Stopover%2C%20Unit%20R-308%20Bonifacio%20Stopover%2C%2031st%20St%20cor%202nd%20Ave%2C%20Rizal%20Drive%2C%20BGC%2C%20Taguig"
+      },
+      {
+       "title": "Kerry Sports Manila · Shangri-La The Fort",
+       "detail": "JR coaches here (his GPTCA page). Two covered outdoor tennis courts, gym. Members and hotel guests; ask JR to bring you. Grab ~30–45 min.",
+       "link": "https://www.google.com/maps/search/?api=1&query=Kerry%20Sports%20Manila%2C%20Shangri-La%20The%20Fort%2C%2030th%20St%20cor%205th%20Ave%2C%20BGC%2C%20Taguig"
+      },
+      {
+       "title": "Alphaland Makati Place · City Club",
+       "detail": "JR is head coach here (GPTCA page). Ask JR about a hit. Grab ~25–40 min.",
+       "link": "https://www.google.com/maps/search/?api=1&query=Alphaland%20Makati%20Place%2C%207232%20Malugay%20St%20cor.%20Ayala%20Ave%20Extension%2C%20Makati"
+      },
+      {
+       "title": "Rockwell · Power Plant Mall",
+       "detail": "JR named Rockwell. Mall, food, the Rockwell Club (members). Just Show Up Club runs from Rockwell Sundays at 5 AM. Grab ~20–35 min. Rest day: yes.",
+       "link": "https://www.google.com/maps/search/?api=1&query=Rockwell%20%C2%B7%20Power%20Plant%20Mall%2C%20Rockwell%20Drive%20cor%20Estrella%20St%2C%20Rockwell%20Center%2C%20Makati"
+      },
+      {
+       "title": "BGC · Bonifacio High Street",
+       "detail": "JR named BGC. Walkable blocks of shops and food; pair it with F45, Kerry Sports or Mendokoro BGC. Free. Grab ~30–50 min. Rest day: yes, late afternoon.",
+       "link": "https://www.google.com/maps/search/?api=1&query=Bonifacio%20High%20Street%2C%20Bonifacio%20High%20Street%2C%20BGC%2C%20Taguig"
+      },
+      {
+       "title": "Binondo · Chinatown food walk",
+       "detail": "JR: \"little Shanghai\", near your place. Binondo Church, then Ongpin St: Eng Bee Tin (628 Ongpin, 8 AM–8 PM), Sincerity fried chicken (Yuchengco St), New Po-Heng lumpia (Carvajal St, closed Sun). About ₱500 eats well. Go late morning to lunch. Grab ~20–40 min. Rest day: yes.",
+       "link": "https://www.google.com/maps/search/?api=1&query=Binondo%20Church%20%C2%B7%20Ongpin%20St%2C%20Binondo%20Church%2C%20Plaza%20Lorenzo%20Ruiz%2C%20Binondo%2C%20Manila"
+      },
+      {
+       "title": "Golden Mosque · Quiapo",
+       "detail": "Metro Manila's largest mosque (1976), center of Quiapo's Muslim town; halal food around it. You asked Muse where the Muslim community is. Free; dress modestly; avoid Friday midday prayers. ~15 min walk from Binondo, Grab ~20–35 min from Malate.",
+       "link": "https://www.google.com/maps/search/?api=1&query=Golden%20Mosque%2C%20Masjid%20Al-Dahab%2C%20Globo%20de%20Oro%20St%2C%20Quiapo%2C%20Manila"
+      },
+      {
+       "title": "Intramuros · Fort Santiago",
+       "detail": "The walled Spanish city. Fort Santiago ₱75 (official site); hours vary by source, roughly 8–9 AM to 8 PM. Grab ~15 min. Rest day: yes, late afternoon into the bay sunset.",
+       "link": "https://www.google.com/maps/search/?api=1&query=Fort%20Santiago%20%C2%B7%20Intramuros%2C%20Fort%20Santiago%2C%20Santa%20Clara%20St%2C%20Intramuros%2C%20Manila"
+      },
+      {
+       "title": "Manila Bay sunset · Baywalk and Dolomite Beach",
+       "detail": "The bay is a walk from Malate along Roxas Blvd. Sunset about 5:25 PM. Dolomite Beach: 6 AM–6 PM, closed Thursdays, free (2024 report). No swimming. Rest day: yes, any evening.",
+       "link": "https://www.google.com/maps/search/?api=1&query=Manila%20Baywalk%20%C2%B7%20Dolomite%20Beach%2C%20Manila%20Baywalk%20Dolomite%20Beach%2C%20Roxas%20Blvd%2C%20Ermita%2C%20Manila"
+      }
+     ]
+    },
+    {
+     "title": "Beach, bay, falls · day trips",
+     "items": [
+      {
+       "title": "Batangas · Fortune Island, Nasugbu",
+       "detail": "JR: Batangas, nearby beach. Bus from DLTB Buendia (near LRT Gil Puyat) 3–4 h to Nasugbu, ₱160–300; then ~1 h boat. Island day tour ₱350. Leave by 5 AM. After qualifying.",
+       "link": "https://www.google.com/maps/search/?api=1&query=Fortune%20Island%20%C2%B7%20Nasugbu%2C%20Fortune%20Island%2C%20Nasugbu%2C%20Batangas"
+      },
+      {
+       "title": "Batangas · Anilao snorkeling",
+       "detail": "Batangas reef, snorkel or dive; Nov–May is the clear season. 2–3 h by car, or bus to Batangas City plus ~45 min jeep. Tours pick up 5–6 AM. After qualifying.",
+       "link": "https://www.google.com/maps/search/?api=1&query=Anilao%2C%20Anilao%20Port%2C%20Mabini%2C%20Batangas"
+      },
+      {
+       "title": "Subic Bay · beach and forest",
+       "detail": "JR: Subic beach, good forest. All Hands Beach (gentle slope, snorkeling) and the Pamulaklakin forest trail. JR's first coaching job was the Subic International Tennis Center. 2–4 h by car. Best as an overnight after qualifying.",
+       "link": "https://www.google.com/maps/search/?api=1&query=Subic%20Bay%20%C2%B7%20All%20Hands%20Beach%2C%20All%20Hands%20Beach%2C%20Subic%20Bay%20Freeport%20Zone%2C%20Zambales"
+      },
+      {
+       "title": "Hinulugang Taktak · Antipolo",
+       "detail": "JR: falls near Manila. The closest one, a park waterfall (viewing, not swimming). Fee ₱30–100 or a donation; hours conflict (Tue–Sun 7 AM–4 PM in one source). Grab ~1–1.5 h. Possible on a rest day morning.",
+       "link": "https://www.google.com/maps/search/?api=1&query=Hinulugang%20Taktak%2C%20Hinulugang%20Taktak%2C%20Taktak%20Rd%2C%20Antipolo%2C%20Rizal"
+      },
+      {
+       "title": "Daranak Falls · Tanay",
+       "detail": "JR: falls near Manila. Swimmable falls; Batlag Falls next door is ₱100 more. Daily 8 AM–5 PM; fee ₱50–180 (sources conflict). ~2 h by car. After qualifying.",
+       "link": "https://www.google.com/maps/search/?api=1&query=Daranak%20Falls%2C%20Daranak%20Falls%2C%20Tanay%2C%20Rizal"
+      },
+      {
+       "title": "Puerto Galera · overnight",
+       "detail": "Real beach town, Mindoro. Bus to Batangas Pier (~₱260) then 45–90 min ferry; 4–5 h total. Overnight only. After the tournament.",
+       "link": "https://www.google.com/maps/search/?api=1&query=Puerto%20Galera%2C%20Balatero%20Pier%2C%20Puerto%20Galera%2C%20Oriental%20Mindoro"
+      }
+     ]
+    },
+    {
+     "title": "Set up paying · do these once",
+     "items": [
+      {
+       "title": "1. Verify GCash with your passport (5 min, approved within 24 h)",
+       "detail": "Why it failed: GCash says “You must be a Fully Verified user to send money.” Until then you can only scan a merchant's QR Ph code. In GCash: Profile → Verify Now → scan your passport → take a selfie. You get an SMS within 24 hours. This unlocks Send Money to people (Adelmo, Mark) and bank cash-in.",
+       "link": "https://help.gcash.com/hc/en-us/articles/53418595702553"
+      },
+      {
+       "title": "2. Make sure your card allows online and international payments",
+       "detail": "GCash charges your linked card directly. Open your card's app and turn on online/e-commerce and international payments; turn off any travel lock. Then GCash → Profile → My Linked Accounts → Credit/Debit Cards → set it as default.",
+       "link": "https://help.gcash.com/hc/en-us/articles/53418023303193"
+      },
+      {
+       "title": "3. Get pesos: change US cash at a money changer",
+       "detail": "Your cheapest cash with no debit card. Go with Adelmo to a mall money changer (Czarina or Sanry's in Makati). Bring crisp, unfolded new-design $100 bills and your passport. Count the pesos at the counter. Ask for ₱20, ₱50 and ₱100 notes. Change one or two $100s at a time (about ₱6,300 each). Don't pull cash from an ATM with a credit card: that's a cash advance, about 6–8% plus interest from day one."
+      },
+      {
+       "title": "4. In person: tap card or Apple Pay where there's a contactless terminal",
+       "detail": "Works at malls, chains and nicer restaurants. At a restaurant, ask “Card or Apple Pay okay?” before ordering. Jeepneys, tricycles, small stores, markets, club courts and tips are cash only. Grab rides: in the Philippines Grab charges rides to your GrabPay balance, and your US Visa can't top that up (Grab: “This foreign card isn't supported for top-ups”). Pay rides in cash, or load GrabPay at 7-Eleven or from GCash."
+      },
+      {
+       "title": "5. Online: pay with your credit card",
+       "detail": "Card works for websites and app stores (not Grab rides, see step 4). After step 1, you can also pay any QR Ph code from GCash."
+      },
+      {
+       "title": "6. Paying people back (Adelmo, Mark ₱900, PCA fees)",
+       "detail": "Simplest: pesos in cash from step 3. After GCash is verified: Send Money to their GCash. From the US side: Wise from your bank account (about $3) to their GCash or bank. PCA fees are paid in cash at the desk in Paco: singles ₱1,200, doubles ₱900 per player.",
+       "link": "https://wise.com/us/send-money/send-money-to-philippines"
+      },
+      {
+       "title": "7. Water: buy bottled",
+       "detail": "Drink bottled or filtered water only. Buy big bottles at 7-Eleven or a supermarket with pesos or card; take 2 L+ to the courts."
+      },
+      {
+       "title": "GCash runs out after 30 days",
+       "detail": "Your GTourist account switches off 30 days after activation. Spend or cash out any balance before you leave."
+      }
+     ]
+    },
+    {
+     "title": "In Manila now · Sat Nov 21",
+     "items": [
+      {
+       "title": "PCA singles · confirm the entry by email",
+       "detail": "Adelmo says he signed you up for singles, and you emailed PCA saying you'll play. Watch for their reply: the entry deadline is today, Sat Nov 21. Check the name, “Sy, Jerry” on the list, and whether there's a fee. If there's no reply, ask Alex or Adelmo to check in person."
+      },
+      {
+       "title": "Mark Ivan Malinis · doubles partner, fee",
+       "detail": "He registered for doubles naming you and asked you to cover his fee; you said yes. PCA doubles is ₱900 per player (about $14), not $30–50. Pay him in cash when you meet, or by GCash after step 1. Nobody found results under his name: ask Adelmo or the PCA desk how he plays, and hit with him once before the event."
+      },
+      {
+       "title": "Ask Adelmo if Tom can come over tomorrow",
+       "detail": "Sun Nov 22."
+      },
+      {
+       "title": "Daily reset",
+       "detail": "Keep only useful things in the bag. Clean the room every day: it's the habit that earns the futon. Free up iPhone storage: Settings → General → iPhone Storage. Offload unused apps and delete big videos once they're backed up."
+      },
+      {
+       "title": "Japan longer? Plan, not hope",
+       "detail": "Before committing to a longer stay, write down weekly tennis, a budget (capsule is fine) and what has to have happened by a set date. A full plan is being written."
+      }
+     ]
+    },
+    {
+     "title": "Before you fly · Fri Nov 20",
+     "items": [
+      {
+       "title": "No visa needed · just eTravel (free)",
+       "detail": "US passport: 30 days visa-free in the Philippines, 90 days in Japan. Fill in eTravel on the official site only (free; other sites charge for the same form) and save the QR to Photos. The 72-hour window for PR123 is open now. No VPN needed in either country.",
+       "link": "https://etravel.gov.ph/"
+      },
+      {
+       "title": "eSIM for data · install tonight on Wi-Fi",
+       "detail": "One eSIM covers data. In the Airalo app pick Asia (Asialink: Philippines + Japan) or Philippines only if you skip Japan; 10 GB is plenty. Install it on Wi-Fi before you leave and switch it on when you land. Keep your US line on for texts so codes still reach you (GCash, banks), with data roaming off on that line.",
+       "link": "https://www.airalo.com/"
+      },
+      {
+       "title": "GCash · sign up for GTourist",
+       "detail": "GCash for US visitors: sign up in the GCash app with your +1 number, a passport scan and a selfie (roaming on for the text code). It switches on once you land in the Philippines and lasts 30 days, through your whole stay. Top it up with your card, then pay by scanning QR codes like locals do.",
+       "link": "https://help.gcash.com/hc/articles/53417886058521-How-to-create-a-GTourist-account-on-GCash"
+      },
+      {
+       "title": "Grab · rides from the airport and around Manila",
+       "detail": "Install Grab for getting around Manila and Cebu. Fixed price shown upfront; no haggling. Pay cash to the driver (your US card can't load GrabPay).",
+       "link": "https://www.grab.com/ph/"
+      },
+      {
+       "title": "Japan only · Visit Japan Web and Suica",
+       "detail": "If you go to Tokyo: fill in Visit Japan Web before the flight for the arrival QR (optional, faster at the airport). Add Suica in Apple Wallet for trains and convenience stores (see Money & payments).",
+       "link": "https://www.vjw.digital.go.jp/"
       }
      ]
     },
@@ -707,10 +1179,9 @@
      "title": "Do now · before Sat Nov 21",
      "items": [
       {
-       "title": "Confirm PCA entry and doubles with Alex",
-       "detail": "The PCA entry list (as of Nov 18) shows “Sy, Jerry” (#159), no “Shi”. Entries close Sat Nov 21. If Alex can’t confirm fast, call PCA 8563 8501 ext 116 or email philcolumbian_pcaopen@yahoo.com. You texted Alex Nov 19 at 4:20 PM about the entry form, fee and Nov 30 qualies; this follow-up adds the name check.",
-       "link": "https://www.facebook.com/100057105145569/posts/posting-list-of-open-entries-as-of-november-18-2026reminder-also-that-the-deadli/1708210611092427/",
-       "draft": "Also, PCA’s entry list has “Sy, Jerry” (#159) but no “Shi”. Is that me? Entries close Saturday."
+       "title": "PCA entry: done (Alex signed you up)",
+       "detail": "Alex, Nov 19 7:48 PM: “You are signed up.” No fee to pay. No message needed.",
+       "link": "https://www.facebook.com/100057105145569/posts/posting-list-of-open-entries-as-of-november-18-2026reminder-also-that-the-deadli/1708210611092427/"
       },
       {
        "title": "Decide Tokyo dates",
@@ -722,18 +1193,8 @@
      "title": "Money & payments · from Muse, Nov 19",
      "items": [
       {
-       "title": "PCA entry fee · ₱1,200 singles, pay first",
-       "detail": "Official form says “No Pay, No Play”: men’s singles ₱1,200, doubles ₱900 each. Pay by BDO transfer to Philippine Columbian Association or QR-PH, then upload the receipt in the form. Easiest from LA: Wise to the BDO account shown on the form. Or Alex/Adelmo pays by QR-PH and you repay in cash. Check first whether “Sy, Jerry” (#159) is already your paid entry.",
-       "link": "https://docs.google.com/forms/d/e/1FAIpQLSdGsNLqzoUeBv0nRPltp4y6S__L5acQg_0ruUmSo2qgfLXQJg/viewform"
-      },
-      {
-       "title": "Philippines · set up GCash GTourist",
-       "detail": "Locals pay by scanning GCash or Maya QR codes. GTourist is GCash for US visitors: sign up with your +1 number and passport (keep roaming on for the code). It activates once you land and lasts 30 days. Use up the balance before it ends.",
-       "link": "https://help.gcash.com/hc/en-us/articles/53417668053273-What-is-GTourist"
-      },
-      {
        "title": "Philippines · carry pesos",
-       "detail": "Cash runs street food, small eateries, tricycles, tips and club courts. Apple Pay (live in PH since Aug 4, 2026) works at contactless terminals in malls, chains and hotels. ATMs charge foreign cards about ₱250 a withdrawal, so pull about ₱10,000 at a time and keep small bills. Grab and GrabFood take your US card.",
+       "detail": "Cash runs street food, small eateries, tricycles, tips and club courts. Apple Pay (live in PH since Aug 4, 2026) works at contactless terminals in malls, chains and hotels. ATMs charge foreign cards about ₱250 a withdrawal, so pull about ₱10,000 at a time and keep small bills. Grab can't take your US card in PH (checked Nov 23): pay cash or load GrabPay at 7-Eleven.",
        "link": "https://mb.com.ph/2026/08/04/no-more-cards-needed-where-you-can-use-apple-pay-in-the-philippines-starting-today"
       },
       {
@@ -745,10 +1206,6 @@
        "detail": "Wise sends dollars to pesos into a Philippine bank account or a GCash wallet. Use it for the PCA fee or paying back Alex or Adelmo."
       },
       {
-       "title": "Local SIM needs passport + address + onward ticket",
-       "detail": "Philippine SIM registration asks for your passport, a local address (Adelmo’s works) and your ticket out. Tourist SIMs die after 30 days. An eSIM or US roaming skips this."
-      },
-      {
        "title": "Loose ends before you fly",
        "detail": "Anthropic credit expires Nov 25: Muse’s balance check stopped at the platform.claude.com sign-in, so check it yourself. Backblaze: Muse found no receipt or invoice in your email; check the account page on your iPhone. Meshy: cancelled, Premium ends Nov 20 with no further charge, 17 credits stay. Venmo to Lawrence: done. CatPrint proofs: no update yet."
       }
@@ -758,45 +1215,81 @@
      "title": "Replies owed",
      "items": [
       {
-       "title": "Whismark · Valle Verde hit",
+       "title": "Fix Tokyo dates once, then answer everyone",
+       "detail": "Your DMs tell Tokyo coaches “Dec 3 to 8, staying in Shinjuku”, but PCA qualifying is Nov 30 – Dec 4, Silvio is in Cebu Dec 6, Tokyo Tarzan is Dec 5 and Ehara and Ryusei both picked Dec 8. Pick the real dates; then Ehara, Ryusei, Hien and Silvio can all be answered in one pass."
+      },
+      {
+       "title": "Hien Pham · dates and lesson count",
+       "detail": "Instagram, Nov 22. Asked your Tokyo dates, area and how many lessons; will book a venue near where you stay once you say.",
+       "link": "https://www.instagram.com/hienpham_/"
+      },
+      {
+       "title": "JB Cuarto · hit at PCA this week",
+       "detail": "Instagram, Nov 22 12:41 PM: “lets play in pca this week whenever ur free!” Give him a day and time.",
+       "link": "https://www.instagram.com/jbcuarto_/"
+      },
+      {
+       "title": "Ehara · decide on paid lesson",
+       "detail": "Instagram. He offered Dec 8 afternoon and asked “Could you pay for lesson fee?” (price not said). Your call: ask the price, or pass."
+      },
+      {
+       "title": "Ryusei Kato · decide on paid lesson",
+       "detail": "Instagram. He offered Dec 8 morning: ¥10,000 for 1 hour or ¥20,000 for 2 hours, plus court and transport. Your call."
+      },
+      {
+       "title": "Malinis Mark Ivan · doubles partner wants fee covered",
+       "detail": "Messenger. “Dont have doubles partner yet. Sure, Will you cover my registration fee?” Your call before replying."
+      },
+      {
+       "title": "Coach Waldo · tentative (Sun or Mon)",
+       "detail": "Told him Nov 20 you’re not sure about Mon 6am and not to hold the court; you’ll confirm Sunday or Monday once you land. His Monday option: 6–8am, Veterans Memorial Tennis Court, Quezon City."
+      },
+      {
+       "title": "Coach JR Moreno · Sunday or Monday after 9am",
+       "detail": "WhatsApp sent (his number is in Joseph’s IG group). He said “See you soon.” WhatsApp him when you land."
+      },
+      {
+       "title": "Tokyo Tarzan · trail run Dec 5, 9:30",
+       "detail": "Meet at Takaosanguchi station."
+      },
+      {
+       "title": "Sent Nov 19–20 · Kenny Watabe · send your UTR",
+       "detail": "Replied Nov 20 JST (email): knows a couple of players practicing in your dates and asked for your UTR or ATP ranking.",
+       "link": "https://mail.google.com/mail/u/0/#inbox/1a1f76c909bf6253"
+      },
+      {
+       "title": "Sent Nov 19–20 · Whismark · Valle Verde hit",
        "detail": "He offered a hit at Valle Verde (IG, Nov 18).",
-       "link": "https://www.instagram.com/whismaaark/",
-       "draft": "Valle Verde sounds good! I land Saturday night, I’ll message you when I get in."
+       "link": "https://www.instagram.com/whismaaark/"
       },
       {
-       "title": "Migi · when are qualies",
+       "title": "Sent Nov 19–20 · Migi · when are qualies",
        "detail": "She asked when PCA qualies are (IG, Nov 18).",
-       "link": "https://www.instagram.com/anotherdayanothercourt/",
-       "draft": "Qualies are Nov 30 to Dec 4! No worries at all, any tune-up games you find would be awesome. Thank you!"
+       "link": "https://www.instagram.com/anotherdayanothercourt/"
       },
       {
-       "title": "Marvin · confirm 43rd PCA",
-       "detail": "He replied “43rd pca open” and offered to arrange courts (IG).",
-       "link": "https://www.instagram.com/racketoncourt/",
-       "draft": "Yes it’s the 43rd PCA Open, qualies Nov 30 to Dec 4. I land in Manila Saturday night. Would love that court hit before qualies!"
+       "title": "Marvin · Asmara and tennisnomad (optional)",
+       "detail": "Instagram, Nov 22. Asked your plan this week; after you said Manila, he suggested visiting Asmara (Cebu) and meeting tennisnomad. Reply only if you want the Cebu detour.",
+       "link": "https://www.instagram.com/racketoncourt/"
       },
       {
-       "title": "Silvio · not PHILTA, it’s PCA",
-       "detail": "He sent the 2026 PHILTA Men’s National Open post and asked “R u talking about this tournament?” (IG, Nov 19).",
-       "link": "https://www.instagram.com/silvio.nyc/",
-       "draft": "It’s this tournament: https://www.abs-cbn.com/sports/othersports/2026/10/15/local-tennis-players-take-the-spotlight-at-43rd-pca-open-1348 But I’m down to hit in Cebu after!"
+       "title": "Silvio · Cebu Dec 6?",
+       "detail": "Instagram, Nov 22 8:59 PM (unread until Nov 23 audit). He asked when you come to Cebu, then said “We r there December 6th”. Decide Cebu vs Tokyo first (see the dates item).",
+       "link": "https://www.instagram.com/direct/inbox/"
       },
       {
-       "title": "Skip Tan · reply to “hey bro”",
+       "title": "Sent Nov 19–20 · Skip Tan · reply to “hey bro”",
        "link": "https://www.instagram.com/skip.tan/",
-       "detail": "Open play and reach, rec level.",
-       "draft": "Hey Skip! I’m in Manila from Nov 21 for PCA qualies. Any open play or hitters you’d point me to?"
+       "detail": "Open play and reach, rec level."
       },
       {
-       "title": "Michael Cumagun · optional thanks",
-       "detail": "He replied Nov 20 PHT: “Ok. I thought you were here already. Good luck with PCA Open.” No reply needed.",
-       "draft": "Thanks Mike! Would love to hit with you and Roland another morning once I’m in, let me know."
+       "title": "Sent Nov 19–20 · Michael Cumagun · optional thanks",
+       "detail": "He replied Nov 20 PHT: “Ok. I thought you were here already. Good luck with PCA Open.” No reply needed."
       },
       {
-       "title": "Tennis United · correct Cebu to Manila",
+       "title": "Sent Nov 19–20 · Tennis United · correct Cebu to Manila",
        "detail": "You told them “Cebu” but they’re in Manila. They offered a hit with a ~9 UTR coach.",
-       "link": "https://www.instagram.com/tennisunitedacademy/",
-       "draft": "Sorry, I meant Manila! I’m there from Nov 21. Could we set a hit with one of your coaches that week?"
+       "link": "https://www.instagram.com/tennisunitedacademy/"
       },
       {
        "title": "Tokyo Tennis International · skip for now (fallback)",
@@ -804,49 +1297,139 @@
        "draft": "Filip様、Kazu様\n\nご返信ありがとうございます。日程はまだ調整中です。プライベートの場合、Lilianさんか Jelassiさんとの試合形式の練習は可能でしょうか。\n\nHi Filip and Kazu, thanks! My dates are still moving. If I book a private, could it be match-play hitting with Lilian or Jelassi? I’ll confirm a date once my plans are set.\n\nThanks,\nJerry"
       },
       {
-       "title": "Lilian Breut · direct DM (skip the club)",
+       "title": "Sent Nov 19–20 · Lilian Breut · direct DM (skip the club)",
        "detail": "Ex-ATP (career high 1321), 29, Tokyo-based, coaches at TTI. His coaching IG says “DM COACHING”. Private personal IG: @lilian.breut.",
-       "link": "https://www.instagram.com/tenniscoachlilian/",
-       "draft": "Hey Lilian, I’m Jerry from LA. I’m playing PCA Open qualies in Manila, then coming to Tokyo in December. Saw you played the tour and you’re based in Tokyo. Would you be down to hit while I’m there? Happy to cover the court."
+       "link": "https://www.instagram.com/tenniscoachlilian/"
       },
       {
-       "title": "Robert Kawaratani · UCLA Japan post",
-       "detail": "Gmail thread. He lives in Kyoto and will post on the UCLA Japan Facebook page. Degree conferred Spring 2025 (UCLA Registrar email).",
-       "draft": "ロバートさん、ありがとうございます。とても助かります。\n\nHi Bob, thank you, that would be great!\n\nDepartment: Mathematics and Statistics (B.S. Data Theory)\nGraduation year: 2025\nEmail: [my email]\n\nThanks again,\nJerry"
+       "title": "Sent Nov 19–20 · Hermont · PH hitters, Futures coach",
+       "detail": "Your Nov 19 email to his UCI address bounced (user unknown). Use IG @hq_legatsby. Sac State alum, UC Irvine women's tennis assistant coach.",
+       "link": "https://ucirvinesports.com/sports/womens-tennis/roster/coaches/hermont-legaspi/1213"
       },
       {
-       "title": "Hermont · PH hitters, Futures coach",
-       "detail": "Instagram @hq_legatsby (Sac State alum, Racquet Club of Irvine). No thread yet; Kyle Vo wouldn’t share his number.",
-       "link": "https://www.instagram.com/hq_legatsby/",
-       "draft": "Hi Hermont, I’m Jerry Shi. Joseph Lizardo mentioned you at Jack Kramer. I hit with Anthony Lee all the time at Victoria since I work at LA Galaxy by the USTA courts in Carson, so if you ever want to hit, let me know! I fly to Manila Friday for the PCA Open. Do you know anyone in the Philippines to hit with? Also I’m looking to play Futures and looking for a coach, do you know anyone?"
+       "title": "Sent Nov 19–20 · Johnny Arcilla · acknowledge",
+       "detail": "He said “Im not playing pca.. sayang” (Messenger, Nov 18)."
       },
       {
-       "title": "Johnny Arcilla · acknowledge",
-       "detail": "He said “Im not playing pca.. sayang” (Messenger, Nov 18).",
-       "draft": "All good! Hope to cross paths on court in Manila sometime."
-      },
-      {
-       "title": "Asmara (Cebu) · optional thanks",
+       "title": "Sent Nov 19–20 · Asmara (Cebu) · optional thanks",
        "detail": "They welcomed you and pointed to online booking (Messenger, Nov 18).",
-       "link": "https://asmara-tennis-association.rezerv.co/",
-       "draft": "Thank you so much! I’ll book a slot once my Cebu dates are set."
+       "link": "https://asmara-tennis-association.rezerv.co/"
       },
       {
-       "title": "Joseph Lizardo · follow up, academy intros",
+       "title": "Sent Nov 19–20 · Joseph Lizardo · follow up, academy intros",
        "detail": "He said to follow up after the Jack Kramer match (Nov 18) and that he knows academy people in Manila.",
+       "link": "https://www.instagram.com/lizardo_jr_development_/"
+      },
+      {
+       "title": "Bob Kawaratani · ask to add more to the post",
+       "detail": "He posted your UCLA Japan alumni note Nov 20. This asks him to add LA Galaxy, Torrance and your AI work, and to share it more. Check the AI line says what you actually do before sending.",
+       "link": "https://mail.google.com/mail/u/0/#inbox/1a1f7eb047a9d4dd",
+       "draft": "ロバートさん、投稿ありがとうございます！\n\nHi Bob, thank you so much for posting! If it helps, a bit more about me: I work at LA Galaxy in Carson and live in Torrance. I'm mainly in charge of AI there, building AI tools and agents that connect our data and help staff get answers in plain English. I've always wanted to spend real time in Japan, so I'd love to meet alumni in tech, AI, sports, or anyone who plays tennis. Would you mind adding that, and sharing it with anyone you think would be interested?\n\nThanks again,\nJerry"
+      }
+     ]
+    },
+    {
+     "title": "Give back · Manila",
+     "items": [
+      {
+       "title": "Pack old rackets, strings, grips, balls to donate",
+       "detail": "Before you fly Fri. Alex runs Friends of Philippine Tennis donations; Joseph coaches juniors. Adam Borak did the same in Cebu and it opened doors.",
+       "link": "https://jerryshi042003.github.io/trip/listen.html?id=uLqDrzi2r28"
+      },
+      {
+       "title": "Adelmo · pay your share",
+       "detail": "Don't mooch: offer cash for the room and groceries, treat dinners, and hit with him. He plays (UTP Men's A champion).",
+       "draft": "Hi Dey, thanks so much for having me! I want to pay my share for the room and food while I'm there, just tell me what's fair. And I'd love to hit with you if you're down."
+      },
+      {
+       "title": "Joseph · offer to help coach his juniors",
+       "detail": "He runs Lizardo Jr Development. Offering free hitting/coaching for his juniors is the strongest way to earn court time and intros.",
        "link": "https://www.instagram.com/lizardo_jr_development_/",
-       "draft": "Hey Coach Joseph, great meeting you at Jack Kramer Wednesday! Following up like you said. You mentioned you know some academy people in Manila. Could you connect me with them? I land Saturday night."
+       "draft": "Coach, while I'm in Manila I'd love to give back. Happy to help with your juniors for free, hitting, feeding, drills, whatever helps. Just tell me when and where."
+      }
+     ]
+    },
+    {
+     "title": "No reply yet · second route",
+     "items": [
+      {
+       "title": "Sent Nov 19–20 · PJ Tierro · email (he coaches at Cal State Fullerton)",
+       "detail": "FB message Nov 17, no reply. Work email is on his Fullerton staff page. May be in Manila now for PCA doubles (unverified).",
+       "link": "https://fullertontitans.com/sports/womens-tennis/roster/coaches/patrick-tierro/849"
+      },
+      {
+       "title": "Tennis United · use the IG reply above",
+       "detail": "They did reply on IG (coaches ~9 UTR, offered a hit). Reply there with your number instead of asking the academy.",
+       "link": "https://tennisunitedacademy.com"
+      },
+      {
+       "title": "Sent Nov 19–20 · John Rey Moreno · email (IG never delivered)",
+       "detail": "Benilde head coach. Email on his GPTCA coach profile.",
+       "link": "https://gptcatennis.org/johnrey-moreno"
+      },
+      {
+       "title": "Sent Nov 19–20 · Coach Czar · email or WhatsApp",
+       "detail": "IG unanswered. She publishes email and WhatsApp for coaching on this page.",
+       "link": "https://sportsprosconnect.com/?p=14121"
+      },
+      {
+       "title": "Sent Nov 19–20 · Gentry Open · email",
+       "detail": "FB unanswered. Organizer contact page.",
+       "link": "https://gentry.ph/pages/contact"
+      },
+      {
+       "title": "Sent Nov 19–20 · AJ Lim · Facebook page",
+       "detail": "IG DM likely sits in his requests.",
+       "link": "https://www.facebook.com/ajlimofficial"
+      },
+      {
+       "title": "Sent Nov 19–20 · Niño Alcantara · Facebook page",
+       "detail": "IG unanswered. Ruben’s referral.",
+       "link": "https://www.facebook.com/franciscasey.alcantara"
+      },
+      {
+       "title": "Sent Nov 19–20 · Tennis MNL · Instagram",
+       "detail": "FB unanswered.",
+       "link": "https://www.instagram.com/tennismnl/"
+      },
+      {
+       "title": "Sent Nov 19–20 · Open Play & Away · ask Coach Waldo",
+       "detail": "IG unanswered. Their coach.",
+       "link": "https://www.instagram.com/coachwaldobernardo/"
+      },
+      {
+       "title": "Sent Nov 19–20 · Bryce · the PH buddy’s number",
+       "detail": "iMessage. He offered on Nov 15 and never sent it."
+      },
+      {
+       "title": "Sent Nov 19–20 · RJ (Jason Fan’s friend) · first text",
+       "detail": "Text. His number is in Jason’s contact card from Nov 14."
+      },
+      {
+       "title": "Sent Nov 19–20 · Griffen · family in Manila",
+       "detail": "iMessage stalled Nov 15."
+      },
+      {
+       "title": "Emon · already asked (Nov 11), skip",
+       "detail": "You asked him about Tokyo academies on Nov 11. No new message needed."
+      },
+      {
+       "title": "Sent Nov 19–20 · Tokyo Nov 18 batch · second route (send once dates are set)",
+       "detail": "Musashino Dome (LINE), Waseda (email on wasedatennis.net), SBC (form), LEONE (form), Kazumax (email on YouTube about), Shota Konishi (LINE), Keisuke Ota (X), Star Tennis Academy (email on YouTube about)."
+      },
+      {
+       "title": "Sent Nov 19–20 · Arthur “Iggy” Pantino · Instagram @arthur_pantino",
+       "detail": "Arthur “Iggy” Pantino · Cebuano, played at LMU (Chris Papa gave you his name Nov 10)"
+      },
+      {
+       "title": "Sent Nov 19–20 · everybodi · Email or Reclub",
+       "detail": "everybodi · Manila open play"
       }
      ]
     },
     {
      "title": "Before departure",
      "items": [
-      {
-       "title": "Finish eTravel and save the QR",
-       "detail": "For the scheduled PR123 arrival, the 72-hour window opened Wednesday, Nov 18 at 10:45 PM Manila time (6:45 AM Pacific). Use the official free form and save the QR.",
-       "link": "https://etravel.gov.ph/"
-      },
       {
        "title": "Confirm the listing and onward plan",
        "detail": "PR123 replaces PR103 in the current plan. Check the actual listing or ticket, passport validity and what proof of onward travel PAL will accept."
@@ -861,8 +1444,8 @@
        "link": "https://www.philippineairlines.com/us/en/before-you-fly/baggage-information/baggage-allowance/baggage-allowance-fees/carry-on-baggage.html"
       },
       {
-       "title": "Set up phone service and offline trip info",
-       "detail": "Install the eSIM on Wi-Fi if needed. Save the pickup details, reservations and contact routes offline. Clear work-laptop travel with IT if bringing it."
+       "title": "Save trip info offline",
+       "detail": "Save the pickup details, reservations and contact routes offline. Clear the work laptop with IT if you bring it."
       }
      ]
     },
@@ -890,37 +1473,34 @@
        "link": "https://asmara-tennis-association.rezerv.co/"
       },
       {
-       "title": "Adam Borak · intro to Noy Seno",
+       "title": "Sent Nov 19–20 · Adam Borak · intro to Noy Seno",
        "detail": "Adam had Noy on Tipsy Tennis a week ago.",
-       "link": "https://www.instagram.com/tipsytennispodcast/",
-       "draft": "Yo Adam, loved the Noy Seno ep. If Cebu happens after PCA, could you connect me with him for a hit?"
+       "link": "https://www.instagram.com/tipsytennispodcast/"
       },
       {
-       "title": "Noy Seno · hit in Cebu",
+       "title": "Sent Nov 19–20 · Noy Seno · hit in Cebu",
        "detail": "Ex D1 at St. Francis Brooklyn, now in Cebu. IG may be private; DM request still works.",
-       "link": "https://www.instagram.com/sinoynoy/",
-       "draft": "Hey Noy! Jerry here, UCLA alum playing Futures, caught your ep on Tipsy Tennis. I’ll be in Cebu after PCA, down to hit? I’ll book the court"
+       "link": "https://www.instagram.com/sinoynoy/"
       },
       {
-       "title": "Citigreen · strongest coach or player",
-       "detail": "Red clay. Lotus Cup running now; draw Nov 21.",
-       "link": "https://www.instagram.com/citigreentennisresort/",
-       "draft": "Hi! UCLA alum playing PCA qualies, in Cebu after. Could you set me up with your strongest coach or a player for a hit? Also is the Lotus Cup still on then?"
+       "title": "Sent Nov 19–20 · Citigreen · strongest coach or player",
+       "detail": "Red clay. Lotus Cup running now; draw Nov 21. Also Messenger: facebook.com/citigreentennisresort.",
+       "link": "https://www.instagram.com/citigreentennisresort/"
       },
       {
-       "title": "Villa Aurora · join pickup",
+       "title": "Sent Nov 19–20 · Villa Aurora · join pickup",
        "detail": "Best pickup in Cebu. Message the FB page or just show up.",
-       "draft": "Hi! Visiting player from LA (UCLA alum). Can a guest join the pickup games? What time are the strong guys there?"
+       "link": "https://www.facebook.com/villaauroratennis"
       },
       {
-       "title": "Coach Sheena Camporedondo · hit",
+       "title": "Sent Nov 19–20 · Coach Sheena Camporedondo · hit",
        "detail": "Citigreen coach. Find her on IG under her name.",
-       "draft": "Hi Coach Sheena! Visiting UCLA player in Cebu after PCA. Do you do hitting sessions, or know strong guys who’d hit?"
+       "link": "https://www.facebook.com/maria.camporedondo"
       },
       {
-       "title": "USC Cebu varsity · join practice",
+       "title": "Sent Nov 19–20 · USC Cebu varsity · join practice",
        "detail": "Coach Misael Bersaluna. Contact through the USC / Today’s Carolinian FB pages.",
-       "draft": "Hi Coach! UCLA alum playing Futures, in Cebu after PCA. Could I join a varsity practice or hit with your top guys?"
+       "link": "https://www.facebook.com/todayscarolinian"
       }
      ]
     },
@@ -948,16 +1528,14 @@
      "title": "Manila · new hitting leads",
      "items": [
       {
-       "title": "Adam Borak · Tipsy Tennis Podcast",
-       "detail": "US ex-ITF junior playing the PH circuit; trains with Chad Cuizon. New cold.",
-       "link": "https://www.instagram.com/tipsytennispodcast/",
-       "draft": "Hey Adam, Jerry here, UCLA alum playing Futures. In Manila for PCA qualies from Nov 21. Love the pod. Down to hit sometime before qualies?"
+       "title": "Sent Nov 19–20 · Adam Borak · Tipsy Tennis Podcast",
+       "detail": "US ex-ITF junior playing the PH circuit; trains with Chad Cuizon. New cold. Business email on the podcast page: rss.com/podcasts/tipsytennispodcast.",
+       "link": "https://www.instagram.com/tipsytennispodcast/"
       },
       {
-       "title": "Carl Ubalde · book a hit",
+       "title": "Sent Nov 19–20 · Carl Ubalde · book a hit",
        "detail": "Accepted your FB request Nov 19. Organized hits in Makati.",
-       "link": "https://www.facebook.com/carl.ubalde.56",
-       "draft": "Hey Coach Carl, thanks for accepting! I’m in Manila from Nov 21 for PCA qualies. Could I book a hitting session that week? What’s your rate?"
+       "link": "https://www.facebook.com/carl.ubalde.56"
       },
       {
        "title": "Ka Palo · watch for order of play",
@@ -965,22 +1543,19 @@
        "link": "https://www.facebook.com/mel.abad.79"
       },
       {
-       "title": "Jed Olivarez · nudge for an Olivarez hit",
+       "title": "Sent Nov 19–20 · Jed Olivarez · nudge for an Olivarez hit",
        "detail": "FB message Nov 17 unseen (likely in Message Requests; not FB friends). Nudge on IG, or ask Alex Marcial, your one mutual. Mutuals on IG: Chris Papa, Silvio, Joseph Lizardo.",
-       "link": "https://www.instagram.com/jeddyboy109/",
-       "draft": "Congrats on Asmara man! I'm the UCLA guy Ruben mentioned, in Manila from Sat for PCA qualies. Any chance I could join a hit at Olivarez one weekday?"
+       "link": "https://www.instagram.com/jeddyboy109/"
       },
       {
-       "title": "Nilo Ledama · ask for a hit",
+       "title": "Sent Nov 19–20 · Nilo Ledama · ask for a hit",
        "detail": "New lead from Jed's Nov 18 Asmara post. Only mutual is Marvin (racketoncourt), so Marvin can intro. PCA entry unknown.",
-       "link": "https://www.instagram.com/its_nillllllll/",
-       "draft": "Hey Nilo, saw you and Jed in the Asmara doubles final. I'm ex-UCLA, in Manila for PCA qualies. Down to hit some time next week?"
+       "link": "https://www.instagram.com/its_nillllllll/"
       },
       {
-       "title": "AJ Lim · ask Chris for an intro",
+       "title": "AJ Lim · skip the Chris intro (DM him directly)",
        "detail": "IG DM Nov 17 likely in his requests (he follows 1 account). Chris Papa is a mutual. Unlikely to hit during PCA week.",
-       "link": "https://www.instagram.com/chrispapa01/",
-       "draft": "Hey Chris, any chance you could intro me to AJ for a hit before PCA qualies? Ex-UCLA, in Manila from Sat."
+       "link": "https://www.instagram.com/chrispapa01/"
       }
      ]
     },
@@ -994,51 +1569,39 @@
        "draft": "Yo Chris, random one. You know Jay Friend? I’ll be in Tokyo early December and would love to hit with him if he’s home. Mind connecting us?"
       },
       {
-       "title": "Jay Friend · hit in Tokyo",
+       "title": "Sent Nov 19–20 · Jay Friend · hit in Tokyo",
        "detail": "Tokyo-born pro, Arizona ’26, playing the Japan Challengers now. Mutual follow with Chris Papa, nothing more. DM him directly.",
-       "link": "https://www.instagram.com/jaythefriend/",
-       "draft": "Yo Jay, Jerry here, UCLA alum playing Futures. Saw you crushing the Japan challengers. I’m in Tokyo early December, if you’re home and want a hit I’ll book the court"
+       "link": "https://www.instagram.com/jaythefriend/"
       },
       {
-       "title": "Emon · who he hits with in Tokyo",
-       "detail": "iMessage. He never answered the Tokyo hitting ask.",
-       "draft": "Yo Emon, quick one. When you’re home in Japan who do you hit with? Any academy or coach in Tokyo I could pull up to? I’m there early December. And I’ll tell Shingo you’re down for Setinn 🙏"
+       "title": "Emon · already asked (Nov 11), skip",
+       "detail": "You asked him about Tokyo academies on Nov 11. No new message needed."
       },
       {
-       "title": "Hien Pham · paid hitting",
+       "title": "Sent Nov 19–20 · Hien Pham · paid hitting",
        "detail": "ATP-ranked pro in Tokyo; LinkedIn message, IG backup.",
-       "link": "https://www.linkedin.com/in/hien-pham-81650b421/",
-       "draft": "Hey Hien, I’m Jerry, UCLA alum playing Futures (UTR ~9). Saw you do private sessions in central Tokyo. I’m there early December. Could I book 2–3 hitting sessions? Happy to pay your rate + court"
+       "link": "https://www.linkedin.com/in/hien-pham-81650b421/"
       },
       {
-       "title": "Kenny Watabe · session or pro hitter",
-       "link": "https://wa.me/819092544908",
-       "detail": "Email kennywatabe1982@gmail.com or WhatsApp.",
-       "draft": "Hi Kenny, I’m Jerry, UCLA alum playing Futures (UTR ~9), in Tokyo early December. Any chance of a paid session, or could you point me to a pro who wants a hitting partner? Thanks!"
-      },
-      {
-       "title": "Frédéric Dewitte · hitting session",
-       "link": "https://www.instagram.com/fdewitte/",
-       "detail": "Tokyo coach, ex-Japan junior team, NCAA D1.",
-       "draft": "Hey Frédéric, Jerry here, UCLA alum playing Futures. In Tokyo early December. Do you do high-level hitting sessions? Would love to book one"
+       "title": "Sent Nov 19–20 · Frédéric Dewitte · hitting session",
+       "link": "https://fredericdewitte.com/ja/contact/",
+       "detail": "Academy is at Club Med Hokkaido/Okinawa, so ask if he hits in Tokyo. Contact form on his site."
       },
       {
        "title": "Kurashima Academy · private with Yuri",
        "link": "https://kurashimatennis.com/",
        "detail": "Inquiry form on the site. Jingu Gaien, near Setinn.",
-       "draft": "はじめまして、UCLA卒でITFフューチャーズに出ているJerryです(UTR 9前後)。12月上旬に東京に滞在します。倉島侑里コーチとのプライベートレッスン(ラリー/ポイント練習中心)を2回ほどお願いできますか?日程と料金を教えてください。"
+       "draft": "はじめまして。UCLAテニス部出身のJerryです。12月[日付]に東京に滞在します。倉島侑里コーチとのプライベートレッスン（ラリー・ポイント練習中心）をお願いできますか？日程と料金を教えてください。\n\nHi, I’m Jerry Shi, I was part of UCLA tennis. I’m in Tokyo [dates] in December. Could I book a private session with Coach Yuri, mostly rallies and points? Please let me know times and price."
       },
       {
-       "title": "Blue Six · join practice",
+       "title": "Sent Nov 19–20 · Blue Six · join practice",
        "link": "https://www.instagram.com/bluesix_trainingclub/",
-       "detail": "Ariake pro club; pros prep there before All-Japans (Dec 13–20).",
-       "draft": "はじめまして、UCLA卒でITFフューチャーズに出ているJerryです(UTR約9)。12月上旬に東京にいます。選手の方の練習相手やクラブの練習に参加させていただくことは可能でしょうか?費用はお支払いします。"
+       "detail": "Ariake pro club; pros prep there before All-Japans (Dec 13–20). Email on tc.blue-6.com."
       },
       {
-       "title": "Ryoto · lock a hit",
+       "title": "Sent Nov 19–20 · Ryoto · lock a hit",
        "link": "https://www.instagram.com/ryoto.tachi/",
-       "detail": "He said “Would love to get a hit in!”",
-       "draft": "Yo Ryoto! Locking dates now, I’m in Tokyo [dates]. Which days work for a hit? Happy to book the court."
+       "detail": "He said “Would love to get a hit in!”"
       },
       {
        "title": "Jinji · book Hitting with the Pro",
@@ -1046,58 +1609,50 @@
        "draft": "Hi Shai, dates are [dates]. Could I book Hitting with the Pro on [day] and [day], mornings ideally? Thanks!"
       },
       {
-       "title": "Shinn Hiramatsu · book hitting",
-       "detail": "Ex-pro hitter, lessons across Tokyo by DM. Rate not public.",
-       "link": "https://www.instagram.com/shinn_hiramatsu/",
-       "draft": "Hey Shinn! Jerry here, UCLA alum playing Futures (UTR ~9). In Tokyo early December, would love to book a couple of hitting sessions with you, happy to pay your rate + court"
+       "title": "Sent Nov 19–20 · Shinn Hiramatsu · book hitting",
+       "detail": "Ex-pro hitter, lessons across Tokyo by DM. Rate not public. Lesson form on his site.",
+       "link": "https://shinnhawkeyetennis.com/"
       },
       {
-       "title": "Takuya Komura · private session",
+       "title": "Sent Nov 19–20 · Takuya Komura · private session",
        "detail": "Pro and private coach in Tokyo, DM for lessons.",
-       "link": "https://www.instagram.com/takuya.komura1221/",
-       "draft": "Hi Takuya! Jerry, UCLA alum playing Futures. In Tokyo early December, could I book a private hitting or match-play session with you? English ok?"
+       "link": "https://www.instagram.com/takuya.komura1221/"
       },
       {
        "title": "Sari Baba · book through B LYNC",
        "detail": "¥17,600 for 60 min, prepaid, you book the court.",
        "link": "https://blync.jp/sports/tennis/",
-       "draft": "Private 90-min hitting and point play for a UTR ~9 male player, early December, Sendagaya area if possible"
+       "draft": "Private 60–90 min hitting and point play with Sari Baba for a former UCLA player, [dates] in December, Sendagaya area if possible."
       },
       {
-       "title": "Chikaya Sato · hit",
+       "title": "Sent Nov 19–20 · Chikaya Sato · hit",
        "detail": "Public email on his IG bio. Ex Penn State / SDSU.",
-       "link": "https://www.instagram.com/chikayasato/",
-       "draft": "Hey Chikaya, Jerry here, UCLA alum playing Futures. Heard you split time in Tokyo. I’m there early December, down to hit? I’ll grab the court"
+       "link": "https://www.instagram.com/chikayasato/"
       },
       {
-       "title": "Hiroyasu Ehara · private",
-       "detail": "2014 All-Japan champion, coaches now. Japanese first.",
-       "link": "https://www.instagram.com/hiroyasueh0727/",
-       "draft": "江原さん、はじめまして。UCLA卒でITFフューチャーズに出ているJerryです。12月上旬に東京にいます。ヒッティングやポイント練習のプライベートをお願いできますか?\n\nHi Ehara-san, I’m Jerry, UCLA alum playing ITF Futures. I’m in Tokyo early December. Could I book a private hitting / point-play session?"
+       "title": "Sent Nov 19–20 · Hiroyasu Ehara · private",
+       "detail": "2014 All-Japan champion, coaches now. Japanese first. Private-lesson form on his site.",
+       "link": "https://hiroyasueharatennis.jimdofree.com/"
       },
       {
-       "title": "t_socialt · play sets",
+       "title": "Sent Nov 19–20 · t_socialt · play sets",
        "detail": "Adult player at All-Japan qualifying level. Name unknown.",
-       "link": "https://www.instagram.com/t_socialt/",
-       "draft": "Hi! UCLA alum here playing Futures, in Tokyo early December. Would love to hit or play sets if you’re free"
+       "link": "https://www.instagram.com/t_socialt/"
       },
       {
-       "title": "Ryusei Kato · English lesson",
+       "title": "Sent Nov 19–20 · Ryusei Kato · English lesson",
        "detail": "Splits Tokyo and Osaka; ask which city he’s in.",
-       "link": "https://www.instagram.com/ryusei__tennis/",
-       "draft": "Hey Ryusei! I’m in Tokyo early December, are you in Tokyo then? Would love to book a hitting session"
+       "link": "https://www.instagram.com/ryusei__tennis/"
       },
       {
-       "title": "EPSOM · top-level hitting session",
+       "title": "Sent Nov 19–20 · EPSOM · top-level hitting session",
        "detail": "Ask on LINE about December dates.",
-       "link": "https://lin.ee/Z6USi7m3",
-       "draft": "12月上旬に東京にいます。上級者向けのヒッティング練習会はありますか?一番強い球のレベルでお願いしたいです。\n\nI’m in Tokyo early December. Do you have an advanced hitting session? I’d like the strongest ball level."
+       "link": "https://lin.ee/Z6USi7m3"
       },
       {
-       "title": "Aoyama Gakuin · join one practice",
+       "title": "Sent Nov 19–20 · Aoyama Gakuin · join one practice",
        "detail": "Team welcomes visitors by email or DM. Early-December practices likely still on.",
-       "link": "https://www.instagram.com/agu_tennis/",
-       "draft": "はじめまして。UCLA卒のJerryです。12月上旬に東京にいます。1日だけ練習に参加させていただくことは可能でしょうか?\n\nHi, I’m Jerry, a UCLA alum. I’m in Tokyo early December. Could I join one of your practices?"
+       "link": "https://www.agu-tennis.com/contact/"
       }
      ]
     },
@@ -1110,10 +1665,9 @@
        "link": "https://justshowupclub.com/"
       },
       {
-       "title": "Manila · trail day with Trailista",
+       "title": "Sent Nov 19–20 · Manila · trail day with Trailista",
        "link": "https://www.instagram.com/trailistarunclub/",
-       "detail": "Rizal trails. BeyondTrails and Aleksis Capili are backups.",
-       "draft": "yo! tennis player from LA in manila from nov 21, I run too. any chance I could tag along on one of your weekend trail runs?"
+       "detail": "Rizal trails. BeyondTrails and Aleksis Capili are backups."
       },
       {
        "title": "Tokyo · Namban Rengo Wednesday",
@@ -1121,16 +1675,14 @@
        "link": "https://namban.org/faq/"
       },
       {
-       "title": "Tokyo · Takao run with Tokyo Tarzan Club",
+       "title": "Sent Nov 19–20 · Tokyo · Takao run with Tokyo Tarzan Club",
        "link": "https://www.instagram.com/tokyo_tarzan_club/",
-       "detail": "December schedule not posted yet.",
-       "draft": "hey! tennis player from LA in tokyo early december. any takao run that week I could join?"
+       "detail": "December schedule not posted yet."
       },
       {
-       "title": "RWP Run Club · join a BGC run",
+       "title": "Sent Nov 19–20 · RWP Run Club · join a BGC run",
        "detail": "Active Nov 2026. Ask the weekly BGC meet point.",
-       "link": "https://www.instagram.com/rwprunclub/",
-       "draft": "Hey! Visiting Manila till early Dec and want to join a BGC run. Which day and where do you meet?"
+       "link": "https://www.instagram.com/rwprunclub/"
       }
      ]
     },
@@ -1176,6 +1728,51 @@
        "title": "Thumbs Up Season 5 Teaser (Philippines, Manila, Siargao)",
        "detail": "A 47-second trailer for David Choe's Manila and Siargao Thumbs Up episode; watch the full episode (D-oSpkzPIoQ) instead, since this clip only shows the arrival in Manila and Choe sick in bed in Siargao. Why: It previews the same trip Jerry can partly retrace (Manila first, then Siargao), and the sick-bed scene is a fair warning to watch street food and water before PCA Open matches. Contact: David Choe, Instagram @davidchoe (https://www.instagram.com/davidchoe/); the trailer shows no shop, guide or venue Jerry could contact.",
        "link": "https://jerryshi042003.github.io/trip/listen.html?id=x5jTxz_n2yo"
+      }
+     ]
+    },
+    {
+     "title": "Futures after Tokyo · decide",
+     "items": [
+      {
+       "title": "Decide by Thu Nov 26: M15 Monastir Dec 14–20",
+       "detail": "Entry deadline Thu Nov 26, 14:00 GMT (10 PM Manila). Needs World Tennis Tour Zone membership (~$75). Unranked players got into qualies last Dec. Route: Qatar from Tokyo Dec 8/9 via Doha to Tunis; pilot must confirm Qatar accepts companions in myIDTravel. ~$600–1,100/week on the ground (estimate)."
+      },
+      {
+       "title": "Second week option: M15 Monastir Dec 21–27",
+       "detail": "Entry deadline Thu Dec 3, 14:00 GMT. Same venue. Fallback: M15 Singapore Dec 14, M15 Bali Dec 21."
+      }
+     ]
+    },
+    {
+     "title": "Tokyo · ultra trail runs (Sat Dec 5 – Sun Dec 6)",
+     "items": [
+      {
+       "title": "Kumotori via Ishione ridge (Tokyo's highest)",
+       "detail": "~32 km, ±2,100 m. Okutama Stn, ~1h40, ¥1,230. Ridge reopened (Nov 6 list). Below freezing: bring chain spikes, off the mountain by ~15:00.",
+       "link": "https://www.youtube.com/watch?v=7eFXrLm09uA"
+      },
+      {
+       "title": "Tokyo Trail Running (English, Facebook)",
+       "detail": "855 events; posts weekend runs ~1 week ahead, check from ~Nov 28.",
+       "draft": "hey! I'm in tokyo dec 3 to 8, I've done a couple 50 and 100 milers and would love to tag along on a long trail day that weekend if anything's going"
+      },
+      {
+       "title": "Michitaro Mizuno · Tanzawa pro ultrarunner",
+       "detail": "Backyard ultra 94 laps; podcast for runners in their 20s.",
+       "link": "https://www.instagram.com/michi_bagman_ultrarunner/",
+       "draft": "hey michi, huge fan of the just one more loop thing. I'm 23, ran a few 50s and a 100 miler, and I'm in tokyo dec 3 to 8. any chance I could join you for a long run in tanzawa?"
+      },
+      {
+       "title": "Takao Trail Club (Meetup, Alain)",
+       "detail": "LINE group linked from its events. No December run posted yet.",
+       "draft": "hi alain! visiting from LA dec 3 to 8, I run ultras (50s and a 100 miler). if anyone's doing a longer takao or okutama run that week I'd love to join"
+      },
+      {
+       "title": "Tsuyoshi Kaburaki · trail legend",
+       "detail": "3rd UTMB 2009, posts daily. Warm route: Run boys! Run girls! club.",
+       "link": "https://www.instagram.com/tsuyoshikaburaki/",
+       "draft": "Hi Kaburaki-san, I'm Jerry, a tennis player from LA who has run 100 miles. I'm in Tokyo Dec 3 to 8, is there any group run that week I could join?"
       }
      ]
     }
@@ -1291,6 +1888,95 @@
        "detail": "Use the brand’s contact form. Ask how they test fabric and print in motion. Offer a photo and ask about visiting only if it’s convenient.",
        "link": "https://mountainmartialarts.tokyo/contact",
        "draft": "Hi MMA team, I’m Tom, a designer from LA. I came across your Racing Series. I’m working on a bandana for tennis and I’m curious how your team tests what actually works during a run. Can I send you a photo of the sample? If you’re around while I’m in Tokyo, coffee’s on me."
+      }
+     ]
+    },
+    {
+     "title": "Shingo’s team · BEAMS, Setinn, paperboy (talk now: 1–4; Keita next)",
+     "items": [
+      {
+       "title": "1 · Talk now · Natsumi Tanaka · Setinn flagship + paperboy staff · plays tennis",
+       "detail": "Works the Setinn and paperboy shops (both in her bio) and has 🎾 in her bio. 762 followers, last post Oct 30. Japanese. Jerry sent her profile to Tom on Nov 22. Purpose: a shop visit for Tom's bandana, and a casual hit for both of you. Online (Nov 23): nothing found beyond Instagram.",
+       "link": "https://www.instagram.com/_____.723n/",
+       "draft": "Natsumiさん、はじめまして。LAでデザインをしているTomです。JerryとLAのBEAMSのイベントで新井さん(Shingoさん)にお会いしました。12月に東京に行くので、Setinnかpaperboyにテニスのバンダナのサンプルを見せに行ってもいいですか?テニスもされるなら、Jerryと一緒に一度打てたらうれしいです。\n\nHi Natsumi, I'm Tom, a designer from LA. Jerry and I met Shingo at the BEAMS event in LA. I'm in Tokyo in December. Could I stop by Setinn or paperboy to show you a tennis bandana I'm making? And if you play, Jerry and I would love to hit once."
+      },
+      {
+       "title": "2 · Talk now · Karen Hihara (花怜) · paperboy + Setinn flagship staff, Tokyo",
+       "detail": "Bio: Tokyo, @paperboy_tokyo, @setinn_flagshipstore, flags 🇯🇵🇵🇱 (may be half Polish, inferred; may speak English). 4,759 followers, last post Oct 30. Jerry sent her profile to Tom on Nov 22. Purpose: shop visit, and what to do in Tokyo in December. Online: her July 28 post is a collab with @paperboy_tokyo and @setinn_official (☕️🎾), so she works the paperboy café side. Polish background not found online.",
+       "link": "https://www.instagram.com/karen_hihara/",
+       "draft": "Karenさん、はじめまして。LAのデザイナーのTomです。JerryとLAのBEAMSのイベントで新井さんにお会いしました。12月に東京に行くので、paperboyにテニス用のバンダナのサンプルを見せに伺ってもいいですか?おすすめの過ごし方もあれば教えてください。\n\nHi Karen, I'm Tom, a designer from LA. Jerry and I met Shingo at the BEAMS event in LA. I'll be in Tokyo in December. Could I stop by paperboy and show you a tennis bandana I'm working on? Any tips on what to do in Tokyo that week are welcome too."
+      },
+      {
+       "title": "3 · Talk now · Hachi (Shun Hachiya) · Setinn / paperboy",
+       "detail": "Bio says Setinn / paperboy. 1,834 followers, last post Nov 18; tags paperboy Paris and Tokyo. Japanese. Purpose: the person on the floor at Setinn when Shingo is out; ask when to come by. Online (Nov 23): nothing found beyond Instagram.",
+       "link": "https://www.instagram.com/shunhachiya/",
+       "draft": "はちさん、はじめまして。LAのデザイナーのTomです。JerryとLAのBEAMSのイベントで新井さんにお会いしました。12月に東京に行きます。Setinnに伺う時、新井さんがいらっしゃる日や時間帯はありますか?テニスのバンダナのサンプルを持っていきます。\n\nHi Hachi, I'm Tom, a designer from LA. Jerry and I met Shingo at the BEAMS event in LA. I'm in Tokyo in December. Is there a good day or time to catch Shingo at Setinn? I'll bring a tennis bandana sample."
+      },
+      {
+       "title": "4 · Talk now · Takahashi (高橋) · paperboy staff · private account",
+       "detail": "Bio: @paperboy_tokyo. Private account, 439 followers; Jerry's follow request is still pending. Jerry sent this profile to Tom on Nov 22. Purpose: paperboy visit. DMs may land in Requests until the follow is accepted. Update Nov 23: Takahashi now follows Jerry back (accepted Nov 22), so a DM lands in the inbox. Online (Nov 23): nothing found beyond Instagram.",
+       "link": "https://www.instagram.com/melobanditaa/",
+       "draft": "高橋さん、はじめまして。LAのデザイナーのTomです。JerryとLAのBEAMSのイベントで新井さんにお会いしました。12月に東京に行くので、paperboyに伺ってテニス用バンダナのサンプルを見ていただけたらうれしいです。\n\nHi, I'm Tom, a designer from LA. Jerry and I met Shingo at the BEAMS event in LA. I'm in Tokyo in December and would love to stop by paperboy and show you a tennis bandana sample."
+      },
+      {
+       "title": "5 · Talk soon, via Shingo · Keita Kobayashi · BEAMS buyer · runs collabs (Crocs, Salomon)",
+       "detail": "Bio: BEAMS BUYER. 13.1K followers, last post Nov 15; recent posts are BEAMS x Crocs and a Salomon capsule. Tagged in 9 of Shingo's posts, the closest to Shingo of this group. Purpose: how a small accessory gets into a BEAMS collab or shop. Nov 23: ask Shingo to introduce you once the sample is ready; use the draft after that. Online (checked Nov 23): fronts the On × BEAMS “Street Tennis Club” collection with Shingo (on.com story). Born Fukui 1989; studied in Seattle at 20, working holiday in Toronto, uses English with overseas makers (OCEANS, BEAMS). The best tennis-and-clothes bridge in this group, and English works.",
+       "link": "https://www.instagram.com/gonzo19891016/",
+       "draft": "小林さん、はじめまして。LAのデザイナーのTomです。JerryとLAのBEAMSのイベントで新井さんにお会いしました。On × BEAMSのStreet Tennis Clubの記事を読みました。テニスでも街でも着られるサイズ感の考え方、テニス用バンダナを作っている自分にすごく刺さりました。12月に東京に行くので、少しだけお話しできませんか?\n\nHi Keita, I'm Tom, a designer from LA. Jerry and I met Shingo at the BEAMS event in LA. I read the On × BEAMS Street Tennis Club story; the idea of fits that work on court and in Harajuku is exactly what I'm chasing with a tennis bandana. I'm in Tokyo in December. Could I ask you a few questions?"
+      },
+      {
+       "title": "6 · Later, via Shingo · Ryosuke Nozaki · BEAMS buyer, Men's Casual",
+       "detail": "Bio: BEAMS buyer @beams_mens_casual. 4,853 followers, posted Nov 20 tagging @sng1980 and adidas Originals. Tagged in 4 of Shingo's posts. Purpose: a buyer's honest read on Tom's bandana (price, who buys it). Nov 23: better as an intro from Shingo than a cold DM; use the draft after Shingo mentions you. Online: BEAMS buyer since 2021, also buys eyewear; born Tokyo (1991 or 1992, sources differ), 90s East Coast hip-hop style, sunglasses collector. Led the BEAMS × Salomon 50th-anniversary collection, headwear to footwear (Houyhnhnm).",
+       "link": "https://www.instagram.com/r.nzk/",
+       "draft": "野崎さん、はじめまして。LAのデザイナーのTomです。JerryとLAのBEAMSのイベントで新井さんにお会いしました。BEAMS×Salomonの50周年コレクション、ヘッドウェアまで揃っていて最高でした。テニス用のバンダナを作っています。12月に東京に行くので、バイヤー目線で5分だけサンプルを見ていただけませんか?\n\nHi Ryosuke, I'm Tom, a designer from LA. Jerry and I met Shingo at the BEAMS event in LA. Loved the BEAMS × Salomon 50th collection, headwear included. I'm making a tennis bandana and I'm in Tokyo in December. Could I get 5 minutes of a buyer's eye on the sample?"
+      },
+      {
+       "title": "7 · Later, via Shingo · Kaito Maru · BEAMS PRESS (PR)",
+       "detail": "Bio: BEAMS PRESS. 2,745 followers, last post Nov 16 (C.P. Company x BEAMS launch). Tagged in Shingo's Nov 13 post. Purpose: what's on in December (launches, parties, pop-ups) so you know where to show up. Nov 23: ask Shingo first. Online: BEAMS press since 2022 (ex-shop staff); produces HAPPY OUTSIDE BEAMS outdoor media; likes soccer and camping (Houyhnhnm, Men's Non-no). Press pieces list his handle as @kaito_maru_; @go_go_maru also says KAITO MARU, BEAMS PRESS.",
+       "link": "https://www.instagram.com/go_go_maru/",
+       "draft": "丸さん、はじめまして。LAのTomです。JerryとLAのBEAMSのイベントで新井さんにお会いしました。12月に東京に行きます。その時期にBEAMSやSetinnのイベントやポップアップはありますか?ぜひ遊びに行きたいです。\n\nHi Kaito, I'm Tom from LA. Jerry and I met Shingo at the BEAMS event in LA. We're in Tokyo in December. Any BEAMS or Setinn events or pop-ups that week? We'd love to come."
+      },
+      {
+       "title": "8 · Later, via Shingo · Maya Watanabe · BEAMS buyer (Men's Casual, Future Archive) + stylist",
+       "detail": "Bio: buyer @beams_mens_casual and @futurearchive_beams, styling work @maya__works. 2,536 followers, last post Nov 18. In Shingo's Mar 6 post. Surname from handle (inferred). Purpose: a stylist's view on how the bandana gets worn. Nov 23: ask Shingo first. Online: a BEAMS Men's Casual post names a buyer Maya Watanabe; the link to this handle is likely, not proven.",
+       "link": "https://www.instagram.com/mayawtnb_/",
+       "draft": "Mayaさん、はじめまして。LAのデザイナーのTomです。JerryとLAのBEAMSのイベントで新井さんにお会いしました。テニス用のバンダナを作っています。12月に東京に行くので、スタイリスト目線でどう巻くと格好いいか、少しだけ意見をいただけませんか?\n\nHi Maya, I'm Tom, a designer from LA. Jerry and I met Shingo at the BEAMS event in LA. I'm making a tennis bandana and I'm in Tokyo in December. Would you give me a stylist's take on how it should be worn?"
+      },
+      {
+       "title": "9 · Later, via Shingo only · Shinsuke Nakada · Creative director, Unlikely · author of Unlikely Things",
+       "detail": "Bio: creative director @unlikely_drygoods, @the_hermit_club_official, @daiwapier39_official; wrote the BEAMS book Unlikely Things. 58.4K followers, posting daily (Nov 20). Tagged in 10 of Shingo's posts. Biggest account here, so a reply is least likely. Purpose: visit his shop and ask one question. Nov 23: senior; never cold. Online: joined BEAMS in 2000, ran BEAMS PLUS and Men's Casual, left in March 2023 and launched UNLIKELY; also directs DAIWA PIER39. UNLIKELY had a capsule at Nepenthes Los Angeles in June 2025, an LA hook for Tom.",
+       "link": "https://www.instagram.com/nakadashinsuke/",
+       "draft": "中田さん、はじめまして。LAのデザイナーのTomです。JerryとLAのBEAMSのイベントで新井さんにお会いしました。LAのNepenthesでUNLIKELYを見ました。12月に東京に行くので、UNLIKELYを扱っているお店に伺いたいです。最初に見るべき一点があれば教えてください。\n\nHi Nakada-san, I'm Tom, a designer from LA. Jerry and I met Shingo at the BEAMS event in LA. I saw UNLIKELY at Nepenthes LA. I'm in Tokyo in December; is there one piece I should see first?"
+      },
+      {
+       "title": "10 · Later, via Shingo or in the shop · Tsukasa Nakao · BEAMS staff, BEAMS Men Shibuya",
+       "detail": "Bio links beams.co.jp; posts tag @beams_men_shibuya. 511 followers, last post Oct 20. Purpose: a friendly face at BEAMS Shibuya when you visit. Nov 23: no clear angle beyond the shop; not worth a cold DM. Online: shop manager at BEAMS MEN Shibuya, from Hokkaido, snowboarder (BEAMS Happy Outside feature). A BEAMS PLUS product page credits a Tsukasa Nakao as planner of the garment-dyed nylon “dip” line, likely him. Useful to Tom for dyeing questions.",
+       "link": "https://www.instagram.com/tsukasanakao/",
+       "draft": "中尾さん、はじめまして。LAのデザイナーのTomです。JerryとLAのBEAMSのイベントで新井さんにお会いしました。dipのナイロンの後染めの話を読みました。テニス用のバンダナの染めで悩んでいるので、12月にBEAMS渋谷に伺ったら少しだけ話を聞かせていただけませんか?\n\nHi Tsukasa, I'm Tom, a designer from LA. Jerry and I met Shingo at the BEAMS event in LA. I read about the garment-dyed nylon in the dip line. I'm stuck on dyeing for a tennis bandana. Could I ask you about it when I stop by BEAMS MEN Shibuya in December?"
+      },
+      {
+       "title": "11 · Later, via Shingo · Kensuke Ido (井戸健介) · Photographer",
+       "detail": "Photographer. 868 followers, last post Nov 12. Highlights from New York, LA and San Francisco (has spent time in the US; inferred he speaks some English). Not tagged in Shingo's posts; followed by Shingo's BEAMS circle (inferred link). Purpose: photos of Tom's bandana on court, which Tom can pay for (Tom pays a Japanese pro; no visa issue). Online correction: he is BEAMS's own staff photographer (credited “Photography: Kensuke Ido (BEAMS co.,Ltd)” on BEAMS shoots), not a freelancer, so a paid shoot is unlikely. Shot the BEAMS showroom at Paris Fashion Week in June 2026.",
+       "link": "https://www.instagram.com/kensuke_ido_studio/",
+       "draft": "井戸さん、はじめまして。LAのデザイナーのTomです。JerryとLAのBEAMSのイベントで新井さんにお会いしました。BEAMSの撮影、いつも見ています。テニス用のバンダナを作っていて、12月に東京に行きます。コートで小物を撮るときのコツを少しだけ教えていただけませんか?\n\nHi Kensuke, I'm Tom, a designer from LA. Jerry and I met Shingo at the BEAMS event in LA. I like your BEAMS shoots. I'm making a tennis bandana and I'm in Tokyo in December. Any tips on shooting a small accessory on court?"
+      },
+      {
+       "title": "12 · Skip DM, say hi in the shop · Hirofumi Tsunakawa (綱川浩史) · BEAMS Men's Casual",
+       "detail": "Bio: BEAMS Men's Casual. 1,034 followers, last post Aug 28. Tagged in one of Shingo's posts, and tagged @sng1980 himself in 2024. Purpose: BEAMS Harajuku visit. Nov 23: no clear angle beyond the shop; not worth a cold DM. Online (Nov 23): nothing found beyond Instagram.",
+       "link": "https://www.instagram.com/tsunakawa_hirofumi_0919/",
+       "draft": "綱川さん、はじめまして。LAのTomです。JerryとLAのBEAMSのイベントで新井さんにお会いしました。12月に東京に行くので、BEAMS原宿に伺いたいです。いらっしゃる日があれば教えてください。\n\nHi Tsunakawa-san, I'm Tom from LA. Jerry and I met Shingo at the BEAMS event in LA. I'm in Tokyo in December and will stop by BEAMS Harajuku. Which days are you usually in?"
+      },
+      {
+       "title": "13 · Skip · tetsuoooooo · Shingo's friend · role unknown",
+       "detail": "Bio only says いつもフレッシュ. 707 followers; posts once a year (last Oct 13). Tagged with Keita Kobayashi in Shingo's Nov 6 post. Purpose unclear. Low priority; skip unless Shingo mentions him. Online (Nov 23): nothing found beyond Instagram.",
+       "link": "https://www.instagram.com/tetsuoooooo/",
+       "draft": "はじめまして。LAのTomです。新井さんの投稿で見かけました。12月に東京に行くので、もし会えたらうれしいです。\n\nHi, I'm Tom from LA. Saw you on Shingo's posts. I'll be in Tokyo in December, would be great to say hi."
+      },
+      {
+       "title": "14 · Skip · Kelly Keisuke · Inactive since Mar 2024",
+       "detail": "Bio: 98's/Japan. 1,363 followers, last post Mar 31 2024 (inactive). Not tagged in Shingo's posts; followed by Shingo's circle (inferred link). Skip. Online (Nov 23): nothing found beyond Instagram.",
+       "link": "https://www.instagram.com/keisuke98jp/",
+       "draft": "はじめまして。LAのTomです。新井さんのつながりで見かけました。12月に東京に行くので、よかったらよろしくお願いします。\n\nHi, I'm Tom from LA. Found you through Shingo's friends. I'll be in Tokyo in December, say hi if you're around."
       }
      ]
     },
