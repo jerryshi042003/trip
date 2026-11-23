@@ -48,6 +48,8 @@ struct Place: Codable, Identifiable {
     var ja: String?
     var lat: Double?
     var lon: Double?
+    var photo: String?
+    var been: Bool?
 }
 
 struct Person: Codable, Identifiable {
@@ -294,5 +296,7 @@ extension Place {
         ja = c.optionalString(.ja)
         lat = try? c.decodeIfPresent(Double.self, forKey: .lat)
         lon = try? c.decodeIfPresent(Double.self, forKey: .lon)
+        photo = c.optionalString(.photo)
+        been = try? c.decodeIfPresent(Bool.self, forKey: .been)
     }
 }

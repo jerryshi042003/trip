@@ -286,8 +286,21 @@ struct PlaceRow: View {
     let place: Place
     var body: some View {
         HStack(spacing: 12) {
+            if let photo = place.photo, let url = URL(string: photo) {
+                AsyncImage(url: url) { image in image.resizable().scaledToFill() } placeholder: { Color.secondary.opacity(0.15) }
+                    .frame(width: 64, height: 64)
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                    .accessibilityHidden(true)
+            }
             VStack(alignment: .leading, spacing: 3) {
-                Text(place.name)
+                HStack(spacing: 6) {
+                    Text(place.name)
+                    if place.been == true {
+                        Text("Been").font(.caption.weight(.semibold)).foregroundStyle(.green)
+                            .padding(.horizontal, 7).padding(.vertical, 1)
+                            .background(Color.green.opacity(0.15), in: Capsule())
+                    }
+                }
                 Text(place.addr).font(.subheadline).foregroundStyle(.secondary)
                 if let ja = place.ja { Text(ja).font(.subheadline).textSelection(.enabled) }
             }

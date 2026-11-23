@@ -51,7 +51,7 @@
   let who = linkedTraveler ? requestedTraveler : travelerKeys.includes(savedTraveler) ? savedTraveler : 'jerry';
   if (linkedTraveler) store.set('who', who);
 
-  const placeRow = p => `<div class="row"><div class="main"><div class="t">${esc(p.name)}</div><div class="s">${esc(p.addr)}</div>${p.ja ? `<div class="ja">${esc(p.ja)}</div>` : ''}</div><div class="acts">${p.ja ? `<button class="a" data-copy="${esc(p.ja)}" aria-label="Copy">${I.copy}</button>` : ''}<a class="a" href="${gmap(p.ja || p.addr)}" aria-label="Map">${I.map}</a></div></div>`;
+  const placeRow = p => `<div class="row">${p.photo ? `<img class="ph" src="${esc(p.photo)}" alt="" loading="lazy">` : ''}<div class="main"><div class="t">${esc(p.name)}${p.been ? ' <span class="been">Been</span>' : ''}</div><div class="s">${esc(p.addr)}</div>${p.ja ? `<div class="ja">${esc(p.ja)}</div>` : ''}</div><div class="acts">${p.ja ? `<button class="a" data-copy="${esc(p.ja)}" aria-label="Copy">${I.copy}</button>` : ''}<a class="a" href="${gmap(p.ja || p.addr)}" aria-label="Map">${I.map}</a></div></div>`;
   const personRow = p => {
     const a = [];
     if (p.phone) a.push(`<a class="a" href="tel:${esc(p.phone)}" aria-label="Call">${I.call}</a>`);

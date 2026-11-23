@@ -50,7 +50,7 @@ if need(d, 'travelers', dict, 'top'):
                     titles.add(it.get('title'))
 for i, p in enumerate(d.get('places') or []):
     for k in ('id', 'city', 'name', 'addr'): need(p, k, str, f'places[{i}]')
-    opt(p, 'ja', str, f'places[{i}]'); opt(p, 'lat', (int, float), f'places[{i}]'); opt(p, 'lon', (int, float), f'places[{i}]')
+    opt(p, 'ja', str, f'places[{i}]'); opt(p, 'lat', (int, float), f'places[{i}]'); opt(p, 'lon', (int, float), f'places[{i}]'); opt(p, 'photo', str, f'places[{i}]'); opt(p, 'been', bool, f'places[{i}]')
 for key in ('people', 'emergency'):
     for i, p in enumerate(d.get(key) or []):
         need(p, 'name', str, f'{key}[{i}]')

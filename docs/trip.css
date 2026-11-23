@@ -85,3 +85,6 @@ h1{display:flex;align-items:center;gap:9px;font:700 34px/1.15 -apple-system,"SF 
 .location-setup li{margin:0 0 15px}
 .location-setup a{color:var(--tint)}
 @media(max-width:460px){.live-travelers .row:has(.live-sharing-link:not([hidden])){display:grid;gap:0}.live-travelers .row:has(.live-sharing-link:not([hidden])) .live-actions{justify-content:flex-start}}
+.ph{width:64px;height:64px;border-radius:10px;object-fit:cover;flex-shrink:0;background:var(--sep)}
+.been{display:inline-block;font-size:12px;font-weight:600;padding:1px 7px;border-radius:9px;background:#34c75922;color:#1f8a3b;vertical-align:2px}
+@media (prefers-color-scheme:dark){.been{color:#4cd964}}
