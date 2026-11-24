@@ -131,6 +131,22 @@
    "addr": "Beco dos Apóstolos, Chiado, 1200-028 Lisboa, Portugal"
   },
   {
+   "id": "tennis-world-sydney",
+   "city": "Sydney",
+   "name": "Sydney Olympic Park Tennis Centre",
+   "addr": "2 Rod Laver Drive, Sydney Olympic Park NSW 2127, Australia",
+   "lat": -33.855277,
+   "lon": 151.0712771
+  },
+  {
+   "id": "ibis-sydney-olympic",
+   "city": "Sydney",
+   "name": "ibis Sydney Olympic Park",
+   "addr": "11b Olympic Boulevard, Sydney Olympic Park NSW 2127, Australia",
+   "lat": -33.848062,
+   "lon": 151.067754
+  },
+  {
    "id": "setinn",
    "city": "Tokyo",
    "name": "Setinn",
@@ -2129,9 +2145,19 @@
      "items": [
       {
        "title": "Sydney Olympic Park · court hire",
-       "detail": "Tennis World takes casual outdoor court reservations online. Its indoor courts are member-only. Arrange a hitting partner separately.",
+       "detail": "Book outdoor courts as a guest. Peak rates apply on weekdays after 5 p.m. and Saturdays before 1 p.m. Indoor courts are reserved for eligible members.",
+       "meta": "A$37 off-peak · A$42 peak per outdoor court per hour",
        "link": "https://www.tennisworld.net.au/locations/sydney/court-hire/",
-       "linkLabel": "Outdoor court hire"
+       "linkLabel": "Outdoor court hire",
+       "place": "tennis-world-sydney"
+      },
+      {
+       "title": "Sydney Olympic Park · singles match play",
+       "detail": "Play a 90-minute singles match. Adults can enter as guests with an X-point profile. Ask Tennis World about pairings at your level before paying.",
+       "meta": "A$26 competition pass · A$22 annual X-point fee for new profiles",
+       "link": "https://www.tennisworld.net.au/locations/sydney/programs/competitive-play/adult-match-play/",
+       "linkLabel": "Match sessions and registration",
+       "place": "tennis-world-sydney"
       }
      ]
     },
@@ -2153,6 +2179,20 @@
        "link": "https://lostinn.eu/lisbon/",
        "linkLabel": "Rooms and booking",
        "place": "lost-inn-lisbon"
+      }
+     ]
+    },
+    {
+     "title": "Australia stay",
+     "region": "Future trips",
+     "category": "Stay",
+     "items": [
+      {
+       "title": "Sydney · ibis Olympic Park",
+       "detail": "Private rooms near Olympic Park station, within walking distance of the Tennis Centre. Check room rates and cancellation terms for your dates.",
+       "link": "https://all.accor.com/hotel/2734/index.en.shtml",
+       "linkLabel": "Rooms and rates",
+       "place": "ibis-sydney-olympic"
       }
      ]
     }
