@@ -331,6 +331,34 @@
    "name": "Midorigaoka Tennis Garden",
    "addr": "4-5-38 Kitano, Mitaka, Tokyo 181-0003",
    "ja": "東京都三鷹市北野4-5-38"
+  },
+  {
+   "id": "arima-river-shinsui",
+   "city": "Kobe",
+   "name": "Arima River Shinsui Park",
+   "addr": "Between Taiko Bridge and Nene Bridge, Arimacho, Kita Ward, Kobe",
+   "ja": "有馬川親水広場 神戸市北区有馬町"
+  },
+  {
+   "id": "windsor-shinjuku",
+   "city": "Tokyo",
+   "name": "Windsor Racket Shop · Shinjuku",
+   "addr": "Tochigi Building B1, 1F and 2F, 1-3-15 Nishishinjuku, Shinjuku. 03-3343-5021.",
+   "ja": "ウインザーラケットショップ新宿店 東京都新宿区西新宿1-3-15"
+  },
+  {
+   "id": "tabio-daimaru-tokyo",
+   "city": "Tokyo",
+   "name": "Tabio MEN · Daimaru Tokyo",
+   "addr": "Daimaru Tokyo 7F, 1-9-1 Marunouchi, Chiyoda. 050-1782-8439.",
+   "ja": "TabioMEN 大丸東京店 東京都千代田区丸の内1-9-1 7F"
+  },
+  {
+   "id": "xebio-kawasaki",
+   "city": "Kawasaki",
+   "name": "Super Sports Xebio · Kawasaki Le Front",
+   "addr": "Kawasaki Le Front 7F–8F, 1-11 Nisshincho, Kawasaki Ward. 044-223-1630.",
+   "ja": "スーパースポーツゼビオ 川崎ルフロン店 川崎市川崎区日進町1-11"
   }
  ],
  "people": [
@@ -1799,6 +1827,97 @@
       }
      ],
      "category": "Tennis"
+    },
+    {
+     "region": "Japan",
+     "title": "Tabi socks",
+     "items": [
+      {
+       "title": "Prince PS295 · split-toe tennis sock",
+       "detail": "The first pair to try on court. The big toe gets its own pocket and the other four share one. Medium thickness with a snug heel. Windsor Shinjuku lists stock, which can change.",
+       "meta": "¥2,277 at Windsor · 22–28 cm across 3 sizes",
+       "link": "https://www.windsorracket.co.jp/shop/g/gPS295-16526-28/",
+       "linkLabel": "Buy or check stock",
+       "place": "windsor-shinjuku",
+       "photos": [
+        {
+         "url": "media/happy-hour/tabi.jpg",
+         "caption": "Happy Hour · Jerry’s Photo Booth shot from the inn scene"
+        }
+       ]
+      },
+      {
+       "title": "Tabio MEN 062120093 · thick split-toe",
+       "detail": "All-over terry cushioning and one toe split. The plush 71% cotton knit is the easy-on tabi to try first. At Tokyo Station, try Tabio MEN on Daimaru’s 7th floor. Check the color and store stock on the product page.",
+       "meta": "¥1,100 · 25–27 cm",
+       "link": "https://tabio.com/products/062120093",
+       "linkLabel": "Buy or check stock",
+       "place": "tabio-daimaru-tokyo"
+      },
+      {
+       "title": "ItoiX Tabi Short · quick-drying split-toe",
+       "detail": "Light washi-blend running sock for sweaty feet. The wide four-toe pocket leaves only the big toe to line up. Ease on wet feet is untested. Xebio Kawasaki Le Front is a listed stockist. Exact model stock is unconfirmed.",
+       "meta": "¥2,420 · 22–30 cm across 3 sizes",
+       "link": "https://www.itoix.co.jp/products/running-socks-tabi",
+       "linkLabel": "Buy from ItoiX",
+       "place": "xebio-kawasaki"
+      },
+      {
+       "title": "Prince PS277 · maximum tennis cushion",
+       "detail": "Extra-thick terry sole and one roomy toe pocket for all five toes. Try this at Windsor Shinjuku if cushioning and easy changes with damp feet matter most. Wet-foot fit is untested.",
+       "meta": "¥1,485 at Windsor · 25–27 cm",
+       "link": "https://www.windsorracket.co.jp/shop/g/gPS277-202F/",
+       "linkLabel": "Buy or check stock",
+       "place": "windsor-shinjuku"
+      }
+     ],
+     "category": "Food & gear"
+    },
+    {
+     "region": "Japan",
+     "title": "Happy Hour · Arima Onsen",
+     "items": [
+      {
+       "title": "Arima River Shinsui Park",
+       "detail": "The 2:20:06 river shot matches the riverside stairs and Arima Gyoen’s curved window awnings. Start at Taiko Bridge and look upstream toward the red Nene Bridge. The riverwalk has been renovated since filming.",
+       "meta": "Kobe · about 4 min on foot from Arima Onsen Station",
+       "link": "https://ohtabookstand.com/2022/02/jibun-02/",
+       "linkLabel": "Compare the location photos",
+       "place": "arima-river-shinsui",
+       "photos": [
+        {
+         "url": "media/happy-hour/arima-river.jpg",
+         "caption": "Happy Hour at 2:20:06 · Jerry’s Photo Booth shot"
+        }
+       ]
+      }
+     ],
+     "category": "Food & gear"
+    },
+    {
+     "region": "Japan",
+     "title": "Buying online in Japan",
+     "items": [
+      {
+       "title": "Tabio · order online, pay in store",
+       "detail": "Tabio offers guest checkout and accepts many foreign cards. If store pickup appears for the sock and branch, you can reserve online and pay there. For delivery, confirm your hotel accepts parcels and use your booking name.",
+       "link": "https://tabio.com/pages/faq",
+       "linkLabel": "Tabio pickup and payment"
+      },
+      {
+       "title": "Amazon Japan · locker or hotel",
+       "detail": "Ordinary checkout uses an account and payment method. A passport is generally unnecessary. Eligible items can go to a locker or convenience store. Pick the location at checkout and check that delivery and pickup fit your stay.",
+       "link": "https://www.aboutamazon.jp/news/guide/how-to-use-amazon-locker-to-receive-amazon-products-whenever-you-want",
+       "linkLabel": "Amazon pickup guide"
+      },
+      {
+       "title": "Passport for the tourist tax refund",
+       "detail": "Since Nov 1, 2026, pay tax up front. For eligible purchases of at least ¥5,000 before tax per shop per day, show your passport at the shop and get Customs confirmation at departure for the refund.",
+       "link": "https://www.japan.travel/en/us/blog/everything-you-need-to-know-japans-new-tax-free-shopping-system/",
+       "linkLabel": "Japan’s official refund guide"
+      }
+     ],
+     "category": "Food & gear"
     },
     {
      "region": "Japan",
