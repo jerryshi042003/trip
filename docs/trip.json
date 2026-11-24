@@ -2236,6 +2236,12 @@
      "category": "Tennis",
      "items": [
       {
+       "title": "Shanghai · courts by district",
+       "detail": "In WeChat, open 上海体育 → Services → 健身地图 → 体育场馆. Set 区域 to your district and 项目 to 网球 (tennis).",
+       "link": "https://english.shanghai.gov.cn/en-Individuals-DailyLife-Fitness/20260813/e23b543680f64e8c89ecdd44a3983831.html",
+       "linkLabel": "Open the Shanghai guide"
+      },
+      {
        "title": "Shanghai · Xujiahui Sports Park",
        "detail": "Search 久事体育 in WeChat. Xujiahui slots open at noon, up to 7 days ahead, with phone verification. Wantihui help: +86 21 3419 6878. For Pudong, check Oriental Sports Center.",
        "meta": "May 2025 tariff · ¥75–180/hr outdoors · ¥160–350 indoors",
@@ -2254,6 +2260,12 @@
        "detail": "InLove lists private and group tennis for adults. Its tennis facility is on Level 2 of the Bund Finance Center. Ask for match play at your level.",
        "link": "https://www.inlovesports.com/Coaching",
        "linkLabel": "Coaches and booking"
+      },
+      {
+       "title": "Hong Kong · courts by district",
+       "detail": "Choose the district where you’re staying to see nearby public courts, addresses and opening hours.",
+       "link": "https://www.lcsd.gov.hk/clpss/en/webApp/Facility/District.do?ftid=42",
+       "linkLabel": "Choose a Hong Kong district"
       },
       {
        "title": "Hong Kong · public courts",
