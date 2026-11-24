@@ -147,6 +147,12 @@
    "lon": 151.067754
   },
   {
+   "id": "kooroora-tennis",
+   "city": "Sydney",
+   "name": "Kooroora Tennis Club",
+   "addr": "5A William Street, Roseville NSW 2069, Australia"
+  },
+  {
    "id": "setinn",
    "city": "Tokyo",
    "name": "Setinn",
@@ -2145,7 +2151,7 @@
      "items": [
       {
        "title": "Sydney Olympic Park · court hire",
-       "detail": "Book outdoor courts as a guest. Peak rates apply on weekdays after 5 p.m. and Saturdays before 1 p.m. Indoor courts are reserved for eligible members.",
+       "detail": "Guests can book outdoor courts within 24 hours of play. Peak rates apply on weekdays after 5 p.m. and Saturdays before 1 p.m. Indoor courts are reserved for eligible members.",
        "meta": "A$37 off-peak · A$42 peak per outdoor court per hour",
        "link": "https://www.tennisworld.net.au/locations/sydney/court-hire/",
        "linkLabel": "Outdoor court hire",
@@ -2158,6 +2164,14 @@
        "link": "https://www.tennisworld.net.au/locations/sydney/programs/competitive-play/adult-match-play/",
        "linkLabel": "Match sessions and registration",
        "place": "tennis-world-sydney"
+      },
+      {
+       "title": "Sydney · North Shore Open",
+       "detail": "Men’s open singles uses verified UTR to group players by level. The club offers an optional consolation draw. This overlaps the Dec 15 singles in Tokyo.",
+       "meta": "Dec 15–20 · A$80 singles · enter by Dec 5, 11:59 p.m. Sydney time",
+       "link": "https://tournaments.tennis.com.au/tournament/3B6275EC-EECB-426E-9A7A-7E5FBB140FD8",
+       "linkLabel": "Draw and entry",
+       "place": "kooroora-tennis"
       }
      ]
     },
