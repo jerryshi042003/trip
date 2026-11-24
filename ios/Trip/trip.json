@@ -318,6 +318,19 @@
    "city": "Siargao",
    "name": "Bebie’s Barbecue",
    "addr": "Tourism Road, General Luna, Surigao del Norte"
+  },
+  {
+   "id": "wai-ying",
+   "city": "Manila",
+   "name": "Wai Ying Fast Food",
+   "addr": "810 Benavidez St, Binondo, Manila"
+  },
+  {
+   "id": "midorigaoka",
+   "city": "Tokyo",
+   "name": "Midorigaoka Tennis Garden",
+   "addr": "4-5-38 Kitano, Mitaka, Tokyo 181-0003",
+   "ja": "東京都三鷹市北野4-5-38"
   }
  ],
  "people": [
@@ -987,10 +1000,10 @@
      "items": [
       {
        "title": "PCA Open · men’s singles",
-       "detail": "Qualifying in Paco. You’re in. Check the draw for your match and check-in time.",
+       "detail": "Clay in Paco. Your match time is still unconfirmed.",
        "meta": "Nov 30–Dec 4 · Qualifying",
        "link": "https://www.facebook.com/100057105145569/",
-       "linkLabel": "PCA match notices",
+       "linkLabel": "Organizer match notices",
        "place": "pca",
        "from": "condo"
       },
@@ -1034,8 +1047,58 @@
        "detail": "Start with easy time outside and short hits. Build up gradually and take cooling breaks.",
        "link": "https://www.cdc.gov/heat-health/about/index.html",
        "linkLabel": "Heat guidance"
+      },
+      {
+       "title": "F45 · BGC Stopover",
+       "detail": "Optional coached group strength and cardio classes.",
+       "link": "https://f45training.com/ph/studio/bgcstopover/",
+       "linkLabel": "Class schedule",
+       "place": "f45-bgc",
+       "photos": [
+        {
+         "url": "media/places/f45-bgc.jpg",
+         "caption": "BGC Stopover studio"
+        }
+       ]
       }
      ],
+     "category": "Tennis"
+    },
+    {
+     "title": "Book a court",
+     "items": [
+      {
+       "title": "Rizal Memorial · public courts",
+       "detail": "Open the PSC portal, choose Rizal Memorial Tennis Hall and check available slots.",
+       "link": "https://play.psc.gov.ph/admin/venue.php",
+       "linkLabel": "PSC booking",
+       "place": "rizal",
+       "meta": "About 2.3 km · 10–15 min by moto",
+       "photos": [
+        {
+         "url": "media/places/rizal-air.jpg",
+         "caption": "Rizal Memorial Sports Complex from above"
+        }
+       ],
+       "from": "condo"
+      },
+      {
+       "title": "ProServe · Santa Ana",
+       "detail": "Indoor backup. Choose the Santa Ana location, Tennis, then an available slot.",
+       "link": "https://proservemanila.com/booking/location",
+       "linkLabel": "Book ProServe",
+       "place": "proserve",
+       "meta": "About 3 km · 10–20 min by moto",
+       "photos": [
+        {
+         "url": "media/places/proserve.jpg",
+         "caption": "ProServe Manila in Santa Ana"
+        }
+       ],
+       "from": "condo"
+      }
+     ],
+     "region": "Manila",
      "category": "Tennis"
     },
     {
@@ -1157,6 +1220,31 @@
      "category": "Tennis"
     },
     {
+     "title": "Food & water nearby",
+     "items": [
+      {
+       "title": "Robinsons Manila · supermarket + Jollibee",
+       "detail": "Water and French Baker are in the Level 1 Adriatico Wing supermarket. Chickenjoy is also on Level 1, in the Sta. Monica Wing.",
+       "meta": "About 1 km · 10–15 min walk",
+       "place": "robinsons-manila",
+       "link": "https://vmd.robinsonsmalls.com/list-of-malls/metro-manila/robinsons-manila",
+       "linkLabel": "Mall directory",
+       "photos": [
+        {
+         "url": "media/places/robinsons-manila.jpg",
+         "caption": "Robinsons Place Manila"
+        },
+        {
+         "url": "media/places/jollibee-robinsons.jpg",
+         "caption": "Jollibee at Robinsons Place Manila"
+        }
+       ]
+      }
+     ],
+     "region": "Manila",
+     "category": "Explore"
+    },
+    {
      "region": "Manila",
      "title": "Places to go",
      "items": [
@@ -1198,6 +1286,21 @@
          "caption": "Hopia from Eng Bee Tin"
         }
        ]
+      },
+      {
+       "title": "Wai Ying · Binondo lunch",
+       "detail": "Order roast duck rice or congee. Add hakaw if you’re sharing.",
+       "meta": "About 4.5 km · 15–30 min by moto",
+       "place": "wai-ying",
+       "link": "https://i-discoverasia.com/walks/binondo/locations/wai-ying/",
+       "linkLabel": "Restaurant & food",
+       "photos": [
+        {
+         "url": "https://cdn.sanity.io/images/ul272611/production/93ebae5a75825c67a6bf9254c1a807b665ac5ff4-1216x1080.jpg?rect=0,220,1216,638&w=1200&h=630&fit=max&auto=format",
+         "caption": "Wai Ying in the Binondo neighborhood guide"
+        }
+       ],
+       "from": "condo"
       },
       {
        "title": "Quiapo · Muslim Town",
@@ -1308,19 +1411,6 @@
          "caption": "Bikram Yoga Manila studio"
         }
        ]
-      },
-      {
-       "title": "F45 · BGC Stopover",
-       "detail": "It’s a coached group workout. Attendance is unconfirmed.",
-       "link": "https://f45training.com/ph/studio/bgcstopover/",
-       "linkLabel": "Class schedule",
-       "place": "f45-bgc",
-       "photos": [
-        {
-         "url": "media/places/f45-bgc.jpg",
-         "caption": "BGC Stopover studio"
-        }
-       ]
       }
      ],
      "category": "Explore"
@@ -1347,7 +1437,7 @@
       },
       {
        "title": "Anilao · Batangas",
-       "detail": "Go for reef snorkeling or a dive. Save it for a full day away from tennis.",
+       "detail": "Optional full day for reef snorkeling or diving. Skip it if you want to stay near the courts.",
        "meta": "About 120 km · 2½–3½ hr by car",
        "place": "anilao",
        "photos": [
@@ -1667,10 +1757,12 @@
      "title": "Tennis in Tokyo",
      "items": [
       {
-       "title": "UTR singles",
-       "detail": "Yokohama’s verified Nov 16–20 events are over. No public adult singles listing found for early December near Tokyo.",
-       "link": "https://app.utrsports.net/club/12084",
-       "linkLabel": "Asia-Pacific UTR calendar"
+       "title": "UTR TENEZ Cup · Mitaka",
+       "detail": "Verified co-ed singles, UTR 5–16. Entry closes Dec 7 at 12:00 am JST. No early-December Tokyo-area event surfaced.",
+       "meta": "Sun Dec 13 · 9:00 am JST",
+       "place": "midorigaoka",
+       "link": "https://app.utrsports.net/events/408042",
+       "linkLabel": "UTR entry & fees"
       },
       {
        "title": "Ariake Tennis Forest",

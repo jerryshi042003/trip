@@ -76,3 +76,6 @@ Images were resized for Trip. The Commons file pages identify creators and licen
 - [malate-kbbq](https://commons.wikimedia.org/wiki/File:Samgyeopsal-gui_2.jpg)
 - [Kanin Baboy](https://discoversiargao.com/siargao-business-directory/food/87-kanin-baboy) · food and restaurant photos served by Discover Siargao.
 - [Bebie’s BBQ](https://www.koobo.ph/siargao/restaurants/guides/bebies-bbq-siargao) · restaurant photo served by Koobo.
+
+- [Robinsons Manila Jollibee](https://commons.wikimedia.org/wiki/File:The_Jollibee_sore_at_Robinsons_Place_Mall_in_Manila.jpg) · Commons file and attribution.
+- [Wai Ying](https://i-discoverasia.com/walks/binondo/locations/wai-ying/) · photo served by iDiscover.
