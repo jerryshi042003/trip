@@ -2267,6 +2267,31 @@
      ]
     },
     {
+     "title": "Shanghai and Hong Kong",
+     "region": "Future trips",
+     "category": "Stay",
+     "items": [
+      {
+       "title": "Shanghai → Hong Kong by rail",
+       "detail": "Flying into Shanghai from outside Hong Kong? A confirmed train ticket to Hong Kong can count as onward travel for 240-hour visa-free transit. Bring an eligible ordinary passport. Immigration decides on arrival.",
+       "link": "https://english.shanghai.gov.cn/en-ServicesandGuides-FAQs-Visas/20261026/2c0e242241104bf79cabd64ad96b7290.html",
+       "linkLabel": "Shanghai rail and entry rules"
+      },
+      {
+       "title": "Shanghai · register a home stay",
+       "detail": "Foreign guests register within 24 hours of arriving at a private home, including on visa-free entry. Ask your host to help the first time. Use the online form or NIA 12367 in WeChat or Alipay.",
+       "link": "https://english.shanghai.gov.cn/en-ServicesandGuides-OnlineServices/20260922/665284ae21624250b916b1c0b570ff2f.html",
+       "linkLabel": "Register a Shanghai stay"
+      },
+      {
+       "title": "Hong Kong · check entry",
+       "detail": "Check Hong Kong’s rules for the passport you’ll travel on before buying an onward ticket. The rules depend on your travel document and whether you’re visiting or passing through.",
+       "link": "https://www.immd.gov.hk/eng/services/visas/visit_transit.html",
+       "linkLabel": "Hong Kong visit and transit rules"
+      }
+     ]
+    },
+    {
      "title": "Spain and Portugal stays",
      "region": "Future trips",
      "category": "Stay",
