@@ -1136,6 +1136,37 @@
    "todos": [
     {
      "region": "Manila",
+     "title": "What to do next",
+     "items": [
+      {
+       "title": "Find your PCA match time",
+       "detail": "Qualifying runs Nov 30–Dec 4. Your singles entry is listed. Check your first match, sign-in time and any doubles dates.",
+       "link": "https://jerryshi042003.github.io/trip/?who=jerry&view=plan&region=Manila&topic=Tennis",
+       "linkLabel": "PCA entry and dates"
+      },
+      {
+       "title": "Choose Japan dates after PCA",
+       "detail": "Fit Tokyo around your return flight. Mitaka men’s singles was waitlist-only on Nov 24. Wait for a confirmed spot before paying for that leg.",
+       "link": "https://jerryshi042003.github.io/trip/?who=jerry&view=plan&region=Japan&topic=Before+flying",
+       "linkLabel": "Japan and flight options"
+      },
+      {
+       "title": "Confirm stays before picking courts",
+       "detail": "Confirm the nights and neighborhoods for Shanghai and Hong Kong before choosing courts.",
+       "link": "https://jerryshi042003.github.io/trip/?who=jerry&view=plan&region=Future+trips&topic=Stay",
+       "linkLabel": "Stay options"
+      },
+      {
+       "title": "Check Prince tabi socks",
+       "detail": "Check which PS295 size fits and whether you can pick it up once Tokyo dates are set.",
+       "link": "https://jerryshi042003.github.io/trip/?who=jerry&view=plan&region=Japan&topic=Food+%26+gear",
+       "linkLabel": "Socks and stores"
+      }
+     ],
+     "category": "Next"
+    },
+    {
+     "region": "Manila",
      "title": "Tennis this week",
      "items": [
       {
