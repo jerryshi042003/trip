@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23",
+ "updated": "2026-11-24",
  "places": [
   {
    "id": "condo",
@@ -114,6 +114,13 @@
    "addr": "2-2-22 Ariake, Koto, Tokyo",
    "ja": "東京都江東区有明2-2-22",
    "photo": "https://jerryshi042003.github.io/trip/media/places/ariake.jpg"
+  },
+  {
+   "id": "ymca-toyocho",
+   "city": "Tokyo",
+   "name": "Tokyo YMCA Toyocho",
+   "addr": "2-2-20 Toyo, Koto, Tokyo · 7th floor courts",
+   "ja": "東京都江東区東陽2-2-20 東京YMCA 7階テニスコート"
   },
   {
    "id": "superpotato",
@@ -1811,6 +1818,22 @@
        "meta": "Tue Dec 15 · 8:30 am · if still in Tokyo",
        "link": "https://www.tennisbear.net/event/1724298/info",
        "linkLabel": "Entry and schedule",
+       "place": "ariake"
+      },
+      {
+       "title": "Toyocho YMCA · men’s singles",
+       "detail": "Open to visitors. At least three matches, ¥4,200 cash. Cancel by Dec 11 without a fee. Check spots in Service Ace.",
+       "meta": "Sat Dec 19 · 6:30 pm JST",
+       "link": "https://tokyo.ymca.or.jp/wellness/2026/10/20261028-4.html",
+       "linkLabel": "Event and entry",
+       "place": "ymca-toyocho"
+      },
+      {
+       "title": "All Japan Championships · Ariake",
+       "detail": "Men’s singles starts Dec 14. Dec 18–20 advance tickets from ¥2,000. Check spectator access for earlier rounds.",
+       "meta": "Dec 13–20 · Watch",
+       "link": "https://eplus.jp/sf/word/0000121752",
+       "linkLabel": "Schedule and tickets",
        "place": "ariake"
       },
       {
