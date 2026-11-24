@@ -100,6 +100,13 @@
    "photo": "https://jerryshi042003.github.io/trip/media/places/capsule510.jpg"
   },
   {
+   "id": "sotetsu-ariake",
+   "city": "Tokyo",
+   "name": "Sotetsu Grand Fresa Tokyo-Bay Ariake",
+   "addr": "3-6-6 Ariake, Koto, Tokyo",
+   "ja": "東京都江東区有明3-6-6"
+  },
+  {
    "id": "setinn",
    "city": "Tokyo",
    "name": "Setinn",
@@ -1786,6 +1793,29 @@
       }
      ],
      "category": "Before flying"
+    },
+    {
+     "region": "Japan",
+     "title": "Where to stay in Tokyo",
+     "items": [
+      {
+       "title": "Sotetsu Grand Fresa · Ariake",
+       "detail": "Walk to Ariake Tennis Forest for the Dec 15 Diadora Cup. The non-smoking single showed a members-only rate with free cancellation through Dec 12, 11:59 p.m. Japan time.",
+       "meta": "¥26,364 for two nights · Dec 14–16 sample",
+       "link": "https://booking.sotetsu-hotels.com/booking/result?code=f5fbb4973fbfd2519ad42114492388d4&checkin=2026%2F12%2F14&checkout=2026%2F12%2F16&type=rooms&is_day_use=false&order=recommended&is_including_occupied=false&rooms=%5B%7B%22adults%22%3A1%2C%22children%22%3A0%7D%5D&lang=en&mcp_currency=JPY",
+       "linkLabel": "Check room and rate",
+       "place": "sotetsu-ariake"
+      },
+      {
+       "title": "Capsule Hotel Shinjuku 510",
+       "detail": "The booking calendar showed a men’s lower capsule on both nights, Dec 14 and 15. Allow extra time for the morning ride from Shinjuku to Ariake.",
+       "meta": "¥7,000 for two nights · Dec 14–16 sample",
+       "link": "https://www.capsule510.jp/contact.html",
+       "linkLabel": "Check capsule dates",
+       "place": "capsule510"
+      }
+     ],
+     "category": "Stay"
     },
     {
      "region": "Japan",
