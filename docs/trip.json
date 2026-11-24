@@ -1988,6 +1988,57 @@
       }
      ],
      "category": "Food & gear"
+    },
+    {
+     "title": "Asia",
+     "region": "Future trips",
+     "category": "Tennis",
+     "items": [
+      {
+       "title": "Shanghai · Xujiahui Sports Park",
+       "detail": "Three indoor tennis courts at Wantihui. Use Juss Sports’ app or WeChat mini program for reservations. Check phone verification before planning a session.",
+       "link": "https://www.xuhui.gov.cn/gzfw-shdt/20241212/548672.html",
+       "linkLabel": "Venue and booking"
+      },
+      {
+       "title": "Hong Kong · public courts",
+       "detail": "Visitors without HKID can register in person as temporary SmartPLAY users for advance booking, or ask at a counter for a same-day court with an original travel document.",
+       "link": "https://www.lcsd.gov.hk/en/facilities/facilitiesbooking/procedure/feeindividual.html",
+       "linkLabel": "Visitor booking rules"
+      }
+     ]
+    },
+    {
+     "title": "Spain and Portugal",
+     "region": "Future trips",
+     "category": "Tennis",
+     "items": [
+      {
+       "title": "Valencia · adult clay training",
+       "detail": "Valencia Tennis Center lists five-day adult training with tactical work and match play. Check the level, dates and fee before booking.",
+       "link": "https://www.cmvalenciatenniscenter.com/club-de-tenis-valencia/adults-tennis-program",
+       "linkLabel": "Adult tennis program"
+      },
+      {
+       "title": "Lisbon area · Jamor courts",
+       "detail": "Use the Portuguese federation’s court-hire rules to find the Jamor reception booking route. Check available sessions before the trip.",
+       "link": "https://tenis.pt/abc/uploads/2025/10/regulamento_utilizacao_campos_jamor_v1.pdf",
+       "linkLabel": "Court booking rules"
+      }
+     ]
+    },
+    {
+     "title": "Australia",
+     "region": "Future trips",
+     "category": "Tennis",
+     "items": [
+      {
+       "title": "Sydney Olympic Park · court hire",
+       "detail": "Tennis World takes casual outdoor court reservations online. Its indoor courts are member-only. Arrange a hitting partner separately.",
+       "link": "https://www.tennisworld.net.au/locations/sydney/court-hire/",
+       "linkLabel": "Outdoor court hire"
+      }
+     ]
     }
    ]
   },
