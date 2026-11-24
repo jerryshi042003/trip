@@ -131,6 +131,18 @@
    "addr": "Beco dos Apóstolos, Chiado, 1200-028 Lisboa, Portugal"
   },
   {
+   "id": "club-espanol-rocafort",
+   "city": "Valencia area",
+   "name": "Club Español de Tenis",
+   "addr": "Carretera de Burjassot a Torres-Torres km 4.6, 46111 Rocafort, Valencia, Spain"
+  },
+  {
+   "id": "cif-lisbon-tennis",
+   "city": "Lisbon",
+   "name": "Club Internacional de Foot-Ball",
+   "addr": "Avenida dos Bombeiros, Estádio Pinto Basto, 1400-036 Lisboa, Portugal"
+  },
+  {
    "id": "tennis-world-sydney",
    "city": "Sydney",
    "name": "Sydney Olympic Park Tennis Centre",
@@ -2135,12 +2147,28 @@
        "place": "valencia-tennis-center"
       },
       {
+       "title": "Rocafort · Gran Premio de Navidad",
+       "detail": "Men’s open singles on clay at Club Español de Tenis. Confirm the federation licence you’ll need as a visitor before paying.",
+       "meta": "Dec 23–31, 2026 · €30 · enter by Dec 18 at 7 p.m. Valencia time",
+       "link": "https://www.cettenis.com/NewsItem.aspx?id=ef2c7343af1c87d1cc10591ec3a9362d",
+       "linkLabel": "Club announcement and entry",
+       "place": "club-espanol-rocafort"
+      },
+      {
        "title": "Lisbon area · Jamor courts",
        "detail": "Reserve outdoor clay or covered synthetic courts through the federation’s Jamor reception. Take the Cascais line to Cruz Quebrada. Lights cost extra.",
        "meta": "Listed singles rate · €4 outdoor or €5.50 covered per player per hour",
        "link": "https://jamor.ipdj.pt/index.php?lang=pt&pid=9&ppid=1&s=white&title=tenis",
        "linkLabel": "Reception and prices",
        "place": "jamor-tennis"
+      },
+      {
+       "title": "Lisbon · CIF singles ladder",
+       "detail": "The under-45 singles ladder takes non-members. Register online, then pay at club reception. Check if there’s an opponent at your level for your dates.",
+       "meta": "2026 season ends Dec 22 · €35 for non-members, court fees extra",
+       "link": "https://www.globaltennisnetwork.com/network/ladder-league/ladderEvent/921_3171-13-torneio-escada-cif-2026",
+       "linkLabel": "League and registration",
+       "place": "cif-lisbon-tennis"
       }
      ]
     },
