@@ -433,6 +433,13 @@
    "ja": "ウインザーラケットショップ新宿店 東京都新宿区西新宿1-3-15"
   },
   {
+   "id": "lafino-funabashi",
+   "city": "Funabashi",
+   "name": "LAFINO · Funabashi",
+   "addr": "1-9-29 Natsumi, Funabashi, Chiba 273-0865. 047-407-0237.",
+   "ja": "ラフィノ船橋店 千葉県船橋市夏見1-9-29"
+  },
+  {
    "id": "tabio-daimaru-tokyo",
    "city": "Tokyo",
    "name": "Tabio MEN · Daimaru Tokyo",
@@ -2008,11 +2015,19 @@
        "place": "windsor-shinjuku"
       },
       {
+       "title": "Funabashi · Prince PS295 pickup",
+       "detail": "LAFINO orders the white pair from Prince. Call first to confirm your size and arrange pickup.",
+       "meta": "¥2,530 online · Sat 10:30 am–7 pm",
+       "link": "https://www.lafino.co.jp/f/funabashi",
+       "linkLabel": "Call or check store hours",
+       "place": "lafino-funabashi"
+      },
+      {
        "title": "Tabio MEN 062120093 · thick split-toe",
-       "detail": "Soft everyday terry sock with one toe split. Indigo was the online option on Nov 24. Check stock before heading to Tabio MEN on Daimaru Tokyo’s 7th floor.",
+       "detail": "Soft everyday terry sock with one toe split. All five colors were sold out online on Nov 24. Call Daimaru Tokyo for store stock.",
        "meta": "¥1,100 · 25–27 cm",
        "link": "https://tabio.com/products/062120093",
-       "linkLabel": "Colors and store stock",
+       "linkLabel": "Check for a restock",
        "place": "tabio-daimaru-tokyo"
       },
       {
