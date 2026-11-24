@@ -1126,7 +1126,7 @@
      "items": [
       {
        "title": "PCA Open · men’s singles",
-       "detail": "Clay in Paco. Final entries are posted. Check the order of play for your match time and sign-in.",
+       "detail": "Final entries are posted. Confirm your match and sign-in times with PCA.",
        "meta": "Nov 30–Dec 4 · Qualifying",
        "link": "https://www.facebook.com/permalink.php?story_fbid=1708210611092427&id=100057105145569",
        "linkLabel": "Official entry list",
@@ -1858,10 +1858,17 @@
      "items": [
       {
        "title": "Check PCA before booking Japan",
-       "detail": "Check the PCA order of play, any doubles dates, and your return flight before paying for Tokyo tennis or a hotel.",
+       "detail": "Check the order of play and any doubles dates before booking Tokyo.",
        "meta": "Qualifying Nov 30–Dec 4 · main draw Dec 5–13",
-       "link": "https://www.hammernutrition.ph/pages/event/43rd-pca-open-2026-2026-11-02",
-       "linkLabel": "PCA Open schedule"
+       "link": "https://www.facebook.com/100057105145569/",
+       "linkLabel": "PCA organizer updates"
+      },
+      {
+       "title": "Manila → Los Angeles",
+       "detail": "If Tokyo doesn’t fit, PAL leaves Manila at 3:15 p.m. or 10:15 p.m. The flights land in Los Angeles at 12:10 p.m. or 7:10 p.m. the same day, local times.",
+       "meta": "Sun Dec 6 · Nonstop options",
+       "link": "https://www.philippineairlines.com/content/dam/palportal/migration/feature/timetable/261112-International-W26-as-of-Nov-12-2026.pdf",
+       "linkLabel": "PAL flight times"
       },
       {
        "title": "Narita trains for Shiroi",
