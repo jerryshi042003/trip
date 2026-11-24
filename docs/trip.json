@@ -2143,6 +2143,13 @@
        "linkLabel": "Juss booking guide"
       },
       {
+       "title": "Shanghai · Moore singles",
+       "detail": "Moore runs UTR 6+ events in Pudong. The Nov 30 event overlaps PCA qualifying. Check the club’s calendar for the next men's singles date and fee.",
+       "meta": "Pudong · UTR 6+",
+       "link": "https://app.utrsports.net/club/1731194",
+       "linkLabel": "Upcoming UTR events"
+      },
+      {
        "title": "Shanghai · coached hit at the Bund",
        "detail": "InLove lists private and group tennis for adults. Its tennis facility is on Level 2 of the Bund Finance Center. Ask for match play at your level.",
        "link": "https://www.inlovesports.com/Coaching",
@@ -2154,6 +2161,12 @@
        "meta": "Standard courts HK$34–57/hr · 7-day booking window",
        "link": "https://www.smartplay.lcsd.gov.hk/website/en/how-to-use/faq.html",
        "linkLabel": "Visitor booking rules"
+      },
+      {
+       "title": "Hong Kong · find a singles opponent",
+       "detail": "TennisGO HK filters by district, time, NTRP and men’s singles. Pick the district first, then agree on a level and court. Court hire is separate.",
+       "link": "https://apps.apple.com/us/app/tennisgo-hk/id6746753289",
+       "linkLabel": "Open TennisGO HK"
       },
       {
        "title": "Hong Kong · adult coaching",
