@@ -1975,24 +1975,18 @@
      "items": [
       {
        "title": "Prince PS295 · split-toe tennis sock",
-       "detail": "The first pair to try on court. The big toe gets its own pocket and the other four share one. Medium thickness with a snug heel. Windsor Shinjuku lists stock, which can change.",
-       "meta": "¥2,277 at Windsor · 22–28 cm across 3 sizes",
+       "detail": "Start here for tennis. The big toe has its own pocket and the heel is held in place. Check your size at Windsor Shinjuku. Online store pickup is card-only.",
+       "meta": "¥2,277 online · 22–24, 24–26 or 26–28 cm",
        "link": "https://www.windsorracket.co.jp/shop/g/gPS295-16526-28/",
        "linkLabel": "Buy or check stock",
-       "place": "windsor-shinjuku",
-       "photos": [
-        {
-         "url": "media/happy-hour/tabi.jpg",
-         "caption": "Happy Hour · Jerry’s Photo Booth shot from the inn scene"
-        }
-       ]
+       "place": "windsor-shinjuku"
       },
       {
        "title": "Tabio MEN 062120093 · thick split-toe",
-       "detail": "All-over terry cushioning and one toe split. The plush 71% cotton knit is the easy-on tabi to try first. At Tokyo Station, try Tabio MEN on Daimaru’s 7th floor. Check the color and store stock on the product page.",
+       "detail": "Soft everyday terry sock with one toe split. Indigo was the online option on Nov 24. Check stock before heading to Tabio MEN on Daimaru Tokyo’s 7th floor.",
        "meta": "¥1,100 · 25–27 cm",
        "link": "https://tabio.com/products/062120093",
-       "linkLabel": "Buy or check stock",
+       "linkLabel": "Colors and store stock",
        "place": "tabio-daimaru-tokyo"
       },
       {
@@ -2031,6 +2025,18 @@
          "caption": "Happy Hour at 2:20:06 · Jerry’s Photo Booth shot"
         }
        ]
+      },
+      {
+       "title": "The inn scene",
+       "detail": "The Arima inn scene is the inspiration for the tabi search. The sock brand and model are unidentified.",
+       "link": "https://hh.fictive.jp/",
+       "linkLabel": "Official film site",
+       "photos": [
+        {
+         "url": "media/happy-hour/tabi.jpg",
+         "caption": "Happy Hour · the inn scene"
+        }
+       ]
       }
      ],
      "category": "Food & gear"
@@ -2040,10 +2046,10 @@
      "title": "Buying online in Japan",
      "items": [
       {
-       "title": "Tabio · order online, pay in store",
-       "detail": "Tabio offers guest checkout and accepts many foreign cards. If store pickup appears for the sock and branch, you can reserve online and pay there. For delivery, confirm your hotel accepts parcels and use your booking name.",
-       "link": "https://tabio.com/pages/faq",
-       "linkLabel": "Tabio pickup and payment"
+       "title": "Tabio · store pickup paused",
+       "detail": "Tabio lists pickup paused for maintenance. Check Daimaru Tokyo stock or ship to a hotel that accepts parcels. Tabio quotes 2–5 days for standard delivery.",
+       "link": "https://tabio.com/pages/store-pickup",
+       "linkLabel": "Check pickup status"
       },
       {
        "title": "Amazon Japan · locker or hotel",
