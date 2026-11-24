@@ -1846,10 +1846,17 @@
      "items": [
       {
        "title": "Check PCA before booking Japan",
-       "detail": "Confirm your match schedule and onward or return flight before paying for a Japan tournament or room.",
-       "meta": "Travel dates open",
-       "link": "https://www.seattle.us.emb-japan.go.jp/itpr_ja/visa_faq.html",
-       "linkLabel": "Onward-ticket guidance"
+       "detail": "Confirm your own match times and return flight before paying for Tokyo tennis or a hotel.",
+       "meta": "Qualifying Nov 30–Dec 4 · main draw Dec 5–13",
+       "link": "https://www.hammernutrition.ph/pages/event/43rd-pca-open-2026-2026-11-02",
+       "linkLabel": "PCA Open schedule"
+      },
+      {
+       "title": "Narita trains for Shiroi",
+       "detail": "Use Sky Access or a Skyliner that stops at Shin-Kamagaya. Change to a local Hokuso train for Nishi-Shiroi, one stop east.",
+       "meta": "Weekend Skyliner examples · Terminal 2 at 1:22 or 2:22 pm",
+       "link": "https://www.hokuso-railway.co.jp/docs/railway/skyliner_timetable2026.pdf",
+       "linkLabel": "Airport train timetable"
       },
       {
        "title": "Check the passport you’ll use",
@@ -1903,7 +1910,7 @@
      "items": [
       {
        "title": "Samurai Tennis · men’s singles",
-       "detail": "If PCA is finished and you’re already in Japan, check for a spot. At least three matches for TennisBear levels 6–9. Full cancellation fee Dec 4–5.",
+       "detail": "If your PCA schedule is clear and you can reach Shiroi before 5 p.m., check for a spot. At least three matches for TennisBear levels 6–9. Full cancellation fee Dec 4–5.",
        "meta": "Sat Dec 5 · 5:00 pm JST · ¥3,000 · same-day entry if space",
        "link": "https://www.tennisbear.net/event/1738521/info",
        "linkLabel": "Entry and cancellation",
