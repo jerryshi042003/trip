@@ -306,6 +306,18 @@
    "city": "Cebu",
    "name": "Carcar Public Market",
    "addr": "Carcar Public Market, Carcar City, Cebu"
+  },
+  {
+   "id": "kanin-baboy",
+   "city": "Siargao",
+   "name": "Kanin Baboy · Siargao",
+   "addr": "Tourism Road, Poblacion V, General Luna, Surigao del Norte"
+  },
+  {
+   "id": "bebies-bbq",
+   "city": "Siargao",
+   "name": "Bebie’s Barbecue",
+   "addr": "Tourism Road, General Luna, Surigao del Norte"
   }
  ],
  "people": [
@@ -1159,6 +1171,10 @@
         {
          "url": "media/places/malate-remedios.jpg",
          "caption": "Remedios Circle, Malate"
+        },
+        {
+         "url": "media/places/malate-kbbq.jpg",
+         "caption": "Samgyeopsal, Korean grilled pork belly"
         }
        ]
       },
@@ -1490,6 +1506,10 @@
        "from": "condo",
        "photos": [
         {
+         "url": "media/places/quiapo-church-front.jpg",
+         "caption": "Quiapo Church from Plaza Miranda"
+        },
+        {
          "url": "https://i.ytimg.com/vi/D-oSpkzPIoQ/hqdefault.jpg",
          "caption": "David Choe’s Thumbs Up episode in the Philippines"
         }
@@ -1502,7 +1522,17 @@
        "link": "https://www.youtube.com/watch?v=D-oSpkzPIoQ&t=488s",
        "linkLabel": "Watch at 8:08",
        "place": "greenhills",
-       "from": "condo"
+       "from": "condo",
+       "photos": [
+        {
+         "url": "media/places/greenhills-entry.jpg",
+         "caption": "Greenhills Shopping Center"
+        },
+        {
+         "url": "media/places/greenhills-stalls.jpg",
+         "caption": "Inside the Greenhills market"
+        }
+       ]
       },
       {
        "title": "Fruit & chicharon",
@@ -1517,20 +1547,29 @@
        "linkLabel": "Watch at 25:17",
        "photos": [
         {
-         "url": "media/places/cloud9.jpg",
-         "caption": "Cloud 9, near General Luna"
+         "url": "https://discoversiargao.com/images/sobipro/entries/87/img_kanin-baboy-siargao-lechon.jpg",
+         "caption": "Kanin Baboy’s roast pork"
         },
         {
-         "url": "media/places/cebu-lechon.jpg",
-         "caption": "Lechon · dish shown here from Cebu"
+         "url": "https://discoversiargao.com/images/sobipro/entries/87/img_kanin-baboy-siargao.jpg",
+         "caption": "Kanin Baboy in General Luna"
         }
-       ]
+       ],
+       "place": "kanin-baboy",
+       "meta": "General Luna · separate island trip"
       },
       {
        "title": "Bebie’s Barbecue · Siargao",
        "detail": "Tourism Road, General Luna. Go for the local grill if you like sweet sauce.",
        "link": "https://www.youtube.com/watch?v=D-oSpkzPIoQ&t=1566s",
-       "linkLabel": "Watch at 26:06"
+       "linkLabel": "Watch at 26:06",
+       "place": "bebies-bbq",
+       "photos": [
+        {
+         "url": "https://www.koobo.ph/assets/babie%27s-bbq-restaurant-bbq.jpg",
+         "caption": "Grilled skewers at Bebie’s"
+        }
+       ]
       },
       {
        "title": "Mrs. Krispy · Siargao",
@@ -1676,8 +1715,8 @@
       {
        "title": "The flight-and-udon story",
        "detail": "DVDASA, 39:28–40:11. Choe’s group flew for ramen, drove on and ate udon three times. The recording gives no shop or town.",
-       "link": "https://jerryshi042003.github.io/david-choe-transcript-archive/#/saga2-saga-02-chapter-028-new-year-new-you-nuru",
-       "linkLabel": "Read the source"
+       "link": "https://github.com/jerryshi042003/david-choe-transcript-archive/blob/aaf089aaa7962913326bbf4487a2256ca14f6b4a/data/saga2-saga-02-chapter-028-new-year-new-you-nuru.script.json",
+       "linkLabel": "Transcript · GitHub sign-in"
       },
       {
        "title": "Tsukiji Outer Market",

@@ -70,3 +70,9 @@ Images were resized for Trip. The Commons file pages identify creators and licen
 - [tsukiji-eel](https://commons.wikimedia.org/wiki/File:Grilled_eel_at_Tsukiji_fish_market_in_Tokyo%2C_Japan_in_July_2026.jpg)
 - [tsukiji-market](https://commons.wikimedia.org/wiki/File:Tsukiji_Outer_Market.jpg)
 - [Choe Philippines video thumbnail](https://www.youtube.com/watch?v=D-oSpkzPIoQ) · served by YouTube.
+- [quiapo-church-front](https://commons.wikimedia.org/wiki/File:Quiapo_Church_from_Plaza_Miranda.jpg)
+- [greenhills-entry](https://commons.wikimedia.org/wiki/File:Greenhills_Shopping_Center.jpg)
+- [greenhills-stalls](https://commons.wikimedia.org/wiki/File:Clothes_stall_at_Greenhills.jpg)
+- [malate-kbbq](https://commons.wikimedia.org/wiki/File:Samgyeopsal-gui_2.jpg)
+- [Kanin Baboy](https://discoversiargao.com/siargao-business-directory/food/87-kanin-baboy) · food and restaurant photos served by Discover Siargao.
+- [Bebie’s BBQ](https://www.koobo.ph/siargao/restaurants/guides/bebies-bbq-siargao) · restaurant photo served by Koobo.
