@@ -188,6 +188,13 @@
    "ja": "千葉県白井市根1071-1"
   },
   {
+   "id": "toyoko-shin-kamagaya",
+   "city": "Chiba",
+   "name": "Toyoko Inn Chiba Shin-Kamagaya Ekimae",
+   "addr": "2-8-18 Shin-Kamagaya, Kamagaya, Chiba 273-0107, Japan",
+   "ja": "千葉県鎌ケ谷市新鎌ケ谷2-8-18"
+  },
+  {
    "id": "ymca-toyocho",
    "city": "Tokyo",
    "name": "Tokyo YMCA Toyocho",
@@ -1863,6 +1870,14 @@
      "region": "Japan",
      "title": "Where to stay in Tokyo",
      "items": [
+      {
+       "title": "Toyoko Inn · Shin-Kamagaya",
+       "detail": "One Hokuso Line stop from the Dec 5 match. The hotel’s standard cancellation cutoff is noon on check-in day.",
+       "meta": "¥10,300 for one night · Dec 5–6 sample",
+       "link": "https://www.toyoko-inn.com/eng/search/result/room_plan/?hotel=00217&people=1&room=1&smoking=noSmoking&start=2026-12-05&end=2026-12-06",
+       "linkLabel": "Check room and rate",
+       "place": "toyoko-shin-kamagaya"
+      },
       {
        "title": "Sotetsu Grand Fresa · Ariake",
        "detail": "Walk to Ariake Tennis Forest for the Dec 15 Diadora Cup. The non-smoking single showed a members-only rate with free cancellation through Dec 12, 11:59 p.m. Japan time.",
