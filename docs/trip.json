@@ -107,6 +107,30 @@
    "ja": "東京都江東区有明3-6-6"
   },
   {
+   "id": "valencia-tennis-center",
+   "city": "Valencia",
+   "name": "Valencia Tennis Center",
+   "addr": "Calle Vicente La Roda and Calle de Gran Canaria, 46011 Valencia, Spain"
+  },
+  {
+   "id": "resa-patacona",
+   "city": "Valencia",
+   "name": "Resa Patacona",
+   "addr": "Passeig Serra d'Espadà 2, 46120 Alboraia, Valencia, Spain"
+  },
+  {
+   "id": "jamor-tennis",
+   "city": "Lisbon area",
+   "name": "Centro de Treino de Ténis do Jamor",
+   "addr": "Complexo Desportivo Nacional do Jamor, Cruz Quebrada, Oeiras, Portugal"
+  },
+  {
+   "id": "lost-inn-lisbon",
+   "city": "Lisbon",
+   "name": "Lost Inn Lisbon Hostel",
+   "addr": "Beco dos Apóstolos, Chiado, 1200-028 Lisboa, Portugal"
+  },
+  {
    "id": "setinn",
    "city": "Tokyo",
    "name": "Setinn",
@@ -2082,15 +2106,19 @@
      "items": [
       {
        "title": "Valencia · adult clay training",
-       "detail": "Valencia Tennis Center lists five-day adult training with tactical work and match play. Check the level, dates and fee before booking.",
-       "link": "https://www.cmvalenciatenniscenter.com/club-de-tenis-valencia/adults-tennis-program",
-       "linkLabel": "Adult tennis program"
+       "detail": "Five weekdays of clay training and fitness. The pro program lists groups of up to four and practice matches. Confirm an advanced group for your dates before paying the deposit.",
+       "meta": "€350 mornings · €500 full days for five days",
+       "link": "https://adv.cmvalenciatenniscenter.com/tennis",
+       "linkLabel": "Compare the five-day programs",
+       "place": "valencia-tennis-center"
       },
       {
        "title": "Lisbon area · Jamor courts",
-       "detail": "Use the Portuguese federation’s court-hire rules to find the Jamor reception booking route. Check available sessions before the trip.",
-       "link": "https://tenis.pt/abc/uploads/2025/10/regulamento_utilizacao_campos_jamor_v1.pdf",
-       "linkLabel": "Court booking rules"
+       "detail": "Reserve outdoor clay or covered synthetic courts through the federation’s Jamor reception. Take the Cascais line to Cruz Quebrada. Lights cost extra.",
+       "meta": "Listed singles rate · €4 outdoor or €5.50 covered per player per hour",
+       "link": "https://jamor.ipdj.pt/index.php?lang=pt&pid=9&ppid=1&s=white&title=tenis",
+       "linkLabel": "Reception and prices",
+       "place": "jamor-tennis"
       }
      ]
     },
@@ -2104,6 +2132,27 @@
        "detail": "Tennis World takes casual outdoor court reservations online. Its indoor courts are member-only. Arrange a hitting partner separately.",
        "link": "https://www.tennisworld.net.au/locations/sydney/court-hire/",
        "linkLabel": "Outdoor court hire"
+      }
+     ]
+    },
+    {
+     "title": "Spain and Portugal stays",
+     "region": "Future trips",
+     "category": "Stay",
+     "items": [
+      {
+       "title": "Valencia · Resa Patacona",
+       "detail": "Short-stay single rooms and studios near Patacona Beach and Valencia Tennis Center. Open the traveler rates for your dates.",
+       "link": "https://resa.es/en/residences/valencia/patacona/?tab=travelers",
+       "linkLabel": "Traveler rooms",
+       "place": "resa-patacona"
+      },
+      {
+       "title": "Lisbon · Lost Inn",
+       "detail": "Private rooms and dorms in Chiado, five minutes on foot from Cais do Sodré. Use that station for the Cascais line toward Jamor.",
+       "link": "https://lostinn.eu/lisbon/#lisbonbooking",
+       "linkLabel": "Check hostel dates",
+       "place": "lost-inn-lisbon"
       }
      ]
     }
