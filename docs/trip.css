@@ -110,6 +110,11 @@ h1{display:flex;align-items:center;gap:9px;font:700 34px/1.15 -apple-system,"SF 
 .trip-app-store{font-size:15px;color:var(--sec);font-weight:500;margin-left:7px;white-space:nowrap}
 .trip-actions{display:flex;flex-wrap:wrap;gap:4px 18px}
 .trip-actions a{display:inline-flex;align-items:center;gap:5px;min-height:44px;font-size:16px}
+.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.trip-next{margin-top:8px}
+.trip-next .trip-entry:first-of-type .trip-actions{margin-top:8px}
+.trip-next .trip-entry:first-of-type .trip-actions a:first-child{padding-inline:14px;border-radius:7px;background:var(--text);color:var(--bg);font-weight:650;text-decoration:none}
+.trip-next .trip-entry:first-of-type .trip-actions a:first-child:focus-visible{outline-color:var(--bg)}
 .trip-actions svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.7}
 .trip-gallery{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;outline-offset:3px;margin:0 0 10px;border-radius:12px}
 .trip-gallery figure{flex:0 0 85%;min-width:0;margin:0;scroll-snap-align:start;position:relative}

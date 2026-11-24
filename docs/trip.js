@@ -108,7 +108,10 @@
     if (!categories.includes(category)) category = categories[0];
     const picker = `<nav class="trip-regions" aria-label="Trip destinations">${regions.map(name => `<button type="button" data-region="${esc(name)}" aria-pressed="${region === name}">${esc(name)}</button>`).join('')}</nav>`;
     const filters = categories.length > 1 ? `<nav class="trip-categories" aria-label="${esc(region)} topics">${categories.map(name => `<button type="button" data-category="${esc(name)}" aria-pressed="${category === name}">${esc(name)}</button>`).join('')}</nav>` : '';
-    const content = regional.filter(section => !section.category || section.category === category).map(section => `<section class="trip-section"><h2>${esc(section.title)}</h2>${section.items.map(item => dashboardItem(item, byId)).join('')}</section>`).join('');
+    const content = regional.filter(section => !section.category || section.category === category).map(section => {
+      const next = section.category === 'Next';
+      return `<section class="trip-section${next ? ' trip-next' : ''}"><h2${next ? ' class="sr-only"' : ''}>${esc(section.title)}</h2>${section.items.map(item => dashboardItem(item, byId)).join('')}</section>`;
+    }).join('');
     return picker + filters + content;
   }
 
@@ -302,8 +305,7 @@
     if (stage) {
       view = stage.dataset.v;
       const url = new URL(location.href);
-      if (view === 'where') url.searchParams.set('view', view);
-      else url.searchParams.delete('view');
+      url.searchParams.set('view', view);
       history.replaceState(null, '', url);
       store.set('view', view);
       render();
