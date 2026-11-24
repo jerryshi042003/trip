@@ -22,6 +22,8 @@ struct TripTaskSection: Codable, Identifiable {
     var id: String { title }
     let title: String
     let items: [TripTask]
+    let region: String?
+    let category: String?
 }
 
 struct TripTask: Codable, Identifiable {
@@ -30,6 +32,18 @@ struct TripTask: Codable, Identifiable {
     let detail: String
     let link: URL?
     let draft: String?
+    let linkLabel: String?
+    let meta: String?
+    let place: String?
+    let from: String?
+    let icon: String?
+    let photos: [TripPhoto]?
+}
+
+struct TripPhoto: Codable, Identifiable {
+    var id: String { url }
+    let url: String
+    let caption: String
 }
 
 struct PlanItem: Codable, Identifiable {
@@ -263,6 +277,8 @@ extension TripTaskSection {
         let c = try decoder.container(keyedBy: CodingKeys.self)
         title = c.string(.title)
         items = c.lossyArray(TripTask.self, forKey: .items)
+        region = c.optionalString(.region)
+        category = c.optionalString(.category)
     }
 }
 
@@ -273,6 +289,12 @@ extension TripTask {
         detail = c.string(.detail)
         link = c.optionalString(.link).flatMap { URL(string: $0.trimmingCharacters(in: .whitespaces)) }
         draft = c.optionalString(.draft)
+        linkLabel = c.optionalString(.linkLabel)
+        meta = c.optionalString(.meta)
+        place = c.optionalString(.place)
+        from = c.optionalString(.from)
+        icon = c.optionalString(.icon)
+        photos = c.optionalLossyArray(TripPhoto.self, forKey: .photos)
     }
 }
 

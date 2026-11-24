@@ -44,7 +44,7 @@
   {
    "id": "rizal",
    "city": "Manila",
-   "name": "Rizal Memorial Tennis",
+   "name": "Rizal Memorial Tennis Center",
    "addr": "Pablo Ocampo Sr. St, Malate, Manila 1004",
    "photo": "https://jerryshi042003.github.io/trip/media/places/rizal.jpg"
   },
@@ -150,7 +150,8 @@
    "city": "Manila",
    "name": "Bikram Yoga Manila",
    "addr": "15/F 88 Corporate Center, 141 Valero cor Sedeño St, Salcedo Village, Makati",
-   "photo": "https://jerryshi042003.github.io/trip/media/places/bikram.jpg"
+   "photo": "https://jerryshi042003.github.io/trip/media/places/bikram.jpg",
+   "been": true
   },
   {
    "id": "f45-bgc",
@@ -256,6 +257,55 @@
    "name": "Puerto Galera",
    "addr": "Balatero Pier, Puerto Galera, Oriental Mindoro",
    "photo": "https://jerryshi042003.github.io/trip/media/places/puerto-galera.jpg"
+  },
+  {
+   "id": "benilde",
+   "city": "Manila",
+   "name": "De La Salle–College of Saint Benilde",
+   "addr": "2544 Taft Avenue, Malate, Manila"
+  },
+  {
+   "id": "koreatown",
+   "city": "Manila",
+   "name": "Koreatown · Remedios Circle",
+   "addr": "Remedios Circle, Malate, Manila"
+  },
+  {
+   "id": "quiapo-church",
+   "city": "Manila",
+   "name": "Quiapo Church",
+   "addr": "910 Plaza Miranda, Quiapo, Manila"
+  },
+  {
+   "id": "greenhills",
+   "city": "Manila",
+   "name": "Greenhills Mall",
+   "addr": "Ortigas Avenue, Greenhills, San Juan"
+  },
+  {
+   "id": "tsukiji",
+   "city": "Tokyo",
+   "name": "Tsukiji Outer Market",
+   "addr": "4-16-2 Tsukiji, Chuo, Tokyo"
+  },
+  {
+   "id": "kotohira",
+   "city": "Japan",
+   "name": "Kotohira · Kagawa",
+   "addr": "Kotohira, Nakatado District, Kagawa"
+  },
+  {
+   "id": "moderate",
+   "city": "Japan",
+   "name": "moderate · Yokkaichi",
+   "addr": "Ties Building 2F–3F, 1-18 Tomari-cho, Yokkaichi, Mie 510-0884",
+   "ja": "三重県四日市市泊町1-18 タイズビル2–3F"
+  },
+  {
+   "id": "carcar",
+   "city": "Cebu",
+   "name": "Carcar Public Market",
+   "addr": "Carcar Public Market, Carcar City, Cebu"
   }
  ],
  "people": [
@@ -881,906 +931,813 @@
    "name": "Jerry",
    "plan": [
     {
-     "date": "Fri Nov 20",
-     "title": "LAX → Manila",
-     "sub": "PR123 · 3:10 PM Los Angeles time",
-     "place": "naia"
+     "date": "Nov 23–28",
+     "title": "ITF J30 Manila",
+     "sub": "Watch juniors at Rizal Memorial Tennis Center",
+     "place": "rizal"
     },
     {
-     "date": "Sat Nov 21",
-     "title": "Land Manila",
-     "sub": "PR123 · 10:45 PM Manila time · NAIA Terminal 1 · check listing",
-     "place": "naia"
+     "date": "Nov 30–Dec 5",
+     "title": "Second ITF J30 Manila",
+     "sub": "Same venue · qualifying Nov 29",
+     "place": "rizal"
     },
     {
-     "date": "Nov 30 – Dec 4",
+     "date": "Nov 30–Dec 4",
      "title": "PCA Open qualifying",
-     "sub": "Paco · entry and check-in need confirmation",
+     "sub": "Men’s singles · check the order of play",
      "place": "pca"
     },
     {
-     "date": "Dec 5 – 13",
+     "date": "Dec 5–13",
      "title": "PCA Open main draw",
-     "sub": "If through qualifying. Later rounds conflict with the target return.",
+     "sub": "If qualified",
      "place": "pca"
-    },
-    {
-     "date": "TBD",
-     "title": "Cebu",
-     "sub": "Maybe, after qualifying. Might stay in Manila the whole time",
-     "place": "asmara"
-    },
-    {
-     "date": "Maybe Dec 5",
-     "title": "Manila → Tokyo",
-     "sub": "Only if qualifying ends early enough and the confirmed return leaves room",
-     "place": "hnd"
     },
     {
      "date": "After PCA",
-     "title": "Tokyo",
-     "sub": "Setinn and Shingo if PCA timing and the return flight leave room",
-     "place": "setinn"
+     "title": "Cebu",
+     "sub": "Optional · confirm tennis and flights first",
+     "place": "asmara"
     },
     {
-     "date": "Dec 6–7 target",
-     "title": "Return to LA",
-     "sub": "Arrival deadline and departure city still to confirm"
-    },
-    {
-     "date": "Dec 15 (if return moves)",
-     "title": "diadora cup",
-     "sub": "Only if the return moves later · Ariake · check-in 8:40 · ¥4,000 cash",
-     "place": "ariake"
+     "date": "After PCA",
+     "title": "Japan",
+     "sub": "Short stay if the schedule fits · dates open",
+     "place": "hnd"
     }
-   ],
-   "bucket": [
-    "PCA Open qualifying and main draw",
-    "Hit with PJ Tierro and the Ateneo guys",
-    "Polo Club doubles with Michael",
-    "Asmara clay in Cebu",
-    "Setinn with Shingo",
-    "diadora cup at Ariake"
    ],
    "where": "",
    "todos": [
     {
-     "title": "Today · Mon Nov 23",
+     "region": "Manila",
+     "title": "Tennis this week",
      "items": [
       {
-       "title": "Adelmo · already at PCA",
-       "detail": "Your words, Nov 23: Adelmo “has already been at PCA” (dictated as “a demo”)."
+       "title": "PCA Open · men’s singles",
+       "detail": "Qualifying in Paco. You’re in. Check the draw for your match and check-in time.",
+       "meta": "Nov 30–Dec 4 · Qualifying",
+       "link": "https://www.facebook.com/100057105145569/",
+       "linkLabel": "PCA match notices",
+       "place": "pca",
+       "from": "condo"
       },
       {
-       "title": "Pesos: change US cash on A. Mabini St",
-       "detail": "A few blocks from Robinsons Place Manila in Ermita/Malate (Moonlight 1190 A. Mabini, Edzen 1511 A. Mabini; Moromax inside Robinsons, 4th level). Compare two rates. Clean, uncreased $50/$100 bills. Ask for ₱20, ₱50, ₱100 notes. Pay the tournament in cash."
+       "title": "Watch juniors at Rizal Memorial",
+       "detail": "Start with a morning session. Check the order of play and ask about spectator entry.",
+       "meta": "Nov 23–28 · ITF J30 Manila · 2.3 km",
+       "link": "https://www.world.tennis/en/tournament/j30-manila/phi/2026/j-j30-phi-2026-001/draws-and-results/",
+       "linkLabel": "Draws & schedule",
+       "place": "rizal",
+       "from": "condo",
+       "photos": [
+        {
+         "url": "media/places/rizal.jpg",
+         "caption": "Rizal Memorial Sports Complex entrance"
+        },
+        {
+         "url": "media/places/rizal-air.jpg",
+         "caption": "The sports complex from above"
+        }
+       ]
       },
       {
-       "title": "Grab: worked Nov 23",
-       "detail": "You said Grab worked on Nov 23. Payment method not recorded yet. If it ever fails: choose Cash, or load GrabPay at 7-Eleven or from GCash. (A US Visa can't top up GrabPay in PH.)",
-       "link": "https://www.grab.com/ph/pay/guide/cash-in/"
+       "title": "Rizal Memorial · second J30",
+       "detail": "Same hard courts. Qualifying starts Sun Nov 29.",
+       "meta": "Nov 30–Dec 5 · Main draw",
+       "link": "https://www.world.tennis/en/tournament/j30-manila/phi/2026/j-j30-phi-2026-002/draws-and-results/",
+       "linkLabel": "Draws & schedule",
+       "place": "rizal",
+       "from": "condo"
       },
       {
-       "title": "GCash: cash-in at 7-Eleven, don't redo the bank transfer",
-       "detail": "Say “GCash cash-in”, give your number, hand over pesos (ask the fee first; about 1% at 7-Eleven). The US bank → GCash (Meridian) screen “Your bank is processing your payment” is the first ₱3,000 still settling on the bank side (up to 3 business days). It allows one at a time, so retrying won't work before about Wed Nov 25 – Thu Nov 26.",
-       "link": "https://help.gcash.com/hc/en-us/articles/360017595774-GCash-Cash-in-fees"
+       "title": "PCA Open · main draw",
+       "detail": "Keep Japan flexible if you advance.",
+       "meta": "Dec 5–13 · If qualified",
+       "link": "https://www.hammernutrition.ph/pages/event/43rd-pca-open-2026-2026-11-02",
+       "linkLabel": "Tournament dates"
       },
       {
-       "title": "Use the phone as little as possible; walk around more",
-       "detail": "Your words, Nov 23: “I want to use my phone as little as possible and just walk around more.”"
-      },
-      {
-       "title": "Get used to the heat: be outside every day",
-       "detail": "Your words: “I think my stamina is actually okay. I don't see how I'm gonna increase my stamina over a week. I've been, I was cramping a lot yesterday. If anything, I just need to get used to the heat, so I don't know if I just need to be outside every single day.” Research agrees on the direction: heat adaptation takes about 7–14 days of daily exposure, about 60–90 minutes of activity in the heat, with heart-rate gains in 3–5 days. Put salt/sodium in your drinks while adapting (sweat loses sodium). Cramping cause isn't established from this.",
-       "link": "https://www.gssiweb.org/en/sports-science-exchange/article/sse-153-heat-acclimatization-to-improve-athletic-performance-in-warm-hot-environments"
+       "title": "Get used to the heat",
+       "detail": "Start with easy time outside and short hits. Build up gradually and take cooling breaks.",
+       "link": "https://www.cdc.gov/heat-health/about/index.html",
+       "linkLabel": "Heat guidance"
       }
-     ]
+     ],
+     "category": "Tennis"
     },
     {
-     "title": "Manila · places to go",
+     "region": "Manila",
+     "title": "Money & transport",
      "items": [
       {
-       "title": "Rizal Memorial Tennis Center · ITF J30 juniors",
-       "detail": "The sports complex by JR's place, next to De La Salle. ITF J30 Manila (PHILTA J30) is on now, Nov 23–28, hard courts; ITF lists a second J30 Manila starting Nov 29. Your Muse note. Watch any morning; free to walk in (not confirmed). Grab ~10 min or walk ~25 min. Rest day: yes.",
-       "link": "https://www.google.com/maps/search/?api=1&query=Rizal%20Memorial%20Tennis%2C%20Pablo%20Ocampo%20Sr.%20St%2C%20Malate%2C%20Manila%201004"
+       "title": "Grab",
+       "detail": "Uber for Manila. A U.S. Chase Sapphire Visa worked for rides.",
+       "link": "https://apps.apple.com/ph/app/id647268330",
+       "icon": "media/apps/grab.jpg"
       },
       {
-       "title": "The Aristocrat · chicken cutlet",
-       "detail": "Next to your condo, about 150 m: the original Aristocrat (since 1936), 432 San Andres St cor. Roxas Blvd. Your pick. Open 24 hours (listing). Walk ~3 min. Been.",
-       "link": "https://www.google.com/maps/search/?api=1&query=The%20Aristocrat%20Restaurant%2C%20432%20San%20Andres%20St%2C%20Malate%2C%20Manila"
+       "title": "Move It",
+       "detail": "Motorcycle taxi. Check pickup, fare and payment in the app.",
+       "link": "https://apps.apple.com/ph/app/id1481198245",
+       "icon": "media/apps/move-it.jpg"
       },
+      {
+       "title": "GCash",
+       "detail": "Cash to a friend worked for getting balance and pesos. Send enough for a few days if using BofA. A repeat transfer was blocked for three days in one case.",
+       "link": "https://apps.apple.com/ph/app/id520020791",
+       "icon": "media/apps/gcash.jpg"
+      },
+      {
+       "title": "Pesos + Visa",
+       "detail": "Carry small peso notes for cash-only spots. U.S. Visa worked where cards are accepted. Walk for nearby stops and open the phone for the ride or map."
+      }
+     ],
+     "category": "Get around"
+    },
+    {
+     "region": "Manila",
+     "title": "Where JR coaches",
+     "items": [
       {
        "title": "Manila Polo Club",
-       "detail": "John Rey Moreno (JR) coaches here. At the gate: guest of Carmela Fernandez, then find JR on the outdoor courts. Your Muse note and JR. Courts 6 AM–10 PM (club post, older). Grab ~30–60 min, book by 4 PM for a 5 PM start. Training day.",
-       "link": "https://www.google.com/maps/search/?api=1&query=Manila%20Polo%20Club%2C%2035%20McKinley%20Rd%2C%20Forbes%20Park%2C%20Makati"
+       "detail": "Private club. Arrange a guest visit with JR. Upscale setting. You preferred PCA’s courts.",
+       "meta": "About 9 km · 25–45 min by moto · Been",
+       "place": "mpc",
+       "from": "condo",
+       "photos": [
+        {
+         "url": "media/places/mpc.jpg",
+         "caption": "Covered tennis courts at Manila Polo Club"
+        },
+        {
+         "url": "media/places/mpc-grounds.jpg",
+         "caption": "Manila Polo Club from the grounds"
+        }
+       ]
       },
       {
-       "title": "Mendokoro Ramenba",
-       "detail": "The ramen JR said to try (\"Mendo Polo\"). No branch at the Polo Club; nearest are Salcedo (Makati) and Mitsukoshi BGC, both about 10 AM–11 PM. From JR. About ₱450–600 a bowl (not checked). Grab ~25–45 min.",
-       "link": "https://www.google.com/maps/search/?api=1&query=Mendokoro%20Ramenba%20Salcedo%2C%20G/F%20V%20Corporate%20Centre%2C%20Soliman%20St%2C%20Salcedo%20Village%2C%20Makati"
+       "title": "Alphaland · The City Club",
+       "detail": "JR is listed as head coach. Arrange access before heading over.",
+       "meta": "About 3 km · 15–25 min by moto",
+       "place": "alphaland",
+       "from": "condo",
+       "photos": [
+        {
+         "url": "media/places/alphaland.jpg",
+         "caption": "Alphaland Makati Place"
+        }
+       ]
       },
       {
-       "title": "Bikram Yoga Manila · Salcedo",
-       "detail": "Hot yoga, 90 min. JR's pick (the 7:45 class). Weekdays about 6 AM–10 PM (2023 listing); drop-in price not found, ClassPass lists it. Grab ~25–40 min. You cramp: skip it in the two days before Nov 30.",
-       "link": "https://www.google.com/maps/search/?api=1&query=Bikram%20Yoga%20Manila%2C%2015/F%2088%20Corporate%20Center%2C%20141%20Valero%20cor%20Sede%C3%B1o%20St%2C%20Salcedo%20Village%2C%20Makati"
+       "title": "Kerry Sports · BGC",
+       "detail": "JR is listed as a coach at the Shangri-La. Ask him about guest access.",
+       "meta": "About 10 km · 25–40 min by moto",
+       "place": "kerry",
+       "from": "condo",
+       "photos": [
+        {
+         "url": "media/places/kerry.jpg",
+         "caption": "Kerry Sports tennis court"
+        }
+       ]
       },
       {
-       "title": "F45 · BGC Stopover",
-       "detail": "HIIT circuits JR does (\"F45 ABC\"). Your Muse note: F45 functional movement. Unit R-308 Bonifacio Stopover; a second studio is in the Zuellig Building, Paseo de Roxas, Makati. Price not checked. Grab ~30–45 min. Not the week of qualifying.",
-       "link": "https://www.google.com/maps/search/?api=1&query=F45%20BGC%20Stopover%2C%20Unit%20R-308%20Bonifacio%20Stopover%2C%2031st%20St%20cor%202nd%20Ave%2C%20Rizal%20Drive%2C%20BGC%2C%20Taguig"
+       "title": "College of Saint Benilde",
+       "detail": "JR heads the varsity program. Ask which courts the team is using.",
+       "meta": "About 2.5 km to campus · 10–15 min by moto",
+       "link": "https://gptcatennis.org/johnrey-moreno",
+       "linkLabel": "JR’s coaching profile",
+       "place": "benilde",
+       "from": "condo"
       },
       {
-       "title": "Kerry Sports Manila · Shangri-La The Fort",
-       "detail": "JR coaches here (his GPTCA page). Two covered outdoor tennis courts, gym. Members and hotel guests; ask JR to bring you. Grab ~30–45 min.",
-       "link": "https://www.google.com/maps/search/?api=1&query=Kerry%20Sports%20Manila%2C%20Shangri-La%20The%20Fort%2C%2030th%20St%20cor%205th%20Ave%2C%20BGC%2C%20Taguig"
+       "title": "PCA · Paco",
+       "detail": "Covered clay. You already hit here with JR.",
+       "meta": "About 3 km · 10–20 min by moto · Been",
+       "place": "pca",
+       "from": "condo",
+       "photos": [
+        {
+         "url": "media/places/pca.jpg",
+         "caption": "Covered clay at PCA"
+        },
+        {
+         "url": "media/places/pca-front.jpg",
+         "caption": "PCA clubhouse"
+        }
+       ]
       },
       {
-       "title": "Alphaland Makati Place · City Club",
-       "detail": "JR is head coach here (GPTCA page). Ask JR about a hit. Grab ~25–40 min.",
-       "link": "https://www.google.com/maps/search/?api=1&query=Alphaland%20Makati%20Place%2C%207232%20Malugay%20St%20cor.%20Ayala%20Ave%20Extension%2C%20Makati"
+       "title": "Rockwell",
+       "detail": "JR mentioned Rockwell. His current coaching location there still needs confirmation.",
+       "meta": "About 9 km · 20–35 min by moto",
+       "place": "rockwell",
+       "from": "condo",
+       "photos": [
+        {
+         "url": "media/places/rockwell.jpg",
+         "caption": "Power Plant Mall atrium"
+        }
+       ]
+      }
+     ],
+     "category": "Tennis"
+    },
+    {
+     "region": "Manila",
+     "title": "Places to go",
+     "items": [
+      {
+       "title": "Malate Koreatown",
+       "detail": "Korean neighborhood around Remedios and Adriatico. Try samgyeopsal or Korean-Chinese jjajangmyeon. Allow ₱500–900 for K-BBQ.",
+       "meta": "About 0.5 km · 5–10 min walk",
+       "link": "https://www.foodpanda.ph/restaurant/v8hg/premier-the-samgyupsal-malate?opening_type=pickup",
+       "linkLabel": "Menu",
+       "place": "koreatown",
+       "photos": [
+        {
+         "url": "media/places/malate-remedios.jpg",
+         "caption": "Remedios Circle, Malate"
+        }
+       ]
       },
       {
-       "title": "Rockwell · Power Plant Mall",
-       "detail": "JR named Rockwell. Mall, food, the Rockwell Club (members). Just Show Up Club runs from Rockwell Sundays at 5 AM. Grab ~20–35 min. Rest day: yes.",
-       "link": "https://www.google.com/maps/search/?api=1&query=Rockwell%20%C2%B7%20Power%20Plant%20Mall%2C%20Rockwell%20Drive%20cor%20Estrella%20St%2C%20Rockwell%20Center%2C%20Makati"
+       "title": "Binondo · Chinatown",
+       "detail": "Chinese-Filipino food crawl. Split fresh lumpia at New Po-Heng, fried chicken at Sincerity and hopia from Eng Bee Tin. Budget ₱350–600.",
+       "meta": "About 4 km · 15–30 min by moto",
+       "place": "binondo",
+       "from": "condo",
+       "photos": [
+        {
+         "url": "media/places/binondo.jpg",
+         "caption": "Street life in Binondo"
+        },
+        {
+         "url": "media/places/binondo-church.jpg",
+         "caption": "Binondo Church, near the start of Ongpin"
+        },
+        {
+         "url": "media/places/binondo-hopia.jpg",
+         "caption": "Hopia from Eng Bee Tin"
+        }
+       ]
       },
       {
-       "title": "BGC · Bonifacio High Street",
-       "detail": "JR named BGC. Walkable blocks of shops and food; pair it with F45, Kerry Sports or Mendokoro BGC. Free. Grab ~30–50 min. Rest day: yes, late afternoon.",
-       "link": "https://www.google.com/maps/search/?api=1&query=Bonifacio%20High%20Street%2C%20Bonifacio%20High%20Street%2C%20BGC%2C%20Taguig"
+       "title": "Quiapo · Muslim Town",
+       "detail": "Go around the Golden Mosque for Filipino-Muslim food. Try pastil, rice topped with shredded meat. Allow ₱100–250 for snacks and a rice meal.",
+       "meta": "About 4.5 km · 15–30 min by moto",
+       "link": "https://www.tourism.gov.ph/asean2026/",
+       "linkLabel": "Food stops",
+       "place": "golden-mosque",
+       "from": "condo",
+       "photos": [
+        {
+         "url": "media/places/golden-mosque.jpg",
+         "caption": "Golden Mosque"
+        },
+        {
+         "url": "media/places/quiapo-mosque.jpg",
+         "caption": "Another view of the Golden Mosque"
+        },
+        {
+         "url": "media/places/quiapo-pastil.jpg",
+         "caption": "Pastil from Quiapo Muslim Town"
+        }
+       ]
       },
       {
-       "title": "Binondo · Chinatown food walk",
-       "detail": "JR: \"little Shanghai\", near your place. Binondo Church, then Ongpin St: Eng Bee Tin (628 Ongpin, 8 AM–8 PM), Sincerity fried chicken (Yuchengco St), New Po-Heng lumpia (Carvajal St, closed Sun). About ₱500 eats well. Go late morning to lunch. Grab ~20–40 min. Rest day: yes.",
-       "link": "https://www.google.com/maps/search/?api=1&query=Binondo%20Church%20%C2%B7%20Ongpin%20St%2C%20Binondo%20Church%2C%20Plaza%20Lorenzo%20Ruiz%2C%20Binondo%2C%20Manila"
-      },
-      {
-       "title": "Golden Mosque · Quiapo",
-       "detail": "Metro Manila's largest mosque (1976), center of Quiapo's Muslim town; halal food around it. You asked Muse where the Muslim community is. Free; dress modestly; avoid Friday midday prayers. ~15 min walk from Binondo, Grab ~20–35 min from Malate.",
-       "link": "https://www.google.com/maps/search/?api=1&query=Golden%20Mosque%2C%20Masjid%20Al-Dahab%2C%20Globo%20de%20Oro%20St%2C%20Quiapo%2C%20Manila"
+       "title": "BGC · High Street",
+       "detail": "Walkable modern Manila: public art, shopping and air-conditioned breaks. Go for the walk. Allow ₱500–1,000 if you sit down for dinner.",
+       "meta": "About 10 km · 25–40 min by moto",
+       "place": "bgc",
+       "from": "condo",
+       "photos": [
+        {
+         "url": "media/places/bgc.jpg",
+         "caption": "Bonifacio High Street"
+        },
+        {
+         "url": "media/places/bgc-walk.jpg",
+         "caption": "High Street Central promenade"
+        }
+       ]
       },
       {
        "title": "Intramuros · Fort Santiago",
-       "detail": "The walled Spanish city. Fort Santiago ₱75 (official site); hours vary by source, roughly 8–9 AM to 8 PM. Grab ~15 min. Rest day: yes, late afternoon into the bay sunset.",
-       "link": "https://www.google.com/maps/search/?api=1&query=Fort%20Santiago%20%C2%B7%20Intramuros%2C%20Fort%20Santiago%2C%20Santa%20Clara%20St%2C%20Intramuros%2C%20Manila"
-      },
-      {
-       "title": "Manila Bay sunset · Baywalk and Dolomite Beach",
-       "detail": "The bay is a walk from Malate along Roxas Blvd. Sunset about 5:25 PM. Dolomite Beach: 6 AM–6 PM, closed Thursdays, free (2024 report). No swimming. Rest day: yes, any evening.",
-       "link": "https://www.google.com/maps/search/?api=1&query=Manila%20Baywalk%20%C2%B7%20Dolomite%20Beach%2C%20Manila%20Baywalk%20Dolomite%20Beach%2C%20Roxas%20Blvd%2C%20Ermita%2C%20Manila"
+       "detail": "Go for the walls, old Manila and the river. Easy to pair with Baywalk.",
+       "meta": "About 3 km · 15–25 min by moto",
+       "place": "intramuros",
+       "from": "condo",
+       "photos": [
+        {
+         "url": "media/places/intramuros.jpg",
+         "caption": "Fort Santiago inside the walled city"
+        }
+       ]
       }
-     ]
+     ],
+     "category": "Explore"
     },
     {
-     "title": "Beach, bay, falls · day trips",
+     "region": "Manila",
+     "title": "Been",
      "items": [
       {
-       "title": "Batangas · Fortune Island, Nasugbu",
-       "detail": "JR: Batangas, nearby beach. Bus from DLTB Buendia (near LRT Gil Puyat) 3–4 h to Nasugbu, ₱160–300; then ~1 h boat. Island day tour ₱350. Leave by 5 AM. After qualifying.",
-       "link": "https://www.google.com/maps/search/?api=1&query=Fortune%20Island%20%C2%B7%20Nasugbu%2C%20Fortune%20Island%2C%20Nasugbu%2C%20Batangas"
+       "title": "The Aristocrat · Malate",
+       "detail": "Good, close and open late. Easy dinner near Alpha Grandview.",
+       "meta": "About 150 m · 2–3 min walk",
+       "place": "aristocrat",
+       "photos": [
+        {
+         "url": "media/places/aristocrat.jpg",
+         "caption": "Aristocrat chicken barbecue"
+        },
+        {
+         "url": "media/places/aristocrat-front.jpg",
+         "caption": "The original Roxas Boulevard branch"
+        }
+       ]
       },
       {
-       "title": "Batangas · Anilao snorkeling",
-       "detail": "Batangas reef, snorkel or dive; Nov–May is the clear season. 2–3 h by car, or bus to Batangas City plus ~45 min jeep. Tours pick up 5–6 AM. After qualifying.",
-       "link": "https://www.google.com/maps/search/?api=1&query=Anilao%2C%20Anilao%20Port%2C%20Mabini%2C%20Batangas"
+       "title": "Manila Polo Club",
+       "detail": "Upscale club. You liked PCA’s courts better.",
+       "place": "mpc",
+       "photos": [
+        {
+         "url": "media/places/mpc.jpg",
+         "caption": "Covered tennis courts at Manila Polo Club"
+        }
+       ]
       },
       {
-       "title": "Subic Bay · beach and forest",
-       "detail": "JR: Subic beach, good forest. All Hands Beach (gentle slope, snorkeling) and the Pamulaklakin forest trail. JR's first coaching job was the Subic International Tennis Center. 2–4 h by car. Best as an overnight after qualifying.",
-       "link": "https://www.google.com/maps/search/?api=1&query=Subic%20Bay%20%C2%B7%20All%20Hands%20Beach%2C%20All%20Hands%20Beach%2C%20Subic%20Bay%20Freeport%20Zone%2C%20Zambales"
+       "title": "Mendokoro Ramenba",
+       "detail": "You had tsukemen, the dipping ramen. Pretty good. Multiple branches.",
+       "link": "https://mendokororamenba.com/",
+       "linkLabel": "Branches & menu",
+       "photos": [
+        {
+         "url": "media/places/mendokoro-bgc.jpg",
+         "caption": "Mendokoro’s BGC branch"
+        }
+       ]
+      },
+      {
+       "title": "Bikram Yoga Manila",
+       "detail": "You went to hot yoga. Keep it easy near match days.",
+       "place": "bikram",
+       "photos": [
+        {
+         "url": "media/places/bikram.jpg",
+         "caption": "Bikram Yoga Manila studio"
+        }
+       ]
+      },
+      {
+       "title": "F45 · BGC Stopover",
+       "detail": "It’s a coached group workout. Attendance is unconfirmed.",
+       "link": "https://f45training.com/ph/studio/bgcstopover/",
+       "linkLabel": "Class schedule",
+       "place": "f45-bgc",
+       "photos": [
+        {
+         "url": "media/places/f45-bgc.jpg",
+         "caption": "BGC Stopover studio"
+        }
+       ]
+      }
+     ],
+     "category": "Explore"
+    },
+    {
+     "region": "Manila",
+     "title": "Beach, bay & falls",
+     "items": [
+      {
+       "title": "Manila Baywalk",
+       "detail": "Closest sunset. Walk the waterfront. Dolomite Beach is for looking, with no swim access.",
+       "meta": "About 1.5 km · 15–25 min walk",
+       "place": "baywalk",
+       "photos": [
+        {
+         "url": "media/places/baywalk.jpg",
+         "caption": "Manila Bay at sunset"
+        },
+        {
+         "url": "media/places/bay-day.jpg",
+         "caption": "Dolomite Beach in daylight"
+        }
+       ]
+      },
+      {
+       "title": "Anilao · Batangas",
+       "detail": "Go for reef snorkeling or a dive. Save it for a full day away from tennis.",
+       "meta": "About 120 km · 2½–3½ hr by car",
+       "place": "anilao",
+       "photos": [
+        {
+         "url": "media/places/anilao.jpg",
+         "caption": "Anilao reef underwater"
+        },
+        {
+         "url": "media/places/anilao-sunset.jpg",
+         "caption": "Sunset off Anilao"
+        }
+       ]
+      },
+      {
+       "title": "Fortune Island · Nasugbu",
+       "detail": "Boat trip for the cliffs and hilltop ruins. Confirm crossings and weather.",
+       "meta": "About 90 km to Nasugbu · 2½–4 hr by car + boat",
+       "place": "nasugbu",
+       "photos": [
+        {
+         "url": "media/places/nasugbu.jpg",
+         "caption": "Hilltop ruins on Fortune Island"
+        },
+        {
+         "url": "media/places/fortune-island-water.jpg",
+         "caption": "Fortune Island from the water"
+        }
+       ]
+      },
+      {
+       "title": "Subic Bay",
+       "detail": "Beach and forest in one trip. Good overnight if you want both.",
+       "meta": "About 130 km · 2½–4 hr by car",
+       "place": "subic",
+       "photos": [
+        {
+         "url": "media/places/subic.jpg",
+         "caption": "Subic Bay beachfront"
+        },
+        {
+         "url": "media/places/subic-shore.jpg",
+         "caption": "Another stretch of Subic shoreline"
+        }
+       ]
       },
       {
        "title": "Hinulugang Taktak · Antipolo",
-       "detail": "JR: falls near Manila. The closest one, a park waterfall (viewing, not swimming). Fee ₱30–100 or a donation; hours conflict (Tue–Sun 7 AM–4 PM in one source). Grab ~1–1.5 h. Possible on a rest day morning.",
-       "link": "https://www.google.com/maps/search/?api=1&query=Hinulugang%20Taktak%2C%20Hinulugang%20Taktak%2C%20Taktak%20Rd%2C%20Antipolo%2C%20Rizal"
+       "detail": "The easier waterfall trip. Walk the park and see the falls.",
+       "meta": "About 26 km · 50–90 min by car",
+       "place": "antipolo",
+       "photos": [
+        {
+         "url": "media/places/antipolo.jpg",
+         "caption": "Hinulugang Taktak waterfall"
+        },
+        {
+         "url": "media/places/taktak-path.jpg",
+         "caption": "River below the falls"
+        }
+       ]
       },
       {
        "title": "Daranak Falls · Tanay",
-       "detail": "JR: falls near Manila. Swimmable falls; Batlag Falls next door is ₱100 more. Daily 8 AM–5 PM; fee ₱50–180 (sources conflict). ~2 h by car. After qualifying.",
-       "link": "https://www.google.com/maps/search/?api=1&query=Daranak%20Falls%2C%20Daranak%20Falls%2C%20Tanay%2C%20Rizal"
+       "detail": "Natural pool and a longer drive. Ask about swimming and rain closures.",
+       "meta": "About 55 km · 1½–2½ hr by car",
+       "place": "daranak",
+       "photos": [
+        {
+         "url": "media/places/daranak.jpg",
+         "caption": "The falls in Tanay"
+        },
+        {
+         "url": "media/places/daranak-pool.jpg",
+         "caption": "Daranak’s pool and cascade"
+        }
+       ]
       },
       {
-       "title": "Puerto Galera · overnight",
-       "detail": "Real beach town, Mindoro. Bus to Batangas Pier (~₱260) then 45–90 min ferry; 4–5 h total. Overnight only. After the tournament.",
-       "link": "https://www.google.com/maps/search/?api=1&query=Puerto%20Galera%2C%20Balatero%20Pier%2C%20Puerto%20Galera%2C%20Oriental%20Mindoro"
+       "title": "Puerto Galera · White Beach",
+       "detail": "Sandy beach and a ferry crossing. Make it an overnight.",
+       "meta": "About 105 km to Batangas Pier · 4–5 hr total",
+       "place": "puerto-galera",
+       "photos": [
+        {
+         "url": "media/places/puerto-galera.jpg",
+         "caption": "White Beach from shore"
+        },
+        {
+         "url": "media/places/puerto-galera-sea.jpg",
+         "caption": "White Beach from the water"
+        }
+       ]
       }
-     ]
+     ],
+     "category": "Explore"
     },
     {
-     "title": "Set up paying · do these once",
-     "items": [
-      {
-       "title": "1. Verify GCash with your passport (5 min, approved within 24 h)",
-       "detail": "Why it failed: GCash says “You must be a Fully Verified user to send money.” Until then you can only scan a merchant's QR Ph code. In GCash: Profile → Verify Now → scan your passport → take a selfie. You get an SMS within 24 hours. This unlocks Send Money to people (Adelmo, Mark) and bank cash-in.",
-       "link": "https://help.gcash.com/hc/en-us/articles/53418595702553"
-      },
-      {
-       "title": "2. Make sure your card allows online and international payments",
-       "detail": "GCash charges your linked card directly. Open your card's app and turn on online/e-commerce and international payments; turn off any travel lock. Then GCash → Profile → My Linked Accounts → Credit/Debit Cards → set it as default.",
-       "link": "https://help.gcash.com/hc/en-us/articles/53418023303193"
-      },
-      {
-       "title": "3. Get pesos: change US cash at a money changer",
-       "detail": "Your cheapest cash with no debit card. Go with Adelmo to a mall money changer (Czarina or Sanry's in Makati). Bring crisp, unfolded new-design $100 bills and your passport. Count the pesos at the counter. Ask for ₱20, ₱50 and ₱100 notes. Change one or two $100s at a time (about ₱6,300 each). Don't pull cash from an ATM with a credit card: that's a cash advance, about 6–8% plus interest from day one."
-      },
-      {
-       "title": "4. In person: tap card or Apple Pay where there's a contactless terminal",
-       "detail": "Works at malls, chains and nicer restaurants. At a restaurant, ask “Card or Apple Pay okay?” before ordering. Jeepneys, tricycles, small stores, markets, club courts and tips are cash only. Grab rides: in the Philippines Grab charges rides to your GrabPay balance, and your US Visa can't top that up (Grab: “This foreign card isn't supported for top-ups”). Pay rides in cash, or load GrabPay at 7-Eleven or from GCash."
-      },
-      {
-       "title": "5. Online: pay with your credit card",
-       "detail": "Card works for websites and app stores (not Grab rides, see step 4). After step 1, you can also pay any QR Ph code from GCash."
-      },
-      {
-       "title": "6. Paying people back (Adelmo, Mark ₱900, PCA fees)",
-       "detail": "Simplest: pesos in cash from step 3. After GCash is verified: Send Money to their GCash. From the US side: Wise from your bank account (about $3) to their GCash or bank. PCA fees are paid in cash at the desk in Paco: singles ₱1,200, doubles ₱900 per player.",
-       "link": "https://wise.com/us/send-money/send-money-to-philippines"
-      },
-      {
-       "title": "7. Water: buy bottled",
-       "detail": "Drink bottled or filtered water only. Buy big bottles at 7-Eleven or a supermarket with pesos or card; take 2 L+ to the courts."
-      },
-      {
-       "title": "GCash runs out after 30 days",
-       "detail": "Your GTourist account switches off 30 days after activation. Spend or cash out any balance before you leave."
-      }
-     ]
-    },
-    {
-     "title": "In Manila now · Sat Nov 21",
-     "items": [
-      {
-       "title": "PCA singles · confirm the entry by email",
-       "detail": "Adelmo says he signed you up for singles, and you emailed PCA saying you'll play. Watch for their reply: the entry deadline is today, Sat Nov 21. Check the name, “Sy, Jerry” on the list, and whether there's a fee. If there's no reply, ask Alex or Adelmo to check in person."
-      },
-      {
-       "title": "Mark Ivan Malinis · doubles partner, fee",
-       "detail": "He registered for doubles naming you and asked you to cover his fee; you said yes. PCA doubles is ₱900 per player (about $14), not $30–50. Pay him in cash when you meet, or by GCash after step 1. Nobody found results under his name: ask Adelmo or the PCA desk how he plays, and hit with him once before the event."
-      },
-      {
-       "title": "Ask Adelmo if Tom can come over tomorrow",
-       "detail": "Sun Nov 22."
-      },
-      {
-       "title": "Daily reset",
-       "detail": "Keep only useful things in the bag. Clean the room every day: it's the habit that earns the futon. Free up iPhone storage: Settings → General → iPhone Storage. Offload unused apps and delete big videos once they're backed up."
-      },
-      {
-       "title": "Japan longer? Plan, not hope",
-       "detail": "Before committing to a longer stay, write down weekly tennis, a budget (capsule is fine) and what has to have happened by a set date. A full plan is being written."
-      }
-     ]
-    },
-    {
-     "title": "Before you fly · Fri Nov 20",
-     "items": [
-      {
-       "title": "No visa needed · just eTravel (free)",
-       "detail": "US passport: 30 days visa-free in the Philippines, 90 days in Japan. Fill in eTravel on the official site only (free; other sites charge for the same form) and save the QR to Photos. The 72-hour window for PR123 is open now. No VPN needed in either country.",
-       "link": "https://etravel.gov.ph/"
-      },
-      {
-       "title": "eSIM for data · install tonight on Wi-Fi",
-       "detail": "One eSIM covers data. In the Airalo app pick Asia (Asialink: Philippines + Japan) or Philippines only if you skip Japan; 10 GB is plenty. Install it on Wi-Fi before you leave and switch it on when you land. Keep your US line on for texts so codes still reach you (GCash, banks), with data roaming off on that line.",
-       "link": "https://www.airalo.com/"
-      },
-      {
-       "title": "GCash · sign up for GTourist",
-       "detail": "GCash for US visitors: sign up in the GCash app with your +1 number, a passport scan and a selfie (roaming on for the text code). It switches on once you land in the Philippines and lasts 30 days, through your whole stay. Top it up with your card, then pay by scanning QR codes like locals do.",
-       "link": "https://help.gcash.com/hc/articles/53417886058521-How-to-create-a-GTourist-account-on-GCash"
-      },
-      {
-       "title": "Grab · rides from the airport and around Manila",
-       "detail": "Install Grab for getting around Manila and Cebu. Fixed price shown upfront; no haggling. Pay cash to the driver (your US card can't load GrabPay).",
-       "link": "https://www.grab.com/ph/"
-      },
-      {
-       "title": "Japan only · Visit Japan Web and Suica",
-       "detail": "If you go to Tokyo: fill in Visit Japan Web before the flight for the arrival QR (optional, faster at the airport). Add Suica in Apple Wallet for trains and convenience stores (see Money & payments).",
-       "link": "https://www.vjw.digital.go.jp/"
-      }
-     ]
-    },
-    {
-     "title": "Do now · before Sat Nov 21",
-     "items": [
-      {
-       "title": "PCA entry: done (Alex signed you up)",
-       "detail": "Alex, Nov 19 7:48 PM: “You are signed up.” No fee to pay. No message needed.",
-       "link": "https://www.facebook.com/100057105145569/posts/posting-list-of-open-entries-as-of-november-18-2026reminder-also-that-the-deadli/1708210611092427/"
-      },
-      {
-       "title": "Decide Tokyo dates",
-       "detail": "Contacts have heard ~Dec 1 (Shingo), ~Dec 3 (Jinji, Tom); the app says ~Dec 5 or Dec 14. Depends on PCA (main draw Dec 5–13) and landing LAX by Dec 6–7. Diadora Cup (Dec 15) only fits the late option. TTI, Jinji, Ryoto, Shingo and new Tokyo contacts wait on this."
-      }
-     ]
-    },
-    {
-     "title": "Money & payments · from Muse, Nov 19",
-     "items": [
-      {
-       "title": "Philippines · carry pesos",
-       "detail": "Cash runs street food, small eateries, tricycles, tips and club courts. Apple Pay (live in PH since Aug 4, 2026) works at contactless terminals in malls, chains and hotels. ATMs charge foreign cards about ₱250 a withdrawal, so pull about ₱10,000 at a time and keep small bills. Grab can't take your US card in PH (checked Nov 23): pay cash or load GrabPay at 7-Eleven.",
-       "link": "https://mb.com.ph/2026/08/04/no-more-cards-needed-where-you-can-use-apple-pay-in-the-philippines-starting-today"
-      },
-      {
-       "title": "Tokyo · Suica in Apple Wallet + ¥10,000–20,000 cash",
-       "detail": "Wallet → + → Transit Card → Suica, top up with Apple Pay. No ID needed. It covers trains and convenience stores. Keep cash for small ramen counters, ticket-machine shops and izakayas; 7-Eleven ATMs take US cards. If one card fails to top up, try another."
-      },
-      {
-       "title": "Sending money to people in PH · Wise",
-       "detail": "Wise sends dollars to pesos into a Philippine bank account or a GCash wallet. Use it for the PCA fee or paying back Alex or Adelmo."
-      },
-      {
-       "title": "Loose ends before you fly",
-       "detail": "Anthropic credit expires Nov 25: Muse’s balance check stopped at the platform.claude.com sign-in, so check it yourself. Backblaze: Muse found no receipt or invoice in your email; check the account page on your iPhone. Meshy: cancelled, Premium ends Nov 20 with no further charge, 17 credits stay. Venmo to Lawrence: done. CatPrint proofs: no update yet."
-      }
-     ]
-    },
-    {
+     "region": "Manila",
      "title": "Replies owed",
      "items": [
       {
-       "title": "Fix Tokyo dates once, then answer everyone",
-       "detail": "Your DMs tell Tokyo coaches “Dec 3 to 8, staying in Shinjuku”, but PCA qualifying is Nov 30 – Dec 4, Silvio is in Cebu Dec 6, Tokyo Tarzan is Dec 5 and Ehara and Ryusei both picked Dec 8. Pick the real dates; then Ehara, Ryusei, Hien and Silvio can all be answered in one pass."
+       "title": "Manila tennis",
+       "detail": "Pick a time with JB if you still want the hit. Singles is the plan; doubles is optional.",
+       "link": "https://www.instagram.com/jbcuarto_/",
+       "linkLabel": "JB’s profile"
       },
       {
-       "title": "Hien Pham · dates and lesson count",
-       "detail": "Instagram, Nov 22. Asked your Tokyo dates, area and how many lessons; will book a venue near where you stay once you say.",
-       "link": "https://www.instagram.com/hienpham_/"
+       "title": "Cebu & Japan",
+       "detail": "Set dates before arranging a hit, lesson or Cebu meetup."
+      }
+     ],
+     "category": "Notes"
+    },
+    {
+     "region": "Manila",
+     "title": "Listen & read",
+     "items": [
+      {
+       "title": "Tipsy Tennis · AJ Lim",
+       "detail": "Adam Borak hosts. At 24:25, AJ explains how the heat at PCA affected his Davis Cup match.",
+       "link": "https://jerryshi042003.github.io/trip/listen.html?id=2L_H33TYv6c",
+       "linkLabel": "Listen or read"
       },
       {
-       "title": "JB Cuarto · hit at PCA this week",
-       "detail": "Instagram, Nov 22 12:41 PM: “lets play in pca this week whenever ur free!” Give him a day and time.",
-       "link": "https://www.instagram.com/jbcuarto_/"
+       "title": "Tipsy Tennis · Jed Olivarez",
+       "detail": "At 4:13, Jed describes his Parañaque training base and who he hits with.",
+       "link": "https://jerryshi042003.github.io/trip/listen.html?id=b-jB18H5Qvc",
+       "linkLabel": "Listen or read"
       },
       {
-       "title": "Ehara · decide on paid lesson",
-       "detail": "Instagram. He offered Dec 8 afternoon and asked “Could you pay for lesson fee?” (price not said). Your call: ask the price, or pass."
+       "title": "Noy Seno · Cebu tennis",
+       "detail": "Cebu hitting lead and former U.S. college player.",
+       "link": "https://jerryshi042003.github.io/trip/listen.html?id=DfjESycCHrc",
+       "linkLabel": "Watch or read"
       },
       {
-       "title": "Ryusei Kato · decide on paid lesson",
-       "detail": "Instagram. He offered Dec 8 morning: ¥10,000 for 1 hour or ¥20,000 for 2 hours, plus court and transport. Your call."
+       "title": "Chad Connor Cuizon",
+       "detail": "Cebu player and coach at Carajay. Adam Borak is a route for an introduction.",
+       "link": "https://www.instagram.com/chadconnorcuizon/",
+       "linkLabel": "Player profile"
+      }
+     ],
+     "category": "Notes"
+    },
+    {
+     "region": "Manila",
+     "title": "David Choe · Philippines",
+     "items": [
+      {
+       "title": "Quiapo Church",
+       "detail": "Choe’s palm-reader scene. Worth pairing with the Golden Mosque and a meal in Quiapo.",
+       "meta": "About 4 km · 15–30 min by moto",
+       "link": "https://www.youtube.com/watch?v=D-oSpkzPIoQ&t=296s",
+       "linkLabel": "Watch at 4:56",
+       "place": "quiapo-church",
+       "from": "condo",
+       "photos": [
+        {
+         "url": "https://i.ytimg.com/vi/D-oSpkzPIoQ/hqdefault.jpg",
+         "caption": "David Choe’s Thumbs Up episode in the Philippines"
+        }
+       ]
       },
       {
-       "title": "Mark Ivan Malinis · doubles partner wants fee covered",
-       "detail": "Messenger. “Dont have doubles partner yet. Sure, Will you cover my registration fee?” Your call before replying."
+       "title": "Greenhills",
+       "detail": "Go if you want the toy stalls. The cut-price Pokémon packs in the episode were bootlegs.",
+       "meta": "About 12 km · 30–50 min by moto",
+       "link": "https://www.youtube.com/watch?v=D-oSpkzPIoQ&t=488s",
+       "linkLabel": "Watch at 8:08",
+       "place": "greenhills",
+       "from": "condo"
       },
       {
-       "title": "Coach Waldo · tentative (Sun or Mon)",
-       "detail": "Told him Nov 20 you’re not sure about Mon 6am and not to hold the court; you’ll confirm Sunday or Monday once you land. His Monday option: 6–8am, Veterans Memorial Tennis Court, Quezon City."
+       "title": "Fruit & chicharon",
+       "detail": "Choe tries rambutan with pork cracklings. Easy to try at a market. His exact stall is unidentified.",
+       "link": "https://www.youtube.com/watch?v=D-oSpkzPIoQ&t=197s",
+       "linkLabel": "Watch at 3:17"
       },
       {
-       "title": "John Rey Moreno (JR) · Sunday or Monday after 9am",
-       "detail": "WhatsApp sent (his number is in Joseph’s IG group). He said “See you soon.” WhatsApp him when you land."
+       "title": "Kanin Baboy · Siargao",
+       "detail": "Choe’s pick for roast pig. Visit if you’re already in General Luna. Tourism Road, Poblacion V.",
+       "link": "https://www.youtube.com/watch?v=D-oSpkzPIoQ&t=1517s",
+       "linkLabel": "Watch at 25:17",
+       "photos": [
+        {
+         "url": "media/places/cloud9.jpg",
+         "caption": "Cloud 9, near General Luna"
+        },
+        {
+         "url": "media/places/cebu-lechon.jpg",
+         "caption": "Lechon · dish shown here from Cebu"
+        }
+       ]
       },
       {
-       "title": "Tokyo Tarzan · trail run Dec 5, 9:30",
-       "detail": "Meet at Takaosanguchi station."
+       "title": "Bebie’s Barbecue · Siargao",
+       "detail": "Tourism Road, General Luna. Go for the local grill if you like sweet sauce.",
+       "link": "https://www.youtube.com/watch?v=D-oSpkzPIoQ&t=1566s",
+       "linkLabel": "Watch at 26:06"
       },
       {
-       "title": "Sent Nov 19–20 · Kenny Watabe · send your UTR",
-       "detail": "Replied Nov 20 JST (email): knows a couple of players practicing in your dates and asked for your UTR or ATP ranking.",
-       "link": "https://mail.google.com/mail/u/0/#inbox/1a1f76c909bf6253"
+       "title": "Mrs. Krispy · Siargao",
+       "detail": "Choe loved the fried chicken. The exact shop address is still unverified.",
+       "link": "https://www.youtube.com/watch?v=D-oSpkzPIoQ&t=1774s",
+       "linkLabel": "Watch at 29:34"
+      }
+     ],
+     "category": "Explore"
+    },
+    {
+     "region": "Manila",
+     "title": "Notes",
+     "items": [
+      {
+       "title": "Restroom kit",
+       "detail": "Carry pocket tissues. Spray gently into the bowl, pat dry, then follow the stall sign for where paper goes. Check the stall for paper before you sit.",
+       "link": "https://health.clevelandclinic.org/is-using-a-bidet-healthy",
+       "linkLabel": "Bidet basics"
+      }
+     ],
+     "category": "Notes"
+    },
+    {
+     "region": "Cebu",
+     "title": "Only if Cebu happens",
+     "items": [
+      {
+       "title": "Choose after PCA",
+       "detail": "Cebu needs its own flight and a clear return window. Go if you can lock in a hit and still make the next flight.",
+       "meta": "Optional · dates open"
       },
       {
-       "title": "Sent Nov 19–20 · Whismark · Valle Verde hit",
-       "detail": "He offered a hit at Valle Verde (IG, Nov 18).",
-       "link": "https://www.instagram.com/whismaaark/"
+       "title": "Asmara · Banilad",
+       "detail": "Start here for red clay and a scheduled session. Book a court or ask the club for match-play.",
+       "meta": "About 35–70 min from Mactan airport by car",
+       "link": "https://asmara-tennis-association.rezerv.co/",
+       "linkLabel": "Book tennis",
+       "place": "asmara",
+       "photos": [
+        {
+         "url": "media/places/asmara.jpg",
+         "caption": "Asmara tennis club"
+        }
+       ]
       },
       {
-       "title": "Sent Nov 19–20 · Migi · when are qualies",
-       "detail": "She asked when PCA qualies are (IG, Nov 18).",
-       "link": "https://www.instagram.com/anotherdayanothercourt/"
+       "title": "Cebu hitting",
+       "detail": "Noy Seno and Chad Cuizon are local leads. Confirm the court and time before flying.",
+       "link": "https://asmaraurbanresort.com/facilities/",
+       "linkLabel": "Asmara facilities"
       },
       {
-       "title": "Marvin · Asmara and tennisnomad (optional)",
-       "detail": "Instagram, Nov 22. Asked your plan this week; after you said Manila, he suggested visiting Asmara (Cebu) and meeting tennisnomad. Reply only if you want the Cebu detour.",
-       "link": "https://www.instagram.com/racketoncourt/"
-      },
-      {
-       "title": "Silvio · Cebu Dec 6?",
-       "detail": "Instagram, Nov 22 8:59 PM (unread until Nov 23 audit). He asked when you come to Cebu, then said “We r there December 6th”. Decide Cebu vs Tokyo first (see the dates item).",
-       "link": "https://www.instagram.com/direct/inbox/"
-      },
-      {
-       "title": "Sent Nov 19–20 · Skip Tan · reply to “hey bro”",
-       "link": "https://www.instagram.com/skip.tan/",
-       "detail": "Open play and reach, rec level."
-      },
-      {
-       "title": "Sent Nov 19–20 · Michael Cumagun · optional thanks",
-       "detail": "He replied Nov 20 PHT: “Ok. I thought you were here already. Good luck with PCA Open.” No reply needed."
-      },
-      {
-       "title": "Sent Nov 19–20 · Tennis United · correct Cebu to Manila",
-       "detail": "You told them “Cebu” but they’re in Manila. They offered a hit with a ~9 UTR coach.",
-       "link": "https://www.instagram.com/tennisunitedacademy/"
-      },
-      {
-       "title": "Tokyo Tennis International · skip for now (fallback)",
-       "detail": "Not worth ¥16,000/h (≈ $100/h) for now. Fallback only if you have nobody to hit with in Tokyo. Lilian Breut, born Nov 22, 1996 (29, turns 30 Nov 22), ATP career high 1321 (2022), is the only verified high-level pro. Optional reply asks for Lilian or Jelassi without booking.",
-       "draft": "Filip様、Kazu様\n\nご返信ありがとうございます。日程はまだ調整中です。プライベートの場合、Lilianさんか Jelassiさんとの試合形式の練習は可能でしょうか。\n\nHi Filip and Kazu, thanks! My dates are still moving. If I book a private, could it be match-play hitting with Lilian or Jelassi? I’ll confirm a date once my plans are set.\n\nThanks,\nJerry"
-      },
-      {
-       "title": "Sent Nov 19–20 · Lilian Breut · direct DM (skip the club)",
-       "detail": "Ex-ATP (career high 1321), 29, Tokyo-based, coaches at TTI. His coaching IG says “DM COACHING”. Private personal IG: @lilian.breut.",
-       "link": "https://www.instagram.com/tenniscoachlilian/"
-      },
-      {
-       "title": "Sent Nov 19–20 · Hermont · PH hitters, Futures coach",
-       "detail": "Your Nov 19 email to his UCI address bounced (user unknown). Use IG @hq_legatsby. Sac State alum, UC Irvine women's tennis assistant coach.",
-       "link": "https://ucirvinesports.com/sports/womens-tennis/roster/coaches/hermont-legaspi/1213"
-      },
-      {
-       "title": "Sent Nov 19–20 · Johnny Arcilla · acknowledge",
-       "detail": "He said “Im not playing pca.. sayang” (Messenger, Nov 18)."
-      },
-      {
-       "title": "Sent Nov 19–20 · Asmara (Cebu) · optional thanks",
-       "detail": "They welcomed you and pointed to online booking (Messenger, Nov 18).",
-       "link": "https://asmara-tennis-association.rezerv.co/"
-      },
-      {
-       "title": "Sent Nov 19–20 · Joseph Lizardo · follow up, academy intros",
-       "detail": "He said to follow up after the Jack Kramer match (Nov 18) and that he knows academy people in Manila.",
-       "link": "https://www.instagram.com/lizardo_jr_development_/"
-      },
-      {
-       "title": "Bob Kawaratani · ask to add more to the post",
-       "detail": "He posted your UCLA Japan alumni note Nov 20. This asks him to add LA Galaxy, Torrance and your AI work, and to share it more. Check the AI line says what you actually do before sending.",
-       "link": "https://mail.google.com/mail/u/0/#inbox/1a1f7eb047a9d4dd",
-       "draft": "ロバートさん、投稿ありがとうございます！\n\nHi Bob, thank you so much for posting! If it helps, a bit more about me: I work at LA Galaxy in Carson and live in Torrance. I'm mainly in charge of AI there, building AI tools and agents that connect our data and help staff get answers in plain English. I've always wanted to spend real time in Japan, so I'd love to meet alumni in tech, AI, sports, or anyone who plays tennis. Would you mind adding that, and sharing it with anyone you think would be interested?\n\nThanks again,\nJerry"
+       "title": "Cebu lechon",
+       "detail": "Crisp skin and meat seasoned on the spit. Try it in the city if tennis is the point. Carcar is a separate market trip.",
+       "meta": "Carcar · about 40 km south of central Cebu City",
+       "place": "carcar",
+       "photos": [
+        {
+         "url": "media/places/cebu-lechon.jpg",
+         "caption": "Crisp-skinned lechon in Carcar"
+        }
+       ]
       }
      ]
     },
     {
-     "title": "Give back · Manila",
+     "region": "Japan",
+     "title": "Before Japan",
      "items": [
       {
-       "title": "Pack old rackets, strings, grips, balls to donate",
-       "detail": "Before you fly Fri. Alex runs Friends of Philippine Tennis donations; Joseph coaches juniors. Adam Borak did the same in Cebu and it opened doors.",
-       "link": "https://jerryshi042003.github.io/trip/listen.html?id=uLqDrzi2r28"
+       "title": "Put a flight out on the plan",
+       "detail": "Keep the stay short if needed. Confirm PCA dates, then hold a real onward or return reservation before flying.",
+       "meta": "Travel dates open",
+       "link": "https://www.seattle.us.emb-japan.go.jp/itpr_ja/visa_faq.html",
+       "linkLabel": "Onward-ticket guidance"
       },
       {
-       "title": "Adelmo · pay your share",
-       "detail": "Don't mooch: offer cash for the room and groceries, treat dinners, and hit with him. He plays (UTP Men's A champion).",
-       "draft": "Hi Dey, thanks so much for having me! I want to pay my share for the room and food while I'm there, just tell me what's fair. And I'd love to hit with you if you're down."
+       "title": "Check the passport you’ll use",
+       "detail": "Ordinary U.S. passport: visa-free for tourism up to 90 days. A mainland Chinese passport generally needs a visa. eVISA eligibility also depends on residence.",
+       "link": "https://www.mofa.go.jp/j_info/visit/visa/visaonline.html",
+       "linkLabel": "Japan eVISA eligibility"
       },
       {
-       "title": "Joseph · offer to help coach his juniors",
-       "detail": "He runs Lizardo Jr Development. Offering free hitting/coaching for his juniors is the strongest way to earn court time and intros.",
-       "link": "https://www.instagram.com/lizardo_jr_development_/",
-       "draft": "Coach, while I'm in Manila I'd love to give back. Happy to help with your juniors for free, hitting, feeding, drills, whatever helps. Just tell me when and where."
+       "title": "Visit Japan Web",
+       "detail": "Optional online immigration and customs setup. Use your confirmed Japan address and flight.",
+       "link": "https://www.digital.go.jp/en/policies/visit_japan_web",
+       "linkLabel": "Official setup"
       }
-     ]
+     ],
+     "category": "Before flying"
     },
     {
-     "title": "No reply yet · second route",
+     "region": "Japan",
+     "title": "Tennis in Tokyo",
      "items": [
       {
-       "title": "Sent Nov 19–20 · PJ Tierro · email (he coaches at Cal State Fullerton)",
-       "detail": "FB message Nov 17, no reply. Work email is on his Fullerton staff page. May be in Manila now for PCA doubles (unverified).",
-       "link": "https://fullertontitans.com/sports/womens-tennis/roster/coaches/patrick-tierro/849"
+       "title": "UTR singles",
+       "detail": "Yokohama’s verified Nov 16–20 events are over. No public adult singles listing found for early December near Tokyo.",
+       "link": "https://app.utrsports.net/club/12084",
+       "linkLabel": "Asia-Pacific UTR calendar"
       },
       {
-       "title": "Tennis United · use the IG reply above",
-       "detail": "They did reply on IG (coaches ~9 UTR, offered a hit). Reply there with your number instead of asking the academy.",
-       "link": "https://tennisunitedacademy.com"
+       "title": "Ariake Tennis Forest",
+       "detail": "Public hard courts. Reserve ahead.",
+       "link": "https://www.sports-tokyo-info.metro.tokyo.lg.jp/english/tokyoSportsFacilities/facility/15.html",
+       "linkLabel": "Courts & access",
+       "place": "ariake",
+       "photos": [
+        {
+         "url": "media/places/ariake.jpg",
+         "caption": "Ariake Tennis Forest entrance"
+        }
+       ]
       },
       {
-       "title": "Sent Nov 19–20 · John Rey Moreno · email (IG never delivered)",
-       "detail": "Benilde head coach. Email on his GPTCA coach profile.",
-       "link": "https://gptcatennis.org/johnrey-moreno"
+       "title": "Diadora Cup · Ariake",
+       "detail": "Men’s singles on hard · ¥4,000. UTR rating is unverified.",
+       "meta": "Tue Dec 15 · 8:30 am · if still in Tokyo",
+       "link": "https://www.tennisbear.net/event/1724298/info",
+       "linkLabel": "Entry and schedule",
+       "place": "ariake"
       },
       {
-       "title": "Sent Nov 19–20 · Coach Czar · email or WhatsApp",
-       "detail": "IG unanswered. She publishes email and WhatsApp for coaching on this page.",
-       "link": "https://sportsprosconnect.com/?p=14121"
+       "title": "Shinagawa · Shi Shi Tennis Academy",
+       "detail": "English private lessons by request. Ask for competitive match-play and confirm a court.",
+       "link": "https://shishitennis.com/en/lesson/",
+       "linkLabel": "Lesson details"
       },
       {
-       "title": "Sent Nov 19–20 · Gentry Open · email",
-       "detail": "FB unanswered. Organizer contact page.",
-       "link": "https://gentry.ph/pages/contact"
-      },
-      {
-       "title": "Sent Nov 19–20 · AJ Lim · Facebook page",
-       "detail": "IG DM likely sits in his requests.",
-       "link": "https://www.facebook.com/ajlimofficial"
-      },
-      {
-       "title": "Sent Nov 19–20 · Niño Alcantara · Facebook page",
-       "detail": "IG unanswered. Ruben’s referral.",
-       "link": "https://www.facebook.com/franciscasey.alcantara"
-      },
-      {
-       "title": "Sent Nov 19–20 · Tennis MNL · Instagram",
-       "detail": "FB unanswered.",
-       "link": "https://www.instagram.com/tennismnl/"
-      },
-      {
-       "title": "Sent Nov 19–20 · Open Play & Away · ask Coach Waldo",
-       "detail": "IG unanswered. Their coach.",
-       "link": "https://www.instagram.com/coachwaldobernardo/"
-      },
-      {
-       "title": "Sent Nov 19–20 · Bryce · the PH buddy’s number",
-       "detail": "iMessage. He offered on Nov 15 and never sent it."
-      },
-      {
-       "title": "Sent Nov 19–20 · RJ (Jason Fan’s friend) · first text",
-       "detail": "Text. His number is in Jason’s contact card from Nov 14."
-      },
-      {
-       "title": "Sent Nov 19–20 · Griffen · family in Manila",
-       "detail": "iMessage stalled Nov 15."
-      },
-      {
-       "title": "Emon · already asked (Nov 11), skip",
-       "detail": "You asked him about Tokyo academies on Nov 11. No new message needed."
-      },
-      {
-       "title": "Sent Nov 19–20 · Tokyo Nov 18 batch · second route (send once dates are set)",
-       "detail": "Musashino Dome (LINE), Waseda (email on wasedatennis.net), SBC (form), LEONE (form), Kazumax (email on YouTube about), Shota Konishi (LINE), Keisuke Ota (X), Star Tennis Academy (email on YouTube about)."
-      },
-      {
-       "title": "Sent Nov 19–20 · Arthur “Iggy” Pantino · Instagram @arthur_pantino",
-       "detail": "Arthur “Iggy” Pantino · Cebuano, played at LMU (Chris Papa gave you his name Nov 10)"
-      },
-      {
-       "title": "Sent Nov 19–20 · everybodi · Email or Reclub",
-       "detail": "everybodi · Manila open play"
+       "title": "JR’s Nishikori coaching lead",
+       "detail": "Get the coach’s name from JR before planning around it. The identity and guest training access are open.",
+       "link": "https://www.instagram.com/jrmtennis/",
+       "linkLabel": "JR’s profile"
       }
-     ]
+     ],
+     "category": "Tennis"
     },
     {
-     "title": "Before departure",
+     "region": "Japan",
+     "title": "David Choe · Japan food",
      "items": [
       {
-       "title": "Confirm the listing and onward plan",
-       "detail": "PR123 replaces PR103 in the current plan. Check the actual listing or ticket, passport validity and what proof of onward travel PAL will accept."
+       "title": "The flight-and-udon story",
+       "detail": "DVDASA, 39:28–40:11. Choe’s group flew for ramen, drove on and ate udon three times. The recording gives no shop or town.",
+       "link": "https://jerryshi042003.github.io/david-choe-transcript-archive/#/saga2-saga-02-chapter-028-new-year-new-you-nuru",
+       "linkLabel": "Read the source"
       },
       {
-       "title": "Confirm and book the return flight",
-       "detail": "Aim to land at LAX by Sun Dec 6. Mon Dec 7 works only if the later deadline is confirmed. Check Tokyo and Manila departures, and keep a confirmed backup if using the AA companion standby listing. Reconcile Japan and PCA dates before booking."
+       "title": "Tsukiji Outer Market",
+       "detail": "Choe names Tsukiji for sushi. The Outer Market still operates. Go in the morning for a bowl or a few pieces.",
+       "meta": "About 30–40 min by transit from Shinjuku",
+       "link": "https://www.tsukiji.or.jp/english/access/",
+       "linkLabel": "Market access",
+       "place": "tsukiji",
+       "photos": [
+        {
+         "url": "media/places/tsukiji-market.jpg",
+         "caption": "Tsukiji Outer Market"
+        },
+        {
+         "url": "media/places/tsukiji-eel.jpg",
+         "caption": "Grilled eel at Tsukiji in 2026"
+        }
+       ]
       },
       {
-       "title": "Pack light and hand off Alex’s gear",
-       "detail": "Confirm Alex’s racket and strings for Adelmo, and check how the racket box must be packed. Bring your playing gear, everyday pants and hoodie, and Shingo’s sticker. Leave the orange puffer.",
-       "link": "https://www.philippineairlines.com/us/en/before-you-fly/baggage-information/baggage-allowance/baggage-allowance-fees/carry-on-baggage.html"
-      },
-      {
-       "title": "Save trip info offline",
-       "detail": "Save the pickup details, reservations and contact routes offline. Clear the work laptop with IT if you bring it."
+       "title": "Sanuki udon · Kotohira, Kagawa",
+       "detail": "Chewy noodles and a shrine town. Worth an overnight if you also want Shikoku. The Choe restaurant is still unidentified.",
+       "meta": "Tokyo → Takamatsu · about 80 min flight + about 1 hr by bus",
+       "link": "https://www.kotohira-travel.com/en/",
+       "linkLabel": "Kotohira travel",
+       "place": "kotohira",
+       "photos": [
+        {
+         "url": "media/places/kagawa-noodles.jpg",
+         "caption": "Sanuki udon, a Kagawa specialty"
+        },
+        {
+         "url": "media/places/kotohira-town.jpg",
+         "caption": "Kotohira’s shrine approach"
+        }
+       ]
       }
-     ]
+     ],
+     "category": "Food & gear"
     },
     {
-     "title": "In Manila",
+     "region": "Japan",
+     "title": "Outdoor gear",
      "items": [
       {
-       "title": "Use Rizal Memorial as the court backup",
-       "detail": "Confirm a session or book a public court if the club sessions don’t line up.",
-       "link": "https://play.psc.gov.ph/"
+       "title": "moderate · physical shop",
+       "detail": "Your order came from this multi-brand outdoor store in Yokkaichi, Mie. Light 5-Pocket Wide Pants and Goldwin hoodie GL45141. Check stock first.",
+       "meta": "Fri–Mon · noon–8 pm · about 3 hr from Tokyo via Nagoya",
+       "link": "https://shop.moderateweb.com/en/pages/about-us",
+       "linkLabel": "Store & hours",
+       "place": "moderate"
+      },
+      {
+       "title": "Tokyo alternatives",
+       "detail": "Yamatomichi and Goldwin have Tokyo-area stockists. Useful if you’re staying in Tokyo.",
+       "link": "https://www.yamatomichi.com/en/stores",
+       "linkLabel": "Yamatomichi stores"
       }
-     ]
-    },
-    {
-     "title": "If Cebu happens",
-     "items": [
-      {
-       "title": "Offer Niegel a date in Cebu",
-       "detail": "He said to reach out when you’re there. Set the day after the PCA schedule is clear.",
-       "link": "https://ig.me/m/niegeldilemma"
-      },
-      {
-       "title": "Book Asmara or arrange a hit at Match Point",
-       "detail": "Asmara invited you to book. Match Point shared its coaching and booking guide. Ask for an adult hitting session that fits your dates.",
-       "link": "https://asmara-tennis-association.rezerv.co/"
-      },
-      {
-       "title": "Sent Nov 19–20 · Adam Borak · intro to Noy Seno",
-       "detail": "Adam had Noy on Tipsy Tennis a week ago.",
-       "link": "https://www.instagram.com/tipsytennispodcast/"
-      },
-      {
-       "title": "Sent Nov 19–20 · Noy Seno · hit in Cebu",
-       "detail": "Ex D1 at St. Francis Brooklyn, now in Cebu. IG may be private; DM request still works.",
-       "link": "https://www.instagram.com/sinoynoy/"
-      },
-      {
-       "title": "Sent Nov 19–20 · Citigreen · strongest coach or player",
-       "detail": "Red clay. Lotus Cup running now; draw Nov 21. Also Messenger: facebook.com/citigreentennisresort.",
-       "link": "https://www.instagram.com/citigreentennisresort/"
-      },
-      {
-       "title": "Sent Nov 19–20 · Villa Aurora · join pickup",
-       "detail": "Best pickup in Cebu. Message the FB page or just show up.",
-       "link": "https://www.facebook.com/villaauroratennis"
-      },
-      {
-       "title": "Sent Nov 19–20 · Coach Sheena Camporedondo · hit",
-       "detail": "Citigreen coach. Find her on IG under her name.",
-       "link": "https://www.facebook.com/maria.camporedondo"
-      },
-      {
-       "title": "Sent Nov 19–20 · USC Cebu varsity · join practice",
-       "detail": "Coach Misael Bersaluna. Contact through the USC / Today’s Carolinian FB pages.",
-       "link": "https://www.facebook.com/todayscarolinian"
-      }
-     ]
-    },
-    {
-     "title": "Japan and getting home",
-     "items": [
-      {
-       "title": "Bring the sticker to Shingo at Setinn",
-       "detail": "Bring one sticker and pick a shop visit or hit once Shingo confirms a time.",
-       "link": "https://ig.me/m/sng1980"
-      },
-      {
-       "title": "Buy more Yamatomichi pants",
-       "detail": "Reorder the Light 5-Pocket Wide Pants. The last order was Dark Gray, size L. Check stock before visiting.",
-       "link": "https://www.yamatomichi.com/en/products/light-5-pocket-wide-pants"
-      },
-      {
-       "title": "Find another Goldwin hoodie with neck coverage",
-       "detail": "Your last order was the WF Light L/S Hoodie (GL45141), Arid Beige, size 3. Look for the same compact hood and high neck.",
-       "link": "https://usshop.goldwin-global.com/products/gl45141"
-      }
-     ]
-    },
-    {
-     "title": "Manila · new hitting leads",
-     "items": [
-      {
-       "title": "Sent Nov 19–20 · Adam Borak · Tipsy Tennis Podcast",
-       "detail": "US ex-ITF junior playing the PH circuit; trains with Chad Cuizon. New cold. Business email on the podcast page: rss.com/podcasts/tipsytennispodcast.",
-       "link": "https://www.instagram.com/tipsytennispodcast/"
-      },
-      {
-       "title": "Sent Nov 19–20 · Carl Ubalde · book a hit",
-       "detail": "Accepted your FB request Nov 19. Organized hits in Makati.",
-       "link": "https://www.facebook.com/carl.ubalde.56"
-      },
-      {
-       "title": "Ka Palo · watch for order of play",
-       "detail": "Follow his FB for daily PCA order of play.",
-       "link": "https://www.facebook.com/mel.abad.79"
-      },
-      {
-       "title": "Sent Nov 19–20 · Jed Olivarez · nudge for an Olivarez hit",
-       "detail": "FB message Nov 17 unseen (likely in Message Requests; not FB friends). Nudge on IG, or ask Alex Marcial, your one mutual. Mutuals on IG: Chris Papa, Silvio, Joseph Lizardo.",
-       "link": "https://www.instagram.com/jeddyboy109/"
-      },
-      {
-       "title": "Sent Nov 19–20 · Nilo Ledama · ask for a hit",
-       "detail": "New lead from Jed's Nov 18 Asmara post. Only mutual is Marvin (racketoncourt), so Marvin can intro. PCA entry unknown.",
-       "link": "https://www.instagram.com/its_nillllllll/"
-      },
-      {
-       "title": "AJ Lim · skip the Chris intro (DM him directly)",
-       "detail": "IG DM Nov 17 likely in his requests (he follows 1 account). Chris Papa is a mutual. Unlikely to hit during PCA week.",
-       "link": "https://www.instagram.com/chrispapa01/"
-      }
-     ]
-    },
-    {
-     "title": "Tokyo · new hitting leads (send once dates are set)",
-     "items": [
-      {
-       "title": "Chris Papa · intro to Jay (skip; DM Jay directly)",
-       "detail": "Checked Nov 19: Jay and Chris follow each other, but that’s the only link found. No sign they’re close friends, so DM Jay yourself first.",
-       "link": "https://www.instagram.com/chrispapa01/",
-       "draft": "Yo Chris, random one. You know Jay Friend? I’ll be in Tokyo early December and would love to hit with him if he’s home. Mind connecting us?"
-      },
-      {
-       "title": "Sent Nov 19–20 · Jay Friend · hit in Tokyo",
-       "detail": "Tokyo-born pro, Arizona ’26, playing the Japan Challengers now. Mutual follow with Chris Papa, nothing more. DM him directly.",
-       "link": "https://www.instagram.com/jaythefriend/"
-      },
-      {
-       "title": "Emon · already asked (Nov 11), skip",
-       "detail": "You asked him about Tokyo academies on Nov 11. No new message needed."
-      },
-      {
-       "title": "Sent Nov 19–20 · Hien Pham · paid hitting",
-       "detail": "ATP-ranked pro in Tokyo; LinkedIn message, IG backup.",
-       "link": "https://www.linkedin.com/in/hien-pham-81650b421/"
-      },
-      {
-       "title": "Sent Nov 19–20 · Frédéric Dewitte · hitting session",
-       "link": "https://fredericdewitte.com/ja/contact/",
-       "detail": "Academy is at Club Med Hokkaido/Okinawa, so ask if he hits in Tokyo. Contact form on his site."
-      },
-      {
-       "title": "Kurashima Academy · private with Yuri",
-       "link": "https://kurashimatennis.com/",
-       "detail": "Inquiry form on the site. Jingu Gaien, near Setinn.",
-       "draft": "はじめまして。UCLAテニス部出身のJerryです。12月[日付]に東京に滞在します。倉島侑里コーチとのプライベートレッスン（ラリー・ポイント練習中心）をお願いできますか？日程と料金を教えてください。\n\nHi, I’m Jerry Shi, I was part of UCLA tennis. I’m in Tokyo [dates] in December. Could I book a private session with Coach Yuri, mostly rallies and points? Please let me know times and price."
-      },
-      {
-       "title": "Sent Nov 19–20 · Blue Six · join practice",
-       "link": "https://www.instagram.com/bluesix_trainingclub/",
-       "detail": "Ariake pro club; pros prep there before All-Japans (Dec 13–20). Email on tc.blue-6.com."
-      },
-      {
-       "title": "Sent Nov 19–20 · Ryoto · lock a hit",
-       "link": "https://www.instagram.com/ryoto.tachi/",
-       "detail": "He said “Would love to get a hit in!”"
-      },
-      {
-       "title": "Jinji · book Hitting with the Pro",
-       "detail": "Replied Nov 20 JST: lessons only, no player introductions. Book a lesson if you want one; LINE or email.",
-       "draft": "Hi Shai, dates are [dates]. Could I book Hitting with the Pro on [day] and [day], mornings ideally? Thanks!"
-      },
-      {
-       "title": "Sent Nov 19–20 · Shinn Hiramatsu · book hitting",
-       "detail": "Ex-pro hitter, lessons across Tokyo by DM. Rate not public. Lesson form on his site.",
-       "link": "https://shinnhawkeyetennis.com/"
-      },
-      {
-       "title": "Sent Nov 19–20 · Takuya Komura · private session",
-       "detail": "Pro and private coach in Tokyo, DM for lessons.",
-       "link": "https://www.instagram.com/takuya.komura1221/"
-      },
-      {
-       "title": "Sari Baba · book through B LYNC",
-       "detail": "¥17,600 for 60 min, prepaid, you book the court.",
-       "link": "https://blync.jp/sports/tennis/",
-       "draft": "Private 60–90 min hitting and point play with Sari Baba for a former UCLA player, [dates] in December, Sendagaya area if possible."
-      },
-      {
-       "title": "Sent Nov 19–20 · Chikaya Sato · hit",
-       "detail": "Public email on his IG bio. Ex Penn State / SDSU.",
-       "link": "https://www.instagram.com/chikayasato/"
-      },
-      {
-       "title": "Sent Nov 19–20 · Hiroyasu Ehara · private",
-       "detail": "2014 All-Japan champion, coaches now. Japanese first. Private-lesson form on his site.",
-       "link": "https://hiroyasueharatennis.jimdofree.com/"
-      },
-      {
-       "title": "Sent Nov 19–20 · t_socialt · play sets",
-       "detail": "Adult player at All-Japan qualifying level. Name unknown.",
-       "link": "https://www.instagram.com/t_socialt/"
-      },
-      {
-       "title": "Sent Nov 19–20 · Ryusei Kato · English lesson",
-       "detail": "Splits Tokyo and Osaka; ask which city he’s in.",
-       "link": "https://www.instagram.com/ryusei__tennis/"
-      },
-      {
-       "title": "Sent Nov 19–20 · EPSOM · top-level hitting session",
-       "detail": "Ask on LINE about December dates.",
-       "link": "https://lin.ee/Z6USi7m3"
-      },
-      {
-       "title": "Sent Nov 19–20 · Aoyama Gakuin · join one practice",
-       "detail": "Team welcomes visitors by email or DM. Early-December practices likely still on.",
-       "link": "https://www.agu-tennis.com/contact/"
-      }
-     ]
-    },
-    {
-     "title": "Runs",
-     "items": [
-      {
-       "title": "Manila · Sunday long run with Just Show Up Club",
-       "detail": "Sunday 5 AM at Rockwell. No message needed.",
-       "link": "https://justshowupclub.com/"
-      },
-      {
-       "title": "Sent Nov 19–20 · Manila · trail day with Trailista",
-       "link": "https://www.instagram.com/trailistarunclub/",
-       "detail": "Rizal trails. BeyondTrails and Aleksis Capili are backups."
-      },
-      {
-       "title": "Tokyo · Namban Rengo Wednesday",
-       "detail": "Wednesdays 7:30 PM, visitors welcome; venue on IG.",
-       "link": "https://namban.org/faq/"
-      },
-      {
-       "title": "Sent Nov 19–20 · Tokyo · Takao run with Tokyo Tarzan Club",
-       "link": "https://www.instagram.com/tokyo_tarzan_club/",
-       "detail": "December schedule not posted yet."
-      },
-      {
-       "title": "Sent Nov 19–20 · RWP Run Club · join a BGC run",
-       "detail": "Active Nov 2026. Ask the weekly BGC meet point.",
-       "link": "https://www.instagram.com/rwprunclub/"
-      }
-     ]
-    },
-    {
-     "title": "Listen & read · Filipino tennis",
-     "items": [
-      {
-       "title": "The Rise of Filipino Tennis Icon Alberto \"AJ\" Lim | TTP Ep 27",
-       "detail": "AJ Lim, the Philippines' No. 1 and a Davis Cup regular, says the PCA courts in Manila are hot, humid and airless with crowds close in, so plan hydration and cramp management (walk cramps off, never lie down) before PCA Open qualies. Why: AJ is the top Filipino player and played the PCA Open right after Davis Cup the year this was filmed, so he is the highest-level hitting partner and local connector Jerry could reach in Manila; he also explains how thin the local pro circuit is (no wild cards, few international men's events). Contact: AJ Lim, Instagram @ajlimofficial (https://www.instagram.com/ajlimofficial/, checked live 2026-11-19: \"AJ Lim\", Athlete, Philippine sponsors, collab email in bio). Adam Borak (@tipsytennispodcast, https://www.instagram.com/tipsytennispodcast/) filmed this and is already in Jerry's Manila contacts, so he can intro.",
-       "link": "https://jerryshi042003.github.io/trip/listen.html?id=2L_H33TYv6c"
-      },
-      {
-       "title": "Former D1 player Noy Seno on going from Cebu to college tennis in the US",
-       "detail": "Noy Seno is a Cebu local who played D1 at St. Francis Brooklyn after Concordia, spent six years in the US and has been back in Cebu for three, which makes him Jerry's natural hitting partner and guide if he goes to Cebu after the PCA Open. Why: He shares Jerry's US college tennis background, still plays locally with Adam Borak in Cebu, and can point Jerry to courts, partners and events there. Contact: Noy Seno, Instagram @sinoynoy (https://www.instagram.com/sinoynoy/, checked live 2026-11-19; tagged by @tipsytennispodcast in this reel). Adam Borak (@tipsytennispodcast) is already in Jerry's Manila contacts and can intro.",
-       "link": "https://jerryshi042003.github.io/trip/listen.html?id=DfjESycCHrc"
-      },
-      {
-       "title": "D1 Filipino College Player Jed Olivarez | TTP Episode 28",
-       "detail": "Jed Olivarez, the Philippines' number two and a Western Michigan D1 alum, trains weekdays at his family's Olivarez College courts in Parañaque and hits with the top Filipino men there, making him a natural Manila hitting partner and PCA Open contact. Why: Jed plays the PCA Open, is chasing ITF points like Jerry, and has a home base with courts right by the Manila airport, so he is a strong first ask for practice sessions before and during qualies. Contact: Jed Olivarez, Instagram @jeddyboy109 (https://www.instagram.com/jeddyboy109/, checked live 2026-11-19: \"Eric Jed Olivarez\", Athlete, \"I play tennis sometimes\", WMU alumni). Adam Borak (@tipsytennispodcast, https://www.instagram.com/tipsytennispodcast/) is already in Jerry's Manila contacts and can intro.",
-       "link": "https://jerryshi042003.github.io/trip/listen.html?id=b-jB18H5Qvc"
-      },
-      {
-       "title": "Teaching Local Kids in the Philippines",
-       "detail": "Adam Borak taught free lessons to local kids at the Asmara Urban Resort in Cebu City and donated his spare rackets, bags and shirts, so bringing a few old rackets and offering a clinic is an easy, welcome way into the Cebu tennis scene. Why: If Jerry goes to Cebu after the PCA Open, the Asmara Urban Resort (home of the monthly Asmara Open) is where Adam already has ties, and a kids clinic or gear donation gives Jerry a natural reason to meet the local coaches and players. Contact: Adam Borak, Instagram @tipsytennispodcast (https://www.instagram.com/tipsytennispodcast/, checked live 2026-11-19), already in Jerry's Manila contacts; ask him for an intro to the Asmara Urban Resort tennis director in Cebu City.",
-       "link": "https://jerryshi042003.github.io/trip/listen.html?id=uLqDrzi2r28"
-      }
-     ]
-    },
-    {
-     "title": "Listen & read · David Choe · Philippines",
-     "items": [
-      {
-       "title": "David Choe Lost in the Philippines (Thumbs Up Season 5)",
-       "detail": "Choe's whole Philippines method is to put the phone away, say yes to whoever talks to you and let the day lead, and it gives Jerry a ready list of stops: Quiapo Church and its palm readers, Greenhills for bootleg toys and 30-peso Pokemon packs, then Siargao for a boat trip to Ma'mon Island, lechon, Bebe's Barbeque and Mrs. Krispy fried chicken. Why: In Manila Jerry can do Choe's Quiapo Church stop (palm readers and the Black Nazarene) and Greenhills Shopping Center (bootleg toys and cheap Pokemon packs; the street fruit and haggling scenes are not located on screen) around PCA Open match days; if he adds Siargao instead of or after Cebu, Choe's day was island hopping by boat to Ma'mon Island, jet skis at sunset, a lechon pig face, Bebe's Barbeque with its house band, and Mrs. Krispy fried chicken, plus a warning that he got traveler's diarrhea there. Contact: Quiapo Church, Instagram @quiapochurch (https://www.instagram.com/quiapochurch/), 910 Plaza Miranda, Quiapo, Manila, site quiapochurch.com.ph; Greenhills Mall, Instagram @greenhillsph (https://www.instagram.com/greenhillsph/), Ortigas Avenue, Greenhills, San Juan. Bebe's Barbeque and Mrs. Krispy in Siargao had no Instagram I could verify; go in person. Bobby Trivia's account was not verified.",
-       "link": "https://jerryshi042003.github.io/trip/listen.html?id=D-oSpkzPIoQ"
-      },
-      {
-       "title": "David Choe Painting in the Philippines",
-       "detail": "This is a mostly wordless painting livestream in which Choe, working with unfamiliar local brushes, acrylics and a loose, thrice-painted canvas, adapts instead of complaining and breaks to rip open Pokemon packs on chat's urging. Why: It has little travel value: no place in Manila or Siargao is named, so it is only worth watching for Choe's mindset (adapt to whatever gear and conditions the country gives you, which applies to unfamiliar courts and balls at the PCA Open) and for his Pokemon card habit, which the full episode ties to Greenhills. Contact: None shown in the video. Only David Choe himself, Instagram @davidchoe (https://www.instagram.com/davidchoe/).",
-       "link": "https://jerryshi042003.github.io/trip/listen.html?id=w3vRQZbmLyw"
-      },
-      {
-       "title": "Thumbs Up Season 5 Teaser (Philippines, Manila, Siargao)",
-       "detail": "A 47-second trailer for David Choe's Manila and Siargao Thumbs Up episode; watch the full episode (D-oSpkzPIoQ) instead, since this clip only shows the arrival in Manila and Choe sick in bed in Siargao. Why: It previews the same trip Jerry can partly retrace (Manila first, then Siargao), and the sick-bed scene is a fair warning to watch street food and water before PCA Open matches. Contact: David Choe, Instagram @davidchoe (https://www.instagram.com/davidchoe/); the trailer shows no shop, guide or venue Jerry could contact.",
-       "link": "https://jerryshi042003.github.io/trip/listen.html?id=x5jTxz_n2yo"
-      }
-     ]
-    },
-    {
-     "title": "Futures after Tokyo · decide",
-     "items": [
-      {
-       "title": "Decide by Thu Nov 26: M15 Monastir Dec 14–20",
-       "detail": "Entry deadline Thu Nov 26, 14:00 GMT (10 PM Manila). Needs World Tennis Tour Zone membership (~$75). Unranked players got into qualies last Dec. Route: Qatar from Tokyo Dec 8/9 via Doha to Tunis; pilot must confirm Qatar accepts companions in myIDTravel. ~$600–1,100/week on the ground (estimate)."
-      },
-      {
-       "title": "Second week option: M15 Monastir Dec 21–27",
-       "detail": "Entry deadline Thu Dec 3, 14:00 GMT. Same venue. Fallback: M15 Singapore Dec 14, M15 Bali Dec 21."
-      }
-     ]
-    },
-    {
-     "title": "Tokyo · ultra trail runs (Sat Dec 5 – Sun Dec 6)",
-     "items": [
-      {
-       "title": "Kumotori via Ishione ridge (Tokyo's highest)",
-       "detail": "~32 km, ±2,100 m. Okutama Stn, ~1h40, ¥1,230. Ridge reopened (Nov 6 list). Below freezing: bring chain spikes, off the mountain by ~15:00.",
-       "link": "https://www.youtube.com/watch?v=7eFXrLm09uA"
-      },
-      {
-       "title": "Tokyo Trail Running (English, Facebook)",
-       "detail": "855 events; posts weekend runs ~1 week ahead, check from ~Nov 28.",
-       "draft": "hey! I'm in tokyo dec 3 to 8, I've done a couple 50 and 100 milers and would love to tag along on a long trail day that weekend if anything's going"
-      },
-      {
-       "title": "Michitaro Mizuno · Tanzawa pro ultrarunner",
-       "detail": "Backyard ultra 94 laps; podcast for runners in their 20s.",
-       "link": "https://www.instagram.com/michi_bagman_ultrarunner/",
-       "draft": "hey michi, huge fan of the just one more loop thing. I'm 23, ran a few 50s and a 100 miler, and I'm in tokyo dec 3 to 8. any chance I could join you for a long run in tanzawa?"
-      },
-      {
-       "title": "Takao Trail Club (Meetup, Alain)",
-       "detail": "LINE group linked from its events. No December run posted yet.",
-       "draft": "hi alain! visiting from LA dec 3 to 8, I run ultras (50s and a 100 miler). if anyone's doing a longer takao or okutama run that week I'd love to join"
-      },
-      {
-       "title": "Tsuyoshi Kaburaki · trail legend",
-       "detail": "3rd UTMB 2009, posts daily. Warm route: Run boys! Run girls! club.",
-       "link": "https://www.instagram.com/tsuyoshikaburaki/",
-       "draft": "Hi Kaburaki-san, I'm Jerry, a tennis player from LA who has run 100 miles. I'm in Tokyo Dec 3 to 8, is there any group run that week I could join?"
-      }
-     ]
+     ],
+     "category": "Food & gear"
     }
    ]
   },

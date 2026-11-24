@@ -25,6 +25,7 @@ except Exception as e:
 
 opt(d, 'updated', str, 'top')
 for k in ('places', 'people', 'emergency'): need(d, k, list, 'top')
+place_ids = {p.get('id') for p in d.get('places', []) if isinstance(p, dict)}
 if need(d, 'travelers', dict, 'top'):
     for who, t in d['travelers'].items():
         w = f'travelers.{who}'
@@ -37,11 +38,23 @@ if need(d, 'travelers', dict, 'top'):
         for si, s in enumerate(t.get('todos') or []):
             sw = f'{w}.todos[{si}]'
             need(s, 'title', str, sw)
+            opt(s, 'region', str, sw); opt(s, 'category', str, sw)
             titles = set()
             if need(s, 'items', list, sw):
                 for ii, it in enumerate(s['items']):
                     iw = f'{sw} "{s.get("title")}" item {ii}'
                     need(it, 'title', str, iw); need(it, 'detail', str, iw); opt(it, 'draft', str, iw)
+                    for key in ('meta', 'linkLabel', 'icon', 'place', 'from'):
+                        opt(it, key, str, iw)
+                    for key in ('place', 'from'):
+                        value = it.get(key)
+                        if isinstance(value, str) and value not in place_ids:
+                            errs.append(f'{iw}: "{key}" references unknown place {value}')
+                    opt(it, 'photos', list, iw)
+                    if isinstance(it.get('photos'), list):
+                        for index, photo in enumerate(it['photos']):
+                            pw = f'{iw}.photos[{index}]'
+                            need(photo, 'url', str, pw); need(photo, 'caption', str, pw)
                     if it.get('link') is not None:
                         u = it['link']
                         if not isinstance(u, str) or not urlparse(u).scheme or ' ' in u:

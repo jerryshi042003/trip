@@ -39,3 +39,34 @@ Photos in `docs/media/places/<id>.jpg` (resized to 800 px, JPEG). Downloaded Nov
 | siargao-airport | Siargao Airport | Google Maps place photo | https://www.google.com/maps/search/?api=1&query=Siargao%20Airport%20Sayak%20Del%20Carmen |
 | subic | Subic Bay · All Hands Beach | Wikimedia Commons | https://commons.wikimedia.org/wiki/File:SBMA_Beach,_Subic_Bay,_January_2023.jpg |
 | superpotato | Super Potato Akihabara | Wikimedia Commons | https://commons.wikimedia.org/wiki/File:Akihabara_-_Super_Potato_Retro_Game_Shop.jpg |
+
+## Dashboard galleries
+
+Images were resized for Trip. The Commons file pages identify creators and license terms. The Polo Club grounds photo was already used in Trip before its court-photo update. The three app icons come from the Apple App Store listings.
+
+- [anilao-sunset](https://commons.wikimedia.org/wiki/File:Sunset_at_Anilao%2C_Batangas.jpg)
+- [aristocrat-front](https://commons.wikimedia.org/wiki/File:The_Aristocrat_Restaurant%2C_Malate%2C_Manila%2C_Mar_2024.jpg)
+- [bay-day](https://commons.wikimedia.org/wiki/File:Manila_Baywalk_Dolomite_Beach_view.jpg)
+- [bgc-walk](https://commons.wikimedia.org/wiki/File:BGC_-_BHS_Central_Jan_8_2025.jpg)
+- [binondo-church](https://commons.wikimedia.org/wiki/File:Iglesia_de_Binondo%2C_Manila%2C_Filipinas%2C_2023-08-26%2C_DD_10-12_HDR.jpg)
+- [binondo-hopia](https://commons.wikimedia.org/wiki/File:JfEngbeetin1240Chinatownfvf_21.JPG)
+- [cebu-lechon](https://commons.wikimedia.org/wiki/File:Crispy_Lechon_Car_Car.jpg)
+- [daranak-pool](https://commons.wikimedia.org/wiki/File:Daranak_Falls%2C_Tanay%2C_Rizal_2.jpg)
+- [fortune-island-water](https://commons.wikimedia.org/wiki/File:Fortune_Island_%2814455431897%29.jpg)
+- [gcash](https://apps.apple.com/ph/app/gcash/id520020791?uo=4)
+- [grab](https://apps.apple.com/ph/app/grab-food-delivery-taxi-ride/id647268330?uo=4)
+- [kagawa-noodles](https://commons.wikimedia.org/wiki/File:Kama-age_sanuki_udon_by_sekido_in_Takamatsu%2C_Kagawa.jpg)
+- [kotohira-town](https://commons.wikimedia.org/wiki/File:JP-Kagawa-Kotohira-g%C5%AB-Entrance.JPG)
+- [malate-remedios](https://commons.wikimedia.org/wiki/File:Remedios_Circle_Manila.jpg)
+- [move-it](https://apps.apple.com/ph/app/move-it-book-a-moto-taxi/id1481198245?uo=4)
+- [mpc-grounds](https://www.google.com/maps/search/?api=1&query=Manila%20Polo%20Club)
+- [pca-front](https://commons.wikimedia.org/wiki/File:Philippine_Columbian_Association_Sports_Club%2C_Paco%2C_Manila%2C_Jul_2026.jpg)
+- [puerto-galera-sea](https://commons.wikimedia.org/wiki/File:PH_-_Puerto_Galera_-_White_Beach_-_from_sea_2.jpg)
+- [quiapo-mosque](https://commons.wikimedia.org/wiki/File:Mosques_in_Manila_%28Metro_Manila_Districts%3B_2023-08-20%29_E911a_33.jpg)
+- [quiapo-pastil](https://commons.wikimedia.org/wiki/File:Pastil_from_Muslim_Town%2C_Quiapo%2C_Manila.jpg)
+- [rizal-air](https://commons.wikimedia.org/wiki/File:Rizal_Memorial_Sports_Complex_birdseye.jpg)
+- [subic-shore](https://commons.wikimedia.org/wiki/File:SBMA_Beach%2C_Subic_Bay%2C_January_2023_%282%29.jpg)
+- [taktak-path](https://commons.wikimedia.org/wiki/File:Hinulugang_Taktak_River%2C_Antipolo%2C_Rizal%2C_Jul_2024.jpg)
+- [tsukiji-eel](https://commons.wikimedia.org/wiki/File:Grilled_eel_at_Tsukiji_fish_market_in_Tokyo%2C_Japan_in_July_2026.jpg)
+- [tsukiji-market](https://commons.wikimedia.org/wiki/File:Tsukiji_Outer_Market.jpg)
+- [Choe Philippines video thumbnail](https://www.youtube.com/watch?v=D-oSpkzPIoQ) · served by YouTube.

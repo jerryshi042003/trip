@@ -42,6 +42,8 @@
   const savedView = store.get('view');
   const savedTraveler = store.get('who');
   let D = null;
+  let region = '';
+  let category = '';
   let tripText = '';
   let tomNotes = [];
   let refreshing = false;
@@ -65,6 +67,49 @@
     return `<div class="row person"><div class="main"><div class="t">${esc(p.name)}</div><div class="s">${esc(sub)}</div></div><div class="acts">${a.join('')}</div></div>`;
   };
   const taskRow = task => `<div class="row task"><div class="main"><div class="t">${esc(task.title)}</div><div class="s">${esc(task.detail)}</div>${task.draft ? `<details><summary>Draft message</summary><p>${esc(task.draft)}</p><button class="lock" data-copy="${esc(task.draft)}">Copy draft</button></details>` : ''}</div>${task.link ? `<a class="a" href="${esc(task.link)}" aria-label="Open link for ${esc(task.title)}">${I.web}</a>` : ''}</div>`;
+  const mediaURL = path => esc(new URL(path, base).href);
+  const directions = (p, origin) => origin
+    ? `https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(origin.addr)}&destination=${encodeURIComponent(p.name + ', ' + p.addr)}&travelmode=two-wheeler`
+    : gmap(p.ja || p.name + ', ' + p.addr);
+
+  function dashboardItem(item, byId) {
+    if (item.icon && item.link) {
+      return `<article class="trip-entry"><a class="trip-entry-copy trip-app-link" href="${esc(item.link)}">
+        <img class="trip-app-icon" src="${mediaURL(item.icon)}" alt="" width="48" height="48">
+        <div class="main"><h3>${esc(item.title)} <span class="trip-app-store">App Store</span></h3><p>${esc(item.detail)}</p></div>
+      </a></article>`;
+    }
+    const place = byId[item.place];
+    const photos = item.photos ?? [];
+    const gallery = photos.length ? `<div class="trip-gallery" ${photos.length > 1 ? 'tabindex="0"' : ''} role="group" aria-label="${esc(item.title)} photos">${photos.map(photo => `
+      <figure><img src="${mediaURL(photo.url)}" alt="${esc(photo.caption)}" loading="lazy" decoding="async"><figcaption>${esc(photo.caption)}</figcaption></figure>`).join('')}</div>` : '';
+    return `<article class="trip-entry">
+      ${gallery}
+      <div class="trip-entry-copy">
+        <div class="main">
+          ${item.meta ? `<div class="trip-meta">${esc(item.meta)}</div>` : ''}
+          <h3>${esc(item.title)}</h3>
+          <p>${esc(item.detail)}</p>
+          ${item.link || place ? `<div class="trip-actions">
+            ${item.link ? `<a href="${esc(item.link)}">${esc(item.linkLabel ?? 'Details')}</a>` : ''}
+            ${place ? `<a href="${esc(directions(place, byId[item.from]))}" aria-label="Directions to ${esc(place.name)}">${I.map} Maps</a>` : ''}
+          </div>` : ''}
+        </div>
+      </div>
+    </article>`;
+  }
+
+  function dashboard(sections, byId) {
+    const regions = [...new Set(sections.map(section => section.region))];
+    if (!regions.includes(region)) region = regions[0];
+    const regional = sections.filter(section => section.region === region);
+    const categories = [...new Set(regional.map(section => section.category).filter(Boolean))];
+    if (!categories.includes(category)) category = categories[0];
+    const picker = `<nav class="trip-regions" aria-label="Trip destinations">${regions.map(name => `<button type="button" data-region="${esc(name)}" aria-pressed="${region === name}">${esc(name)}</button>`).join('')}</nav>`;
+    const filters = categories.length > 1 ? `<nav class="trip-categories" aria-label="${esc(region)} topics">${categories.map(name => `<button type="button" data-category="${esc(name)}" aria-pressed="${category === name}">${esc(name)}</button>`).join('')}</nav>` : '';
+    const content = regional.filter(section => !section.category || section.category === category).map(section => `<section class="trip-section"><h2>${esc(section.title)}</h2>${section.items.map(item => dashboardItem(item, byId)).join('')}</section>`).join('');
+    return picker + filters + content;
+  }
 
   // Calendar: reads the free-text plan dates. "Nov 30 – Dec 4", "Fri Nov 20", "Dec 15 – 19" are exact;
   // anything else that names a day ("By Dec 20", "Dec 14 or ~Dec 5") is shown dashed as tentative.
@@ -163,6 +208,11 @@
     let h = '';
     const T = D.travelers[who];
     if (view === 'plan') {
+      const tripSections = (T.todos ?? []).filter(section => section.region);
+      if (tripSections.length) {
+        document.getElementById('out').innerHTML = dashboard(tripSections, byId);
+        return;
+      }
       if (who === 'tom') {
         if (showInstall) h += `<details class="group install-guide"><summary>Install on iPhone</summary><p>Open this link in Safari. Tap Safari’s <strong>Share</strong> → <strong>Add to Home Screen</strong>. Keep <strong>Open as Web App</strong> on and tap <strong>Add</strong>.</p></details>`;
         h += `<h2 class="hdr">Tom’s updates</h2><div class="group">${tomNotes.map(note => `<div class="row"><div class="main">${esc(note)}</div></div>`).join('')}<div class="row update-actions"><a href="${edit}tom-notes.txt" target="_blank" rel="noopener">Edit updates</a><a href="${edit}trip.json" target="_blank" rel="noopener">Edit full plan</a></div></div>`;
@@ -204,6 +254,22 @@
   });
 
   document.addEventListener('click', e => {
+    const destination = e.target.closest('button[data-region]');
+    if (destination) {
+      region = destination.dataset.region;
+      category = '';
+      render();
+      const selected = document.querySelector('.trip-regions [aria-pressed="true"]');
+      selected?.focus({ preventScroll: true });
+      return;
+    }
+    const topic = e.target.closest('button[data-category]');
+    if (topic) {
+      category = topic.dataset.category;
+      render();
+      document.querySelector('.trip-categories [aria-pressed="true"]')?.focus({ preventScroll: true });
+      return;
+    }
     const w = e.target.closest('.who button');
     if (w) {
       who = w.dataset.who;

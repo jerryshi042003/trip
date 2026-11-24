@@ -135,10 +135,13 @@ enum Links {
 struct PlanView: View {
     @EnvironmentObject var store: TripStore
     @Binding var who: String
+    @State private var region = ""
+    @State private var category = ""
 
     var body: some View {
         let t = store.data?.travelers[who]
         let places = Dictionary(uniqueKeysWithValues: (store.data?.places ?? []).map { ($0.id, $0) })
+        let dashboard = (t?.todos ?? []).filter { $0.region != nil }
         List {
             Section {
                 HStack(spacing: 8) {
@@ -168,53 +171,192 @@ struct PlanView: View {
                     Link("Edit full plan", destination: Links.editPlan)
                 }
             }
-            ForEach(t?.todos ?? []) { section in
-                Section(section.title) {
-                    ForEach(section.items) { item in
-                        VStack(alignment: .leading, spacing: 5) {
-                            HStack(alignment: .top) {
-                                VStack(alignment: .leading, spacing: 3) {
-                                    Text(item.title)
-                                    Text(item.detail).font(.subheadline).foregroundStyle(.secondary)
+            if dashboard.isEmpty {
+                ForEach(t?.todos ?? []) { section in
+                    Section(section.title) {
+                        ForEach(section.items) { item in
+                            VStack(alignment: .leading, spacing: 5) {
+                                HStack(alignment: .top) {
+                                    VStack(alignment: .leading, spacing: 3) {
+                                        Text(item.title)
+                                        Text(item.detail).font(.subheadline).foregroundStyle(.secondary)
+                                    }
+                                    if let link = item.link {
+                                        Spacer(minLength: 4)
+                                        Link(destination: link) { Image(systemName: "globe") }
+                                            .buttonStyle(.borderless)
+                                            .accessibilityLabel("Open link for \(item.title)")
+                                    }
                                 }
-                                if let link = item.link {
-                                    Spacer(minLength: 4)
-                                    Link(destination: link) { Image(systemName: "globe") }
-                                        .buttonStyle(.borderless)
-                                        .accessibilityLabel("Open link for \(item.title)")
-                                }
-                            }
-                            if let draft = item.draft {
-                                DisclosureGroup("Draft message") {
-                                    Text(draft).textSelection(.enabled)
-                                    Button("Copy draft") { UIPasteboard.general.string = draft }
-                                        .buttonStyle(.borderless)
+                                if let draft = item.draft {
+                                    DisclosureGroup("Draft message") {
+                                        Text(draft).textSelection(.enabled)
+                                        Button("Copy draft") { UIPasteboard.general.string = draft }
+                                            .buttonStyle(.borderless)
+                                    }
                                 }
                             }
                         }
                     }
                 }
-            }
-            if let d = store.data, let t {
-                Section("Calendar") { TripCalendar(data: d, traveler: t) }
-            }
-            Section {
-                ForEach(t?.plan ?? []) { item in
-                    let p = item.place.flatMap { places[$0] }
-                    Group {
-                        if let p { Link(destination: Links.maps(p, store.coordinate(for: p))) { PlanRow(item: item, chevron: true) } }
-                        else { PlanRow(item: item, chevron: false) }
+                if let d = store.data, let t {
+                    Section("Calendar") { TripCalendar(data: d, traveler: t) }
+                }
+                Section {
+                    ForEach(t?.plan ?? []) { item in
+                        let p = item.place.flatMap { places[$0] }
+                        Group {
+                            if let p { Link(destination: Links.maps(p, store.coordinate(for: p))) { PlanRow(item: item, chevron: true) } }
+                            else { PlanRow(item: item, chevron: false) }
+                        }
+                    }
+                } header: {
+                    Text("Itinerary")
+                }
+                if let b = t?.bucket, !b.isEmpty {
+                    Section("Bucket list") { ForEach(b, id: \.self) { Text($0) } }
+                }
+            } else {
+                let regions = dashboard.compactMap(\.region).reduce(into: [String]()) { names, name in
+                    if !names.contains(name) { names.append(name) }
+                }
+                let selection = Binding(get: { regions.contains(region) ? region : regions[0] }, set: {
+                    region = $0
+                    category = ""
+                })
+                let regional = dashboard.filter { $0.region == selection.wrappedValue }
+                let categories = regional.compactMap(\.category).reduce(into: [String]()) { names, name in
+                    if !names.contains(name) { names.append(name) }
+                }
+                let topic = Binding(get: { categories.contains(category) ? category : categories.first ?? "" }, set: { category = $0 })
+                Section {
+                    Picker("Trip destination", selection: selection) {
+                        ForEach(regions, id: \.self) { Text($0).tag($0) }
+                    }
+                    .pickerStyle(.segmented)
+                    .listRowInsets(EdgeInsets())
+                    .listRowBackground(Color.clear)
+                }
+                if categories.count > 1 {
+                    Section {
+                        Picker("\(selection.wrappedValue) topics", selection: topic) {
+                            ForEach(categories, id: \.self) { Text($0).tag($0) }
+                        }
+                        .pickerStyle(.segmented)
+                        .listRowInsets(EdgeInsets())
+                        .listRowBackground(Color.clear)
                     }
                 }
-            } header: {
-                Text("Itinerary")
-            }
-            if let b = t?.bucket, !b.isEmpty {
-                Section("Bucket list") { ForEach(b, id: \.self) { Text($0) } }
+                ForEach(regional.filter { $0.category == nil || $0.category == topic.wrappedValue }) { section in
+                    Section {
+                        ForEach(section.items) { item in
+                            TripDashboardRow(item: item, places: places)
+                        }
+                    } header: {
+                        Text(section.title).font(.title3.weight(.semibold)).foregroundStyle(.primary)
+                            .textCase(nil)
+                    }
+                }
             }
         }
         .navigationTitle("Trip")
         .refreshable { await store.refresh() }
+    }
+}
+
+struct TripDashboardRow: View {
+    @EnvironmentObject var store: TripStore
+    let item: TripTask
+    let places: [String: Place]
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 9) {
+            if let photos = item.photos, !photos.isEmpty {
+                ScrollView(.horizontal) {
+                    HStack(alignment: .top, spacing: 8) {
+                        ForEach(photos) { photo in
+                            VStack(alignment: .leading, spacing: 4) {
+                                AsyncImage(url: mediaURL(photo.url)) { image in
+                                    image.resizable().scaledToFill()
+                                } placeholder: {
+                                    Rectangle().fill(.quaternary)
+                                }
+                                .frame(height: 142)
+                                .frame(maxWidth: .infinity)
+                                .clipped()
+                                .clipShape(.rect(cornerRadius: 10))
+                                .accessibilityHidden(true)
+                                Text(photo.caption).font(.subheadline).foregroundStyle(.secondary)
+                            }
+                            .containerRelativeFrame(.horizontal) { width, _ in
+                                photos.count == 1 ? width : width * 0.87
+                            }
+                        }
+                    }
+                    .scrollTargetLayout()
+                }
+                .scrollTargetBehavior(.viewAligned)
+                .accessibilityLabel("\(item.title) photos")
+            }
+            if let icon = item.icon, let link = item.link {
+                Link(destination: link) {
+                    HStack(spacing: 12) {
+                        AsyncImage(url: mediaURL(icon)) { image in
+                            image.resizable()
+                        } placeholder: {
+                            Rectangle().fill(.quaternary)
+                        }
+                        .frame(width: 46, height: 46)
+                        .clipShape(.rect(cornerRadius: 10))
+                        .accessibilityHidden(true)
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text("\(item.title) · App Store").font(.headline)
+                            Text(item.detail).font(.callout)
+                        }
+                        Spacer(minLength: 0)
+                    }
+                    .foregroundStyle(.primary)
+                    .contentShape(Rectangle())
+                }
+                .buttonStyle(.borderless)
+            } else {
+                if let meta = item.meta {
+                    Text(meta).font(.subheadline.weight(.semibold)).foregroundStyle(.secondary)
+                }
+                Text(item.title).font(.headline)
+                Text(item.detail).font(.callout)
+                let place = item.place.flatMap { places[$0] }
+                if item.link != nil || place != nil {
+                    HStack(spacing: 16) {
+                        if let link = item.link {
+                            Link(item.linkLabel ?? "Details", destination: link).buttonStyle(.borderless)
+                        }
+                        if let place {
+                            Link("Maps", destination: mapURL(place)).buttonStyle(.borderless)
+                                .accessibilityLabel("Directions to \(place.name)")
+                        }
+                    }
+                    .font(.callout)
+                }
+            }
+        }
+        .padding(.vertical, 4)
+    }
+
+    private func mediaURL(_ path: String) -> URL? {
+        URL(string: path, relativeTo: TripStore.remote)
+    }
+
+    private func mapURL(_ place: Place) -> URL {
+        if let id = item.from, let origin = places[id] {
+            var url = URLComponents(string: "https://www.google.com/maps/dir/")!
+            url.queryItems = [URLQueryItem(name: "api", value: "1"),
+                              URLQueryItem(name: "origin", value: origin.addr),
+                              URLQueryItem(name: "destination", value: "\(place.name), \(place.addr)"),
+                              URLQueryItem(name: "travelmode", value: "two-wheeler")]
+            if let result = url.url { return result }
+        }
+        return Links.maps(place, store.coordinate(for: place))
     }
 }
 

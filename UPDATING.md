@@ -30,6 +30,8 @@ Field rules the app needs:
 - Every to-do item needs `title` and `detail` as text.
 - `link` must be a full `https://` URL. (Since build 8 the app skips one bad item instead of keeping the old copy, but the check still matters.)
 - `draft` is optional.
+- On Jerry’s Plan, a to-do section with `region` appears in the destination picker. Give it a `category` to put it under a topic. Older iPhone builds display those same sections in their original list layout.
+- Dashboard items can include `meta` (date or travel estimate), `place` and `from` (place IDs for Maps), `linkLabel`, an app `icon`, and a `photos` array with `url` and `caption`. Paths such as `media/places/pca.jpg` resolve against the Trip site.
 - Every person needs a `name`.
 - No private phone numbers or emails: the site is public.
 
