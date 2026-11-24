@@ -398,9 +398,9 @@ struct PlacesView: View {
             if !cities.isEmpty {
                 Section {
                     Picker("City", selection: selection) { ForEach(cities, id: \.self) { Text($0).tag($0) } }
-                        .pickerStyle(.segmented)
+                        .pickerStyle(.menu)
+                        .accessibilityIdentifier("places-city")
                         .listRowBackground(Color.clear)
-                        .listRowInsets(EdgeInsets())
                         .listRowSeparator(.hidden)
                 }
             }

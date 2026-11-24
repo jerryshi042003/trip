@@ -102,6 +102,7 @@ final class TripStore: ObservableObject {
     @Published var coords: [String: CLLocationCoordinate2D] = [:]
     @Published var localMedia: [String: URL] = [:]
     @Published private(set) var tomNotes: [String] = []
+    private var refreshTask: Task<Void, Never>?
 
     private let docs = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
     private var cacheURL: URL { docs.appendingPathComponent("trip.json") }
@@ -127,6 +128,17 @@ final class TripStore: ObservableObject {
     }
 
     func refresh() async {
+        if let refreshTask {
+            await refreshTask.value
+            return
+        }
+        let task = Task { await refreshFeed() }
+        refreshTask = task
+        defer { refreshTask = nil }
+        await task.value
+    }
+
+    private func refreshFeed() async {
         async let notes: Void = refreshTomNotes()
         var req = URLRequest(url: Self.remote)
         req.cachePolicy = .reloadIgnoringLocalCacheData
