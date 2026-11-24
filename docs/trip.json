@@ -2001,10 +2001,22 @@
        "linkLabel": "Venue and booking"
       },
       {
+       "title": "Shanghai · coached hit at the Bund",
+       "detail": "InLove lists private and group tennis for adults. Its tennis facility is on Level 2 of the Bund Finance Center. Ask for match play at your level.",
+       "link": "https://www.inlovesports.com/Coaching",
+       "linkLabel": "Coaches and booking"
+      },
+      {
        "title": "Hong Kong · public courts",
        "detail": "Visitors without HKID can register in person as temporary SmartPLAY users for advance booking, or ask at a counter for a same-day court with an original travel document.",
        "link": "https://www.lcsd.gov.hk/en/facilities/facilitiesbooking/procedure/feeindividual.html",
        "linkLabel": "Visitor booking rules"
+      },
+      {
+       "title": "Hong Kong · adult coaching",
+       "detail": "HKCTA lists private sessions at four venues, including Causeway Bay and Kowloon Tsai. Ask for live points at your level.",
+       "link": "https://www.tennishk.org/en/learn-to-play/adult-tennis/private-coaching/",
+       "linkLabel": "Venues and rates"
       }
      ]
     },
