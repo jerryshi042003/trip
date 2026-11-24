@@ -2150,10 +2150,10 @@
      "items": [
       {
        "title": "Shanghai · Xujiahui Sports Park",
-       "detail": "Three indoor courts at Wantihui and four outdoors. Search 久事体育 in WeChat to book. The Wantihui desk can help. If Pudong is closer, check the Oriental Sports Center in the same mini program.",
-       "meta": "Xujiahui slots open at noon · up to 7 days ahead",
-       "link": "https://www.jusssports.com/news/16291245245979",
-       "linkLabel": "Juss booking guide"
+       "detail": "Search 久事体育 in WeChat. Xujiahui slots open at noon, up to 7 days ahead, with phone verification. Wantihui help: +86 21 3419 6878. For Pudong, check Oriental Sports Center.",
+       "meta": "May 2025 tariff · ¥75–180/hr outdoors · ¥160–350 indoors",
+       "link": "https://www.xuhui.gov.cn/xwzx_zwxx/20250427/556065.html",
+       "linkLabel": "Xuhui tariff and notice"
       },
       {
        "title": "Shanghai · Moore singles",
@@ -2174,6 +2174,13 @@
        "meta": "Standard courts HK$34–57/hr · 7-day booking window",
        "link": "https://www.smartplay.lcsd.gov.hk/website/en/how-to-use/faq.html",
        "linkLabel": "Visitor booking rules"
+      },
+      {
+       "title": "Hong Kong · book Kowloon Tsai directly",
+       "detail": "Call +852 2338 7748 or visit HKCTA at 13 Inverness Road, 7 a.m.–9 p.m. Book with your passport and keep your receipt number for check-in.",
+       "meta": "HK$34–57/hr · 7 days including today",
+       "link": "https://www.tennishk.org/en/hkta-tennis-centre-availability/",
+       "linkLabel": "HKCTA booking and rates"
       },
       {
        "title": "Hong Kong · find a singles opponent",
