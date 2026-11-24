@@ -37,17 +37,18 @@
   const showInstall = !navigator.standalone && !matchMedia('(display-mode: standalone)').matches;
   const travelerKeys = ['jerry', 'tom'];
   const viewKeys = ['plan', 'places', 'people', 'where'];
-  const requestedTraveler = new URLSearchParams(location.search).get('who') ?? document.body.dataset.traveler;
+  const route = new URLSearchParams(location.search);
+  const requestedTraveler = route.get('who') ?? document.body.dataset.traveler;
   const linkedTraveler = travelerKeys.includes(requestedTraveler);
   const savedView = store.get('view');
   const savedTraveler = store.get('who');
   let D = null;
-  let region = '';
-  let category = '';
+  let region = route.get('region') ?? '';
+  let category = route.get('topic') ?? '';
   let tripText = '';
   let tomNotes = [];
   let refreshing = false;
-  const requestedView = new URLSearchParams(location.search).get('view');
+  const requestedView = route.get('view');
   let view = viewKeys.includes(requestedView) ? requestedView : !linkedTraveler && viewKeys.includes(savedView) ? savedView : 'plan';
   let whereView;
   let who = linkedTraveler ? requestedTraveler : travelerKeys.includes(savedTraveler) ? savedTraveler : 'jerry';
@@ -253,12 +254,23 @@
     catch { window.location.assign(url); }
   });
 
+  function savePlanLink() {
+    const url = new URL(location.href);
+    url.searchParams.set('who', who);
+    url.searchParams.set('view', 'plan');
+    url.searchParams.set('region', region);
+    if (category) url.searchParams.set('topic', category);
+    else url.searchParams.delete('topic');
+    history.replaceState(null, '', url);
+  }
+
   document.addEventListener('click', e => {
     const destination = e.target.closest('button[data-region]');
     if (destination) {
       region = destination.dataset.region;
       category = '';
       render();
+      savePlanLink();
       const selected = document.querySelector('.trip-regions [aria-pressed="true"]');
       selected?.focus({ preventScroll: true });
       return;
@@ -267,6 +279,7 @@
     if (topic) {
       category = topic.dataset.category;
       render();
+      savePlanLink();
       document.querySelector('.trip-categories [aria-pressed="true"]')?.focus({ preventScroll: true });
       return;
     }
@@ -275,8 +288,8 @@
       who = w.dataset.who;
       selDay = null;
       store.set('who', who);
-      if (linkedTraveler) {
-        const url = new URL(location.href);
+      const url = new URL(location.href);
+      if (linkedTraveler || url.searchParams.has('who')) {
         url.searchParams.set('who', who);
         history.replaceState(null, '', url);
       }
