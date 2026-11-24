@@ -445,6 +445,18 @@
    "name": "Super Sports Xebio · Kawasaki Le Front",
    "addr": "Kawasaki Le Front 7F–8F, 1-11 Nisshincho, Kawasaki Ward. 044-223-1630.",
    "ja": "スーパースポーツゼビオ 川崎ルフロン店 川崎市川崎区日進町1-11"
+  },
+  {
+   "id": "frederico-marques-tennis",
+   "city": "Lisbon",
+   "name": "Frederico Marques Tennis Academy",
+   "addr": "Rua Robalo Gouveia 2, 1900-392 Lisboa, Portugal"
+  },
+  {
+   "id": "ramada-olaias-lisbon",
+   "city": "Lisbon",
+   "name": "Ramada by Wyndham Lisbon",
+   "addr": "Av. Engenheiro Arantes e Oliveira 9, 1900-221 Lisboa, Portugal"
   }
  ],
  "people": [
@@ -2218,6 +2230,14 @@
        "place": "club-espanol-rocafort"
       },
       {
+       "title": "Lisbon · Frederico Marques Academy",
+       "detail": "Join the academy’s regular training for a day. Choose Pro One-Day Experience and ask about live singles, group level and where you’ll train.",
+       "meta": "One-day training · price by request",
+       "link": "https://fredericomarques.com/pro-tennis-programs/#form",
+       "linkLabel": "Ask about one-day training",
+       "place": "frederico-marques-tennis"
+      },
+      {
        "title": "Lisbon area · Jamor courts",
        "detail": "Reserve outdoor clay or covered synthetic courts through the federation’s Jamor reception. Take the Cascais line to Cruz Quebrada. Lights cost extra.",
        "meta": "Listed singles rate · €4 outdoor or €5.50 covered per player per hour",
@@ -2305,10 +2325,17 @@
       },
       {
        "title": "Lisbon · Lost Inn",
-       "detail": "Private rooms and dorms in Chiado, five minutes on foot from Cais do Sodré. Use that station for the Cascais line toward Jamor.",
+       "detail": "Private rooms and dorms near Cais do Sodré. Take the Cascais train for Jamor, or the Green line to Alameda and the Red one stop to Olaias.",
        "link": "https://lostinn.eu/lisbon/",
        "linkLabel": "Rooms and booking",
        "place": "lost-inn-lisbon"
+      },
+      {
+       "title": "Lisbon · Ramada by Olaias",
+       "detail": "Rooms by Olaias Metro and Olaias Clube. Check dates and cancellation if training is confirmed there.",
+       "link": "https://www.ramadalisbon.pt/m/en/",
+       "linkLabel": "Check rooms and rates",
+       "place": "ramada-olaias-lisbon"
       }
      ]
     },
