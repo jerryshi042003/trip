@@ -2049,9 +2049,10 @@
      "items": [
       {
        "title": "Shanghai · Xujiahui Sports Park",
-       "detail": "Three indoor tennis courts at Wantihui. Use Juss Sports’ app or WeChat mini program for reservations. Check phone verification before planning a session.",
-       "link": "https://www.xuhui.gov.cn/gzfw-shdt/20241212/548672.html",
-       "linkLabel": "Venue and booking"
+       "detail": "Three indoor courts at Wantihui and four outdoors. Search 久事体育 in WeChat to book. The Wantihui desk can help. If Pudong is closer, check the Oriental Sports Center in the same mini program.",
+       "meta": "Xujiahui slots open at noon · up to 7 days ahead",
+       "link": "https://www.jusssports.com/news/16291245245979",
+       "linkLabel": "Juss booking guide"
       },
       {
        "title": "Shanghai · coached hit at the Bund",
@@ -2061,8 +2062,9 @@
       },
       {
        "title": "Hong Kong · public courts",
-       "detail": "Visitors without HKID can register in person as temporary SmartPLAY users for advance booking, or ask at a counter for a same-day court with an original travel document.",
-       "link": "https://www.lcsd.gov.hk/en/facilities/facilitiesbooking/procedure/feeindividual.html",
+       "detail": "Try Victoria Park in Causeway Bay or Junction Road Park in Kowloon. Verify a temporary SmartPLAY account in Jordan, then book from 7:15 a.m. without iAM Smart. For walk-ups, bring your passport to the counter 15 minutes before an available slot.",
+       "meta": "Standard courts HK$34–57/hr · 7-day booking window",
+       "link": "https://www.smartplay.lcsd.gov.hk/website/en/how-to-use/faq.html",
        "linkLabel": "Visitor booking rules"
       },
       {
