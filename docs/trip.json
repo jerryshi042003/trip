@@ -181,6 +181,13 @@
    "photo": "https://jerryshi042003.github.io/trip/media/places/ariake.jpg"
   },
   {
+   "id": "samurai-tennis-shiroi",
+   "city": "Chiba",
+   "name": "Samurai Tennis",
+   "addr": "1071-1 Ne, Shiroi, Chiba 270-1431, Japan",
+   "ja": "千葉県白井市根1071-1"
+  },
+  {
    "id": "ymca-toyocho",
    "city": "Tokyo",
    "name": "Tokyo YMCA Toyocho",
@@ -1831,8 +1838,8 @@
      "title": "Before Japan",
      "items": [
       {
-       "title": "Put a flight out on the plan",
-       "detail": "Keep the stay short if needed. Confirm PCA dates, then hold a real onward or return reservation before flying.",
+       "title": "Check PCA before booking Japan",
+       "detail": "Confirm your match schedule and onward or return flight before paying for a Japan tournament or room.",
        "meta": "Travel dates open",
        "link": "https://www.seattle.us.emb-japan.go.jp/itpr_ja/visa_faq.html",
        "linkLabel": "Onward-ticket guidance"
@@ -1879,6 +1886,14 @@
      "region": "Japan",
      "title": "Tennis in Tokyo",
      "items": [
+      {
+       "title": "Samurai Tennis · men’s singles",
+       "detail": "If PCA is finished and you’re already in Japan, check for a spot. At least three matches for TennisBear levels 6–9. Full cancellation fee Dec 4–5.",
+       "meta": "Sat Dec 5 · 5:00 pm JST · ¥3,000 · same-day entry if space",
+       "link": "https://www.tennisbear.net/event/1738521/info",
+       "linkLabel": "Entry and cancellation",
+       "place": "samurai-tennis-shiroi"
+      },
       {
        "title": "UTR TENEZ Cup · Mitaka",
        "detail": "Verified UTR 5–16 singles. Enter before 12:00 am JST Dec 7. A ¥3,300 withdrawal fee applies after 12:00 am JST Nov 29.",
