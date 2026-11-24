@@ -348,25 +348,29 @@
    "id": "benilde",
    "city": "Manila",
    "name": "De La Salle–College of Saint Benilde",
-   "addr": "2544 Taft Avenue, Malate, Manila"
+   "addr": "2544 Taft Avenue, Malate, Manila",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/benilde-taft-campus.jpg"
   },
   {
    "id": "koreatown",
    "city": "Manila",
    "name": "Koreatown · Remedios Circle",
-   "addr": "Remedios Circle, Malate, Manila"
+   "addr": "Remedios Circle, Malate, Manila",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/malate-remedios.jpg"
   },
   {
    "id": "quiapo-church",
    "city": "Manila",
    "name": "Quiapo Church",
-   "addr": "910 Plaza Miranda, Quiapo, Manila"
+   "addr": "910 Plaza Miranda, Quiapo, Manila",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/quiapo-church-front.jpg"
   },
   {
    "id": "greenhills",
    "city": "Manila",
    "name": "Greenhills Mall",
-   "addr": "Ortigas Avenue, Greenhills, San Juan"
+   "addr": "Ortigas Avenue, Greenhills, San Juan",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/greenhills-entry.jpg"
   },
   {
    "id": "tsukiji",
@@ -409,7 +413,8 @@
    "id": "wai-ying",
    "city": "Manila",
    "name": "Wai Ying Fast Food",
-   "addr": "810 Benavidez St, Binondo, Manila"
+   "addr": "810 Benavidez St, Binondo, Manila",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/wai-ying-fast-food.jpg"
   },
   {
    "id": "midorigaoka",
@@ -1361,7 +1366,13 @@
        "link": "https://gptcatennis.org/johnrey-moreno",
        "linkLabel": "JR’s coaching profile",
        "place": "benilde",
-       "from": "condo"
+       "from": "condo",
+       "photos": [
+        {
+         "url": "media/places/benilde-taft-campus.jpg",
+         "caption": "Benilde’s Taft campus"
+        }
+       ]
       },
       {
        "title": "PCA · Paco",

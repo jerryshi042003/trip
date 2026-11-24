@@ -79,3 +79,6 @@ Images were resized for Trip. The Commons file pages identify creators and licen
 
 - [Robinsons Manila Jollibee](https://commons.wikimedia.org/wiki/File:The_Jollibee_sore_at_Robinsons_Place_Mall_in_Manila.jpg) · Commons file and attribution.
 - [Wai Ying](https://i-discoverasia.com/walks/binondo/locations/wai-ying/) · photo served by iDiscover.
+
+- [Benilde Taft campus](https://commons.wikimedia.org/wiki/File:1993De_La_Salle_College_of_Saint_Benilde_14.jpg) · Judgefloro, [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). The campus photograph does not identify the team’s court.
+- [Wai Ying Fast Food interior](https://commons.wikimedia.org/wiki/File:Metro_Manila_Landmarks_and_Heritage_Lunar_Year_26.jpg) · Zarate123, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Wikimedia thumbnail used at its original crop.
