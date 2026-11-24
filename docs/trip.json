@@ -419,6 +419,13 @@
    "ja": "東京都三鷹市北野4-5-38"
   },
   {
+   "id": "chofu-creston",
+   "city": "Tokyo",
+   "name": "Chofu Creston Hotel",
+   "addr": "Chofu PARCO 8F–10F, 1-38-1 Kojimacho, Chofu, Tokyo 182-0026",
+   "ja": "東京都調布市小島町1-38-1 調布PARCO 8～10階"
+  },
+  {
    "id": "arima-river-shinsui",
    "city": "Kobe",
    "name": "Arima River Shinsui Park",
@@ -1919,6 +1926,14 @@
        "place": "toyoko-shin-kamagaya"
       },
       {
+       "title": "Chofu Creston · for Mitaka",
+       "detail": "If you get a Mitaka spot, start at Chofu Station. Take a Keio train that stops at Sengawa, then walk 12 minutes to the courts.",
+       "meta": "Dec 12–13 · Non-smoking double for one · ¥30,000 shown Nov 24",
+       "link": "https://go-hmihotelgroup.reservation.jp/en/hotels/crestonhotel-chofu/plans/10127061?checkin_date=20261212&checkout_date=20261213&adults=1&child1=0&child2=0&child3=0&child4=0&child5=0&children=0&rooms=1",
+       "linkLabel": "Check room and rate",
+       "place": "chofu-creston"
+      },
+      {
        "title": "Sotetsu Grand Fresa · Ariake",
        "detail": "Walk to Ariake Tennis Forest for the Dec 15 Diadora Cup. The non-smoking single showed a members-only rate with free cancellation through Dec 12, 11:59 p.m. Japan time.",
        "meta": "¥26,364 for two nights · Dec 14–16 sample",
@@ -1951,8 +1966,8 @@
       },
       {
        "title": "UTR TENEZ Cup · Mitaka",
-       "detail": "UTR 5–16 singles. Enter by Dec 6 at 10:59 pm Manila. The organizer lists a 50% refund from Nov 28 at 11 pm and none from Dec 5 at 11 pm, Manila time.",
-       "meta": "Sun Dec 13 · 9:00 am JST · ¥6,600–¥7,757.10 listed",
+       "detail": "Men’s singles was full on Nov 24 (6 of 6, 3 waiting). UTR quoted a ¥7,757.10 waitlist subtotal. Confirm a spot before booking travel. Organizer refunds drop to 50% Nov 28 at 11 pm and zero Dec 5 at 11 pm, Manila time.",
+       "meta": "Dec 13 · 9:00 am JST · Entry closes Dec 6 at 10:59 pm Manila",
        "place": "midorigaoka",
        "link": "https://www.tennisbear.net/event/1705188/info",
        "linkLabel": "Rules and UTR entry"
