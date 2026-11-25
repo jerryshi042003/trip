@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24",
+ "updated": "2026-11-25",
  "places": [
   {
    "id": "condo",
@@ -279,7 +279,8 @@
    "city": "Manila",
    "name": "Binondo Church · Ongpin St",
    "addr": "Binondo Church, Plaza Lorenzo Ruiz, Binondo, Manila",
-   "photo": "https://jerryshi042003.github.io/trip/media/places/binondo.jpg?v=2"
+   "photo": "https://jerryshi042003.github.io/trip/media/places/binondo.jpg?v=2",
+   "been": true
   },
   {
    "id": "golden-mosque",
@@ -1150,6 +1151,20 @@
        "linkLabel": "PCA organizer updates"
       },
       {
+       "title": "Jollibee · Robinsons Manila",
+       "detail": "Chickenjoy on Level 1 in the Sta. Monica Wing.",
+       "meta": "About 1 km · 10–15 min walk",
+       "place": "robinsons-manila",
+       "link": "https://vmd.robinsonsmalls.com/list-of-malls/metro-manila/robinsons-manila",
+       "linkLabel": "Mall directory",
+       "photos": [
+        {
+         "url": "media/places/jollibee-robinsons.jpg",
+         "caption": "Jollibee at Robinsons Place Manila"
+        }
+       ]
+      },
+      {
        "title": "Choose Japan dates after PCA",
        "detail": "Fit Tokyo around your return flight. Mitaka men’s singles was waitlist-only on Nov 24. Wait for a confirmed spot before paying for that leg.",
        "link": "https://jerryshi042003.github.io/trip/?who=jerry&view=plan&region=Japan&topic=Before+flying",
@@ -1181,7 +1196,13 @@
        "link": "https://www.facebook.com/permalink.php?story_fbid=1708210611092427&id=100057105145569",
        "linkLabel": "Official entry list",
        "place": "pca",
-       "from": "condo"
+       "from": "condo",
+       "photos": [
+        {
+         "url": "media/places/pca.jpg",
+         "caption": "Covered clay at PCA"
+        }
+       ]
       },
       {
        "title": "Step in on the short high ball",
@@ -1193,8 +1214,8 @@
        "title": "Watch juniors at Rizal Memorial",
        "detail": "Start with a morning session. Check the order of play and ask about spectator entry.",
        "meta": "Nov 23–28 · ITF J30 Manila · 2.3 km",
-       "link": "https://www.world.tennis/en/tournament/j30-manila/phi/2026/j-j30-phi-2026-001/draws-and-results/",
-       "linkLabel": "Draws & schedule",
+       "link": "https://www.world.tennis/en/tournament/j30-manila/phi/2026/j-j30-phi-2026-001/order-of-play/",
+       "linkLabel": "Order of play",
        "place": "rizal",
        "from": "condo",
        "photos": [
@@ -1215,7 +1236,13 @@
        "link": "https://www.world.tennis/en/tournament/j30-manila/phi/2026/j-j30-phi-2026-002/draws-and-results/",
        "linkLabel": "Draws & schedule",
        "place": "rizal",
-       "from": "condo"
+       "from": "condo",
+       "photos": [
+        {
+         "url": "media/places/rizal-air.jpg",
+         "caption": "Rizal Memorial Sports Complex from above"
+        }
+       ]
       },
       {
        "title": "PCA Open · main draw",
@@ -1411,8 +1438,8 @@
      "title": "Food & water nearby",
      "items": [
       {
-       "title": "Robinsons Manila · supermarket + Jollibee",
-       "detail": "Water and French Baker are in the Level 1 Adriatico Wing supermarket. Chickenjoy is also on Level 1, in the Sta. Monica Wing.",
+       "title": "Robinsons Manila · supermarket",
+       "detail": "The supermarket and French Baker are on Level 1 in the Adriatico Wing.",
        "meta": "About 1 km · 10–15 min walk",
        "place": "robinsons-manila",
        "link": "https://vmd.robinsonsmalls.com/list-of-malls/metro-manila/robinsons-manila",
@@ -1421,10 +1448,6 @@
         {
          "url": "media/places/robinsons-manila.jpg",
          "caption": "Robinsons Place Manila"
-        },
-        {
-         "url": "media/places/jollibee-robinsons.jpg",
-         "caption": "Jollibee at Robinsons Place Manila"
         }
        ]
       }
@@ -1451,27 +1474,6 @@
         {
          "url": "media/places/malate-kbbq.jpg",
          "caption": "Samgyeopsal, Korean grilled pork belly"
-        }
-       ]
-      },
-      {
-       "title": "Binondo · Chinatown",
-       "detail": "Chinese-Filipino food crawl. Split fresh lumpia at New Po-Heng, fried chicken at Sincerity and hopia from Eng Bee Tin. Budget ₱350–600.",
-       "meta": "About 4 km · 15–30 min by moto",
-       "place": "binondo",
-       "from": "condo",
-       "photos": [
-        {
-         "url": "media/places/binondo.jpg",
-         "caption": "Street life in Binondo"
-        },
-        {
-         "url": "media/places/binondo-church.jpg",
-         "caption": "Binondo Church, near the start of Ongpin"
-        },
-        {
-         "url": "media/places/binondo-hopia.jpg",
-         "caption": "Hopia from Eng Bee Tin"
         }
        ]
       },
@@ -1597,6 +1599,27 @@
         {
          "url": "media/places/bikram.jpg",
          "caption": "Bikram Yoga Manila studio"
+        }
+       ]
+      },
+      {
+       "title": "Binondo · Chinatown",
+       "detail": "Chinese-Filipino food crawl. Split fresh lumpia at New Po-Heng, fried chicken at Sincerity and hopia from Eng Bee Tin. Budget ₱350–600.",
+       "meta": "About 4 km · 15–30 min by moto",
+       "place": "binondo",
+       "from": "condo",
+       "photos": [
+        {
+         "url": "media/places/binondo.jpg",
+         "caption": "Street life in Binondo"
+        },
+        {
+         "url": "media/places/binondo-church.jpg",
+         "caption": "Binondo Church, near the start of Ongpin"
+        },
+        {
+         "url": "media/places/binondo-hopia.jpg",
+         "caption": "Hopia from Eng Bee Tin"
         }
        ]
       }
