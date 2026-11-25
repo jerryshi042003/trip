@@ -6,9 +6,16 @@ html,body{margin:0;background:var(--bg);color:var(--text);font:17px/1.3 -apple-s
 .top{display:flex;align-items:center;justify-content:space-between;gap:12px}
 h1{display:flex;align-items:center;gap:9px;font:700 34px/1.15 -apple-system,"SF Pro Display",sans-serif;letter-spacing:.01em;margin:14px 4px 12px}
 .trip-mark{display:block;border-radius:8px;border:1px solid var(--sep)}
-.seg{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-bottom:16px;position:sticky;top:env(safe-area-inset-top);z-index:2;background:var(--bg);border-bottom:1px solid var(--sep)}
-.seg button,.who button{appearance:none;border:0;min-height:44px;background:transparent;color:var(--sec);font:500 15px/1.25 -apple-system,sans-serif;padding:6px;cursor:pointer}
-.seg button[aria-pressed=true]{color:var(--text);box-shadow:inset 0 -2px var(--tint);font-weight:650}
+.trip-menu{position:relative;z-index:3}
+.trip-menu summary,.trip-notes summary{min-height:44px;line-height:44px;cursor:pointer}
+.trip-menu summary{padding:0 8px}
+.trip-menu nav{position:absolute;right:0;min-width:160px;padding:4px;background:var(--card);border:1px solid var(--sep);border-radius:10px;box-shadow:0 8px 24px #0002}
+.trip-menu button{display:block;width:100%;min-height:44px;padding:0 12px;border:0;border-radius:6px;text-align:left;background:none;color:inherit;font:inherit;cursor:pointer}
+.trip-menu button:hover,.trip-menu button[aria-pressed=true]{background:var(--fill)}
+.trip-menu button[aria-pressed=true]{font-weight:650}
+.trip-notes{margin:16px 0}
+.trip-notes summary{padding:0 16px;background:var(--card);border-radius:10px}
+.who button{appearance:none;border:0;min-height:44px;background:transparent;color:var(--sec);font:500 15px/1.25 -apple-system,sans-serif;padding:6px;cursor:pointer}
 .who{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));background:var(--fill);border-radius:10px;padding:3px}
 .who button{border-radius:7px}
 .who button[aria-pressed=true]{background:var(--seg);color:var(--text);font-weight:650}
@@ -86,10 +93,7 @@ h1{display:flex;align-items:center;gap:9px;font:700 34px/1.15 -apple-system,"SF 
 .location-setup a{color:var(--tint)}
 @media(max-width:460px){.live-travelers .row:has(.live-sharing-link:not([hidden])){display:grid;gap:0}.live-travelers .row:has(.live-sharing-link:not([hidden])) .live-actions{justify-content:flex-start}}
 .ph{width:64px;height:64px;border-radius:10px;object-fit:cover;flex-shrink:0;background:var(--sep)}
-.been{display:inline-block;font-size:12px;font-weight:600;padding:1px 7px;border-radius:9px;background:#34c75922;color:#1f8a3b;vertical-align:2px}
-@media (prefers-color-scheme:dark){.been{color:#4cd964}}
 
-.wrap:has(.trip-regions) .seg{margin-bottom:8px}
 .trip-regions{display:flex;gap:24px;margin:9px 0 0;border-bottom:1px solid var(--sep)}
 .trip-regions button{min-height:48px;padding:0 1px;border:0;background:none;color:var(--sec);font:inherit;font-weight:600;cursor:pointer}
 .trip-regions button[aria-pressed=true]{color:var(--text);box-shadow:inset 0 -2px var(--tint)}

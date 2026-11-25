@@ -26,6 +26,17 @@ except Exception as e:
 opt(d, 'updated', str, 'top')
 for k in ('places', 'people', 'emergency'): need(d, k, list, 'top')
 place_ids = {p.get('id') for p in d.get('places', []) if isinstance(p, dict)}
+people_names = {p.get('name') for p in d.get('people', []) if isinstance(p, dict)}
+if opt(d, 'directory', dict, 'top') and d.get('directory') is not None:
+    directory = d['directory']
+    for key, known in (('places', place_ids), ('people', people_names)):
+        if need(directory, key, list, 'directory'):
+            seen = set()
+            for value in directory[key]:
+                if not isinstance(value, str) or value not in known or value in seen:
+                    errs.append(f'directory.{key}: unknown or repeated entry {value!r}')
+                else:
+                    seen.add(value)
 if need(d, 'travelers', dict, 'top'):
     for who, t in d['travelers'].items():
         w = f'travelers.{who}'

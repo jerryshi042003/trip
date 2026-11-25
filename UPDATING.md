@@ -33,6 +33,7 @@ Field rules the app needs:
 - On Jerry’s Plan, a to-do section with `region` appears in the destination picker. Give it a `category` to put it under a topic. Older iPhone builds display those same sections in their original list layout.
 - Dashboard items can include `meta` (date or travel estimate), `place` and `from` (place IDs for Maps), `linkLabel`, an app `icon`, and a `photos` array with `url` and `caption`. Paths such as `media/places/pca.jpg` resolve against the Trip site.
 - Every person needs a `name`.
+- `directory.places` lists the place IDs shown in More → Places. `directory.people` lists the exact names shown in More → People, above emergency numbers. Plan links still look up the full places array.
 - No private phone numbers or emails: the site is public.
 
 ## 2. App code (anything in `ios/`)

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25",
+ "updated": "2026-11-25T22:12:02+08:00",
  "places": [
   {
    "id": "condo",
@@ -717,7 +717,7 @@
   },
   {
    "name": "PCA OPEN Facebook page",
-   "role": "Entry list (deadline Sat Nov 21) and schedule posts",
+   "role": "Draw and order of play",
    "fb": "https://www.facebook.com/100057105145569",
    "group": "Trip logistics"
   },
@@ -1146,41 +1146,15 @@
      "items": [
       {
        "title": "Find your PCA match time",
-       "detail": "Qualifying runs Nov 30–Dec 4. Check the organizer for your first match, sign-in time and any doubles dates.",
+       "detail": "Qualifying runs Nov 30–Dec 4. Check when you play and when to sign in.",
        "link": "https://www.facebook.com/100057105145569/",
        "linkLabel": "PCA organizer updates"
       },
       {
-       "title": "Jollibee · Robinsons Manila",
-       "detail": "Chickenjoy on Level 1 in the Sta. Monica Wing.",
-       "meta": "About 1 km · 10–15 min walk",
-       "place": "robinsons-manila",
-       "link": "https://vmd.robinsonsmalls.com/list-of-malls/metro-manila/robinsons-manila",
-       "linkLabel": "Mall directory",
-       "photos": [
-        {
-         "url": "media/places/jollibee-robinsons.jpg",
-         "caption": "Jollibee at Robinsons Place Manila"
-        }
-       ]
-      },
-      {
        "title": "Choose Japan dates after PCA",
-       "detail": "Fit Tokyo around your return flight. Mitaka men’s singles was waitlist-only on Nov 24. Wait for a confirmed spot before paying for that leg.",
+       "detail": "Check your PCA schedule and return flight before booking Tokyo.",
        "link": "https://jerryshi042003.github.io/trip/?who=jerry&view=plan&region=Japan&topic=Before+flying",
        "linkLabel": "Japan and flight options"
-      },
-      {
-       "title": "Confirm stays before picking courts",
-       "detail": "Confirm the nights and neighborhoods for Shanghai and Hong Kong before choosing courts.",
-       "link": "https://jerryshi042003.github.io/trip/?who=jerry&view=plan&region=Future+trips&topic=Stay",
-       "linkLabel": "Stay options"
-      },
-      {
-       "title": "Check Prince tabi socks",
-       "detail": "Check which PS295 size fits and whether you can pick it up once Tokyo dates are set.",
-       "link": "https://jerryshi042003.github.io/trip/?who=jerry&view=plan&region=Japan&topic=Food+%26+gear",
-       "linkLabel": "Socks and stores"
       }
      ],
      "category": "Next"
@@ -2283,258 +2257,6 @@
       }
      ],
      "category": "Food & gear"
-    },
-    {
-     "title": "Asia",
-     "region": "Future trips",
-     "category": "Tennis",
-     "items": [
-      {
-       "title": "Shanghai · courts by district",
-       "detail": "In WeChat, open 上海体育 → Services → 健身地图 → 体育场馆. Set 区域 to your district and 项目 to 网球 (tennis).",
-       "link": "https://english.shanghai.gov.cn/en-Individuals-DailyLife-Fitness/20260813/e23b543680f64e8c89ecdd44a3983831.html",
-       "linkLabel": "Open the Shanghai guide"
-      },
-      {
-       "title": "Shanghai · Xujiahui Sports Park",
-       "detail": "Search 久事体育 in WeChat. Xujiahui slots open at noon, up to 7 days ahead, with phone verification. Wantihui help: +86 21 3419 6878. For Pudong, check Oriental Sports Center.",
-       "meta": "May 2025 tariff · ¥75–180/hr outdoors · ¥160–350 indoors",
-       "link": "https://www.xuhui.gov.cn/xwzx_zwxx/20250427/556065.html",
-       "linkLabel": "Xuhui tariff and notice"
-      },
-      {
-       "title": "Shanghai · Moore singles",
-       "detail": "Moore runs UTR 6+ events in Pudong. The Nov 30 event overlaps PCA qualifying. Check the club’s calendar for the next men's singles date and fee.",
-       "meta": "Pudong · UTR 6+",
-       "link": "https://app.utrsports.net/club/1731194",
-       "linkLabel": "Upcoming UTR events"
-      },
-      {
-       "title": "Shanghai · coached hit at the Bund",
-       "detail": "InLove lists private and group tennis for adults. Its tennis facility is on Level 2 of the Bund Finance Center. Ask for match play at your level.",
-       "link": "https://www.inlovesports.com/Coaching",
-       "linkLabel": "Coaches and booking"
-      },
-      {
-       "title": "Hong Kong · courts by district",
-       "detail": "Choose the district where you’re staying to see nearby public courts, addresses and opening hours.",
-       "link": "https://www.lcsd.gov.hk/clpss/en/webApp/Facility/District.do?ftid=42",
-       "linkLabel": "Choose a Hong Kong district"
-      },
-      {
-       "title": "Hong Kong · public courts",
-       "detail": "Try Victoria Park in Causeway Bay or Junction Road Park in Kowloon. Verify a temporary SmartPLAY account in Jordan, then book from 7:15 a.m. without iAM Smart. For walk-ups, bring your passport to the counter 15 minutes before an available slot.",
-       "meta": "Standard courts HK$34–57/hr · 7-day booking window",
-       "link": "https://www.smartplay.lcsd.gov.hk/website/en/how-to-use/faq.html",
-       "linkLabel": "Visitor booking rules"
-      },
-      {
-       "title": "Hong Kong · book Kowloon Tsai directly",
-       "detail": "Call +852 2338 7748 or visit HKCTA at 13 Inverness Road, 7 a.m.–9 p.m. Book with your passport and keep your receipt number for check-in.",
-       "meta": "HK$34–57/hr · 7 days including today",
-       "link": "https://www.tennishk.org/en/hkta-tennis-centre-availability/",
-       "linkLabel": "HKCTA booking and rates"
-      },
-      {
-       "title": "Hong Kong · find a singles opponent",
-       "detail": "TennisGO HK filters by district, time, NTRP and men’s singles. Pick the district first, then agree on a level and court. Court hire is separate.",
-       "link": "https://apps.apple.com/us/app/tennisgo-hk/id6746753289",
-       "linkLabel": "Open TennisGO HK"
-      },
-      {
-       "title": "Hong Kong · adult coaching",
-       "detail": "HKCTA lists private sessions at four venues, including Causeway Bay and Kowloon Tsai. Ask for live points at your level.",
-       "link": "https://www.tennishk.org/en/learn-to-play/adult-tennis/private-coaching/",
-       "linkLabel": "Venues and rates"
-      },
-      {
-       "title": "Shanghai · adult singles ranking",
-       "detail": "The Shanghai Tennis Association lists a men’s 4.0+ singles division. Use its event listings to check the date and whether an overseas visitor can enter. The local grade has its own scale.",
-       "meta": "2027 draw and visitor entry unconfirmed",
-       "link": "https://sagsh.shsports.cn/upload/4def37c3d515457e8386a9013aa0ca23.pdf#page=10",
-       "linkLabel": "Association singles guide"
-      },
-      {
-       "title": "Hong Kong · TennisAsia UTR ladder",
-       "detail": "Pick opponents near your UTR and agree on a court. The published 2026 men's singles season ends Nov 30. Check for a new season and a match at your level before paying.",
-       "meta": "2027 season unconfirmed",
-       "link": "https://tennisasia.com.hk/clutch/",
-       "linkLabel": "Ladder and season dates"
-      }
-     ]
-    },
-    {
-     "title": "Spain and Portugal",
-     "region": "Future trips",
-     "category": "Tennis",
-     "items": [
-      {
-       "title": "Valencia · adult clay training",
-       "detail": "Five weekdays of clay training and fitness. The pro program lists groups of up to four and practice matches. Confirm an advanced group for your dates before paying the deposit.",
-       "meta": "€350 mornings · €500 full days for five days",
-       "link": "https://adv.cmvalenciatenniscenter.com/tennis",
-       "linkLabel": "Compare the five-day programs",
-       "place": "valencia-tennis-center"
-      },
-      {
-       "title": "Rocafort · Gran Premio de Navidad",
-       "detail": "Men’s open singles on clay. Confirm which federation licence you need as a visitor and complete iSquad affiliation before paying.",
-       "meta": "Dec 23–31, 2026 · €30 · enter by Dec 18 at 7 p.m. Valencia time",
-       "link": "https://www.cettenis.com/NewsItem.aspx?id=ef2c7343af1c87d1cc10591ec3a9362d",
-       "linkLabel": "Club announcement and entry",
-       "place": "club-espanol-rocafort"
-      },
-      {
-       "title": "Lisbon · Frederico Marques Academy",
-       "detail": "Join the academy’s regular training for a day. Choose Pro One-Day Experience and ask about live singles, group level and where you’ll train.",
-       "meta": "One-day training · price by request",
-       "link": "https://fredericomarques.com/pro-tennis-programs/#form",
-       "linkLabel": "Ask about one-day training",
-       "place": "frederico-marques-tennis"
-      },
-      {
-       "title": "Lisbon area · Jamor courts",
-       "detail": "Ask Jamor reception for current singles rates and light charges. Take the Cascais line to Cruz Quebrada.",
-       "meta": "Outdoor clay · covered synthetic",
-       "link": "https://jamor.ipdj.pt/index.php?lang=pt&pid=9&ppid=1&s=white&title=tenis",
-       "linkLabel": "Jamor reception",
-       "place": "jamor-tennis"
-      },
-      {
-       "title": "Lisbon · CIF singles ladder",
-       "detail": "The under-45 singles ladder takes non-members. Join CIF’s network, then submit the form and pay at club reception. Confirm an opponent at your level for your dates.",
-       "meta": "2026 season ends Dec 22 · €35 for non-members, court fees extra",
-       "link": "https://www.globaltennisnetwork.com/network/ladder-league/ladderEvent/921_3171-13-torneio-escada-cif-2026",
-       "linkLabel": "League and registration",
-       "place": "cif-lisbon-tennis"
-      },
-      {
-       "title": "Valencia · find a singles opponent",
-       "detail": "For a short visit, use Hoqai’s open matches and filter to Valencia city and your level. Its separate singles league runs Feb 15–Jun 7 and has one match per round, about every two weeks.",
-       "meta": "League €29.99 · no federation licence listed",
-       "link": "https://hoqai.com/ligas-de-tenis/valencia/ciudad",
-       "linkLabel": "Open matches and league format"
-      },
-      {
-       "title": "Lisbon · ProTennis advanced singles",
-       "detail": "The organizer lists an advanced singles ladder through July 31. Join the network to see its private draw. Confirm a match during your visit and an available payment method before joining.",
-       "meta": "2026–27 season · €20 for singles",
-       "link": "https://www.globaltennisnetwork.com/network/ladder-league/ladderEvent/4774_3461-ligas-protennis-26-27",
-       "linkLabel": "League dates and divisions"
-      }
-     ]
-    },
-    {
-     "title": "Australia",
-     "region": "Future trips",
-     "category": "Tennis",
-     "items": [
-      {
-       "title": "Sydney Olympic Park · court hire",
-       "detail": "Guests can book outdoor courts within 24 hours of play. Peak rates apply on weekdays after 5 p.m. and Saturdays before 1 p.m. Indoor courts are reserved for eligible members.",
-       "meta": "A$37 off-peak · A$42 peak per outdoor court per hour",
-       "link": "https://www.tennisworld.net.au/locations/sydney/court-hire/",
-       "linkLabel": "Outdoor court hire",
-       "place": "tennis-world-sydney"
-      },
-      {
-       "title": "Sydney Olympic Park · singles match play",
-       "detail": "Play a 90-minute singles match. Adults can enter as guests with an X-point profile. Ask Tennis World about pairings at your level before paying.",
-       "meta": "A$26 competition pass · A$22 annual X-point fee for new profiles",
-       "link": "https://www.tennisworld.net.au/locations/sydney/programs/competitive-play/adult-match-play/",
-       "linkLabel": "Match sessions and registration",
-       "place": "tennis-world-sydney"
-      },
-      {
-       "title": "Sydney · North Shore Open",
-       "detail": "Verified UTR sets your tier. Twilight starts around 6 p.m. for men under UTR 10. Choose one singles draw and confirm visitor affiliation before paying.",
-       "meta": "Dec 15–20 · A$80 Open singles · enter by Dec 5, 11:59 p.m. Sydney time",
-       "link": "https://tournaments.tennis.com.au/tournament/3B6275EC-EECB-426E-9A7A-7E5FBB140FD8",
-       "linkLabel": "Draw and entry",
-       "place": "kooroora-tennis"
-      },
-      {
-       "title": "Sydney Open · Rockdale",
-       "detail": "Overseas players are welcome. Open singles is UTR-verified on synthetic grass. Keep all three days free and check the singles fee and first match before booking travel.",
-       "meta": "Jan 15–17, 2027 · enter by Jan 1, 11:59 p.m. Sydney time",
-       "link": "https://glta.tournamentsoftware.com/tournament/6d6d214b-e149-413a-92b9-a7c23205b2a7",
-       "linkLabel": "Open singles draw and entry"
-      },
-      {
-       "title": "Sydney · Macarthur Open singles",
-       "detail": "Men’s Open Series at Wests Tennis Centre, Leumeah. Entry opens Dec 18. Check the fee and visitor affiliation before booking travel.",
-       "meta": "Jan 23–26, 2027 · enter by Jan 13, 11:59 p.m. AEDT",
-       "link": "https://tournaments.tennis.com.au/tournament/2E07D5F9-418E-4E58-87E2-5915CE3E817F",
-       "linkLabel": "Tennis Australia draw and deadlines"
-      }
-     ]
-    },
-    {
-     "title": "Shanghai and Hong Kong",
-     "region": "Future trips",
-     "category": "Stay",
-     "items": [
-      {
-       "title": "Shanghai → Hong Kong by rail",
-       "detail": "Flying into Shanghai from outside Hong Kong? A confirmed train ticket to Hong Kong can count as onward travel for 240-hour visa-free transit. Bring an eligible ordinary passport. Immigration decides on arrival.",
-       "link": "https://english.shanghai.gov.cn/en-ServicesandGuides-FAQs-Visas/20261026/2c0e242241104bf79cabd64ad96b7290.html",
-       "linkLabel": "Shanghai rail and entry rules"
-      },
-      {
-       "title": "Shanghai · register a home stay",
-       "detail": "Foreign guests register within 24 hours of arriving at a private home, including on visa-free entry. Ask your host to help the first time. Use the online form or NIA 12367 in WeChat or Alipay.",
-       "link": "https://english.shanghai.gov.cn/en-ServicesandGuides-OnlineServices/20260922/665284ae21624250b916b1c0b570ff2f.html",
-       "linkLabel": "Register a Shanghai stay"
-      },
-      {
-       "title": "Hong Kong · check entry",
-       "detail": "Check Hong Kong’s rules for the passport you’ll travel on before buying an onward ticket. The rules depend on your travel document and whether you’re visiting or passing through.",
-       "link": "https://www.immd.gov.hk/eng/services/visas/visit_transit.html",
-       "linkLabel": "Hong Kong visit and transit rules"
-      }
-     ]
-    },
-    {
-     "title": "Spain and Portugal stays",
-     "region": "Future trips",
-     "category": "Stay",
-     "items": [
-      {
-       "title": "Valencia · Resa Patacona",
-       "detail": "Short-stay single rooms and studios near Patacona Beach and Valencia Tennis Center. Open the traveler rates for your dates.",
-       "link": "https://resa.es/en/residences/valencia/patacona/?tab=travelers",
-       "linkLabel": "Traveler rooms",
-       "place": "resa-patacona"
-      },
-      {
-       "title": "Lisbon · Lost Inn",
-       "detail": "Private rooms and dorms near Cais do Sodré. Take the Cascais train for Jamor, or the Green line to Alameda and the Red one stop to Olaias.",
-       "link": "https://lostinn.eu/lisbon/",
-       "linkLabel": "Rooms and booking",
-       "place": "lost-inn-lisbon"
-      },
-      {
-       "title": "Lisbon · Ramada by Olaias",
-       "detail": "Rooms by Olaias Metro and Olaias Clube. Check dates and cancellation if training is confirmed there.",
-       "link": "https://www.ramadalisbon.pt/m/en/",
-       "linkLabel": "Check rooms and rates",
-       "place": "ramada-olaias-lisbon"
-      }
-     ]
-    },
-    {
-     "title": "Australia stay",
-     "region": "Future trips",
-     "category": "Stay",
-     "items": [
-      {
-       "title": "Sydney · ibis Olympic Park",
-       "detail": "Private rooms near Olympic Park station, within walking distance of the Tennis Centre. Check room rates and cancellation terms for your dates.",
-       "link": "https://all.accor.com/hotel/2734/index.en.shtml",
-       "linkLabel": "Rooms and rates",
-       "place": "ibis-sydney-olympic"
-      }
-     ]
     }
    ]
   },
@@ -3068,5 +2790,19 @@
     }
    ]
   }
+ },
+ "directory": {
+  "places": [
+   "pca",
+   "rizal",
+   "proserve",
+   "asmara",
+   "hnd",
+   "ariake"
+  ],
+  "people": [
+   "PCA OPEN Facebook page",
+   "Rizal Memorial"
+  ]
  }
 }

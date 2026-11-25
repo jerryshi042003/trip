@@ -4,14 +4,17 @@
 <div class="wrap">
   <header class="top">
     <h1><img class="trip-mark" src="${new URL('icon-180.png?v=2', base)}" width="32" height="32" alt="">Trip</h1>
-    <button class="lock" id="share-trip" type="button">Share Trip</button>
+    <details class="trip-menu" id="trip-menu">
+      <summary>More</summary>
+      <nav aria-label="Trip sections">
+        <button data-v="plan" aria-pressed="true">Plan</button>
+        <button data-v="places" aria-pressed="false">Places</button>
+        <button data-v="people" aria-pressed="false">People</button>
+        <button data-v="where" aria-pressed="false">Where</button>
+        <button id="share-trip" type="button">Share Trip</button>
+      </nav>
+    </details>
   </header>
-  <nav class="seg" aria-label="Trip sections">
-    <button data-v="plan" aria-pressed="true">Plan</button>
-    <button data-v="places" aria-pressed="false">Places</button>
-    <button data-v="people" aria-pressed="false">People</button>
-    <button data-v="where" aria-pressed="false">Where</button>
-  </nav>
   <div class="who" role="group" aria-label="Traveler">
     <button data-who="jerry" aria-pressed="true">Jerry</button>
     <button data-who="tom" aria-pressed="false">Tom</button>
@@ -53,13 +56,13 @@
   let whereView;
   let who = linkedTraveler ? requestedTraveler : travelerKeys.includes(savedTraveler) ? savedTraveler : 'jerry';
   if (linkedTraveler) store.set('who', who);
+  const menu = document.getElementById('trip-menu');
 
-  const placeRow = p => `<div class="row">${p.photo ? `<img class="ph" src="${esc(p.photo)}" alt="" loading="lazy">` : ''}<div class="main"><div class="t">${esc(p.name)}${p.been ? ' <span class="been">Been</span>' : ''}</div><div class="s">${esc(p.addr)}</div>${p.ja ? `<div class="ja">${esc(p.ja)}</div>` : ''}</div><div class="acts">${p.ja ? `<button class="a" data-copy="${esc(p.ja)}" aria-label="Copy">${I.copy}</button>` : ''}<a class="a" href="${gmap(p.ja || p.addr)}" aria-label="Map">${I.map}</a></div></div>`;
+  const placeRow = p => `<div class="row">${p.photo ? `<img class="ph" src="${esc(p.photo)}" alt="" loading="lazy">` : ''}<div class="main"><div class="t">${esc(p.name)}</div><div class="s">${esc(p.addr)}</div>${p.ja ? `<div class="ja">${esc(p.ja)}</div>` : ''}</div><div class="acts">${p.ja ? `<button class="a" data-copy="${esc(p.ja)}" aria-label="Copy">${I.copy}</button>` : ''}<a class="a" href="${gmap(p.ja || p.addr)}" aria-label="Map">${I.map}</a></div></div>`;
   const personRow = p => {
     const a = [];
     if (p.phone) a.push(`<a class="a" href="tel:${esc(p.phone)}" aria-label="Call">${I.call}</a>`);
     if (p.whatsapp) a.push(`<a class="a" href="https://wa.me/${esc(p.whatsapp)}" aria-label="WhatsApp">${I.msg}</a>`);
-    else if (p.phone && p.phone.length > 6) a.push(`<a class="a" href="sms:${esc(p.phone)}" aria-label="Message">${I.msg}</a>`);
     if (p.email) a.push(`<a class="a" href="mailto:${esc(p.email)}" aria-label="Email">${I.mail}</a>`);
     if (p.ig) a.push(`<a class="a" href="https://ig.me/m/${esc(p.ig)}" aria-label="Instagram">IG</a>`);
     if (p.fb) a.push(`<a class="a" href="${esc(p.fb)}" aria-label="Facebook">FB</a>`);
@@ -195,7 +198,7 @@
 
   function render() {
     document.querySelector('.who').hidden = view !== 'plan';
-    document.querySelectorAll('.seg button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.v === view)));
+    menu.querySelectorAll('[data-v]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.v === view)));
     document.querySelectorAll('.who button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.who === who)));
     if (view === 'where') {
       whereView ??= window.mountTripWhere(document.getElementById('out'));
@@ -217,36 +220,38 @@
         document.getElementById('out').innerHTML = dashboard(tripSections, byId);
         return;
       }
-      if (who === 'tom') {
-        if (showInstall) h += `<details class="group install-guide"><summary>Install on iPhone</summary><p>Open this link in Safari. Tap Safari’s <strong>Share</strong> → <strong>Add to Home Screen</strong>. Keep <strong>Open as Web App</strong> on and tap <strong>Add</strong>.</p></details>`;
-        h += `<h2 class="hdr">Tom’s updates</h2><div class="group">${tomNotes.map(note => `<div class="row"><div class="main">${esc(note)}</div></div>`).join('')}<div class="row update-actions"><a href="${edit}tom-notes.txt" target="_blank" rel="noopener">Edit updates</a><a href="${edit}trip.json" target="_blank" rel="noopener">Edit full plan</a></div></div>`;
-      }
-      for (const section of T.todos ?? []) {
-        h += `<h2 class="hdr">${esc(section.title)}</h2><div class="group">${section.items.map(taskRow).join('')}</div>`;
-      }
+      const sections = T.todos ?? [];
+      const taskSections = list => list.map(section => `<h2 class="hdr">${esc(section.title)}</h2><div class="group">${section.items.map(taskRow).join('')}</div>`).join('');
       const cal = calendar(T, byId);
-      if (cal) h += `<h2 class="hdr">Calendar</h2>${cal}`;
+      const calendarSection = cal ? `<h2 class="hdr">Calendar</h2>${cal}` : '';
+      if (who !== 'tom') h += taskSections(sections) + calendarSection;
       h += '<h2 class="hdr">Itinerary</h2>';
       h += `<div class="group">${T.plan.map(x => { const p = byId[x.place]; return `<a class="row" ${p ? `href="${gmap(p.ja || p.addr)}"` : ''}><div class="date">${esc(x.date)}</div><div class="main"><div class="t">${esc(x.title)}</div>${x.sub ? `<div class="s">${esc(x.sub)}</div>` : ''}</div>${p ? '<span class="chev">›</span>' : ''}</a>`; }).join('')}</div>`;
-      if (T.bucket && T.bucket.length) h += `<h2 class="hdr">Bucket list</h2><div class="group">${T.bucket.map(b => `<div class="row"><div class="main"><div class="t">${esc(b)}</div></div></div>`).join('')}</div>`;
+      const bucket = T.bucket?.length ? `<h2 class="hdr">Bucket list</h2><div class="group">${T.bucket.map(b => `<div class="row"><div class="main"><div class="t">${esc(b)}</div></div></div>`).join('')}</div>` : '';
+      if (who === 'tom') {
+        h += `<h2 class="hdr">Tom’s updates</h2><div class="group">${tomNotes.map(note => `<div class="row"><div class="main">${esc(note)}</div></div>`).join('')}<div class="row update-actions"><a href="${edit}tom-notes.txt" target="_blank" rel="noopener">Edit updates</a><a href="${edit}trip.json" target="_blank" rel="noopener">Edit full plan</a></div></div>`;
+        const beforeDeparture = sections.filter(section => section.title === 'Before departure');
+        const notes = sections.filter(section => section.title !== 'Before departure');
+        h += taskSections(beforeDeparture);
+        const open = document.querySelector('.trip-notes')?.open ? ' open' : '';
+        h += `<details class="trip-notes"${open}><summary>Trip notes & drafts</summary>${taskSections(notes)}${calendarSection}${bucket}</details>`;
+        if (showInstall) h += `<details class="group install-guide"><summary>Install on iPhone</summary><p>Open this link in Safari. Tap Safari’s <strong>Share</strong> → <strong>Add to Home Screen</strong>. Keep <strong>Open as Web App</strong> on and tap <strong>Add</strong>.</p></details>`;
+      } else {
+        h += bucket;
+      }
     } else if (view === 'places') {
-      for (const city of [...new Set(D.places.map(p => p.city))]) h += `<h2 class="hdr">${esc(city)}</h2><div class="group">${D.places.filter(p => p.city === city).map(placeRow).join('')}</div>`;
+      const ids = D.directory?.places ?? [...new Set(T.plan.map(item => item.place).filter(Boolean))];
+      h = `<h2 class="hdr">Places</h2><div class="group">${ids.map(id => byId[id]).filter(Boolean).map(placeRow).join('')}</div>`;
     } else {
-      const groups = new Map();
-      for (const person of D.people) {
-        const title = person.group || 'Contacts';
-        if (!groups.has(title)) groups.set(title, []);
-        groups.get(title).push(person);
-      }
-      for (const [title, contacts] of groups) {
-        h += `<h2 class="hdr">${esc(title)}</h2><div class="group">${contacts.map(personRow).join('')}</div>`;
-      }
+      const contacts = (D.directory?.people ?? []).map(name => D.people.find(person => person.name === name)).filter(Boolean);
+      if (contacts.length) h += `<h2 class="hdr">Trip contacts</h2><div class="group">${contacts.map(personRow).join('')}</div>`;
       h += `<h2 class="hdr">Emergency</h2><div class="group">${D.emergency.map(personRow).join('')}</div>`;
     }
     document.getElementById('out').innerHTML = h;
   }
 
   document.getElementById('share-trip').addEventListener('click', async () => {
+    menu.open = false;
     const sharingWhere = view === 'where';
     const url = sharingWhere ? new URL('?view=where', base).href : tomPlan;
     if (navigator.share) {
@@ -268,6 +273,7 @@
   }
 
   document.addEventListener('click', e => {
+    if (!menu.contains(e.target)) menu.open = false;
     const destination = e.target.closest('button[data-region]');
     if (destination) {
       region = destination.dataset.region;
@@ -301,13 +307,15 @@
     }
     const cd = e.target.closest('.cal-d.has');
     if (cd) { selDay = selDay === cd.dataset.day ? null : cd.dataset.day; render(); document.querySelector(`[data-day="${selDay || cd.dataset.day}"]`)?.focus({ preventScroll: true }); return; }
-    const stage = e.target.closest('.seg button');
+    const stage = e.target.closest('#trip-menu [data-v]');
     if (stage) {
       view = stage.dataset.v;
       const url = new URL(location.href);
       url.searchParams.set('view', view);
       history.replaceState(null, '', url);
       store.set('view', view);
+      menu.open = false;
+      menu.querySelector('summary').focus({ preventScroll: true });
       render();
       window.scrollTo(0, 0);
       return;
@@ -317,6 +325,13 @@
       const copy = navigator.clipboard?.writeText(c.dataset.copy);
       if (copy) copy.then(() => toast('Copied'), () => toast('Could not copy. Select the text to copy it.'));
       else toast('Could not copy. Select the text to copy it.');
+    }
+  });
+
+  menu.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && menu.open) {
+      menu.open = false;
+      menu.querySelector('summary').focus();
     }
   });
 

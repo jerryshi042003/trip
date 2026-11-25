@@ -1,5 +1,5 @@
 import SwiftUI
-import MapKit
+import CoreLocation
 import AVKit
 import UIKit
 
@@ -19,84 +19,37 @@ struct TripApp: App {
 }
 
 struct RootView: View {
-    private enum TripTab: String, CaseIterable {
-        case plan = "Plan", places = "Places", people = "People", media = "Media"
-
-        var icon: String {
-            switch self {
-            case .plan: "calendar"
-            case .places: "mappin.and.ellipse"
-            case .people: "person.2"
-            case .media: "play.rectangle"
-            }
-        }
-    }
+    private enum TripSection: Hashable { case places, people, media }
 
     @EnvironmentObject var store: TripStore
     @AppStorage("who") private var who = "jerry"
-    @Environment(\.accessibilityReduceMotion) private var reduceMotion
-    @Environment(\.accessibilityReduceTransparency) private var reduceTransparency
-    @State private var tab: TripTab = .plan
-
-    private var showsMedia: Bool { !(store.data?.media ?? []).isEmpty }
+    @State private var path: [TripSection] = []
 
     var body: some View {
-        TabView(selection: $tab) {
-            Tab("Plan", systemImage: TripTab.plan.icon, value: .plan) {
-                NavigationStack { PlanView(who: $who).toolbar(.hidden, for: .tabBar) }
-            }
-            Tab("Places", systemImage: TripTab.places.icon, value: .places) {
-                NavigationStack { PlacesView().toolbar(.hidden, for: .tabBar) }
-            }
-            Tab("People", systemImage: TripTab.people.icon, value: .people) {
-                NavigationStack { PeopleView().toolbar(.hidden, for: .tabBar) }
-            }
-            if showsMedia {
-                Tab("Media", systemImage: TripTab.media.icon, value: .media) {
-                    NavigationStack { MediaView().toolbar(.hidden, for: .tabBar) }
-                }
-            }
-        }
-        .safeAreaInset(edge: .bottom, spacing: 0) { sectionBar }
-        .onChange(of: showsMedia) { _, visible in
-            if !visible && tab == .media { tab = .plan }
-        }
-    }
-
-    private var sectionBar: some View {
-        HStack(spacing: 0) {
-            ForEach(TripTab.allCases.filter { $0 != .media || showsMedia }, id: \.self) { section in
-                let selected = section == tab
-                Button {
-                    tab = section
-                } label: {
-                    VStack(spacing: 4) {
-                        Capsule()
-                            .fill(selected ? Color.accentColor : Color.clear)
-                            .frame(width: 16, height: 2)
-                        Image(systemName: section.icon).font(.system(size: 18, weight: .medium))
-                        Text(section.rawValue).font(.caption2.weight(.semibold))
+        NavigationStack(path: $path) {
+            PlanView(who: $who)
+                .toolbar {
+                    ToolbarItem(placement: .topBarTrailing) {
+                        Menu("More") {
+                            Button("Places") { path.append(.places) }
+                            Button("People") { path.append(.people) }
+                            if !(store.data?.media ?? []).isEmpty {
+                                Button("Media") { path.append(.media) }
+                            }
+                            Divider()
+                            ShareLink("Share Trip", item: Links.tomPlan)
+                        }
+                        .accessibilityIdentifier("trip-menu")
                     }
-                    .foregroundStyle(selected ? Color.accentColor : Color.secondary)
-                    .frame(maxWidth: .infinity, minHeight: 52)
-                    .contentShape(Rectangle())
-                    .animation(reduceMotion ? nil : .easeInOut(duration: 0.28), value: selected)
                 }
-                .buttonStyle(.plain)
-                .accessibilityLabel(section.rawValue)
-                .accessibilityAddTraits(selected ? .isSelected : [])
-                .accessibilityIdentifier("section-\(section.rawValue)")
-            }
+                .navigationDestination(for: TripSection.self) { section in
+                    switch section {
+                    case .places: PlacesView()
+                    case .people: PeopleView()
+                    case .media: MediaView()
+                    }
+                }
         }
-        .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
-        .background {
-            Group {
-                if reduceTransparency { Color(.systemBackground) }
-                else { Rectangle().fill(.regularMaterial) }
-            }
-            .ignoresSafeArea(edges: .bottom)
-        }
-        .overlay(alignment: .top) { Divider() }
     }
 }
 
@@ -133,77 +86,43 @@ struct PlanView: View {
         let dashboard = (t?.todos ?? []).filter { $0.region != nil }
         List {
             Section {
-                HStack(spacing: 8) {
-                    Picker("Traveler", selection: $who) {
-                        ForEach((store.data?.travelers ?? [:]).keys.sorted(), id: \.self) { key in
-                            Text(store.data?.travelers[key]?.name ?? key).tag(key)
-                        }
+                Picker("Traveler", selection: $who) {
+                    ForEach((store.data?.travelers ?? [:]).keys.sorted(), id: \.self) { key in
+                        Text(store.data?.travelers[key]?.name ?? key).tag(key)
                     }
-                    .pickerStyle(.segmented)
-                    ShareLink(item: Links.tomPlan) {
-                        Image(systemName: "square.and.arrow.up")
-                            .frame(width: 44, height: 44)
-                            .contentShape(Rectangle())
-                    }
-                    .buttonStyle(.borderless)
-                    .accessibilityLabel("Share Tom’s Trip link")
-                    .accessibilityIdentifier("share-tom-trip")
                 }
+                .pickerStyle(.segmented)
                 .listRowBackground(Color.clear)
                 .listRowInsets(EdgeInsets())
                 .listRowSeparator(.hidden)
             }
-            if who == "tom" {
-                Section("Tom’s updates") {
-                    ForEach(Array(store.tomNotes.enumerated()), id: \.offset) { _, note in Text(note) }
-                    Link("Edit updates", destination: Links.editTomNotes)
-                    Link("Edit full plan", destination: Links.editPlan)
-                }
-            }
             if dashboard.isEmpty {
-                ForEach(t?.todos ?? []) { section in
-                    Section(section.title) {
-                        ForEach(section.items) { item in
-                            VStack(alignment: .leading, spacing: 5) {
-                                HStack(alignment: .top) {
-                                    VStack(alignment: .leading, spacing: 3) {
-                                        Text(item.title)
-                                        Text(item.detail).font(.subheadline).foregroundStyle(.secondary)
-                                    }
-                                    if let link = item.link {
-                                        Spacer(minLength: 4)
-                                        Link(destination: link) { Image(systemName: "globe") }
-                                            .buttonStyle(.borderless)
-                                            .accessibilityLabel("Open link for \(item.title)")
-                                    }
+                if let t {
+                    let sections = t.todos ?? []
+                    if who == "tom" {
+                        itinerary(t.plan, places: places)
+                        Section("Tom’s updates") {
+                            ForEach(Array(store.tomNotes.enumerated()), id: \.offset) { _, note in Text(note) }
+                            Link("Edit updates", destination: Links.editTomNotes)
+                            Link("Edit full plan", destination: Links.editPlan)
+                        }
+                        taskSections(sections.filter { $0.title == "Before departure" })
+                        Section {
+                            NavigationLink("Trip notes & drafts") {
+                                List {
+                                    taskSections(sections.filter { $0.title != "Before departure" })
+                                    calendar(t)
+                                    bucket(t)
                                 }
-                                if let draft = item.draft {
-                                    DisclosureGroup("Draft message") {
-                                        Text(draft).textSelection(.enabled)
-                                        Button("Copy draft") { UIPasteboard.general.string = draft }
-                                            .buttonStyle(.borderless)
-                                    }
-                                }
+                                .navigationTitle("Trip notes & drafts")
                             }
                         }
+                    } else {
+                        taskSections(sections)
+                        calendar(t)
+                        itinerary(t.plan, places: places)
+                        bucket(t)
                     }
-                }
-                if let d = store.data, let t {
-                    Section("Calendar") { TripCalendar(data: d, traveler: t) }
-                }
-                Section {
-                    ForEach(t?.plan ?? []) { item in
-                        let p = item.place.flatMap { places[$0] }
-                        Group {
-                            if let p { Link(destination: Links.maps(p, store.coordinate(for: p))) { PlanRow(item: item, chevron: true) } }
-                            else { PlanRow(item: item, chevron: false) }
-                        }
-                    }
-                } header: {
-                    Text("Itinerary")
-                }
-                if let b = t?.bucket, !b.isEmpty {
-                    Section("Bucket list") { ForEach(b, id: \.self) { Text($0) } }
                 }
             } else {
                 let regions = dashboard.compactMap(\.region).reduce(into: [String]()) { names, name in
@@ -250,6 +169,62 @@ struct PlanView: View {
         }
         .navigationTitle("Trip")
         .refreshable { await store.refresh() }
+    }
+
+    private func taskSections(_ sections: [TripTaskSection]) -> some View {
+        ForEach(sections) { section in
+            Section(section.title) {
+                ForEach(section.items) { item in
+                    VStack(alignment: .leading, spacing: 5) {
+                        HStack(alignment: .top) {
+                            VStack(alignment: .leading, spacing: 3) {
+                                Text(item.title)
+                                Text(item.detail).font(.subheadline).foregroundStyle(.secondary)
+                            }
+                            if let link = item.link {
+                                Spacer(minLength: 4)
+                                Link(destination: link) { Image(systemName: "globe") }
+                                    .buttonStyle(.borderless)
+                                    .accessibilityLabel("Open link for \(item.title)")
+                            }
+                        }
+                        if let draft = item.draft {
+                            DisclosureGroup("Draft message") {
+                                Text(draft).textSelection(.enabled)
+                                Button("Copy draft") { UIPasteboard.general.string = draft }
+                                    .buttonStyle(.borderless)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    private func itinerary(_ plan: [PlanItem], places: [String: Place]) -> some View {
+        Section {
+            ForEach(plan) { item in
+                let p = item.place.flatMap { places[$0] }
+                Group {
+                    if let p { Link(destination: Links.maps(p, store.coordinate(for: p))) { PlanRow(item: item, chevron: true) } }
+                    else { PlanRow(item: item, chevron: false) }
+                }
+            }
+        } header: {
+            Text("Itinerary")
+        }
+    }
+
+    @ViewBuilder private func calendar(_ traveler: Traveler) -> some View {
+        if let data = store.data {
+            Section("Calendar") { TripCalendar(data: data, traveler: traveler) }
+        }
+    }
+
+    @ViewBuilder private func bucket(_ traveler: Traveler) -> some View {
+        if let items = traveler.bucket, !items.isEmpty {
+            Section("Bucket list") { ForEach(items, id: \.self) { Text($0) } }
+        }
     }
 }
 
@@ -376,36 +351,10 @@ struct PlanRow: View {
 
 struct PlacesView: View {
     @EnvironmentObject var store: TripStore
-    @State private var city = ""
 
     var body: some View {
-        let places = store.data?.places ?? []
-        let cities = places.map(\.city).reduce(into: [String]()) { if !$0.contains($1) { $0.append($1) } }
-        let selection = Binding(get: { cities.contains(city) ? city : cities.first ?? "" }, set: { city = $0 })
-        let shown = places.filter { $0.city == selection.wrappedValue }
-        List {
-            if !cities.isEmpty {
-                Section {
-                    Picker("City", selection: selection) { ForEach(cities, id: \.self) { Text($0).tag($0) } }
-                        .pickerStyle(.menu)
-                        .accessibilityIdentifier("places-city")
-                        .listRowBackground(Color.clear)
-                        .listRowSeparator(.hidden)
-                }
-            }
-            let pins = shown.compactMap { p in store.coordinate(for: p).map { (p, $0) } }
-            if !pins.isEmpty {
-                Section {
-                    Map {
-                        ForEach(pins, id: \.0.id) { p, c in Marker(p.name, coordinate: c) }
-                    }
-                    .frame(height: 220)
-                    .listRowInsets(EdgeInsets())
-                }
-            }
-            Section {
-                ForEach(shown) { p in PlaceRow(place: p) }
-            }
+        List(store.data?.listedPlaces ?? []) { place in
+            PlaceRow(place: place)
         }
         .navigationTitle("Places")
         .refreshable { await store.refresh() }
@@ -424,14 +373,7 @@ struct PlaceRow: View {
                     .accessibilityHidden(true)
             }
             VStack(alignment: .leading, spacing: 3) {
-                HStack(spacing: 6) {
-                    Text(place.name)
-                    if place.been == true {
-                        Text("Been").font(.caption.weight(.semibold)).foregroundStyle(.green)
-                            .padding(.horizontal, 7).padding(.vertical, 1)
-                            .background(Color.green.opacity(0.15), in: Capsule())
-                    }
-                }
+                Text(place.name)
                 Text(place.addr).font(.subheadline).foregroundStyle(.secondary)
                 if let ja = place.ja { Text(ja).font(.subheadline).textSelection(.enabled) }
             }
@@ -457,13 +399,10 @@ struct PlaceRow: View {
 struct PeopleView: View {
     @EnvironmentObject var store: TripStore
     var body: some View {
-        let people = store.data?.people ?? []
-        let grouped = Dictionary(grouping: people, by: \.contactGroup)
-        var seen = Set<String>()
-        let groupOrder = people.map(\.contactGroup).filter { seen.insert($0).inserted }
+        let people = store.data?.listedPeople ?? []
         List {
-            ForEach(groupOrder, id: \.self) { name in
-                Section(name) { ForEach(grouped[name] ?? []) { PersonRow(person: $0) } }
+            if !people.isEmpty {
+                Section("Trip contacts") { ForEach(people) { PersonRow(person: $0) } }
             }
             Section("Emergency") { ForEach(store.data?.emergency ?? []) { PersonRow(person: $0) } }
         }
@@ -492,8 +431,6 @@ struct PersonRow: View {
                 }
                 if let w = person.whatsapp, let u = URL(string: "https://wa.me/\(w)") {
                     Link(destination: u) { Image(systemName: "message.fill") }.accessibilityLabel("WhatsApp")
-                } else if let p = person.phone, p.count > 6, let u = URL(string: "sms:\(p)") {
-                    Link(destination: u) { Image(systemName: "message.fill") }.accessibilityLabel("Text message")
                 }
                 if let e = person.email, let u = URL(string: "mailto:\(e)") {
                     Link(destination: u) { Image(systemName: "envelope.fill") }.accessibilityLabel("Email")

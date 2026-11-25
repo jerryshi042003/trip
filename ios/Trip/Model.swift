@@ -7,7 +7,23 @@ struct TripData: Codable {
     var places: [Place]
     var people: [Person]
     var emergency: [Person]
+    var directory: TripDirectory?
     var media: [Media]?
+
+    var listedPlaces: [Place] {
+        let ids = directory?.places ?? travelers.keys.sorted().flatMap { travelers[$0]?.plan.compactMap(\.place) ?? [] }
+        var seen = Set<String>()
+        return ids.filter { seen.insert($0).inserted }.compactMap { id in places.first { $0.id == id } }
+    }
+
+    var listedPeople: [Person] {
+        (directory?.people ?? []).compactMap { name in people.first { $0.name == name } }
+    }
+}
+
+struct TripDirectory: Codable {
+    let places: [String]
+    let people: [String]
 }
 
 struct Traveler: Codable {
@@ -68,10 +84,6 @@ struct Place: Codable, Identifiable {
 
 struct Person: Codable, Identifiable {
     var id: String { name }
-    var contactGroup: String {
-        guard let group, !group.isEmpty else { return "Contacts" }
-        return group
-    }
     var name: String
     var role: String?
     var group: String?
@@ -262,6 +274,7 @@ extension TripData {
         places = c.lossyArray(Place.self, forKey: .places)
         people = c.lossyArray(Person.self, forKey: .people)
         emergency = c.lossyArray(Person.self, forKey: .emergency)
+        directory = try? c.decodeIfPresent(TripDirectory.self, forKey: .directory)
         media = c.optionalLossyArray(Media.self, forKey: .media)
     }
 }
