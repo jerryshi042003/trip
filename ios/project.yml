@@ -18,28 +18,36 @@ targets:
       properties:
         CFBundleShortVersionString: $(MARKETING_VERSION)
         CFBundleVersion: $(CURRENT_PROJECT_VERSION)
-        UIBackgroundModes: [location]
-        CFBundleURLTypes:
-          - CFBundleURLName: com.shishi88.trip
-            CFBundleURLSchemes: [trip]
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.shishi88.trip
         PRODUCT_NAME: Trip
         MARKETING_VERSION: '1.0'
-        CURRENT_PROJECT_VERSION: '12'
+        CURRENT_PROJECT_VERSION: '13'
         GENERATE_INFOPLIST_FILE: YES
         INFOPLIST_KEY_ITSAppUsesNonExemptEncryption: NO
         TARGETED_DEVICE_FAMILY: '1'
         INFOPLIST_KEY_CFBundleDisplayName: Trip
-        INFOPLIST_KEY_NSLocationWhenInUseUsageDescription: Trip shares your location with Jerry and Tom while sharing is on.
-        INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription: Trip shares your location with Jerry and Tom while sharing is on.
         INFOPLIST_KEY_UILaunchScreen_Generation: YES
         INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
         INFOPLIST_KEY_LSApplicationQueriesSchemes: "comgooglemaps whatsapp instagram fb"
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+  TripUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: TripUITests
+    dependencies:
+      - target: Trip
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.shishi88.trip.uitests
+        GENERATE_INFOPLIST_FILE: YES
 schemes:
   Trip:
     build:
       targets:
         Trip: all
+    test:
+      targets:
+        - TripUITests

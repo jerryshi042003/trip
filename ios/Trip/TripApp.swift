@@ -8,18 +8,11 @@ struct TripApp: App {
     @StateObject private var store = TripStore()
     @Environment(\.scenePhase) private var phase
 
-    init() {
-        // Simulator tests pass a trip:// link as a launch argument (-pairURL …) to skip the system "Open in Trip?" prompt.
-        if let link = UserDefaults.standard.string(forKey: "pairURL"), let url = URL(string: link) { LocationSharer.shared.handle(url) }
-        LocationSharer.shared.resumeIfNeeded()
-    }
-
     var body: some Scene {
         WindowGroup {
             RootView()
                 .environmentObject(store)
                 .task { await store.refresh() }
-                .onOpenURL { LocationSharer.shared.handle($0) }
                 .onChange(of: phase) { _, p in if p == .active { Task { await store.refresh() } } }
         }
     }
@@ -27,14 +20,13 @@ struct TripApp: App {
 
 struct RootView: View {
     private enum TripTab: String, CaseIterable {
-        case plan = "Plan", places = "Places", people = "People", `where` = "Where", media = "Media"
+        case plan = "Plan", places = "Places", people = "People", media = "Media"
 
         var icon: String {
             switch self {
             case .plan: "calendar"
             case .places: "mappin.and.ellipse"
             case .people: "person.2"
-            case .where: "location"
             case .media: "play.rectangle"
             }
         }
@@ -58,9 +50,6 @@ struct RootView: View {
             }
             Tab("People", systemImage: TripTab.people.icon, value: .people) {
                 NavigationStack { PeopleView().toolbar(.hidden, for: .tabBar) }
-            }
-            Tab("Where", systemImage: TripTab.where.icon, value: .where) {
-                NavigationStack { WhereView(isVisible: tab == .where).toolbar(.hidden, for: .tabBar) }
             }
             if showsMedia {
                 Tab("Media", systemImage: TripTab.media.icon, value: .media) {
