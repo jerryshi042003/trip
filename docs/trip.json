@@ -2091,6 +2091,20 @@
        "detail": "Get the coach’s name from JR before planning around it. The identity and guest training access are open.",
        "link": "https://www.instagram.com/jrmtennis/",
        "linkLabel": "JR’s profile"
+      },
+      {
+       "title": "Tokyo · Shiomi men’s Open",
+       "detail": "JTA general player registration and a locally registered affiliation are required. Confirm that route before booking. A March 4–12 men’s Open is also listed, with no entry deadline posted yet.",
+       "meta": "Feb 11–19, 2027 · enter by Jan 18, 1:59 p.m. JST",
+       "link": "https://jta.tournamentsoftware.com/tournament/8486F77F-7204-4C7D-901C-2F7B2A76FD2F",
+       "linkLabel": "JTA draw and deadlines"
+      },
+      {
+       "title": "West Tokyo · Moripark Open singles",
+       "detail": "Men’s singles for players 30 and under. Two pool matches, then a placement draw. Enter and pay by card on the organizer’s TennisBear page when the draw is available.",
+       "meta": "Feb 21, 2027 · 4:30 pm JST · ¥4,500",
+       "link": "https://www.moripark-tennisgarden.com/sports/news-2/47228",
+       "linkLabel": "Organizer’s format and entry"
       }
      ],
      "category": "Tennis"
@@ -2332,6 +2346,20 @@
        "detail": "HKCTA lists private sessions at four venues, including Causeway Bay and Kowloon Tsai. Ask for live points at your level.",
        "link": "https://www.tennishk.org/en/learn-to-play/adult-tennis/private-coaching/",
        "linkLabel": "Venues and rates"
+      },
+      {
+       "title": "Shanghai · adult singles ranking",
+       "detail": "The Shanghai Tennis Association lists a men’s 4.0+ singles division. Use its event listings to check the date and whether an overseas visitor can enter. The local grade has its own scale.",
+       "meta": "2027 draw and visitor entry unconfirmed",
+       "link": "https://sagsh.shsports.cn/upload/4def37c3d515457e8386a9013aa0ca23.pdf#page=10",
+       "linkLabel": "Association singles guide"
+      },
+      {
+       "title": "Hong Kong · TennisAsia UTR ladder",
+       "detail": "Pick opponents near your UTR and agree on a court. The published 2026 men's singles season ends Nov 30. Check for a new season and a match at your level before paying.",
+       "meta": "2027 season unconfirmed",
+       "link": "https://tennisasia.com.hk/clutch/",
+       "linkLabel": "Ladder and season dates"
       }
      ]
     },
@@ -2379,6 +2407,20 @@
        "link": "https://www.globaltennisnetwork.com/network/ladder-league/ladderEvent/921_3171-13-torneio-escada-cif-2026",
        "linkLabel": "League and registration",
        "place": "cif-lisbon-tennis"
+      },
+      {
+       "title": "Valencia · find a singles opponent",
+       "detail": "For a short visit, use Hoqai’s open matches and filter to Valencia city and your level. Its separate singles league runs Feb 15–Jun 7 and has one match per round, about every two weeks.",
+       "meta": "League €29.99 · no federation licence listed",
+       "link": "https://hoqai.com/ligas-de-tenis/valencia/ciudad",
+       "linkLabel": "Open matches and league format"
+      },
+      {
+       "title": "Lisbon · ProTennis advanced singles",
+       "detail": "The organizer lists an advanced singles ladder through July 31. Join the network to see its private draw. Confirm a match during your visit and an available payment method before joining.",
+       "meta": "2026–27 season · €20 for singles",
+       "link": "https://www.globaltennisnetwork.com/network/ladder-league/ladderEvent/4774_3461-ligas-protennis-26-27",
+       "linkLabel": "League dates and divisions"
       }
      ]
     },
@@ -2417,6 +2459,13 @@
        "meta": "Jan 15–17, 2027 · enter by Jan 1, 11:59 p.m. Sydney time",
        "link": "https://glta.tournamentsoftware.com/tournament/6d6d214b-e149-413a-92b9-a7c23205b2a7",
        "linkLabel": "Open singles draw and entry"
+      },
+      {
+       "title": "Sydney · Macarthur Open singles",
+       "detail": "Men’s Open Series at Wests Tennis Centre, Leumeah. Entry opens Dec 18. Check the fee and visitor affiliation before booking travel.",
+       "meta": "Jan 23–26, 2027 · enter by Jan 13, 11:59 p.m. AEDT",
+       "link": "https://tournaments.tennis.com.au/tournament/2E07D5F9-418E-4E58-87E2-5915CE3E817F",
+       "linkLabel": "Tennis Australia draw and deadlines"
       }
      ]
     },
