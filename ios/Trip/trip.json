@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23",
+ "updated": "2026-11-25T22:12:02+08:00",
  "places": [
   {
    "id": "condo",
@@ -100,6 +100,71 @@
    "photo": "https://jerryshi042003.github.io/trip/media/places/capsule510.jpg"
   },
   {
+   "id": "sotetsu-ariake",
+   "city": "Tokyo",
+   "name": "Sotetsu Grand Fresa Tokyo-Bay Ariake",
+   "addr": "3-6-6 Ariake, Koto, Tokyo",
+   "ja": "東京都江東区有明3-6-6"
+  },
+  {
+   "id": "valencia-tennis-center",
+   "city": "Valencia",
+   "name": "Valencia Tennis Center",
+   "addr": "Calle Vicente La Roda and Calle de Gran Canaria, 46011 Valencia, Spain"
+  },
+  {
+   "id": "resa-patacona",
+   "city": "Valencia",
+   "name": "Resa Patacona",
+   "addr": "Passeig Serra d'Espadà 2, 46120 Alboraia, Valencia, Spain"
+  },
+  {
+   "id": "jamor-tennis",
+   "city": "Lisbon area",
+   "name": "Centro de Treino de Ténis do Jamor",
+   "addr": "Complexo Desportivo Nacional do Jamor, Cruz Quebrada, Oeiras, Portugal"
+  },
+  {
+   "id": "lost-inn-lisbon",
+   "city": "Lisbon",
+   "name": "Lost Inn Lisbon Hostel",
+   "addr": "Beco dos Apóstolos, Chiado, 1200-028 Lisboa, Portugal"
+  },
+  {
+   "id": "club-espanol-rocafort",
+   "city": "Valencia area",
+   "name": "Club Español de Tenis",
+   "addr": "Carretera de Burjassot a Torres-Torres km 4.6, 46111 Rocafort, Valencia, Spain"
+  },
+  {
+   "id": "cif-lisbon-tennis",
+   "city": "Lisbon",
+   "name": "Club Internacional de Foot-Ball",
+   "addr": "Avenida dos Bombeiros, Estádio Pinto Basto, 1400-036 Lisboa, Portugal"
+  },
+  {
+   "id": "tennis-world-sydney",
+   "city": "Sydney",
+   "name": "Sydney Olympic Park Tennis Centre",
+   "addr": "2 Rod Laver Drive, Sydney Olympic Park NSW 2127, Australia",
+   "lat": -33.855277,
+   "lon": 151.0712771
+  },
+  {
+   "id": "ibis-sydney-olympic",
+   "city": "Sydney",
+   "name": "ibis Sydney Olympic Park",
+   "addr": "11b Olympic Boulevard, Sydney Olympic Park NSW 2127, Australia",
+   "lat": -33.848062,
+   "lon": 151.067754
+  },
+  {
+   "id": "kooroora-tennis",
+   "city": "Sydney",
+   "name": "Kooroora Tennis Club",
+   "addr": "5A William Street, Roseville NSW 2069, Australia"
+  },
+  {
    "id": "setinn",
    "city": "Tokyo",
    "name": "Setinn",
@@ -114,6 +179,27 @@
    "addr": "2-2-22 Ariake, Koto, Tokyo",
    "ja": "東京都江東区有明2-2-22",
    "photo": "https://jerryshi042003.github.io/trip/media/places/ariake.jpg"
+  },
+  {
+   "id": "samurai-tennis-shiroi",
+   "city": "Chiba",
+   "name": "Samurai Tennis",
+   "addr": "1071-1 Ne, Shiroi, Chiba 270-1431, Japan",
+   "ja": "千葉県白井市根1071-1"
+  },
+  {
+   "id": "toyoko-shin-kamagaya",
+   "city": "Chiba",
+   "name": "Toyoko Inn Chiba Shin-Kamagaya Ekimae",
+   "addr": "2-8-18 Shin-Kamagaya, Kamagaya, Chiba 273-0107, Japan",
+   "ja": "千葉県鎌ケ谷市新鎌ケ谷2-8-18"
+  },
+  {
+   "id": "ymca-toyocho",
+   "city": "Tokyo",
+   "name": "Tokyo YMCA Toyocho",
+   "addr": "2-2-20 Toyo, Koto, Tokyo · 7th floor courts",
+   "ja": "東京都江東区東陽2-2-20 東京YMCA 7階テニスコート"
   },
   {
    "id": "superpotato",
@@ -193,7 +279,8 @@
    "city": "Manila",
    "name": "Binondo Church · Ongpin St",
    "addr": "Binondo Church, Plaza Lorenzo Ruiz, Binondo, Manila",
-   "photo": "https://jerryshi042003.github.io/trip/media/places/binondo.jpg?v=2"
+   "photo": "https://jerryshi042003.github.io/trip/media/places/binondo.jpg?v=2",
+   "been": true
   },
   {
    "id": "golden-mosque",
@@ -262,25 +349,29 @@
    "id": "benilde",
    "city": "Manila",
    "name": "De La Salle–College of Saint Benilde",
-   "addr": "2544 Taft Avenue, Malate, Manila"
+   "addr": "2544 Taft Avenue, Malate, Manila",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/benilde-taft-campus.jpg"
   },
   {
    "id": "koreatown",
    "city": "Manila",
    "name": "Koreatown · Remedios Circle",
-   "addr": "Remedios Circle, Malate, Manila"
+   "addr": "Remedios Circle, Malate, Manila",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/malate-remedios.jpg"
   },
   {
    "id": "quiapo-church",
    "city": "Manila",
    "name": "Quiapo Church",
-   "addr": "910 Plaza Miranda, Quiapo, Manila"
+   "addr": "910 Plaza Miranda, Quiapo, Manila",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/quiapo-church-front.jpg"
   },
   {
    "id": "greenhills",
    "city": "Manila",
    "name": "Greenhills Mall",
-   "addr": "Ortigas Avenue, Greenhills, San Juan"
+   "addr": "Ortigas Avenue, Greenhills, San Juan",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/greenhills-entry.jpg"
   },
   {
    "id": "tsukiji",
@@ -323,7 +414,8 @@
    "id": "wai-ying",
    "city": "Manila",
    "name": "Wai Ying Fast Food",
-   "addr": "810 Benavidez St, Binondo, Manila"
+   "addr": "810 Benavidez St, Binondo, Manila",
+   "photo": "https://jerryshi042003.github.io/trip/media/places/wai-ying-fast-food.jpg"
   },
   {
    "id": "midorigaoka",
@@ -331,6 +423,60 @@
    "name": "Midorigaoka Tennis Garden",
    "addr": "4-5-38 Kitano, Mitaka, Tokyo 181-0003",
    "ja": "東京都三鷹市北野4-5-38"
+  },
+  {
+   "id": "chofu-creston",
+   "city": "Tokyo",
+   "name": "Chofu Creston Hotel",
+   "addr": "Chofu PARCO 8F–10F, 1-38-1 Kojimacho, Chofu, Tokyo 182-0026",
+   "ja": "東京都調布市小島町1-38-1 調布PARCO 8～10階"
+  },
+  {
+   "id": "arima-river-shinsui",
+   "city": "Kobe",
+   "name": "Arima River Shinsui Park",
+   "addr": "Between Taiko Bridge and Nene Bridge, Arimacho, Kita Ward, Kobe",
+   "ja": "有馬川親水広場 神戸市北区有馬町"
+  },
+  {
+   "id": "windsor-shinjuku",
+   "city": "Tokyo",
+   "name": "Windsor Racket Shop · Shinjuku",
+   "addr": "Tochigi Building B1, 1F and 2F, 1-3-15 Nishishinjuku, Shinjuku. 03-3343-5021.",
+   "ja": "ウインザーラケットショップ新宿店 東京都新宿区西新宿1-3-15"
+  },
+  {
+   "id": "lafino-funabashi",
+   "city": "Funabashi",
+   "name": "LAFINO · Funabashi",
+   "addr": "1-9-29 Natsumi, Funabashi, Chiba 273-0865. 047-407-0237.",
+   "ja": "ラフィノ船橋店 千葉県船橋市夏見1-9-29"
+  },
+  {
+   "id": "tabio-daimaru-tokyo",
+   "city": "Tokyo",
+   "name": "Tabio MEN · Daimaru Tokyo",
+   "addr": "Daimaru Tokyo 7F, 1-9-1 Marunouchi, Chiyoda. 050-1782-8439.",
+   "ja": "TabioMEN 大丸東京店 東京都千代田区丸の内1-9-1 7F"
+  },
+  {
+   "id": "xebio-kawasaki",
+   "city": "Kawasaki",
+   "name": "Super Sports Xebio · Kawasaki Le Front",
+   "addr": "Kawasaki Le Front 7F–8F, 1-11 Nisshincho, Kawasaki Ward. 044-223-1630.",
+   "ja": "スーパースポーツゼビオ 川崎ルフロン店 川崎市川崎区日進町1-11"
+  },
+  {
+   "id": "frederico-marques-tennis",
+   "city": "Lisbon",
+   "name": "Frederico Marques Tennis Academy",
+   "addr": "Rua Robalo Gouveia 2, 1900-392 Lisboa, Portugal"
+  },
+  {
+   "id": "ramada-olaias-lisbon",
+   "city": "Lisbon",
+   "name": "Ramada by Wyndham Lisbon",
+   "addr": "Av. Engenheiro Arantes e Oliveira 9, 1900-221 Lisboa, Portugal"
   }
  ],
  "people": [
@@ -571,7 +717,7 @@
   },
   {
    "name": "PCA OPEN Facebook page",
-   "role": "Entry list (deadline Sat Nov 21) and schedule posts",
+   "role": "Draw and order of play",
    "fb": "https://www.facebook.com/100057105145569",
    "group": "Trip logistics"
   },
@@ -996,23 +1142,54 @@
    "todos": [
     {
      "region": "Manila",
+     "title": "What to do next",
+     "items": [
+      {
+       "title": "Find your PCA match time",
+       "detail": "Qualifying runs Nov 30–Dec 4. Check when you play and when to sign in.",
+       "link": "https://www.facebook.com/100057105145569/",
+       "linkLabel": "PCA organizer updates"
+      },
+      {
+       "title": "Choose Japan dates after PCA",
+       "detail": "Check your PCA schedule and return flight before booking Tokyo.",
+       "link": "https://jerryshi042003.github.io/trip/?who=jerry&view=plan&region=Japan&topic=Before+flying",
+       "linkLabel": "Japan and flight options"
+      }
+     ],
+     "category": "Next"
+    },
+    {
+     "region": "Manila",
      "title": "Tennis this week",
      "items": [
       {
        "title": "PCA Open · men’s singles",
-       "detail": "Clay in Paco. Your match time is still unconfirmed.",
+       "detail": "Final entries are posted. Confirm your match and sign-in times with PCA.",
        "meta": "Nov 30–Dec 4 · Qualifying",
-       "link": "https://www.facebook.com/100057105145569/",
-       "linkLabel": "Organizer match notices",
+       "link": "https://www.facebook.com/permalink.php?story_fbid=1708210611092427&id=100057105145569",
+       "linkLabel": "Official entry list",
        "place": "pca",
-       "from": "condo"
+       "from": "condo",
+       "photos": [
+        {
+         "url": "media/places/pca.jpg",
+         "caption": "Covered clay at PCA"
+        }
+       ]
+      },
+      {
+       "title": "Step in on the short high ball",
+       "detail": "In Tennis Training → My game, try the ten-ball set. Take the ball on the rise and count how many land deep down the line.",
+       "link": "https://www.youtube.com/watch?v=gQYYL7vhTYE&t=577s",
+       "linkLabel": "Watch Agassi at 9:37"
       },
       {
        "title": "Watch juniors at Rizal Memorial",
        "detail": "Start with a morning session. Check the order of play and ask about spectator entry.",
        "meta": "Nov 23–28 · ITF J30 Manila · 2.3 km",
-       "link": "https://www.world.tennis/en/tournament/j30-manila/phi/2026/j-j30-phi-2026-001/draws-and-results/",
-       "linkLabel": "Draws & schedule",
+       "link": "https://www.world.tennis/en/tournament/j30-manila/phi/2026/j-j30-phi-2026-001/order-of-play/",
+       "linkLabel": "Order of play",
        "place": "rizal",
        "from": "condo",
        "photos": [
@@ -1033,7 +1210,13 @@
        "link": "https://www.world.tennis/en/tournament/j30-manila/phi/2026/j-j30-phi-2026-002/draws-and-results/",
        "linkLabel": "Draws & schedule",
        "place": "rizal",
-       "from": "condo"
+       "from": "condo",
+       "photos": [
+        {
+         "url": "media/places/rizal-air.jpg",
+         "caption": "Rizal Memorial Sports Complex from above"
+        }
+       ]
       },
       {
        "title": "PCA Open · main draw",
@@ -1184,7 +1367,13 @@
        "link": "https://gptcatennis.org/johnrey-moreno",
        "linkLabel": "JR’s coaching profile",
        "place": "benilde",
-       "from": "condo"
+       "from": "condo",
+       "photos": [
+        {
+         "url": "media/places/benilde-taft-campus.jpg",
+         "caption": "Benilde’s Taft campus"
+        }
+       ]
       },
       {
        "title": "PCA · Paco",
@@ -1223,8 +1412,8 @@
      "title": "Food & water nearby",
      "items": [
       {
-       "title": "Robinsons Manila · supermarket + Jollibee",
-       "detail": "Water and French Baker are in the Level 1 Adriatico Wing supermarket. Chickenjoy is also on Level 1, in the Sta. Monica Wing.",
+       "title": "Robinsons Manila · supermarket",
+       "detail": "The supermarket and French Baker are on Level 1 in the Adriatico Wing.",
        "meta": "About 1 km · 10–15 min walk",
        "place": "robinsons-manila",
        "link": "https://vmd.robinsonsmalls.com/list-of-malls/metro-manila/robinsons-manila",
@@ -1233,10 +1422,6 @@
         {
          "url": "media/places/robinsons-manila.jpg",
          "caption": "Robinsons Place Manila"
-        },
-        {
-         "url": "media/places/jollibee-robinsons.jpg",
-         "caption": "Jollibee at Robinsons Place Manila"
         }
        ]
       }
@@ -1263,27 +1448,6 @@
         {
          "url": "media/places/malate-kbbq.jpg",
          "caption": "Samgyeopsal, Korean grilled pork belly"
-        }
-       ]
-      },
-      {
-       "title": "Binondo · Chinatown",
-       "detail": "Chinese-Filipino food crawl. Split fresh lumpia at New Po-Heng, fried chicken at Sincerity and hopia from Eng Bee Tin. Budget ₱350–600.",
-       "meta": "About 4 km · 15–30 min by moto",
-       "place": "binondo",
-       "from": "condo",
-       "photos": [
-        {
-         "url": "media/places/binondo.jpg",
-         "caption": "Street life in Binondo"
-        },
-        {
-         "url": "media/places/binondo-church.jpg",
-         "caption": "Binondo Church, near the start of Ongpin"
-        },
-        {
-         "url": "media/places/binondo-hopia.jpg",
-         "caption": "Hopia from Eng Bee Tin"
         }
        ]
       },
@@ -1409,6 +1573,27 @@
         {
          "url": "media/places/bikram.jpg",
          "caption": "Bikram Yoga Manila studio"
+        }
+       ]
+      },
+      {
+       "title": "Binondo · Chinatown",
+       "detail": "Chinese-Filipino food crawl. Split fresh lumpia at New Po-Heng, fried chicken at Sincerity and hopia from Eng Bee Tin. Budget ₱350–600.",
+       "meta": "About 4 km · 15–30 min by moto",
+       "place": "binondo",
+       "from": "condo",
+       "photos": [
+        {
+         "url": "media/places/binondo.jpg",
+         "caption": "Street life in Binondo"
+        },
+        {
+         "url": "media/places/binondo-church.jpg",
+         "caption": "Binondo Church, near the start of Ongpin"
+        },
+        {
+         "url": "media/places/binondo-hopia.jpg",
+         "caption": "Hopia from Eng Bee Tin"
         }
        ]
       }
@@ -1731,11 +1916,25 @@
      "title": "Before Japan",
      "items": [
       {
-       "title": "Put a flight out on the plan",
-       "detail": "Keep the stay short if needed. Confirm PCA dates, then hold a real onward or return reservation before flying.",
-       "meta": "Travel dates open",
-       "link": "https://www.seattle.us.emb-japan.go.jp/itpr_ja/visa_faq.html",
-       "linkLabel": "Onward-ticket guidance"
+       "title": "Check PCA before booking Japan",
+       "detail": "Check the order of play and any doubles dates before booking Tokyo.",
+       "meta": "Qualifying Nov 30–Dec 4 · main draw Dec 5–13",
+       "link": "https://www.facebook.com/100057105145569/",
+       "linkLabel": "PCA organizer updates"
+      },
+      {
+       "title": "Manila → Los Angeles",
+       "detail": "If Tokyo doesn’t fit, PAL leaves Manila at 3:15 p.m. or 10:15 p.m. The flights land in Los Angeles at 12:10 p.m. or 7:10 p.m. the same day, local times.",
+       "meta": "Sun Dec 6 · Nonstop options",
+       "link": "https://www.philippineairlines.com/content/dam/palportal/migration/feature/timetable/261112-International-W26-as-of-Nov-12-2026.pdf",
+       "linkLabel": "PAL flight times"
+      },
+      {
+       "title": "Narita trains for Shiroi",
+       "detail": "Use Sky Access or a Skyliner that stops at Shin-Kamagaya. Change to a local Hokuso train for Nishi-Shiroi, one stop east.",
+       "meta": "Weekend Skyliner examples · Terminal 2 at 1:22 or 2:22 pm",
+       "link": "https://www.hokuso-railway.co.jp/docs/railway/skyliner_timetable2026.pdf",
+       "linkLabel": "Airport train timetable"
       },
       {
        "title": "Check the passport you’ll use",
@@ -1748,21 +1947,75 @@
        "detail": "Optional online immigration and customs setup. Use your confirmed Japan address and flight.",
        "link": "https://www.digital.go.jp/en/policies/visit_japan_web",
        "linkLabel": "Official setup"
+      },
+      {
+       "title": "Ueda · Sanada day trip",
+       "detail": "Dec 16 example. Tokyo 08:41 → Ueda 10:03. From Castle Exit stop 3, take the 10:30 bus to Sanada, arriving 10:53. Return bus at 15:48, back at Tokyo Station at 18:12.",
+       "meta": "About 2¼ hr each way · ¥13,740 round trip unreserved",
+       "link": "https://www.city.ueda.nagano.jp/soshiki/ssangyo/2828.html",
+       "linkLabel": "Sanada stop and map"
       }
      ],
      "category": "Before flying"
     },
     {
      "region": "Japan",
+     "title": "Where to stay in Tokyo",
+     "items": [
+      {
+       "title": "Toyoko Inn · Shin-Kamagaya",
+       "detail": "One Hokuso Line stop from the Dec 5 match. The hotel’s standard cancellation cutoff is noon on check-in day.",
+       "meta": "¥10,300 for one night · Dec 5–6 sample",
+       "link": "https://www.toyoko-inn.com/eng/search/result/room_plan/?hotel=00217&people=1&room=1&smoking=noSmoking&start=2026-12-05&end=2026-12-06",
+       "linkLabel": "Check room and rate",
+       "place": "toyoko-shin-kamagaya"
+      },
+      {
+       "title": "Chofu Creston · for Mitaka",
+       "detail": "If you get a Mitaka spot, start at Chofu Station. Take a Keio train that stops at Sengawa, then walk 12 minutes to the courts.",
+       "meta": "Dec 12–13 · Non-smoking double for one · ¥30,000 shown Nov 24",
+       "link": "https://go-hmihotelgroup.reservation.jp/en/hotels/crestonhotel-chofu/plans/10127061?checkin_date=20261212&checkout_date=20261213&adults=1&child1=0&child2=0&child3=0&child4=0&child5=0&children=0&rooms=1",
+       "linkLabel": "Check room and rate",
+       "place": "chofu-creston"
+      },
+      {
+       "title": "Sotetsu Grand Fresa · Ariake",
+       "detail": "Walk to Ariake Tennis Forest for the Dec 15 Diadora Cup. The non-smoking single showed a members-only rate with free cancellation through Dec 12, 11:59 p.m. Japan time.",
+       "meta": "¥26,364 for two nights · Dec 14–16 sample",
+       "link": "https://booking.sotetsu-hotels.com/booking/result?code=f5fbb4973fbfd2519ad42114492388d4&checkin=2026%2F12%2F14&checkout=2026%2F12%2F16&type=rooms&is_day_use=false&order=recommended&is_including_occupied=false&rooms=%5B%7B%22adults%22%3A1%2C%22children%22%3A0%7D%5D&lang=en&mcp_currency=JPY",
+       "linkLabel": "Check room and rate",
+       "place": "sotetsu-ariake"
+      },
+      {
+       "title": "Capsule Hotel Shinjuku 510",
+       "detail": "The booking calendar showed a men’s lower capsule on both nights, Dec 14 and 15. Allow extra time for the morning ride from Shinjuku to Ariake.",
+       "meta": "¥7,000 for two nights · Dec 14–16 sample",
+       "link": "https://www.capsule510.jp/contact.html",
+       "linkLabel": "Check capsule dates",
+       "place": "capsule510"
+      }
+     ],
+     "category": "Stay"
+    },
+    {
+     "region": "Japan",
      "title": "Tennis in Tokyo",
      "items": [
       {
+       "title": "Samurai Tennis · men’s singles",
+       "detail": "If your PCA schedule is clear and you can reach Shiroi before 5 p.m., check for a spot. At least three matches for TennisBear levels 6–9. Full cancellation fee Dec 4–5.",
+       "meta": "Sat Dec 5 · 5:00 pm JST · ¥3,000 · same-day entry if space",
+       "link": "https://www.tennisbear.net/event/1738521/info",
+       "linkLabel": "Entry and cancellation",
+       "place": "samurai-tennis-shiroi"
+      },
+      {
        "title": "UTR TENEZ Cup · Mitaka",
-       "detail": "Verified co-ed singles, UTR 5–16. Entry closes Dec 7 at 12:00 am JST. No early-December Tokyo-area event surfaced.",
-       "meta": "Sun Dec 13 · 9:00 am JST",
+       "detail": "Men’s singles was full on Nov 24 (6 of 6, 3 waiting). UTR quoted a ¥7,757.10 waitlist subtotal. Confirm a spot before booking travel. Organizer refunds drop to 50% Nov 28 at 11 pm and zero Dec 5 at 11 pm, Manila time.",
+       "meta": "Dec 13 · 9:00 am JST · Entry closes Dec 6 at 10:59 pm Manila",
        "place": "midorigaoka",
-       "link": "https://app.utrsports.net/events/408042",
-       "linkLabel": "UTR entry & fees"
+       "link": "https://www.tennisbear.net/event/1705188/info",
+       "linkLabel": "Rules and UTR entry"
       },
       {
        "title": "Ariake Tennis Forest",
@@ -1779,10 +2032,26 @@
       },
       {
        "title": "Diadora Cup · Ariake",
-       "detail": "Men’s singles on hard · ¥4,000. UTR rating is unverified.",
+       "detail": "Men’s singles on hard · ¥4,000. A 100% cancellation charge applies from 12:00 am JST Dec 8. UTR rating is unverified.",
        "meta": "Tue Dec 15 · 8:30 am · if still in Tokyo",
        "link": "https://www.tennisbear.net/event/1724298/info",
        "linkLabel": "Entry and schedule",
+       "place": "ariake"
+      },
+      {
+       "title": "Toyocho YMCA · men’s singles",
+       "detail": "Open to visitors. At least three matches, ¥4,200 cash. Cancel by Dec 11 without a fee. Check spots in Service Ace.",
+       "meta": "Sat Dec 19 · 6:30 pm JST",
+       "link": "https://tokyo.ymca.or.jp/wellness/2026/10/20261028-4.html",
+       "linkLabel": "Event and entry",
+       "place": "ymca-toyocho"
+      },
+      {
+       "title": "All Japan Championships · Ariake",
+       "detail": "Men’s singles starts Dec 14. Dec 18–20 advance tickets from ¥2,000. Check spectator access for earlier rounds.",
+       "meta": "Dec 13–20 · Watch",
+       "link": "https://eplus.jp/sf/word/0000121752",
+       "linkLabel": "Schedule and tickets",
        "place": "ariake"
       },
       {
@@ -1796,9 +2065,128 @@
        "detail": "Get the coach’s name from JR before planning around it. The identity and guest training access are open.",
        "link": "https://www.instagram.com/jrmtennis/",
        "linkLabel": "JR’s profile"
+      },
+      {
+       "title": "Tokyo · Shiomi men’s Open",
+       "detail": "JTA general player registration and a locally registered affiliation are required. Confirm that route before booking. A March 4–12 men’s Open is also listed, with no entry deadline posted yet.",
+       "meta": "Feb 11–19, 2027 · enter by Jan 18, 1:59 p.m. JST",
+       "link": "https://jta.tournamentsoftware.com/tournament/8486F77F-7204-4C7D-901C-2F7B2A76FD2F",
+       "linkLabel": "JTA draw and deadlines"
+      },
+      {
+       "title": "West Tokyo · Moripark Open singles",
+       "detail": "Men’s singles for players 30 and under. Two pool matches, then a placement draw. Enter and pay by card on the organizer’s TennisBear page when the draw is available.",
+       "meta": "Feb 21, 2027 · 4:30 pm JST · ¥4,500",
+       "link": "https://www.moripark-tennisgarden.com/sports/news-2/47228",
+       "linkLabel": "Organizer’s format and entry"
       }
      ],
      "category": "Tennis"
+    },
+    {
+     "region": "Japan",
+     "title": "Tabi socks",
+     "items": [
+      {
+       "title": "Prince PS295 · split-toe tennis sock",
+       "detail": "Start here for tennis. The big toe has its own pocket and the heel is held in place. Check your size at Windsor Shinjuku. Online store pickup is card-only.",
+       "meta": "¥2,277 online · 22–24, 24–26 or 26–28 cm",
+       "link": "https://www.windsorracket.co.jp/shop/g/gPS295-16526-28/",
+       "linkLabel": "Buy or check stock",
+       "place": "windsor-shinjuku"
+      },
+      {
+       "title": "Funabashi · Prince PS295 pickup",
+       "detail": "LAFINO orders the white pair from Prince. Call first to confirm your size and arrange pickup.",
+       "meta": "¥2,530 online · Sat 10:30 am–7 pm",
+       "link": "https://www.lafino.co.jp/f/funabashi",
+       "linkLabel": "Call or check store hours",
+       "place": "lafino-funabashi"
+      },
+      {
+       "title": "Tabio MEN 062120093 · thick split-toe",
+       "detail": "Soft everyday terry sock with one toe split. All five colors were sold out online on Nov 24. Call Daimaru Tokyo for store stock.",
+       "meta": "¥1,100 · 25–27 cm",
+       "link": "https://tabio.com/products/062120093",
+       "linkLabel": "Check for a restock",
+       "place": "tabio-daimaru-tokyo"
+      },
+      {
+       "title": "ItoiX Tabi Short · quick-drying split-toe",
+       "detail": "Light washi-blend running sock for sweaty feet. The wide four-toe pocket leaves only the big toe to line up. Ease on wet feet is untested. Xebio Kawasaki Le Front is a listed stockist. Exact model stock is unconfirmed.",
+       "meta": "¥2,420 · 22–30 cm across 3 sizes",
+       "link": "https://www.itoix.co.jp/products/running-socks-tabi",
+       "linkLabel": "Buy from ItoiX",
+       "place": "xebio-kawasaki"
+      },
+      {
+       "title": "Prince PS277 · maximum tennis cushion",
+       "detail": "Extra-thick terry sole and one roomy toe pocket for all five toes. Try this at Windsor Shinjuku if cushioning and easy changes with damp feet matter most. Wet-foot fit is untested.",
+       "meta": "¥1,485 at Windsor · 25–27 cm",
+       "link": "https://www.windsorracket.co.jp/shop/g/gPS277-202F/",
+       "linkLabel": "Buy or check stock",
+       "place": "windsor-shinjuku"
+      }
+     ],
+     "category": "Food & gear"
+    },
+    {
+     "region": "Japan",
+     "title": "Happy Hour · Arima Onsen",
+     "items": [
+      {
+       "title": "Arima River Shinsui Park",
+       "detail": "The 2:20:06 river shot matches the riverside stairs and Arima Gyoen’s curved window awnings. Start at Taiko Bridge and look upstream toward the red Nene Bridge. The riverwalk has been renovated since filming.",
+       "meta": "Kobe · about 4 min on foot from Arima Onsen Station",
+       "link": "https://ohtabookstand.com/2022/02/jibun-02/",
+       "linkLabel": "Compare the location photos",
+       "place": "arima-river-shinsui",
+       "photos": [
+        {
+         "url": "media/happy-hour/arima-river.jpg",
+         "caption": "Happy Hour at 2:20:06 · Jerry’s Photo Booth shot"
+        }
+       ]
+      },
+      {
+       "title": "The inn scene",
+       "detail": "The Arima inn scene is the inspiration for the tabi search. The sock brand and model are unidentified.",
+       "link": "https://hh.fictive.jp/",
+       "linkLabel": "Official film site",
+       "photos": [
+        {
+         "url": "media/happy-hour/tabi.jpg",
+         "caption": "Happy Hour · the inn scene"
+        }
+       ]
+      }
+     ],
+     "category": "Food & gear"
+    },
+    {
+     "region": "Japan",
+     "title": "Buying online in Japan",
+     "items": [
+      {
+       "title": "Tabio · store pickup paused",
+       "detail": "Tabio lists pickup paused for maintenance. Check Daimaru Tokyo stock or ship to a hotel that accepts parcels. Tabio quotes 2–5 days for standard delivery.",
+       "link": "https://tabio.com/pages/store-pickup",
+       "linkLabel": "Check pickup status"
+      },
+      {
+       "title": "Amazon Japan · locker or hotel",
+       "detail": "Ordinary checkout uses an account and payment method. A passport is generally unnecessary. Eligible items can go to a locker or convenience store. Pick the location at checkout and check that delivery and pickup fit your stay.",
+       "link": "https://www.aboutamazon.jp/news/guide/how-to-use-amazon-locker-to-receive-amazon-products-whenever-you-want",
+       "linkLabel": "Amazon pickup guide"
+      },
+      {
+       "title": "Passport for the tourist tax refund",
+       "detail": "Since Nov 1, 2026, pay tax up front. For eligible purchases of at least ¥5,000 before tax per shop per day, show your passport at the shop and get Customs confirmation at departure for the refund.",
+       "link": "https://www.japan.travel/en/us/blog/everything-you-need-to-know-japans-new-tax-free-shopping-system/",
+       "linkLabel": "Japan’s official refund guide"
+      }
+     ],
+     "category": "Food & gear"
     },
     {
      "region": "Japan",
@@ -2402,5 +2790,19 @@
     }
    ]
   }
+ },
+ "directory": {
+  "places": [
+   "pca",
+   "rizal",
+   "proserve",
+   "asmara",
+   "hnd",
+   "ariake"
+  ],
+  "people": [
+   "PCA OPEN Facebook page",
+   "Rizal Memorial"
+  ]
  }
 }
