@@ -30,7 +30,7 @@ struct JapanShopMap: View {
                 VStack(spacing: 0) {
                     Map(initialPosition: .region(Self.region), interactionModes: [.pan, .zoom]) {
                         ForEach(shops) { shop in
-                            Annotation(shop.label, coordinate: shop.coordinate, anchor: .bottom) {
+                            Annotation(shop.label, coordinate: shop.coordinate, anchor: shop.anchor) {
                                 pin(shop, active: active.id == shop.id)
                             }
                             .annotationTitles(.hidden)
@@ -170,6 +170,7 @@ private struct Shop: Identifiable {
     let name: String
     let coordinate: CLLocationCoordinate2D
     var walking = false
+    var anchor: UnitPoint = .bottom
     let stockNote: String
 
     static let stops = [
@@ -177,7 +178,7 @@ private struct Shop: Identifiable {
              coordinate: .init(latitude: 35.6933456, longitude: 139.6984301),
              stockNote: "Oedo Line Exit D4 · prices from Windsor’s listings"),
         Shop(id: "tabio-daimaru-tokyo", label: "Tabio", name: "Tabio MEN · Daimaru Tokyo",
-             coordinate: .init(latitude: 35.68126, longitude: 139.76882), walking: true,
+             coordinate: .init(latitude: 35.68126, longitude: 139.76882), walking: true, anchor: .bottomLeading,
              stockNote: "Daimaru 7F · check branch stock"),
         Shop(id: "lafino-funabashi", label: "LAFINO", name: "LAFINO Funabashi",
              coordinate: .init(latitude: 35.7066389, longitude: 139.9882889),
@@ -186,7 +187,7 @@ private struct Shop: Identifiable {
              coordinate: .init(latitude: 35.5293483, longitude: 139.6967751),
              stockNote: "Le Front 7F–8F · check this model and size"),
         Shop(id: "goldwin-marunouchi", label: "Goldwin", name: "Goldwin Marunouchi",
-             coordinate: .init(latitude: 35.678783, longitude: 139.763062), walking: true,
+             coordinate: .init(latitude: 35.678783, longitude: 139.763062), walking: true, anchor: .topLeading,
              stockNote: "Brick Square 1F · 11 am–8 pm · tax-free"),
         Shop(id: "bamboo-shoots", label: "Yamatomichi", name: "Bamboo Shoots · Nakameguro",
              coordinate: .init(latitude: 35.644451, longitude: 139.700668),
