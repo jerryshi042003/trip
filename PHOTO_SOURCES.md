@@ -82,3 +82,21 @@ Images were resized for Trip. The Commons file pages identify creators and licen
 
 - [Benilde Taft campus](https://commons.wikimedia.org/wiki/File:1993De_La_Salle_College_of_Saint_Benilde_14.jpg) · Judgefloro, [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). The campus photograph does not identify the team’s court.
 - [Wai Ying Fast Food interior](https://commons.wikimedia.org/wiki/File:Metro_Manila_Landmarks_and_Heritage_Lunar_Year_26.jpg) · Zarate123, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Wikimedia thumbnail used at its original crop.
+
+## Shop product photos
+
+`docs/media/shop/*.jpg` are each seller's own product photo (resized to 800 px), downloaded Nov 27 2026 for the Japan shopping guide.
+
+| File | Product | Source page |
+|---|---|---|
+| prince-ps295.jpg | Prince PS295 tabi sock | https://www.windsorracket.co.jp/shop/g/gPS295-16526-28/ |
+| prince-ps277.jpg | Prince PS277 | https://www.windsorracket.co.jp/shop/g/gPS277-202F/ |
+| tabio-062120093.jpg | Tabio MEN pile tabi | https://tabio.com/products/062120093 |
+| itoix-tabi.jpg | ItoiX Tabi Short | https://www.itoix.co.jp/products/running-socks-tabi |
+| nodal-pile.jpg | NODAL Brushed Pile | https://roco2web.com/products/a18700 |
+| yamap-tabi.jpg | YAMAP Mountain tabi | https://store.yamap.com/products/yamap-original-trail-socks-tabi-middle-mountain-unisex-25fw |
+| goldwin-gl45141.jpg | Goldwin GL45141 hoodie | https://crouka.store/products/goldw-gl45141 |
+| bow-ja2402.jpg | Bow Brand BOW-JA2402 | https://item.rakuten.co.jp/racket/bwb-bow-ja2402/ |
+| stc-bda4801.jpg | St. Christopher BDA4801 | https://item.rakuten.co.jp/racket/stc-stc-bda4801/ |
+| runtage-if50.jpg | Runtage Extra Thick Ace | https://item.rakuten.co.jp/footraku/if50/ |
+| otafuku-jw132.jpg | Otafuku JW-132 | https://www.buzzworks-web.com/view/item/000000000094 |

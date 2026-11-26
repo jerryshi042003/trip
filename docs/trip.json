@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T22:12:02+08:00",
+ "updated": "2026-11-27T02:00:00+08:00",
  "places": [
   {
    "id": "condo",
@@ -477,6 +477,20 @@
    "city": "Lisbon",
    "name": "Ramada by Wyndham Lisbon",
    "addr": "Av. Engenheiro Arantes e Oliveira 9, 1900-221 Lisboa, Portugal"
+  },
+  {
+   "id": "goldwin-marunouchi",
+   "city": "Tokyo",
+   "name": "Goldwin Marunouchi",
+   "addr": "Marunouchi Brick Square 1F, 2-6-1 Marunouchi, Chiyoda. 03-6268-0037.",
+   "ja": "ゴールドウイン丸の内 東京都千代田区丸の内2-6-1 丸の内ブリックスクエア1F"
+  },
+  {
+   "id": "bamboo-shoots",
+   "city": "Tokyo",
+   "name": "Bamboo Shoots · Nakameguro",
+   "addr": "Nakameguro Mansion 107, 1-5-10 Kamimeguro, Meguro. 03-5720-1677.",
+   "ja": "バンブーシュート 東京都目黒区上目黒1-5-10 中目黒マンション107"
   }
  ],
  "people": [
@@ -2093,7 +2107,13 @@
        "meta": "¥2,277 online · 22–24, 24–26 or 26–28 cm",
        "link": "https://www.windsorracket.co.jp/shop/g/gPS295-16526-28/",
        "linkLabel": "Buy or check stock",
-       "place": "windsor-shinjuku"
+       "place": "windsor-shinjuku",
+       "photos": [
+        {
+         "url": "media/shop/prince-ps295.jpg",
+         "caption": "Prince PS295"
+        }
+       ]
       },
       {
        "title": "Funabashi · Prince PS295 pickup",
@@ -2101,7 +2121,13 @@
        "meta": "¥2,530 online · Sat 10:30 am–7 pm",
        "link": "https://www.lafino.co.jp/f/funabashi",
        "linkLabel": "Call or check store hours",
-       "place": "lafino-funabashi"
+       "place": "lafino-funabashi",
+       "photos": [
+        {
+         "url": "media/shop/prince-ps295.jpg",
+         "caption": "Funabashi"
+        }
+       ]
       },
       {
        "title": "Tabio MEN 062120093 · thick split-toe",
@@ -2109,7 +2135,13 @@
        "meta": "¥1,100 · 25–27 cm",
        "link": "https://tabio.com/products/062120093?variant=67660444467478",
        "linkLabel": "Buy indigo blue",
-       "place": "tabio-daimaru-tokyo"
+       "place": "tabio-daimaru-tokyo",
+       "photos": [
+        {
+         "url": "media/shop/tabio-062120093.jpg",
+         "caption": "Tabio MEN 062120093"
+        }
+       ]
       },
       {
        "title": "ItoiX Tabi Short · quick-drying split-toe",
@@ -2117,7 +2149,13 @@
        "meta": "¥2,420 · 22–30 cm across 3 sizes",
        "link": "https://www.itoix.co.jp/products/running-socks-tabi",
        "linkLabel": "Buy from ItoiX",
-       "place": "xebio-kawasaki"
+       "place": "xebio-kawasaki",
+       "photos": [
+        {
+         "url": "media/shop/itoix-tabi.jpg",
+         "caption": "ItoiX Tabi Short"
+        }
+       ]
       },
       {
        "title": "Prince PS277 · maximum tennis cushion",
@@ -2125,28 +2163,91 @@
        "meta": "¥1,485 at Windsor · 25–27 cm",
        "link": "https://www.windsorracket.co.jp/shop/g/gPS277-202F/",
        "linkLabel": "Buy or check stock",
-       "place": "windsor-shinjuku"
+       "place": "windsor-shinjuku",
+       "photos": [
+        {
+         "url": "media/shop/prince-ps277.jpg",
+         "caption": "Prince PS277"
+        }
+       ]
       },
       {
-       "title": "Bow Brand · Thorlo-like tennis cushion",
-       "detail": "A Japanese reviewer played in both and found similar thick padding at the toes and heel. The 25–27 cm crew was sold out at Racket Plaza when checked. Prince PS277 is the buy-now option.",
-       "meta": "BOW-JA2401 · ¥1,980 list price",
-       "link": "https://tennisenjoy.com/bowbrand-socks",
-       "linkLabel": "See the Thorlo comparison"
+       "title": "Bow Brand BOW-JA2402 · Thorlo-level cushion",
+       "detail": "Extra-thick terry heel and toe. A Japanese reviewer who played in both rated the padding equal to Thorlo. Racket Plaza takes orders now and ships within 4 business days once its supplier has stock. Runs large: 25–27 cm fits 27 cm shoes.",
+       "meta": "¥1,429 + ¥290 shipping at Racket Plaza · 25–27 cm",
+       "link": "https://item.rakuten.co.jp/racket/bwb-bow-ja2402/",
+       "linkLabel": "Order at Racket Plaza",
+       "photos": [
+        {
+         "url": "media/shop/bow-ja2402.jpg",
+         "caption": "Bow Brand BOW-JA2402"
+        }
+       ]
+      },
+      {
+       "title": "Otafuku JW-132 · thick all-pile tabi",
+       "detail": "Full terry inside, split toe, heat-holding yarn. Black had 10 and heather gray 8 in stock on Nov 27. A buyer called it warmer than merino at −10 °C.",
+       "meta": "¥1,140 for 2 pairs · 25–27 cm",
+       "link": "https://www.buzzworks-web.com/view/item/000000000094",
+       "linkLabel": "Buy from Otafuku",
+       "photos": [
+        {
+         "url": "media/shop/otafuku-jw132.jpg",
+         "caption": "Otafuku JW-132"
+        }
+       ]
+      },
+      {
+       "title": "St. Christopher BDA4801 · extra-thick court sock",
+       "detail": "Japanese brand built to match Thorlo. A buyer says it is thicker than his other socks. Racket Plaza lists off-white and navy.",
+       "meta": "¥1,320 + ¥290 shipping at Racket Plaza · 25–28 cm",
+       "link": "https://item.rakuten.co.jp/racket/stc-stc-bda4801/",
+       "linkLabel": "Check size and order",
+       "photos": [
+        {
+         "url": "media/shop/stc-bda4801.jpg",
+         "caption": "St. Christopher BDA4801"
+        }
+       ]
+      },
+      {
+       "title": "Runtage Extra Thick Ace · made in Japan",
+       "detail": "Low-gauge knit made to fill the shoe for tennis footwork. Hard-wearing cotton-poly face.",
+       "meta": "¥2,480 with mail shipping at Futtoraku · 23–27 cm",
+       "link": "https://item.rakuten.co.jp/footraku/if50/",
+       "linkLabel": "Buy at Futtoraku",
+       "photos": [
+        {
+         "url": "media/shop/runtage-if50.jpg",
+         "caption": "Runtage Extra Thick Ace"
+        }
+       ]
       },
       {
        "title": "NODAL Brushed Pile · very thick tabi",
        "detail": "Full terry interior brushed twice for warmth. Best for lounging or winter wear. Light blue was available online on Nov 26.",
        "meta": "¥2,552 at ROCOCO · 23–27 cm",
        "link": "https://roco2web.com/products/a18700?variant=67950632206429",
-       "linkLabel": "Buy light blue"
+       "linkLabel": "Buy light blue",
+       "photos": [
+        {
+         "url": "media/shop/nodal-pile.jpg",
+         "caption": "NODAL Brushed Pile"
+        }
+       ]
       },
       {
        "title": "YAMAP Mountain · cushioned hiking tabi",
        "detail": "A split-toe hiking sock with a padded sole. Navy was available in 25–27 and 27–29 cm on Nov 26.",
        "meta": "¥2,860 · navy",
        "link": "https://store.yamap.com/products/yamap-original-trail-socks-tabi-middle-mountain-unisex-25fw",
-       "linkLabel": "Pick a size"
+       "linkLabel": "Pick a size",
+       "photos": [
+        {
+         "url": "media/shop/yamap-tabi.jpg",
+         "caption": "YAMAP Mountain"
+        }
+       ]
       }
      ],
      "category": "Food & gear"
@@ -2189,23 +2290,46 @@
      "title": "Buying online in Japan",
      "items": [
       {
-       "title": "Ship prepaid to a Japanese address",
-       "detail": "Ask the recipient first. Use their delivery name and address and a reachable delivery phone if the store requires one. Use your own email, payment and billing address. Ordinary guest checkout does not ask for the recipient’s passport or account credentials.",
-       "link": "https://crouka.store/policies/shipping-policy",
-       "linkLabel": "Crouka shipping policy"
+       "title": "Ship to a friend’s address",
+       "detail": "Every shop below asks only for the recipient’s name, its katakana reading, postal address and phone. No ID, account or password of theirs. You pay with your own card and email."
       },
       {
-       "title": "Windsor · ship both Prince pairs",
-       "detail": "Both pairs were ¥3,762 in the guest cart. Windsor usually ships in 3–7 business days. If a host can receive the parcel, confirm the Japanese address, a phone number and the delivery date before paying.",
-       "meta": "¥4,752 with standard mainland shipping",
+       "title": "Windsor · guest checkout",
+       "detail": "Japanese delivery address and phone. Ships in 3–7 business days.",
+       "meta": "Free shipping from ¥3,980",
        "link": "https://www.windsorracket.co.jp/shop/pages/guide.aspx",
-       "linkLabel": "Delivery and payment terms"
+       "linkLabel": "Delivery terms"
       },
       {
-       "title": "Tabio · store pickup paused",
-       "detail": "Tabio lists pickup paused for maintenance. Check Daimaru Tokyo stock or ship to a hotel that accepts parcels. Tabio quotes 2–5 days for standard delivery.",
-       "link": "https://tabio.com/pages/store-pickup",
-       "linkLabel": "Check pickup status"
+       "title": "Racket Plaza and Futtoraku · Rakuten guest",
+       "detail": "Choose “use without membership”. Your own address can be abroad and the delivery address separate.",
+       "link": "https://item.rakuten.co.jp/racket/bwb-bow-ja2402/",
+       "linkLabel": "Racket Plaza"
+      },
+      {
+       "title": "Tabio · guest checkout",
+       "detail": "Japanese delivery address and phone. Pick “different sender” so the parcel arrives without price tags.",
+       "link": "https://tabio.com/products/062120093?variant=67660444467478",
+       "linkLabel": "Tabio"
+      },
+      {
+       "title": "Otafuku · guest checkout",
+       "detail": "The order form wants a Japanese address for the buyer. Use the delivery address there.",
+       "meta": "Free shipping from ¥3,200",
+       "link": "https://www.buzzworks-web.com/view/item/000000000094",
+       "linkLabel": "Otafuku"
+      },
+      {
+       "title": "Crouka · Goldwin hoodie",
+       "detail": "Guest checkout with a Japanese delivery address and a separate billing address, US allowed.",
+       "link": "https://crouka.store/policies/shipping-policy",
+       "linkLabel": "Shipping policy"
+      },
+      {
+       "title": "HouHou · Yamatomichi pants",
+       "detail": "Order by inquiry form. Give the delivery name, address and phone when they confirm stock.",
+       "link": "https://houhoutravel.com/yamatomichi",
+       "linkLabel": "Inquiry form"
       },
       {
        "title": "Amazon Japan · locker or hotel",
@@ -2280,7 +2404,13 @@
        "detail": "Crouka had this exact color and size in stock and in guest checkout on Nov 26. Checkout offers a separate billing address, including the US. Card approval and delivery timing depend on the order.",
        "meta": "GL45141 · ¥16,500",
        "link": "https://crouka.store/products/goldw-gl45141?variant=54400221118777",
-       "linkLabel": "Buy Arid Beige in size 3"
+       "linkLabel": "Buy Arid Beige in size 3",
+       "photos": [
+        {
+         "url": "media/shop/goldwin-gl45141.jpg",
+         "caption": "Goldwin GL45141"
+        }
+       ]
       },
       {
        "title": "Yamatomichi Light 5-Pocket Wide Pants · Dark Gray L",
@@ -2298,10 +2428,20 @@
        "place": "moderate"
       },
       {
-       "title": "Tokyo alternatives",
-       "detail": "Yamatomichi and Goldwin have Tokyo-area stockists. Useful if you’re staying in Tokyo.",
+       "title": "Goldwin GL45141 hoodie · Marunouchi store",
+       "detail": "Goldwin’s Tokyo flagship, tax-free. Call to check Arid Beige in size 3.",
+       "meta": "¥16,500 · daily 11 am–8 pm · 5 min walk from Tokyo Station",
+       "link": "https://www.marunouchi.com/en/tenants/10078/",
+       "linkLabel": "Store page",
+       "place": "goldwin-marunouchi"
+      },
+      {
+       "title": "Yamatomichi Wide Pants · Bamboo Shoots",
+       "detail": "A Tokyo partner shop on Yamatomichi’s stockist list. Call to check Dark Gray L.",
+       "meta": "03-5720-1677 · Nakameguro Station",
        "link": "https://www.yamatomichi.com/en/stores",
-       "linkLabel": "Yamatomichi stores"
+       "linkLabel": "Yamatomichi stockists",
+       "place": "bamboo-shoots"
       }
      ],
      "category": "Food & gear"

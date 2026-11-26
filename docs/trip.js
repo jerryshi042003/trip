@@ -227,7 +227,7 @@
     if (view === 'plan') {
       const tripSections = (T.todos ?? []).filter(section => section.region);
       if (tripSections.length) {
-        const itinerary = T.plan.length ? `<details class="group trip-itinerary"><summary>Itinerary</summary>${itineraryRows(T.plan, byId)}</details>` : '';
+        const itinerary = T.plan.length ? `<details class="group trip-itinerary" open><summary>Itinerary</summary>${itineraryRows(T.plan, byId)}</details>` : '';
         document.getElementById('out').innerHTML = itinerary + dashboard(tripSections, byId);
         return;
       }

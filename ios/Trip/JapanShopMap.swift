@@ -15,8 +15,9 @@ struct JapanShopMap: View {
     )
 
     private var products: [TripTask] {
-        store.data?.travelers["jerry"]?.todos?
-            .first { $0.region == "Japan" && $0.title == "Tabi socks" }?.items ?? []
+        (store.data?.travelers["jerry"]?.todos ?? [])
+            .filter { $0.region == "Japan" }
+            .flatMap(\.items)
     }
 
     var body: some View {
@@ -183,6 +184,12 @@ private struct Shop: Identifiable {
              stockNote: "White pair by order · call before going"),
         Shop(id: "xebio-kawasaki", label: "Xebio", name: "Xebio Kawasaki Le Front",
              coordinate: .init(latitude: 35.5293483, longitude: 139.6967751),
-             stockNote: "Le Front 7F–8F · check this model and size")
+             stockNote: "Le Front 7F–8F · check this model and size"),
+        Shop(id: "goldwin-marunouchi", label: "Goldwin", name: "Goldwin Marunouchi",
+             coordinate: .init(latitude: 35.678783, longitude: 139.763062), walking: true,
+             stockNote: "Brick Square 1F · 11 am–8 pm · tax-free"),
+        Shop(id: "bamboo-shoots", label: "Yamatomichi", name: "Bamboo Shoots · Nakameguro",
+             coordinate: .init(latitude: 35.644451, longitude: 139.700668),
+             stockNote: "Yamatomichi partner shop · call 03-5720-1677")
     ]
 }

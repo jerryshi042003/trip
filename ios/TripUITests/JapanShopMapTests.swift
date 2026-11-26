@@ -40,6 +40,18 @@ final class JapanShopMapTests: XCTestCase {
         XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "¥2,420")).firstMatch.exists)
         XCTAssertTrue(app.staticTexts["shop-detail-distance"].label.contains("from Tokyo Station"))
 
+        let goldwin = app.buttons["shop-goldwin-marunouchi"]
+        XCTAssertTrue(goldwin.isHittable)
+        goldwin.tap()
+        XCTAssertEqual(shop.label, "Goldwin Marunouchi")
+        XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "¥16,500")).firstMatch.exists)
+
+        let yamatomichi = app.buttons["shop-bamboo-shoots"]
+        XCTAssertTrue(yamatomichi.isHittable)
+        yamatomichi.tap()
+        XCTAssertEqual(shop.label, "Bamboo Shoots · Nakameguro")
+        XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "Yamatomichi Wide Pants")).firstMatch.exists)
+
         let kawasaki = XCTAttachment(screenshot: app.screenshot())
         kawasaki.name = "Xebio Kawasaki on Apple Maps"
         kawasaki.lifetime = .keepAlways
