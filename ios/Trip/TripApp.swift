@@ -19,7 +19,7 @@ struct TripApp: App {
 }
 
 struct RootView: View {
-    private enum TripSection: Hashable { case itinerary, plans, tom, places, people, media }
+    private enum TripSection: Hashable { case itinerary, plans, tom, places, people, media, japanShopMap }
 
     @EnvironmentObject var store: TripStore
     @State private var path: [TripSection] = []
@@ -35,6 +35,7 @@ struct RootView: View {
                             Button("Tom’s trip") { path.append(.tom) }
                             Divider()
                             Button("Places") { path.append(.places) }
+                            Button("Japan shop map") { path.append(.japanShopMap) }
                             Button("People") { path.append(.people) }
                             if !(store.data?.media ?? []).isEmpty {
                                 Button("Media") { path.append(.media) }
@@ -51,6 +52,7 @@ struct RootView: View {
                     case .plans: PlanView(who: "jerry")
                     case .tom: PlanView(who: "tom")
                     case .places: PlacesView()
+                    case .japanShopMap: JapanShopMap()
                     case .people: PeopleView()
                     case .media: MediaView()
                     }
