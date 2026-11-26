@@ -89,7 +89,20 @@ struct ManilaToday: View {
         List {
             if let next {
                 Section {
-                    TripDashboardRow(item: next, places: [:])
+                    if let url = next.link {
+                        TripSourceButton(url: url) {
+                            VStack(alignment: .leading, spacing: 5) {
+                                Text(next.title).font(.headline)
+                                Text(next.detail).font(.body).foregroundStyle(.secondary)
+                            }
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(.vertical, 4)
+                            .contentShape(Rectangle())
+                        }
+                        .foregroundStyle(.primary)
+                    } else {
+                        TripDashboardRow(item: next, places: [:])
+                    }
                 }
             }
         }
