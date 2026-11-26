@@ -56,7 +56,7 @@ struct JapanShopMap: View {
             Text(shop.label)
                 .font(.subheadline.weight(.semibold))
                 .multilineTextAlignment(.center)
-                .padding(.horizontal, 10)
+                .padding(.horizontal, 8)
                 .padding(.vertical, 5)
                 .background(active ? Color.accentColor : Color(uiColor: .systemBackground), in: .rect(cornerRadius: 8))
                 .foregroundStyle(active ? Color.white : Color.primary)
@@ -106,7 +106,7 @@ struct JapanShopMap: View {
                 HStack(alignment: .firstTextBaseline) {
                     Text(product.title)
                     Spacer(minLength: 10)
-                    if let price = product.meta?.split(separator: " · ").first {
+                    if let price = product.meta?.split(separator: " ").first(where: { $0.hasPrefix("¥") }) {
                         Text(String(price))
                             .monospacedDigit()
                             .fixedSize(horizontal: true, vertical: false)
@@ -121,7 +121,7 @@ struct JapanShopMap: View {
                 .foregroundStyle(.secondary)
         }
         .padding()
-        .frame(maxWidth: .infinity, alignment: .leading)
+        .frame(maxWidth: .infinity, minHeight: 184, alignment: .topLeading)
         .background(.background)
     }
 
@@ -172,16 +172,16 @@ private struct Shop: Identifiable {
     let stockNote: String
 
     static let stops = [
-        Shop(id: "windsor-shinjuku", label: "Windsor\nShinjuku", name: "Windsor Shinjuku",
+        Shop(id: "windsor-shinjuku", label: "Windsor", name: "Windsor Shinjuku",
              coordinate: .init(latitude: 35.6933456, longitude: 139.6984301),
              stockNote: "Oedo Line Exit D4 · prices from Windsor’s listings"),
-        Shop(id: "tabio-daimaru-tokyo", label: "Tabio\nDaimaru", name: "Tabio MEN · Daimaru Tokyo",
+        Shop(id: "tabio-daimaru-tokyo", label: "Tabio", name: "Tabio MEN · Daimaru Tokyo",
              coordinate: .init(latitude: 35.68126, longitude: 139.76882), walking: true,
              stockNote: "Daimaru 7F · check branch stock"),
-        Shop(id: "lafino-funabashi", label: "LAFINO\nFunabashi", name: "LAFINO Funabashi",
+        Shop(id: "lafino-funabashi", label: "LAFINO", name: "LAFINO Funabashi",
              coordinate: .init(latitude: 35.7066389, longitude: 139.9882889),
              stockNote: "White pair by order · call before going"),
-        Shop(id: "xebio-kawasaki", label: "Xebio\nKawasaki", name: "Xebio Kawasaki Le Front",
+        Shop(id: "xebio-kawasaki", label: "Xebio", name: "Xebio Kawasaki Le Front",
              coordinate: .init(latitude: 35.5293483, longitude: 139.6967751),
              stockNote: "Le Front 7F–8F · check this model and size")
     ]

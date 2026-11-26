@@ -27,6 +27,12 @@ final class JapanShopMapTests: XCTestCase {
         XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "¥1,100")).firstMatch.exists)
         XCTAssertFalse(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "¥2,277")).firstMatch.exists)
 
+        let lafino = app.buttons["shop-lafino-funabashi"]
+        XCTAssertTrue(lafino.isHittable)
+        lafino.tap()
+        XCTAssertEqual(shop.label, "LAFINO Funabashi")
+        XCTAssertTrue(app.staticTexts["¥2,530"].exists)
+
         let xebio = app.buttons["shop-xebio-kawasaki"]
         XCTAssertTrue(xebio.isHittable)
         xebio.tap()
