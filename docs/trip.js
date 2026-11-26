@@ -118,6 +118,16 @@
     return picker + filters + content;
   }
 
+  function itineraryRows(plan, byId) {
+    return plan.map(item => {
+      const place = byId[item.place];
+      const content = `<div class="date">${esc(item.date)}</div><div class="main"><div class="t">${esc(item.title)}</div>${item.sub ? `<div class="s">${esc(item.sub)}</div>` : ''}</div>`;
+      return place
+        ? `<a class="row" href="${gmap(place.ja || place.addr)}">${content}<span class="chev">›</span></a>`
+        : `<div class="row">${content}</div>`;
+    }).join('');
+  }
+
   // Calendar: reads the free-text plan dates. "Nov 30 – Dec 4", "Fri Nov 20", "Dec 15 – 19" are exact;
   // anything else that names a day ("By Dec 20", "Dec 14 or ~Dec 5") is shown dashed as tentative.
   const MON = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'];
@@ -217,7 +227,8 @@
     if (view === 'plan') {
       const tripSections = (T.todos ?? []).filter(section => section.region);
       if (tripSections.length) {
-        document.getElementById('out').innerHTML = dashboard(tripSections, byId);
+        const itinerary = T.plan.length ? `<details class="group trip-itinerary"><summary>Itinerary</summary>${itineraryRows(T.plan, byId)}</details>` : '';
+        document.getElementById('out').innerHTML = itinerary + dashboard(tripSections, byId);
         return;
       }
       const sections = T.todos ?? [];
@@ -226,7 +237,7 @@
       const calendarSection = cal ? `<h2 class="hdr">Calendar</h2>${cal}` : '';
       if (who !== 'tom') h += taskSections(sections) + calendarSection;
       h += '<h2 class="hdr">Itinerary</h2>';
-      h += `<div class="group">${T.plan.map(x => { const p = byId[x.place]; return `<a class="row" ${p ? `href="${gmap(p.ja || p.addr)}"` : ''}><div class="date">${esc(x.date)}</div><div class="main"><div class="t">${esc(x.title)}</div>${x.sub ? `<div class="s">${esc(x.sub)}</div>` : ''}</div>${p ? '<span class="chev">›</span>' : ''}</a>`; }).join('')}</div>`;
+      h += `<div class="group">${itineraryRows(T.plan, byId)}</div>`;
       const bucket = T.bucket?.length ? `<h2 class="hdr">Bucket list</h2><div class="group">${T.bucket.map(b => `<div class="row"><div class="main"><div class="t">${esc(b)}</div></div></div>`).join('')}</div>` : '';
       if (who === 'tom') {
         h += `<h2 class="hdr">Tom’s updates</h2><div class="group">${tomNotes.map(note => `<div class="row"><div class="main">${esc(note)}</div></div>`).join('')}<div class="row update-actions"><a href="${edit}tom-notes.txt" target="_blank" rel="noopener">Edit updates</a><a href="${edit}trip.json" target="_blank" rel="noopener">Edit full plan</a></div></div>`;

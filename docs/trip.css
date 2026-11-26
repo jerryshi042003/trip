@@ -7,14 +7,14 @@ html,body{margin:0;background:var(--bg);color:var(--text);font:17px/1.3 -apple-s
 h1{display:flex;align-items:center;gap:9px;font:700 34px/1.15 -apple-system,"SF Pro Display",sans-serif;letter-spacing:.01em;margin:14px 4px 12px}
 .trip-mark{display:block;border-radius:8px;border:1px solid var(--sep)}
 .trip-menu{position:relative;z-index:3}
-.trip-menu summary,.trip-notes summary{min-height:44px;line-height:44px;cursor:pointer}
+.trip-menu summary,.trip-notes summary,.trip-itinerary summary{min-height:44px;line-height:44px;cursor:pointer}
 .trip-menu summary{padding:0 8px}
 .trip-menu nav{position:absolute;right:0;min-width:160px;padding:4px;background:var(--card);border:1px solid var(--sep);border-radius:10px;box-shadow:0 8px 24px #0002}
 .trip-menu button{display:block;width:100%;min-height:44px;padding:0 12px;border:0;border-radius:6px;text-align:left;background:none;color:inherit;font:inherit;cursor:pointer}
 .trip-menu button:hover,.trip-menu button[aria-pressed=true]{background:var(--fill)}
 .trip-menu button[aria-pressed=true]{font-weight:650}
 .trip-notes{margin:16px 0}
-.trip-notes summary{padding:0 16px;background:var(--card);border-radius:10px}
+.trip-notes summary,.trip-itinerary summary{padding:0 16px;background:var(--card);border-radius:10px}
 .who button{appearance:none;border:0;min-height:44px;background:transparent;color:var(--sec);font:500 15px/1.25 -apple-system,sans-serif;padding:6px;cursor:pointer}
 .who{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));background:var(--fill);border-radius:10px;padding:3px}
 .who button{border-radius:7px}

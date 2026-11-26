@@ -125,6 +125,21 @@ struct PlanView: View {
                     }
                 }
             } else {
+                if let t, !t.plan.isEmpty {
+                    Section {
+                        NavigationLink("Itinerary") {
+                            ScrollView {
+                                VStack(alignment: .leading, spacing: 0) {
+                                    itineraryRows(t.plan, places: places, standalone: true)
+                                }
+                                .padding(.horizontal)
+                            }
+                            .navigationTitle("Itinerary")
+                            .navigationBarTitleDisplayMode(.inline)
+                        }
+                        .accessibilityIdentifier("traveler-itinerary")
+                    }
+                }
                 let regions = dashboard.compactMap(\.region).reduce(into: [String]()) { names, name in
                     if !names.contains(name) { names.append(name) }
                 }
@@ -203,15 +218,21 @@ struct PlanView: View {
 
     private func itinerary(_ plan: [PlanItem], places: [String: Place]) -> some View {
         Section {
-            ForEach(plan) { item in
-                let p = item.place.flatMap { places[$0] }
-                Group {
-                    if let p { Link(destination: Links.maps(p, store.coordinate(for: p))) { PlanRow(item: item, chevron: true) } }
-                    else { PlanRow(item: item, chevron: false) }
-                }
-            }
+            itineraryRows(plan, places: places)
         } header: {
             Text("Itinerary")
+        }
+    }
+
+    private func itineraryRows(_ plan: [PlanItem], places: [String: Place], standalone: Bool = false) -> some View {
+        ForEach(plan) { item in
+            let p = item.place.flatMap { places[$0] }
+            Group {
+                if let p { Link(destination: Links.maps(p, store.coordinate(for: p))) { PlanRow(item: item, chevron: true) } }
+                else { PlanRow(item: item, chevron: false) }
+            }
+            .padding(.vertical, standalone ? 12 : 0)
+            if standalone { Divider() }
         }
     }
 
