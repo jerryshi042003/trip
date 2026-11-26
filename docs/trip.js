@@ -86,7 +86,7 @@
     const place = byId[item.place];
     const photos = item.photos ?? [];
     const gallery = photos.length ? `<div class="trip-gallery" ${photos.length > 1 ? 'tabindex="0"' : ''} role="group" aria-label="${esc(item.title)} photos">${photos.map(photo => `
-      <figure><img src="${mediaURL(photo.url)}" alt="${esc(photo.caption)}" loading="lazy" decoding="async"><figcaption>${esc(photo.caption)}</figcaption></figure>`).join('')}</div>` : '';
+      <figure><img src="${mediaURL(photo.url)}" alt="${esc(photo.caption)}" loading="lazy" decoding="async">${item.title.startsWith(photo.caption) ? '' : `<figcaption>${esc(photo.caption)}</figcaption>`}</figure>`).join('')}</div>` : '';
     return `<article class="trip-entry">
       ${gallery}
       <div class="trip-entry-copy">

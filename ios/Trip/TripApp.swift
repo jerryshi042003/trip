@@ -288,7 +288,9 @@ struct TripDashboardRow: View {
                                 .clipped()
                                 .clipShape(.rect(cornerRadius: 10))
                                 .accessibilityHidden(true)
-                                Text(photo.caption).font(.subheadline).foregroundStyle(.secondary)
+                                if !item.title.hasPrefix(photo.caption) {
+                                    Text(photo.caption).font(.subheadline).foregroundStyle(.secondary)
+                                }
                             }
                             .containerRelativeFrame(.horizontal) { width, _ in
                                 photos.count == 1 ? width : width * 0.87
