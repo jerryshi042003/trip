@@ -19,18 +19,21 @@ struct TripApp: App {
 }
 
 struct RootView: View {
-    private enum TripSection: Hashable { case places, people, media }
+    private enum TripSection: Hashable { case itinerary, plans, tom, places, people, media }
 
     @EnvironmentObject var store: TripStore
-    @AppStorage("who") private var who = "jerry"
     @State private var path: [TripSection] = []
 
     var body: some View {
         NavigationStack(path: $path) {
-            PlanView(who: $who)
+            ManilaToday()
                 .toolbar {
                     ToolbarItem(placement: .topBarTrailing) {
                         Menu("More") {
+                            Button("Itinerary") { path.append(.itinerary) }
+                            Button("Trip plans") { path.append(.plans) }
+                            Button("Tom’s trip") { path.append(.tom) }
+                            Divider()
                             Button("Places") { path.append(.places) }
                             Button("People") { path.append(.people) }
                             if !(store.data?.media ?? []).isEmpty {
@@ -44,6 +47,9 @@ struct RootView: View {
                 }
                 .navigationDestination(for: TripSection.self) { section in
                     switch section {
+                    case .itinerary: JerryItinerary()
+                    case .plans: PlanView(who: "jerry")
+                    case .tom: PlanView(who: "tom")
                     case .places: PlacesView()
                     case .people: PeopleView()
                     case .media: MediaView()
@@ -74,28 +80,61 @@ enum Links {
 
 // MARK: - Plan
 
+struct ManilaToday: View {
+    @EnvironmentObject private var store: TripStore
+
+    var body: some View {
+        let next = store.data?.travelers["jerry"]?.todos?
+            .first { $0.region == "Manila" && $0.category == "Next" }?.items.first
+        List {
+            if let next {
+                Section {
+                    TripDashboardRow(item: next, places: [:])
+                }
+            }
+        }
+        .navigationTitle("Manila")
+        .refreshable { await store.refresh() }
+    }
+}
+
+struct JerryItinerary: View {
+    @EnvironmentObject private var store: TripStore
+
+    var body: some View {
+        let trips = store.data?.travelers["jerry"]?.plan ?? []
+        let places = Dictionary(uniqueKeysWithValues: (store.data?.places ?? []).map { ($0.id, $0) })
+        ScrollView {
+            VStack(alignment: .leading, spacing: 0) {
+                ForEach(trips) { item in
+                    if let place = item.place.flatMap({ places[$0] }) {
+                        Link(destination: Links.maps(place, store.coordinate(for: place))) {
+                            PlanRow(item: item, chevron: true)
+                        }
+                        .padding(.vertical, 12)
+                    } else {
+                        PlanRow(item: item, chevron: false)
+                            .padding(.vertical, 12)
+                    }
+                    Divider()
+                }
+            }
+            .padding(.horizontal)
+        }
+        .navigationTitle("Itinerary")
+        .navigationBarTitleDisplayMode(.inline)
+    }
+}
+
 struct PlanView: View {
     @EnvironmentObject var store: TripStore
-    @Binding var who: String
-    @State private var region = ""
-    @State private var category = ""
+    let who: String
 
     var body: some View {
         let t = store.data?.travelers[who]
         let places = Dictionary(uniqueKeysWithValues: (store.data?.places ?? []).map { ($0.id, $0) })
         let dashboard = (t?.todos ?? []).filter { $0.region != nil }
         List {
-            Section {
-                Picker("Traveler", selection: $who) {
-                    ForEach((store.data?.travelers ?? [:]).keys.sorted(), id: \.self) { key in
-                        Text(store.data?.travelers[key]?.name ?? key).tag(key)
-                    }
-                }
-                .pickerStyle(.segmented)
-                .listRowBackground(Color.clear)
-                .listRowInsets(EdgeInsets())
-                .listRowSeparator(.hidden)
-            }
             if dashboard.isEmpty {
                 if let t {
                     let sections = t.todos ?? []
@@ -125,64 +164,27 @@ struct PlanView: View {
                     }
                 }
             } else {
-                if let t, !t.plan.isEmpty {
-                    Section {
-                        NavigationLink("Itinerary") {
-                            ScrollView {
-                                VStack(alignment: .leading, spacing: 0) {
-                                    itineraryRows(t.plan, places: places, standalone: true)
-                                }
-                                .padding(.horizontal)
-                            }
-                            .navigationTitle("Itinerary")
-                            .navigationBarTitleDisplayMode(.inline)
-                        }
-                        .accessibilityIdentifier("traveler-itinerary")
-                    }
-                }
                 let regions = dashboard.compactMap(\.region).reduce(into: [String]()) { names, name in
                     if !names.contains(name) { names.append(name) }
                 }
-                let selection = Binding(get: { regions.contains(region) ? region : regions[0] }, set: {
-                    region = $0
-                    category = ""
-                })
-                let regional = dashboard.filter { $0.region == selection.wrappedValue }
-                let categories = regional.compactMap(\.category).reduce(into: [String]()) { names, name in
-                    if !names.contains(name) { names.append(name) }
-                }
-                let topic = Binding(get: { categories.contains(category) ? category : categories.first ?? "" }, set: { category = $0 })
-                Section {
-                    Picker("Trip destination", selection: selection) {
-                        ForEach(regions, id: \.self) { Text($0).tag($0) }
-                    }
-                    .pickerStyle(.segmented)
-                    .listRowInsets(EdgeInsets())
-                    .listRowBackground(Color.clear)
-                }
-                if categories.count > 1 {
-                    Section {
-                        Picker("\(selection.wrappedValue) topics", selection: topic) {
-                            ForEach(categories, id: \.self) { Text($0).tag($0) }
+                ForEach(regions, id: \.self) { region in
+                    NavigationLink(region) {
+                        List {
+                            ForEach(dashboard.filter { $0.region == region }) { section in
+                                Section(section.title) {
+                                    ForEach(section.items) { item in
+                                        TripDashboardRow(item: item, places: places)
+                                    }
+                                }
+                            }
                         }
-                        .pickerStyle(.segmented)
-                        .listRowInsets(EdgeInsets())
-                        .listRowBackground(Color.clear)
+                        .navigationTitle(region)
                     }
-                }
-                ForEach(regional.filter { $0.category == nil || $0.category == topic.wrappedValue }) { section in
-                    Section {
-                        ForEach(section.items) { item in
-                            TripDashboardRow(item: item, places: places)
-                        }
-                    } header: {
-                        Text(section.title).font(.title3.weight(.semibold)).foregroundStyle(.primary)
-                            .textCase(nil)
-                    }
+                    .accessibilityIdentifier("trip-region-\(region)")
                 }
             }
         }
-        .navigationTitle("Trip")
+        .navigationTitle(who == "tom" ? "Tom’s trip" : "Trip plans")
         .refreshable { await store.refresh() }
     }
 
@@ -198,7 +200,7 @@ struct PlanView: View {
                             }
                             if let link = item.link {
                                 Spacer(minLength: 4)
-                                Link(destination: link) { Image(systemName: "globe") }
+                                TripSourceButton(url: link) { Image(systemName: "globe") }
                                     .buttonStyle(.borderless)
                                     .accessibilityLabel("Open link for \(item.title)")
                             }
@@ -314,7 +316,8 @@ struct TripDashboardRow: View {
                 if item.link != nil || place != nil {
                     HStack(spacing: 16) {
                         if let link = item.link {
-                            Link(item.linkLabel ?? "Details", destination: link).buttonStyle(.borderless)
+                            TripSourceButton(url: link) { Text(item.linkLabel ?? "Details") }
+                                .buttonStyle(.borderless)
                         }
                         if let place {
                             Link("Maps", destination: mapURL(place)).buttonStyle(.borderless)
@@ -467,6 +470,19 @@ struct PersonRow: View {
                 }
             }
             .buttonStyle(CircleButton())
+        }
+    }
+}
+
+private struct TripSourceButton<Label: View>: View {
+    let url: URL
+    @ViewBuilder let label: () -> Label
+
+    var body: some View {
+        if InAppVideo(url: url) != nil {
+            InAppVideoButton(url: url, label: label)
+        } else {
+            Link(destination: url, label: label)
         }
     }
 }
